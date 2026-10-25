@@ -291,6 +291,8 @@ function App() {
         <style>{CSS}</style>
         <Navbar />
         <MediaPage />
+        <Footer />
+        <BackToTop />
       </>
     )
   }

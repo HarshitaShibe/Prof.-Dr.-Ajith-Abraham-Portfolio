@@ -14,7 +14,7 @@ const ITEMS = [
   { label: 'Career and Leadership', id: 'career' },
   { label: 'Publications', id: 'publications' },
   { label: 'Journals and Publishers', id: 'journals' },
-  { label: 'Media', id: 'media' },
+  { label: 'Media and Gallery', id: 'media' },
   { label: 'Contact', id: 'contact' },
 ]
 
