@@ -198,6 +198,12 @@ body { display: block; min-height: 0; }
   padding: 90px 30px 0; box-sizing: border-box; color: #fff;
   font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 @media (min-width: 640px) { .mm-over { padding: 130px 56px 0; } }
+.mm-sec { position: relative; width: 100%; height: calc(100vh + 260px); background: #24476B; overflow: hidden; }
+.mm-wall { position: absolute; inset: 260px 0 0 0; }
+@media (max-width: 639px) {
+  .mm-sec { height: calc(100svh + 40px); }
+  .mm-wall { inset: 150px 0 0 0; }
+}
 .mm-title { margin: 0; text-align: center; font-size: clamp(1.8rem, 3.6vw, 2.6rem); font-weight: 600;
   line-height: 1.15; letter-spacing: -.04em; color: #fff; }
 
@@ -219,6 +225,14 @@ function App() {
   }, [])
   // Shuru mein sirf 2 photos load hoti hain, baaki ek-ek karke.
   const [mountedCount, setMountedCount] = useState(Math.min(2, SLIDES.length))
+  // phones: 3 narrower columns on the Moments wall
+  const [phone, setPhone] = useState(() => typeof window !== 'undefined' && window.innerWidth < 640)
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 639px)')
+    const on = () => setPhone(mq.matches)
+    mq.addEventListener('change', on)
+    return () => mq.removeEventListener('change', on)
+  }, [])
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
@@ -381,19 +395,19 @@ function App() {
 
       <Collaborations />
 
-      <section id="moments" aria-labelledby="mm-title" style={{ position: 'relative', width: '100%', height: 'calc(100vh + 260px)', background: '#24476B', overflow: 'hidden' }}>
+      <section id="moments" className="mm-sec" aria-labelledby="mm-title">
         <div className="mm-over">
           <h2 id="mm-title" className="mm-title">Moments &amp; Milestones</h2>
         </div>
-        <div style={{ position: 'absolute', inset: '260px 0 0 0' }}>
+        <div className="mm-wall">
         <DriftWall
           items={WALL_ITEMS}
-          columns={9}
-          tileWidth={240}
-          tileHeight={132}
-          gap={18}
-          tilt={16}
-          turn={-14}
+          columns={phone ? 3 : 9}
+          tileWidth={phone ? 104 : 240}
+          tileHeight={phone ? 104 : 132}
+          gap={phone ? 12 : 18}
+          tilt={phone ? 12 : 16}
+          turn={phone ? 0 : -14}
           perspective={1200}
           depth={120}
           speed={42}
