@@ -15,6 +15,7 @@ import Collaborations from './components/collaborations'
 import CareerPage from './components/careerpage'
 import JournalsPage from './components/journalspage'
 import ContactPage from './components/contactpage'
+import MediaPage from './components/mediapage'
 import BackToTop from './components/backtotop'
 import home from './data/home.json'
 
@@ -38,7 +39,7 @@ const FADE = 1.4 // s: crossfade
 const MOVE = (HOLD + FADE * 1000) / 1000 // s: slow camera move
 
 type Mo = 'zoomIn' | 'zoomOut' | 'panLeft' | 'panRight'
-type Route = 'home' | 'career' | 'publications' | 'journals' | 'contact'
+type Route = 'home' | 'career' | 'publications' | 'journals' | 'media' | 'contact'
 
 function frame(mo: Mo, active: boolean) {
   const start = {
@@ -231,7 +232,7 @@ function App() {
   // Tiny hash router: "#career" shows the Career page, any other hash shows the
   // home page (and scrolls to that section).
   const routeFromHash = (): Route =>
-    window.location.hash === '#career' ? 'career' : window.location.hash === '#publications' ? 'publications' : window.location.hash === '#journals' ? 'journals' : window.location.hash === '#contact' ? 'contact' : 'home'
+    window.location.hash === '#career' ? 'career' : window.location.hash === '#publications' ? 'publications' : window.location.hash === '#journals' ? 'journals' : window.location.hash === '#media' ? 'media' : window.location.hash === '#contact' ? 'contact' : 'home'
   const [route, setRoute] = useState<Route>(routeFromHash)
   useEffect(() => {
     const onHash = () => setRoute(routeFromHash())
@@ -280,6 +281,16 @@ function App() {
         <JournalsPage />
         <Footer />
         <BackToTop />
+      </>
+    )
+  }
+
+  if (route === 'media') {
+    return (
+      <>
+        <style>{CSS}</style>
+        <Navbar />
+        <MediaPage />
       </>
     )
   }

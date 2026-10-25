@@ -17,6 +17,7 @@ const LINKS = [
   { label: 'Career and Leadership', href: '#career' },
   { label: 'Publications', href: '#publications' },
   { label: 'Journals and Publishers', href: '#journals' },
+  { label: 'Media', href: '#media' },
   { label: 'Contact', href: '#contact' },
 ]
 

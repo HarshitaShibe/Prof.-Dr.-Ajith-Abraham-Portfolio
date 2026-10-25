@@ -14,6 +14,7 @@ const ITEMS = [
   { label: 'Career and Leadership', id: 'career' },
   { label: 'Publications', id: 'publications' },
   { label: 'Journals and Publishers', id: 'journals' },
+  { label: 'Media', id: 'media' },
   { label: 'Contact', id: 'contact' },
 ]
 
@@ -27,6 +28,8 @@ const CSS = `
   box-sizing: border-box;
 }
 @media (min-width: 640px) { .nv-header { top: 34px; padding: 0 20px; } }
+/* five tabs are wide: on tablets the name would collide with the pill */
+@media (min-width: 768px) and (max-width: 1100px) { .nv-header .nv-brand { display: none; } }
 
 .nv-row {
   position: relative; max-width: 1200px; margin: 0 auto;
@@ -163,7 +166,7 @@ const CONTACT = {
 }
 
 // Scroll to a section so its heading lands just under the floating navbar
-const PAGES = ['career', 'publications', 'journals', 'contact']
+const PAGES = ['career', 'publications', 'journals', 'media', 'contact']
 const goTo = (id: string) => (e: MouseEvent<HTMLAnchorElement>) => {
   if (PAGES.includes(id)) return // separate pages: let the hash change open them
   const el = document.getElementById(id)
