@@ -33,7 +33,7 @@ const CSS = `
 
 @media (max-width: 639px) {
   .bio-title { margin-bottom: 20px; }
-  .bio-p { text-align: left; line-height: 1.75; margin-bottom: 18px; }
+  .bio-p { font-size: .9rem; text-align: left; line-height: 1.75; margin-bottom: 18px; }
 }
 
 .bio-reveal {

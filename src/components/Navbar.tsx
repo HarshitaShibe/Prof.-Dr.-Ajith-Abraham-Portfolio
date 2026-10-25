@@ -17,6 +17,9 @@ const ITEMS = [
   { label: 'Contact', id: 'contact' },
 ]
 
+// the phone menu also has a Homepage entry that goes back to the hero
+const MENU_ITEMS = [{ label: 'Homepage', id: 'top' }, ...ITEMS]
+
 const CSS = `
 .nv-header {
   position: fixed; left: 0; right: 0; top: 30px; z-index: 50;
@@ -97,6 +100,9 @@ const CSS = `
   border-color: rgba(255,255,255,.14);
 }
 
+/* Publications page, desktop only: the name sits over the light top of the hero, so it is dark blue */
+@media (min-width: 768px) { .on-publications .nv-brand .nv-name { color: #24476B; text-shadow: none; font-weight: 600; } }
+
 /* Publications page only: after the hero, the pill turns dark and the name stays visible in dark blue */
 .on-publications .nv-header.is-scrolled .nv-pill, .on-journals .nv-header.is-scrolled .nv-pill { background: #24476B; border-color: rgba(255,255,255,.14); }
 
@@ -119,7 +125,7 @@ const CSS = `
 
   .nv-menu {
     display: flex; flex-direction: column; gap: 2px; position: absolute; right: 0; top: calc(100% + 10px);
-    width: min(280px, 100%); margin: 0; padding: 8px; list-style: none; box-sizing: border-box;
+    width: min(300px, 100%); margin: 0; padding: 10px; list-style: none; box-sizing: border-box;
     border-radius: 20px; background: #24476B; border: 1px solid rgba(255,255,255,.2);
     box-shadow: 0 22px 44px -16px rgba(18,36,60,.85), inset 0 1px 0 rgba(255,255,255,.2);
     opacity: 0; visibility: hidden; transform: translateY(-8px) scale(.98); transform-origin: top right; pointer-events: none;
@@ -127,16 +133,34 @@ const CSS = `
   }
   .nv-menu.is-open { opacity: 1; visibility: visible; transform: none; pointer-events: auto; }
   .nv-menu a {
-    display: block; padding: 13px 16px; border-radius: 14px; color: rgba(255,255,255,.9); text-decoration: none;
+    display: block; padding: 15px 18px; border-radius: 14px; color: rgba(255,255,255,.9); text-decoration: none;
     font-size: .86rem; font-weight: 400; -webkit-tap-highlight-color: transparent; transition: background-color .2s, color .2s;
   }
   .nv-menu a:hover, .nv-menu a:active { background: rgba(255,255,255,.1); color: #fff; }
   .nv-menu a.is-active { background: rgba(255,255,255,.16); color: #fff; font-weight: 500; }
   .nv-menu a:focus-visible { outline: 2px solid #cdd9ff; outline-offset: -2px; }
+  .nv-menu-sep { height: 1px; margin: 8px 8px 6px; background: rgba(255,255,255,.16); }
+  .nv-menu-h { margin: 4px 18px 6px; font-size: .68rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+  .nv-menu a.nv-menu-c { padding: 10px 18px; font-size: .8rem; color: rgba(255,255,255,.82); overflow-wrap: anywhere; }
+  .nv-menu-p { display: flex; flex-wrap: wrap; gap: 6px; padding: 6px 12px 4px; }
+  .nv-menu a.nv-menu-chip { padding: 6px 12px; border-radius: 999px; font-size: .7rem; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.26); color: #fff; }
+  .nv-menu a.nv-menu-chip:hover { background: rgba(255,255,255,.2); }
 }
 @media (prefers-reduced-motion: reduce) { .nv-menu, .nv-burger span { transition: none; } }
-}
 `
+
+// Contact links shown at the bottom of the mobile menu
+const CONTACT = {
+  phone: { display: '+91-7012325144', tel: '+917012325144' },
+  email: 'ajith.a@saiuniversity.edu.in',
+  profiles: [
+    { label: 'Google Scholar', url: 'https://scholar.google.com/citations?user=i95DGLQAAAAJ' },
+    { label: 'ORCID', url: 'https://orcid.org/0000-0002-0169-6738' },
+    { label: 'Scopus', url: 'https://www.scopus.com/authid/detail.uri?authorId=7202760099' },
+    { label: 'Web of Science', url: 'https://www.webofscience.com/wos/author/record/A-1416-2008' },
+    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/ajithabraham/' },
+  ],
+}
 
 // Scroll to a section so its heading lands just under the floating navbar
 const PAGES = ['career', 'publications', 'journals', 'contact']
@@ -181,7 +205,7 @@ export default function Navbar() {
     const sync = () => {
       const h = window.location.hash.slice(1)
       if (PAGES.includes(h)) setActive(h)
-      else setActive('')
+      else setActive(h === 'top' ? 'top' : '')
       setOpen(false)
     }
     sync()
@@ -209,7 +233,7 @@ export default function Navbar() {
 
   // Scroll-spy: jo section screen ke beech mein ho, uska tab active ho
   useEffect(() => {
-    const sections = ITEMS.map((i) => document.getElementById(i.id)).filter(
+    const sections = MENU_ITEMS.map((i) => document.getElementById(i.id)).filter(
       (el): el is HTMLElement => el !== null,
     )
     if (sections.length === 0) return
@@ -217,7 +241,9 @@ export default function Navbar() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) setActive(entry.target.id)
+          const id = entry.target.id
+          if (entry.isIntersecting) setActive(id)
+          else setActive((a) => (a === id ? '' : a))
         })
       },
       { rootMargin: '-45% 0px -50% 0px' },
@@ -292,7 +318,7 @@ export default function Navbar() {
         </button>
 
         <ul id="nv-menu" className={`nv-menu${open ? ' is-open' : ''}`}>
-          {ITEMS.map((item) => (
+          {MENU_ITEMS.map((item) => (
             <li key={item.id}>
               <a
                 href={`#${item.id}`}
@@ -309,6 +335,17 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          <li className="nv-menu-sep" role="separator" />
+          <li>
+            <p className="nv-menu-h">Contact</p>
+            <a className="nv-menu-c" href={`tel:${CONTACT.phone.tel}`} tabIndex={open ? 0 : -1}>{CONTACT.phone.display}</a>
+            <a className="nv-menu-c" href={`mailto:${CONTACT.email}`} tabIndex={open ? 0 : -1}>{CONTACT.email}</a>
+            <div className="nv-menu-p">
+              {CONTACT.profiles.map((p) => (
+                <a key={p.label} className="nv-menu-chip" href={p.url} target="_blank" rel="noopener noreferrer" tabIndex={open ? 0 : -1}>{p.label}</a>
+              ))}
+            </div>
+          </li>
         </ul>
       </div>
     </header>

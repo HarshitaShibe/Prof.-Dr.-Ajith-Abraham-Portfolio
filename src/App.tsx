@@ -171,6 +171,27 @@ body { display: block; min-height: 0; }
   .hm-btn { height: 44px; padding: 0 20px; font-size: .88rem; }
 }
 
+@media (max-width: 639px) {
+  .hm-hero { min-height: 740px; }
+  .hm-content { padding-bottom: 150px; }
+  .hm-badge { font-size: 1rem; }
+  .hm-hero h1.hm-name { font-size: 2.6rem; margin-top: 20px; white-space: nowrap; }
+  .hm-tag { font-size: 1.15rem; white-space: normal; flex-wrap: wrap; row-gap: 2px; margin-top: 20px; line-height: 1.4; }
+  .hm-aff { margin-top: 32px; gap: 10px; }
+  .hm-aff li { font-size: 1rem; line-height: 1.5; }
+  .hm-aff li:first-child { white-space: nowrap; font-size: calc((100vw - 56px) / 23.5); }
+}
+@media (max-width: 380px) {
+  .hm-hero { min-height: 780px; }
+  .hm-content { padding-top: 70px; }
+  .hm-hero h1.hm-name { font-size: 2.3rem; }
+  .hm-badge { font-size: .92rem; }
+  .hm-tag { font-size: 1.05rem; margin-top: 16px; }
+  .hm-aff { margin-top: 24px; gap: 8px; }
+  .hm-aff li { font-size: .92rem; }
+  .hm-aff li:first-child { font-size: calc((100vw - 56px) / 23.5); }
+}
+
 /* Heading sits over the faded top of the DriftWall photos (same style as the other section titles) */
 .mm-over { position: absolute; top: 0; left: 0; right: 0; z-index: 2; pointer-events: none;
   padding: 90px 30px 0; box-sizing: border-box; color: #fff;

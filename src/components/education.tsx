@@ -99,6 +99,13 @@ const CSS = `
 .edu-inst { margin: 0 0 4px; font-size: .8rem; color: rgba(255,255,255,.95); }
 .edu-detail { margin: 0; font-size: .75rem; font-style: italic; color: rgba(255,255,255,.9); }
 
+@media (max-width: 639px) {
+  .edu-degree { font-size: 1.05rem; }
+  .edu-inst { font-size: .9rem; }
+  .edu-detail { font-size: .82rem; }
+  .edu-period { font-size: .9rem; }
+}
+
 /* Reduced motion: no pinning, the track simply scrolls sideways */
 @media (prefers-reduced-motion: reduce) {
   .edu-sticky { height: auto; overflow-x: auto; padding: 60px 0; }

@@ -113,7 +113,7 @@ const CSS = `
 :is(.on-career, .on-publications, .on-journals, .on-contact) .ft-logo-dark { display: block; }
 :is(.on-career, .on-publications, .on-journals, .on-contact) .ft-wrap .ft-name a { color: #fff; }
 :is(.on-career, .on-publications, .on-journals, .on-contact) .ft-lab, :is(.on-career, .on-publications, .on-journals, .on-contact) .ft-by { color: rgba(255,255,255,.7); }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-bottom { background: #DCE8F1; color: #24476B; }
+:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-bottom { background: transparent; color: rgba(255,255,255,.85); border-top: 1px solid rgba(255,255,255,.28); }
 `
 
 export default function Footer() {

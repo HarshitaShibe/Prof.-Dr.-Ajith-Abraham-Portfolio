@@ -491,12 +491,6 @@ const Icon = ({ children }: { children: ReactNode }) => (
     {children}
   </svg>
 )
-const CapIcon = () => (
-  <Icon>
-    <path d="M22 9 12 4 2 9l10 5 10-5Z" />
-    <path d="M6 11.5V16c0 1.2 2.7 3 6 3s6-1.8 6-3v-4.5" />
-  </Icon>
-)
 const DownloadIcon = () => (
   <Icon>
     <path d="M12 4v11M7 11l5 5 5-5M5 20h14" />
@@ -836,7 +830,6 @@ export default function Publications() {
           </h1>
           <div className="pb-ctas">
             <a className="pb-btn" href={SCHOLAR.profileUrl} target="_blank" rel="noopener noreferrer" data-grid-avoid>
-              <CapIcon />
               Google Scholar
             </a>
             <a className="pb-btn" href="https://www.scopus.com/authid/detail.uri?authorId=7202760099" target="_blank" rel="noopener noreferrer" data-grid-avoid>
@@ -849,7 +842,6 @@ export default function Publications() {
               ORCID
             </a>
             <a className="pb-btn" href={CV_URL} download data-grid-avoid>
-              <DownloadIcon />
               Download CV (PDF)
             </a>
           </div>

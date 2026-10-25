@@ -24,9 +24,11 @@ const CSS = `
 }
 
 @media (max-width: 639px) {
-  .ai-title { margin-bottom: 32px; text-wrap: balance; }
+  .ai-title { margin-bottom: 32px; text-align: center; }
+  .ai-l2 { display: block; }
   .ai-grid { gap: 14px; }
   .ai-fact { padding: 20px 20px 22px; }
+  .ai-wrap .ai-text { font-size: .9rem; font-weight: 300; line-height: 1.6; }
 }
 .ai-grid { display: grid; grid-template-columns: 1fr; grid-auto-rows: 1fr; gap: 32px 16px; }
 @media (min-width: 640px) { .ai-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -59,7 +61,9 @@ export default function AcademicImpact() {
   return (
     <section id="academic-impact" className="ai-wrap" aria-labelledby="ai-title">
       <style>{CSS}</style>
-      <h2 id="ai-title" className="ai-title">Academic Impact at a Glance</h2>
+      <h2 id="ai-title" className="ai-title">
+        <span>Academic Impact at </span><span className="ai-l2">a Glance</span>
+      </h2>
 
       <div className="ai-grid">
         {FACTS.map((f) => (

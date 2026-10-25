@@ -256,6 +256,11 @@ const CSS = `
   .kp-title { margin-bottom: 32px; }
   .kp-grid { gap: 14px; }
   .kp-card { min-height: 0; }
+  .kp-wrap .kp-name { font-size: 1.1rem; }
+  .kp-wrap .kp-teaser { font-size: .9rem; }
+  .kp-wrap .kp-more { font-size: .9rem; }
+  .kp-wrap .kp-p, .kp-wrap .kp-li { font-size: .9rem; }
+  .kp-wrap .kp-subhead { font-size: 1.1rem; }
 }
 .kp-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
 @media (min-width: 640px) { .kp-grid { grid-template-columns: repeat(2, 1fr); } }

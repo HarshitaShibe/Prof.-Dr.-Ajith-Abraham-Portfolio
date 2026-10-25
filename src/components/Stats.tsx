@@ -59,8 +59,12 @@ const CSS = `
 .st-label { margin-top: 4px; font-size: .74rem; font-weight: 250; white-space: pre-line; color: rgba(255,255,255,.85); }
 
 @media (max-width: 639px) {
-  .st-item { padding: 14px 8px; }
+  .st-wrap { bottom: 30px; padding: 0 14px; }
+  .st-card { border-radius: 18px; padding: 6px 0; background: linear-gradient(to top, rgba(18,36,60,.42), rgba(18,36,60,.18)); }
+  .st-item { padding: 9px 6px; }
   .st-item:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .st-num { font-size: 1.3rem; }
+  .st-label { margin-top: 3px; font-size: .75rem; font-weight: 300; line-height: 1.3; white-space: normal; text-wrap: balance; }
 }
 
 @keyframes st-up { to { opacity: 1; transform: none; } }
