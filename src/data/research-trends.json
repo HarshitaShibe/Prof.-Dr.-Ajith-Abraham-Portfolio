@@ -1,0 +1,107 @@
+{
+  "_help": "Edit this file to change how the 20 most-cited papers (src/data/scholar-top.json) are grouped on the Research and Trends page. Every paper id should appear in exactly one domain. Numbers are always computed from scholar-top.json.",
+  "eras": [
+    {
+      "label": "Soft computing and security",
+      "from": 2000,
+      "to": 2007
+    },
+    {
+      "label": "Evolutionary era",
+      "from": 2008,
+      "to": 2013
+    },
+    {
+      "label": "AI for next-generation systems",
+      "from": 2014,
+      "to": null
+    }
+  ],
+  "domains": [
+    {
+      "key": "evolutionary",
+      "name": "Evolutionary Computation",
+      "blurb": "Differential evolution, particle swarm, bacterial foraging and multi-objective optimisation, from theory to applications such as clustering and grid scheduling.",
+      "topics": [
+        "Differential Evolution",
+        "Swarm Intelligence",
+        "Multi-objective",
+        "Bacterial Foraging",
+        "Scheduling"
+      ],
+      "paperIds": [
+        "qjMakFHDy7sC",
+        "JzGFD3-rS6kC",
+        "zYLM7Y9cAGgC",
+        "jRIwE-1ttnoC",
+        "2osOgNQ5qMEC",
+        "fQNAKQ3IYiAC",
+        "hqOjcs7Dif8C",
+        "UeHWp8X0CEIC",
+        "u5HHmVD_uO8C"
+      ]
+    },
+    {
+      "key": "neural",
+      "name": "Neural Networks",
+      "blurb": "Artificial neural networks, their metaheuristic design and ensembles for forecasting.",
+      "topics": [
+        "ANN",
+        "Ensembles",
+        "Forecasting",
+        "Metaheuristic Design"
+      ],
+      "paperIds": [
+        "abG-DnoFyZgC",
+        "FnaCo-ypupUC",
+        "Se3iqnhoufwC"
+      ]
+    },
+    {
+      "key": "security",
+      "name": "Intelligent Cyber Security",
+      "blurb": "Hybrid and ensemble intelligent systems for intrusion detection, feature reduction and information assurance in computer networks.",
+      "topics": [
+        "Intrusion Detection",
+        "Ensemble Learning",
+        "Network Security",
+        "Feature Deduction"
+      ],
+      "paperIds": [
+        "u-x6o8ySG0sC",
+        "Y0pCki6q_DkC",
+        "9yKSN-GCB0IC"
+      ]
+    },
+    {
+      "key": "nextgen",
+      "name": "Next-Gen Computing",
+      "blurb": "Reviews and perspectives on AI for the Internet of Things, Industry 4.0 and generative AI in education.",
+      "topics": [
+        "AI for IoT",
+        "Industry 4.0",
+        "Generative AI",
+        "Education"
+      ],
+      "paperIds": [
+        "aGxtzYPGyQEC",
+        "wsYPZf_qF0UC",
+        "uQrt9rju91QC"
+      ]
+    },
+    {
+      "key": "mining",
+      "name": "Data Mining",
+      "blurb": "Text mining and learning from imbalanced data, including plagiarism detection and class imbalance methods.",
+      "topics": [
+        "Class Imbalance",
+        "Text Mining",
+        "Plagiarism Detection"
+      ],
+      "paperIds": [
+        "48xauSegjOkC",
+        "Iq19BMNozs4C"
+      ]
+    }
+  ]
+}

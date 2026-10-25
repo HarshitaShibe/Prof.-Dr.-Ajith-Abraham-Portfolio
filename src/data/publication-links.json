@@ -1,0 +1,5047 @@
+{
+ "generated": "2026-10-18",
+ "sources": {
+  "doi": "Crossref (api.crossref.org), confident title, year and author matches only",
+  "openAccess": "Unpaywall (api.unpaywall.org); PDF links were downloaded and checked"
+ },
+ "counts": {
+  "entries": 1580,
+  "doi": 888,
+  "pdf": 70,
+  "freeToRead": 115
+ },
+ "items": {
+  "book-2": {
+   "doi": "10.1007/978-3-030-42044-4",
+   "match": "crossref"
+  },
+  "book-3": {
+   "doi": "10.1007/978-3-030-04097-0",
+   "match": "crossref"
+  },
+  "book-4": {
+   "doi": "10.1007/978-3-319-44254-9",
+   "match": "crossref"
+  },
+  "book-5": {
+   "doi": "10.1007/978-3-319-30192-1",
+   "match": "crossref"
+  },
+  "book-6": {
+   "doi": "10.1007/978-3-319-16000-9",
+   "match": "crossref"
+  },
+  "book-7": {
+   "doi": "10.1007/978-3-642-21004-4",
+   "match": "crossref"
+  },
+  "book-8": {
+   "doi": "10.1007/978-1-4471-2248-7",
+   "match": "crossref"
+  },
+  "chapter-1": {
+   "doi": "10.1016/b978-0-443-44638-2.00001-4",
+   "match": "crossref"
+  },
+  "chapter-4": {
+   "doi": "10.1016/b978-0-443-29096-1.00011-8",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.36227/techrxiv.173014889.92806792/v1",
+    "version": "acceptedVersion",
+    "license": "cc-by",
+    "host": null,
+    "checked": "2026-10-18"
+   }
+  },
+  "chapter-5": {
+   "doi": "10.1016/b978-0-323-89963-5.00003-4",
+   "match": "crossref"
+  },
+  "chapter-6": {
+   "doi": "10.1016/b978-0-323-90875-7.00011-3",
+   "match": "crossref"
+  },
+  "chapter-7": {
+   "doi": "10.1007/978-981-16-8082-3_11",
+   "match": "crossref"
+  },
+  "chapter-8": {
+   "doi": "10.1007/978-3-319-05885-6_1",
+   "match": "crossref"
+  },
+  "chapter-9": {
+   "doi": "10.1201/b16318-3",
+   "match": "crossref"
+  },
+  "chapter-10": {
+   "doi": "10.1002/9781118567869.ch14",
+   "match": "crossref"
+  },
+  "chapter-11": {
+   "doi": "10.1007/978-3-642-40888-5_11",
+   "match": "crossref"
+  },
+  "chapter-12": {
+   "doi": "10.1007/978-3-642-37959-8_7",
+   "match": "crossref"
+  },
+  "chapter-13": {
+   "doi": "10.1007/978-3-642-30504-7_39",
+   "match": "crossref"
+  },
+  "chapter-14": {
+   "doi": "10.4018/978-1-4666-2190-9.ch011",
+   "match": "crossref"
+  },
+  "chapter-15": {
+   "doi": "10.1007/978-1-4471-4054-2_1",
+   "match": "crossref"
+  },
+  "chapter-16": {
+   "doi": "10.1007/978-1-4471-4051-1_1",
+   "match": "crossref"
+  },
+  "chapter-17": {
+   "doi": "10.1007/978-1-4471-4048-1_1",
+   "match": "crossref"
+  },
+  "chapter-18": {
+   "doi": "10.1007/978-1-4471-4054-2_2",
+   "match": "crossref"
+  },
+  "chapter-19": {
+   "doi": "10.1007/978-1-4471-4054-2_14",
+   "match": "crossref"
+  },
+  "chapter-21": {
+   "doi": "10.1007/978-3-642-21705-0_1",
+   "match": "crossref"
+  },
+  "chapter-23": {
+   "doi": "10.1007/978-3-642-16793-5_4",
+   "match": "crossref"
+  },
+  "chapter-26": {
+   "doi": "10.1007/978-3-642-11224-9_5",
+   "match": "crossref"
+  },
+  "chapter-27": {
+   "doi": "10.1007/978-3-642-11224-9_4",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://figshare.com/articles/chapter/Intelligent_and_interactive_web-based_tutoring_system_in_engineering_education_reviews_perspectives_and_development/13451960",
+    "version": "submittedVersion",
+    "license": "cc-by",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "chapter-28": {
+   "doi": "10.1007/978-1-84996-074-8_7",
+   "match": "crossref"
+  },
+  "chapter-29": {
+   "doi": "10.1007/978-1-84882-229-0_13",
+   "match": "crossref"
+  },
+  "chapter-30": {
+   "doi": "10.1007/978-3-642-05179-1_21",
+   "match": "crossref"
+  },
+  "chapter-31": {
+   "doi": "10.1007/978-3-642-01088-0_13",
+   "match": "crossref"
+  },
+  "chapter-32": {
+   "doi": "10.1007/978-3-642-01085-9_10",
+   "match": "crossref"
+  },
+  "chapter-33": {
+   "doi": "10.1007/978-3-642-01085-9_2",
+   "match": "crossref"
+  },
+  "chapter-34": {
+   "doi": "10.1007/978-3-642-01085-9_5",
+   "match": "crossref"
+  },
+  "chapter-36": {
+   "doi": "10.4018/978-1-60566-204-6.ch013",
+   "match": "crossref"
+  },
+  "chapter-37": {
+   "doi": "10.1007/978-1-84882-599-4_18",
+   "match": "crossref"
+  },
+  "chapter-39": {
+   "doi": "10.1007/978-1-84882-599-4_11",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://hdl.handle.net/10366/134514",
+    "version": "submittedVersion",
+    "license": "other-oa",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "chapter-42": {
+   "doi": "10.1007/978-3-540-89921-1_10",
+   "match": "crossref"
+  },
+  "chapter-44": {
+   "doi": "10.1201/9781420060614.ch3",
+   "match": "crossref"
+  },
+  "chapter-45": {
+   "doi": "10.1007/978-3-540-78733-4_13",
+   "match": "crossref"
+  },
+  "chapter-46": {
+   "doi": "10.1007/978-3-540-76827-2_1",
+   "match": "crossref"
+  },
+  "chapter-50": {
+   "doi": "10.1007/978-3-540-70778-3_1",
+   "match": "crossref"
+  },
+  "chapter-51": {
+   "doi": "10.1007/978-3-540-78985-7_13",
+   "match": "crossref"
+  },
+  "chapter-54": {
+   "doi": "10.1007/978-3-540-69277-5_10",
+   "match": "crossref"
+  },
+  "chapter-55": {
+   "doi": "10.1007/978-3-540-69277-5_1",
+   "match": "crossref"
+  },
+  "chapter-56": {
+   "doi": "10.1007/978-3-540-78297-1_1",
+   "match": "crossref"
+  },
+  "chapter-58": {
+   "doi": "10.1007/978-3-540-75396-4_1",
+   "match": "crossref"
+  },
+  "chapter-59": {
+   "doi": "10.1007/978-3-540-76803-6_4",
+   "match": "crossref"
+  },
+  "chapter-60": {
+   "doi": "10.1007/978-3-540-73297-6_8",
+   "match": "crossref"
+  },
+  "chapter-62": {
+   "doi": "10.1007/978-3-540-73297-6_1",
+   "match": "crossref"
+  },
+  "chapter-63": {
+   "doi": "10.1007/978-3-540-34956-3_1",
+   "match": "crossref"
+  },
+  "chapter-64": {
+   "doi": "10.1007/978-3-540-34690-6_1",
+   "match": "crossref"
+  },
+  "chapter-65": {
+   "doi": "10.1007/978-3-540-33869-7_1",
+   "match": "crossref"
+  },
+  "chapter-67": {
+   "doi": "10.1007/3-540-32498-4_3",
+   "match": "crossref"
+  },
+  "chapter-68": {
+   "doi": "10.1007/3-540-32498-4_6",
+   "match": "crossref"
+  },
+  "chapter-69": {
+   "doi": "10.4018/978-1-59140-670-9.ch004",
+   "match": "crossref"
+  },
+  "chapter-73": {
+   "doi": "10.1007/3-540-32374-0_8",
+   "match": "crossref"
+  },
+  "chapter-75": {
+   "doi": "10.1007/11011620_15",
+   "match": "crossref"
+  },
+  "chapter-78": {
+   "doi": "10.4018/978-1-59140-640-2.ch005",
+   "match": "crossref"
+  },
+  "chapter-79": {
+   "doi": "10.1007/11339366_5",
+   "match": "crossref"
+  },
+  "chapter-80": {
+   "doi": "10.1007/11339366_3",
+   "match": "crossref"
+  },
+  "chapter-81": {
+   "doi": "10.1002/0471497398.mm420",
+   "match": "crossref"
+  },
+  "chapter-85": {
+   "doi": "10.1002/9780471683407.ch11",
+   "match": "crossref"
+  },
+  "chapter-87": {
+   "doi": "10.1142/9789812562432_0012",
+   "match": "crossref"
+  },
+  "chapter-88": {
+   "doi": "10.1007/978-3-540-39615-4_12",
+   "match": "crossref"
+  },
+  "chapter-89": {
+   "doi": "10.1007/978-3-7908-1770-6_1",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/cs/0405009",
+    "landing": "http://arxiv.org/abs/cs/0405009",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-16": {
+   "doi": "10.1007/978-3-031-81083-1_54",
+   "match": "crossref"
+  },
+  "conference-17": {
+   "doi": "10.1007/978-3-031-81083-1_53",
+   "match": "crossref"
+  },
+  "conference-18": {
+   "doi": "10.1007/978-3-031-81083-1_55",
+   "match": "crossref"
+  },
+  "conference-19": {
+   "doi": "10.1007/978-3-031-81080-0_30",
+   "match": "crossref"
+  },
+  "conference-20": {
+   "doi": "10.1007/978-3-031-81080-0_55",
+   "match": "crossref"
+  },
+  "conference-22": {
+   "doi": "10.1007/978-3-031-81080-0_53",
+   "match": "crossref"
+  },
+  "conference-23": {
+   "doi": "10.1007/978-3-031-81080-0_57",
+   "match": "crossref"
+  },
+  "conference-24": {
+   "doi": "10.1007/978-3-031-81080-0_54",
+   "match": "crossref"
+  },
+  "conference-25": {
+   "doi": "10.1007/978-3-031-81080-0_52",
+   "match": "crossref"
+  },
+  "conference-26": {
+   "doi": "10.1007/978-3-031-88992-9_52",
+   "match": "crossref"
+  },
+  "conference-27": {
+   "doi": "10.1109/icccnt61001.2024.10724031",
+   "match": "crossref"
+  },
+  "conference-28": {
+   "doi": "10.1109/icccnt61001.2024.10724845",
+   "match": "crossref"
+  },
+  "conference-32": {
+   "doi": "10.55056/ceur-ws.org/vol-3777/short1.pdf",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://doi.org/10.55056/ceur-ws.org/vol-3777/short1.pdf",
+    "landing": "https://doi.org/10.55056/ceur-ws.org/vol-3777/short1.pdf",
+    "version": "publishedVersion",
+    "license": null,
+    "host": null,
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-33": {
+   "doi": "10.1007/978-3-031-39774-5_69",
+   "match": "crossref"
+  },
+  "conference-34": {
+   "doi": "10.1007/978-3-031-39777-6_4",
+   "match": "crossref"
+  },
+  "conference-37": {
+   "doi": "10.1007/978-3-031-27440-4_3",
+   "match": "crossref"
+  },
+  "conference-38": {
+   "doi": "10.1007/978-3-031-27440-4_5",
+   "match": "crossref"
+  },
+  "conference-39": {
+   "doi": "10.1007/978-3-031-35507-3_34",
+   "match": "crossref"
+  },
+  "conference-40": {
+   "doi": "10.1007/978-3-031-35501-1_6",
+   "match": "crossref"
+  },
+  "conference-41": {
+   "doi": "10.1007/978-3-031-35510-3_5",
+   "match": "crossref"
+  },
+  "conference-42": {
+   "doi": "10.1007/978-3-031-35510-3_25",
+   "match": "crossref"
+  },
+  "conference-43": {
+   "doi": "10.1007/978-3-031-35510-3_37",
+   "match": "crossref"
+  },
+  "conference-44": {
+   "doi": "10.1007/978-3-031-35510-3_38",
+   "match": "crossref"
+  },
+  "conference-45": {
+   "doi": "10.1007/978-3-031-27524-1_65",
+   "match": "crossref"
+  },
+  "conference-46": {
+   "doi": "10.1007/978-3-031-27499-2_58",
+   "match": "crossref"
+  },
+  "conference-51": {
+   "doi": "10.1007/978-3-030-73050-5_30",
+   "match": "crossref"
+  },
+  "conference-52": {
+   "doi": "10.1007/978-3-030-73603-3_6",
+   "match": "crossref"
+  },
+  "conference-53": {
+   "doi": "10.1007/978-3-030-73603-3_8",
+   "match": "crossref"
+  },
+  "conference-54": {
+   "doi": "10.1007/978-3-030-73603-3_13",
+   "match": "crossref"
+  },
+  "conference-55": {
+   "doi": "10.1007/978-3-030-73603-3_27",
+   "match": "crossref"
+  },
+  "conference-57": {
+   "doi": "10.1007/978-3-030-73689-7_32",
+   "match": "crossref"
+  },
+  "conference-58": {
+   "doi": "10.1007/978-3-030-73689-7_37",
+   "match": "crossref"
+  },
+  "conference-59": {
+   "doi": "10.1007/978-3-030-73689-7_46",
+   "match": "crossref"
+  },
+  "conference-61": {
+   "doi": "10.1007/978-3-030-71187-0_62",
+   "match": "crossref"
+  },
+  "conference-62": {
+   "doi": "10.1007/978-3-030-71187-0_76",
+   "match": "crossref"
+  },
+  "conference-63": {
+   "doi": "10.1007/978-3-030-37188-3_24",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/1912.00501",
+    "landing": "http://arxiv.org/abs/1912.00501",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-64": {
+   "doi": "10.1007/978-3-030-49339-4_9",
+   "match": "crossref"
+  },
+  "conference-65": {
+   "doi": "10.1007/978-3-030-49345-5_10",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/1802.06404",
+    "landing": "http://arxiv.org/abs/1802.06404",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-66": {
+   "doi": "10.1007/978-3-030-49345-5_27",
+   "match": "crossref"
+  },
+  "conference-67": {
+   "doi": "10.1007/978-3-030-49336-3_8",
+   "match": "crossref"
+  },
+  "conference-68": {
+   "doi": "10.1007/978-3-030-49342-4_61",
+   "match": "crossref"
+  },
+  "conference-69": {
+   "doi": "10.1007/978-3-030-49342-4_60",
+   "match": "crossref"
+  },
+  "conference-70": {
+   "doi": "10.1109/menacomm46666.2019.8988538",
+   "match": "crossref"
+  },
+  "conference-71": {
+   "doi": "10.1007/978-3-030-14347-3_10",
+   "match": "crossref"
+  },
+  "conference-72": {
+   "doi": "10.1007/978-3-030-14347-3_18",
+   "match": "crossref"
+  },
+  "conference-75": {
+   "doi": "10.1007/978-3-319-76351-4_19",
+   "match": "crossref"
+  },
+  "conference-76": {
+   "doi": "10.1007/978-3-319-76351-4_21",
+   "match": "crossref"
+  },
+  "conference-77": {
+   "doi": "10.1007/978-3-319-76351-4_22",
+   "match": "crossref"
+  },
+  "conference-78": {
+   "doi": "10.1007/978-3-319-76351-4_26",
+   "match": "crossref"
+  },
+  "conference-79": {
+   "doi": "10.1007/978-3-319-76351-4_31",
+   "match": "crossref"
+  },
+  "conference-80": {
+   "doi": "10.1007/978-3-319-76348-4_78",
+   "match": "crossref"
+  },
+  "conference-81": {
+   "doi": "10.1007/978-3-319-76348-4_80",
+   "match": "crossref"
+  },
+  "conference-84": {
+   "doi": "10.1007/978-3-319-52941-7_7",
+   "match": "crossref"
+  },
+  "conference-85": {
+   "doi": "10.1007/978-3-319-52941-7_13",
+   "match": "crossref"
+  },
+  "conference-86": {
+   "doi": "10.1007/978-3-319-52941-7_47",
+   "match": "crossref"
+  },
+  "conference-87": {
+   "doi": "10.1007/978-3-319-52941-7_53",
+   "match": "crossref"
+  },
+  "conference-88": {
+   "doi": "10.1007/978-3-319-53480-0_41",
+   "match": "crossref"
+  },
+  "conference-89": {
+   "doi": "10.1007/978-3-319-53480-0_48",
+   "match": "crossref"
+  },
+  "conference-90": {
+   "doi": "10.1007/978-3-319-53480-0_55",
+   "match": "crossref"
+  },
+  "conference-95": {
+   "doi": "10.1007/978-3-319-60618-7_1",
+   "match": "crossref"
+  },
+  "conference-96": {
+   "doi": "10.1007/978-3-319-60618-7_8",
+   "match": "crossref"
+  },
+  "conference-97": {
+   "doi": "10.1007/978-3-319-60618-7_38",
+   "match": "crossref"
+  },
+  "conference-98": {
+   "doi": "10.1007/978-3-319-60618-7_58",
+   "match": "crossref"
+  },
+  "conference-99": {
+   "doi": "10.1007/978-3-319-60618-7_62",
+   "match": "crossref"
+  },
+  "conference-100": {
+   "doi": "10.1007/978-3-319-28031-8_13",
+   "match": "crossref"
+  },
+  "conference-101": {
+   "doi": "10.1007/978-3-319-28031-8_37",
+   "match": "crossref"
+  },
+  "conference-102": {
+   "doi": "10.1007/978-3-319-28031-8_30",
+   "match": "crossref"
+  },
+  "conference-103": {
+   "doi": "10.1007/978-3-319-28031-8_8",
+   "match": "crossref"
+  },
+  "conference-104": {
+   "doi": "10.1007/978-3-319-27221-4_9",
+   "match": "crossref"
+  },
+  "conference-105": {
+   "doi": "10.1007/978-3-319-27400-3_27",
+   "match": "crossref"
+  },
+  "conference-106": {
+   "doi": "10.1007/978-3-319-27400-3_3",
+   "match": "crossref"
+  },
+  "conference-107": {
+   "doi": "10.1007/978-3-319-27400-3_11",
+   "match": "crossref"
+  },
+  "conference-108": {
+   "doi": "10.1007/978-3-319-27400-3_20",
+   "match": "crossref"
+  },
+  "conference-109": {
+   "doi": "10.1007/978-3-319-27400-3_19",
+   "match": "crossref"
+  },
+  "conference-110": {
+   "doi": "10.1007/978-3-319-27400-3_9",
+   "match": "crossref"
+  },
+  "conference-111": {
+   "doi": "10.1109/afrcon.2015.7331972",
+   "match": "crossref"
+  },
+  "conference-113": {
+   "doi": "10.1109/ijcnn.2015.7280747",
+   "match": "crossref"
+  },
+  "conference-114": {
+   "doi": "10.1109/cec.2015.7257284",
+   "match": "crossref"
+  },
+  "conference-116": {
+   "doi": "10.1007/978-3-319-19644-2_49",
+   "match": "crossref"
+  },
+  "conference-124": {
+   "doi": "10.1109/his.2014.7086201",
+   "match": "crossref"
+  },
+  "conference-125": {
+   "doi": "10.1109/his.2014.7086182",
+   "match": "crossref"
+  },
+  "conference-126": {
+   "doi": "10.1109/his.2014.7086187",
+   "match": "crossref"
+  },
+  "conference-127": {
+   "doi": "10.1109/his.2014.7086194",
+   "match": "crossref"
+  },
+  "conference-128": {
+   "doi": "10.1109/his.2014.7086200",
+   "match": "crossref"
+  },
+  "conference-129": {
+   "doi": "10.1109/his.2014.7086207",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/1707.01810",
+    "landing": "http://arxiv.org/abs/1707.01810",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-130": {
+   "doi": "10.1109/his.2014.7086212",
+   "match": "crossref"
+  },
+  "conference-131": {
+   "doi": "10.1109/his.2014.7086168",
+   "match": "crossref"
+  },
+  "conference-132": {
+   "doi": "10.1109/isda.2014.7066261",
+   "match": "crossref"
+  },
+  "conference-133": {
+   "doi": "10.1109/isda.2014.7066271",
+   "match": "crossref"
+  },
+  "conference-134": {
+   "doi": "10.1109/isda.2014.7066253",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/1707.01812",
+    "landing": "http://arxiv.org/abs/1707.01812",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-135": {
+   "doi": "10.1007/978-81-322-2208-8_48",
+   "match": "crossref"
+  },
+  "conference-136": {
+   "doi": "10.1007/978-81-322-2205-7_38",
+   "match": "crossref"
+  },
+  "conference-137": {
+   "doi": "10.1007/978-81-322-2202-6_61",
+   "match": "crossref"
+  },
+  "conference-143": {
+   "doi": "10.1109/socpar.2014.7007995",
+   "match": "crossref"
+  },
+  "conference-144": {
+   "doi": "10.1109/nabic.2014.6921884",
+   "match": "crossref"
+  },
+  "conference-145": {
+   "doi": "10.1109/nabic.2014.6921851",
+   "match": "crossref"
+  },
+  "conference-146": {
+   "doi": "10.1109/nabic.2014.6921852",
+   "match": "crossref"
+  },
+  "conference-147": {
+   "doi": "10.1109/nabic.2014.6921864",
+   "match": "crossref"
+  },
+  "conference-148": {
+   "doi": "10.1109/nabic.2014.6921867",
+   "match": "crossref"
+  },
+  "conference-149": {
+   "doi": "10.1109/nabic.2014.6921868",
+   "match": "crossref"
+  },
+  "conference-150": {
+   "doi": "10.1109/cason.2014.6920428",
+   "match": "crossref"
+  },
+  "conference-151": {
+   "doi": "10.1109/cason.2014.6920419",
+   "match": "crossref"
+  },
+  "conference-152": {
+   "doi": "10.1109/cason.2014.6920421",
+   "match": "crossref"
+  },
+  "conference-153": {
+   "doi": "10.1109/cason.2014.6920423",
+   "match": "crossref"
+  },
+  "conference-155": {
+   "doi": "10.1109/ijcnn.2014.6889671",
+   "match": "crossref"
+  },
+  "conference-156": {
+   "doi": "10.1109/ijcnn.2014.6889726",
+   "match": "crossref"
+  },
+  "conference-157": {
+   "doi": "10.1109/fuzz-ieee.2014.6891722",
+   "match": "crossref"
+  },
+  "conference-158": {
+   "doi": "10.1109/cec.2014.6900304",
+   "match": "crossref"
+  },
+  "conference-159": {
+   "doi": "10.1007/978-3-319-08156-4_5",
+   "match": "crossref"
+  },
+  "conference-161": {
+   "doi": "10.1007/978-3-319-08156-4_34",
+   "match": "crossref"
+  },
+  "conference-167": {
+   "doi": "10.1109/isias.2013.6947740",
+   "match": "crossref"
+  },
+  "conference-173": {
+   "doi": "10.1109/wict.2013.7113101",
+   "match": "crossref"
+  },
+  "conference-174": {
+   "doi": "10.1109/wict.2013.7113144",
+   "match": "crossref"
+  },
+  "conference-175": {
+   "doi": "10.1109/wict.2013.7113136",
+   "match": "crossref"
+  },
+  "conference-176": {
+   "doi": "10.1109/socpar.2013.7054132",
+   "match": "crossref"
+  },
+  "conference-178": {
+   "doi": "10.1109/smc.2013.173",
+   "match": "crossref"
+  },
+  "conference-179": {
+   "doi": "10.1109/smc.2013.176",
+   "match": "crossref"
+  },
+  "conference-180": {
+   "doi": "10.1109/smc.2013.344",
+   "match": "crossref"
+  },
+  "conference-181": {
+   "doi": "10.1109/smc.2013.345",
+   "match": "crossref"
+  },
+  "conference-182": {
+   "doi": "10.1109/smc.2013.346",
+   "match": "crossref"
+  },
+  "conference-183": {
+   "doi": "10.1109/smc.2013.347",
+   "match": "crossref"
+  },
+  "conference-184": {
+   "doi": "10.1109/smc.2013.187",
+   "match": "crossref"
+  },
+  "conference-188": {
+   "doi": "10.1007/978-3-319-01781-5_18",
+   "match": "crossref"
+  },
+  "conference-189": {
+   "doi": "10.1007/978-3-319-01781-5_14",
+   "match": "crossref"
+  },
+  "conference-190": {
+   "doi": "10.1109/nabic.2013.6617839",
+   "match": "crossref"
+  },
+  "conference-191": {
+   "doi": "10.1109/nabic.2013.6617841",
+   "match": "crossref"
+  },
+  "conference-192": {
+   "doi": "10.1109/nabic.2013.6617845",
+   "match": "crossref"
+  },
+  "conference-193": {
+   "doi": "10.1109/nabic.2013.6617873",
+   "match": "crossref"
+  },
+  "conference-194": {
+   "doi": "10.1109/nabic.2013.6617848",
+   "match": "crossref"
+  },
+  "conference-196": {
+   "doi": "10.1109/nabic.2013.6617872",
+   "match": "crossref"
+  },
+  "conference-197": {
+   "doi": "10.1109/cason.2013.6622595",
+   "match": "crossref"
+  },
+  "conference-198": {
+   "doi": "10.1109/nabic.2013.6617856",
+   "match": "crossref"
+  },
+  "conference-199": {
+   "doi": "10.1109/ijcnn.2013.6706992",
+   "match": "crossref"
+  },
+  "conference-200": {
+   "doi": "10.1109/cybconf.2013.6617425",
+   "match": "crossref"
+  },
+  "conference-201": {
+   "doi": "10.1109/cybconf.2013.6617428",
+   "match": "crossref"
+  },
+  "conference-202": {
+   "doi": "10.1007/978-3-642-35326-0_59",
+   "match": "crossref"
+  },
+  "conference-203": {
+   "doi": "10.1109/isda.2012.6416656",
+   "match": "crossref"
+  },
+  "conference-204": {
+   "doi": "10.1109/isda.2012.6416622",
+   "match": "crossref"
+  },
+  "conference-205": {
+   "doi": "10.1109/his.2012.6421312",
+   "match": "crossref"
+  },
+  "conference-206": {
+   "doi": "10.1109/his.2012.6421376",
+   "match": "crossref"
+  },
+  "conference-207": {
+   "doi": "10.1109/his.2012.6421395",
+   "match": "crossref"
+  },
+  "conference-208": {
+   "doi": "10.1109/his.2012.6421396",
+   "match": "crossref"
+  },
+  "conference-209": {
+   "doi": "10.1109/cason.2012.6412429",
+   "match": "crossref"
+  },
+  "conference-211": {
+   "doi": "10.1109/cason.2012.6412421",
+   "match": "crossref"
+  },
+  "conference-212": {
+   "doi": "10.1109/cason.2012.6412420",
+   "match": "crossref"
+  },
+  "conference-213": {
+   "doi": "10.1109/nabic.2012.6402214",
+   "match": "crossref"
+  },
+  "conference-214": {
+   "doi": "10.1109/nabic.2012.6402168",
+   "match": "crossref"
+  },
+  "conference-215": {
+   "doi": "10.1109/nabic.2012.6402262",
+   "match": "crossref"
+  },
+  "conference-216": {
+   "doi": "10.1109/wict.2012.6409244",
+   "match": "crossref"
+  },
+  "conference-217": {
+   "doi": "10.1109/icimtr.2012.6236394",
+   "match": "crossref"
+  },
+  "conference-219": {
+   "doi": "10.1007/978-3-642-32063-7_22",
+   "match": "crossref"
+  },
+  "conference-220": {
+   "doi": "10.1109/icsmc.2012.6377882",
+   "match": "crossref"
+  },
+  "conference-221": {
+   "doi": "10.1109/icsmc.2012.6377881",
+   "match": "crossref"
+  },
+  "conference-222": {
+   "doi": "10.1109/ibica.2012.29",
+   "match": "crossref"
+  },
+  "conference-223": {
+   "doi": "10.1109/incos.2012.75",
+   "match": "crossref"
+  },
+  "conference-226": {
+   "doi": "10.1109/csnt.2012.136",
+   "match": "crossref"
+  },
+  "conference-227": {
+   "doi": "10.1109/cec.2012.6256119",
+   "match": "crossref"
+  },
+  "conference-228": {
+   "doi": "10.1109/ijcnn.2012.6252771",
+   "match": "crossref"
+  },
+  "conference-230": {
+   "doi": "10.1007/978-81-322-0487-9_74",
+   "match": "crossref"
+  },
+  "conference-231": {
+   "doi": "10.1016/j.proeng.2012.01.827",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.proeng.2012.01.827",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-232": {
+   "doi": "10.1007/978-3-642-28942-2_58",
+   "match": "crossref"
+  },
+  "conference-234": {
+   "doi": "10.1109/wict.2011.6141191",
+   "match": "crossref"
+  },
+  "conference-235": {
+   "doi": "10.1109/wict.2011.6141192",
+   "match": "crossref"
+  },
+  "conference-236": {
+   "doi": "10.1109/wict.2011.6141213",
+   "match": "crossref"
+  },
+  "conference-237": {
+   "doi": "10.1109/wict.2011.6141217",
+   "match": "crossref"
+  },
+  "conference-238": {
+   "doi": "10.1109/wict.2011.6141274",
+   "match": "crossref"
+  },
+  "conference-239": {
+   "doi": "10.1109/wict.2011.6141426",
+   "match": "crossref"
+  },
+  "conference-240": {
+   "doi": "10.1109/isda.2011.6121837",
+   "match": "crossref"
+  },
+  "conference-241": {
+   "doi": "10.1109/his.2011.6122079",
+   "match": "crossref"
+  },
+  "conference-242": {
+   "doi": "10.1109/his.2011.6122096",
+   "match": "crossref"
+  },
+  "conference-243": {
+   "doi": "10.1109/his.2011.6122116",
+   "match": "crossref"
+  },
+  "conference-244": {
+   "doi": "10.1109/his.2011.6122117",
+   "match": "crossref"
+  },
+  "conference-245": {
+   "doi": "10.1109/socpar.2011.6089288",
+   "match": "crossref"
+  },
+  "conference-246": {
+   "doi": "10.1109/socpar.2011.6089152",
+   "match": "crossref"
+  },
+  "conference-247": {
+   "doi": "10.1109/socpar.2011.6089276",
+   "match": "crossref"
+  },
+  "conference-248": {
+   "doi": "10.1109/cason.2011.6085955",
+   "match": "crossref"
+  },
+  "conference-250": {
+   "doi": "10.1109/nwesp.2011.6088144",
+   "match": "crossref"
+  },
+  "conference-251": {
+   "doi": "10.1109/nabic.2011.6089460",
+   "match": "crossref"
+  },
+  "conference-252": {
+   "doi": "10.1109/nabic.2011.6089608",
+   "match": "crossref"
+  },
+  "conference-253": {
+   "doi": "10.1109/nabic.2011.6089408",
+   "match": "crossref"
+  },
+  "conference-254": {
+   "doi": "10.1109/nabic.2011.6089641",
+   "match": "crossref"
+  },
+  "conference-255": {
+   "doi": "10.1109/nabic.2011.6089645",
+   "match": "crossref"
+  },
+  "conference-256": {
+   "doi": "10.1109/nabic.2011.6089659",
+   "match": "crossref"
+  },
+  "conference-257": {
+   "doi": "10.1109/nabic.2011.6089459",
+   "match": "crossref"
+  },
+  "conference-258": {
+   "doi": "10.1109/nabic.2011.6089409",
+   "match": "crossref"
+  },
+  "conference-259": {
+   "doi": "10.1109/nabic.2011.6089410",
+   "match": "crossref"
+  },
+  "conference-260": {
+   "doi": "10.1109/icsmc.2011.6083786",
+   "match": "crossref"
+  },
+  "conference-261": {
+   "doi": "10.1109/icsmc.2011.6083684",
+   "match": "crossref"
+  },
+  "conference-262": {
+   "doi": "10.1109/icsmc.2011.6083782",
+   "match": "crossref"
+  },
+  "conference-263": {
+   "doi": "10.1007/978-3-642-23896-3_29",
+   "match": "crossref"
+  },
+  "conference-264": {
+   "doi": "10.1007/978-3-642-22309-9_9",
+   "match": "crossref"
+  },
+  "conference-265": {
+   "doi": "10.1109/cec.2011.5949853",
+   "match": "crossref"
+  },
+  "conference-266": {
+   "doi": "10.1109/cec.2011.5949854",
+   "match": "crossref"
+  },
+  "conference-267": {
+   "doi": "10.1109/cec.2011.5949696",
+   "match": "crossref"
+  },
+  "conference-268": {
+   "doi": "10.1109/cec.2011.5949695",
+   "match": "crossref"
+  },
+  "conference-269": {
+   "doi": "10.1109/cec.2011.5949694",
+   "match": "crossref"
+  },
+  "conference-270": {
+   "doi": "10.1109/dmo.2011.5976513",
+   "match": "crossref"
+  },
+  "conference-273": {
+   "doi": "10.1007/978-3-642-21219-2_47",
+   "match": "crossref"
+  },
+  "conference-274": {
+   "doi": "10.1007/978-3-642-22606-9_19",
+   "match": "crossref"
+  },
+  "conference-275": {
+   "doi": "10.1109/csnt.2011.166",
+   "match": "crossref"
+  },
+  "conference-276": {
+   "doi": "10.1109/carpathiancc.2011.5945872",
+   "match": "crossref"
+  },
+  "conference-277": {
+   "doi": "10.1007/978-3-642-19644-7_2",
+   "match": "crossref"
+  },
+  "conference-278": {
+   "doi": "10.1007/978-3-642-19644-7_13",
+   "match": "crossref"
+  },
+  "conference-279": {
+   "doi": "10.1109/cicn.2010.124",
+   "match": "crossref"
+  },
+  "conference-280": {
+   "doi": "10.1109/isda.2010.5687160",
+   "match": "crossref"
+  },
+  "conference-281": {
+   "doi": "10.1109/isda.2010.5687239",
+   "match": "crossref"
+  },
+  "conference-284": {
+   "doi": "10.1109/icetet.2010.48",
+   "match": "crossref"
+  },
+  "conference-285": {
+   "doi": "10.1109/cason.2010.120",
+   "match": "crossref"
+  },
+  "conference-286": {
+   "doi": "10.1109/socpar.2010.5685849",
+   "match": "crossref"
+  },
+  "conference-287": {
+   "doi": "10.1109/socpar.2010.5686527",
+   "match": "crossref"
+  },
+  "conference-288": {
+   "doi": "10.1109/nabic.2010.5716363",
+   "match": "crossref"
+  },
+  "conference-289": {
+   "doi": "10.1109/nabic.2010.5716364",
+   "match": "crossref"
+  },
+  "conference-290": {
+   "doi": "10.1109/nabic.2010.5716306",
+   "match": "crossref"
+  },
+  "conference-291": {
+   "doi": "10.1007/978-3-642-17298-4_36",
+   "match": "crossref"
+  },
+  "conference-292": {
+   "doi": "10.1007/978-3-642-17563-3_7",
+   "match": "crossref"
+  },
+  "conference-295": {
+   "doi": "10.1109/icsmc.2010.5641794",
+   "match": "crossref"
+  },
+  "conference-297": {
+   "doi": "10.1109/icsmc.2010.5642253",
+   "match": "crossref"
+  },
+  "conference-298": {
+   "doi": "10.1109/cisim.2010.5643638",
+   "match": "crossref"
+  },
+  "conference-299": {
+   "doi": "10.1109/cisim.2010.5643680",
+   "match": "crossref"
+  },
+  "conference-300": {
+   "doi": "10.1109/cisim.2010.5643516",
+   "match": "crossref"
+  },
+  "conference-301": {
+   "doi": "10.1109/cisim.2010.5643515",
+   "match": "crossref"
+  },
+  "conference-303": {
+   "doi": "10.1007/978-3-642-16626-6_3",
+   "match": "crossref"
+  },
+  "conference-304": {
+   "doi": "10.1109/grc.2010.138",
+   "match": "crossref"
+  },
+  "conference-305": {
+   "doi": "10.1109/cec.2010.5586318",
+   "match": "crossref"
+  },
+  "conference-306": {
+   "doi": "10.1109/cec.2010.5586518",
+   "match": "crossref"
+  },
+  "conference-307": {
+   "doi": "10.1109/cec.2010.5586276",
+   "match": "crossref"
+  },
+  "conference-308": {
+   "doi": "10.1109/isias.2010.5604077",
+   "match": "crossref"
+  },
+  "conference-310": {
+   "doi": "10.1109/isias.2010.5604048",
+   "match": "crossref"
+  },
+  "conference-312": {
+   "doi": "10.1109/isias.2010.5604057",
+   "match": "crossref"
+  },
+  "conference-313": {
+   "doi": "10.1109/isias.2010.5604063",
+   "match": "crossref"
+  },
+  "conference-314": {
+   "doi": "10.1109/isias.2010.5604076",
+   "match": "crossref"
+  },
+  "conference-315": {
+   "doi": "10.1109/isias.2010.5604080",
+   "match": "crossref"
+  },
+  "conference-316": {
+   "doi": "10.1109/isias.2010.5604180",
+   "match": "crossref"
+  },
+  "conference-317": {
+   "doi": "10.1109/his.2010.5600080",
+   "match": "crossref"
+  },
+  "conference-318": {
+   "doi": "10.1109/his.2010.5600021",
+   "match": "crossref"
+  },
+  "conference-319": {
+   "doi": "10.1109/his.2010.5600018",
+   "match": "crossref"
+  },
+  "conference-320": {
+   "doi": "10.1109/uksim.2010.121",
+   "match": "crossref"
+  },
+  "conference-321": {
+   "doi": "10.1007/978-3-642-13161-5_28",
+   "match": "crossref"
+  },
+  "conference-323": {
+   "doi": "10.1109/nabic.2009.5393605",
+   "match": "crossref"
+  },
+  "conference-324": {
+   "doi": "10.1109/nabic.2009.5393618",
+   "match": "crossref"
+  },
+  "conference-326": {
+   "doi": "10.1109/nabic.2009.5393362",
+   "match": "crossref"
+  },
+  "conference-327": {
+   "doi": "10.1109/nabic.2009.5393350",
+   "match": "crossref"
+  },
+  "conference-329": {
+   "doi": "10.1109/nabic.2009.5393622",
+   "match": "crossref"
+  },
+  "conference-330": {
+   "doi": "10.1109/nabic.2009.5393623",
+   "match": "crossref"
+  },
+  "conference-331": {
+   "doi": "10.1109/nabic.2009.5393723",
+   "match": "crossref"
+  },
+  "conference-332": {
+   "doi": "10.1109/nabic.2009.5393520",
+   "match": "crossref"
+  },
+  "conference-333": {
+   "doi": "10.1109/nabic.2009.5393883",
+   "match": "crossref"
+  },
+  "conference-334": {
+   "doi": "10.1109/nabic.2009.5393884",
+   "match": "crossref"
+  },
+  "conference-335": {
+   "doi": "10.1109/nabic.2009.5393518",
+   "match": "crossref"
+  },
+  "conference-336": {
+   "doi": "10.1109/nabic.2009.5393797",
+   "match": "crossref"
+  },
+  "conference-337": {
+   "doi": "10.1109/nabic.2009.5393816",
+   "match": "crossref"
+  },
+  "conference-338": {
+   "doi": "10.1109/socpar.2009.48",
+   "match": "crossref"
+  },
+  "conference-339": {
+   "doi": "10.1109/socpar.2009.88",
+   "match": "crossref"
+  },
+  "conference-340": {
+   "doi": "10.1109/socpar.2009.42",
+   "match": "crossref"
+  },
+  "conference-341": {
+   "doi": "10.1109/socpar.2009.101",
+   "match": "crossref"
+  },
+  "conference-342": {
+   "doi": "10.1109/incos.2009.46",
+   "match": "crossref"
+  },
+  "conference-344": {
+   "doi": "10.1109/asonam.2009.48",
+   "match": "crossref"
+  },
+  "conference-345": {
+   "doi": "10.1007/978-3-642-04125-9_56",
+   "match": "crossref"
+  },
+  "conference-346": {
+   "doi": "10.1007/978-3-642-04394-9_92",
+   "match": "crossref"
+  },
+  "conference-347": {
+   "doi": "10.1109/icumt.2009.5345507",
+   "match": "crossref"
+  },
+  "conference-348": {
+   "doi": "10.1007/978-3-642-04091-7_6",
+   "match": "crossref"
+  },
+  "conference-349": {
+   "doi": "10.1109/icbake.2009.13",
+   "match": "crossref"
+  },
+  "conference-350": {
+   "doi": "10.1109/socinfo.2009.15",
+   "match": "crossref"
+  },
+  "conference-351": {
+   "doi": "10.1007/978-3-642-00563-3_29",
+   "match": "crossref"
+  },
+  "conference-352": {
+   "doi": "10.1109/ias.2009.348",
+   "match": "crossref"
+  },
+  "conference-353": {
+   "doi": "10.1109/ias.2009.262",
+   "match": "crossref"
+  },
+  "conference-354": {
+   "doi": "10.1109/his.2009.294",
+   "match": "crossref"
+  },
+  "conference-355": {
+   "doi": "10.1109/his.2009.287",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://hdl.handle.net/10366/134955",
+    "version": "submittedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-356": {
+   "doi": "10.1109/his.2009.216",
+   "match": "crossref"
+  },
+  "conference-357": {
+   "doi": "10.1109/his.2009.293",
+   "match": "crossref"
+  },
+  "conference-358": {
+   "doi": "10.1109/his.2009.288",
+   "match": "crossref"
+  },
+  "conference-359": {
+   "doi": "10.1109/his.2009.289",
+   "match": "crossref"
+  },
+  "conference-360": {
+   "doi": "10.1109/cason.2009.15",
+   "match": "crossref"
+  },
+  "conference-361": {
+   "doi": "10.1007/978-3-642-02319-4_37",
+   "match": "crossref"
+  },
+  "conference-362": {
+   "doi": "10.1007/978-3-642-02319-4_30",
+   "match": "crossref"
+  },
+  "conference-363": {
+   "doi": "10.1007/978-3-642-02319-4_21",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://hal.science/hal-00389059",
+    "version": "submittedVersion",
+    "license": "other-oa",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-365": {
+   "doi": "10.1109/cso.2009.487",
+   "match": "crossref"
+  },
+  "conference-367": {
+   "doi": "10.1109/ams.2009.88",
+   "match": "crossref"
+  },
+  "conference-368": {
+   "doi": "10.1007/978-3-642-01970-8_51",
+   "match": "crossref"
+  },
+  "conference-369": {
+   "doi": "10.1109/cisis.2009.18",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://hdl.handle.net/2117/118244",
+    "version": "acceptedVersion",
+    "license": "other-oa",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-375": {
+   "doi": "10.1109/uksim.2009.75",
+   "match": "crossref"
+  },
+  "conference-376": {
+   "doi": "10.1109/uksim.2009.105",
+   "match": "crossref"
+  },
+  "conference-377": {
+   "doi": "10.1109/uksim.2009.106",
+   "match": "crossref"
+  },
+  "conference-381": {
+   "doi": "10.1007/978-3-642-00405-6_14",
+   "match": "crossref"
+  },
+  "conference-384": {
+   "doi": "10.1109/icdim.2008.4746746",
+   "match": "crossref"
+  },
+  "conference-385": {
+   "doi": "10.1109/icdim.2008.4746758",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://hdl.handle.net/2117/117666",
+    "version": "acceptedVersion",
+    "license": "other-oa",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-386": {
+   "doi": "10.1109/icdim.2008.4746793",
+   "match": "crossref"
+  },
+  "conference-387": {
+   "doi": "10.1109/icdim.2008.4746766",
+   "match": "crossref"
+  },
+  "conference-388": {
+   "doi": "10.1109/tsmca.2008.2011474",
+   "match": "crossref"
+  },
+  "conference-389": {
+   "doi": "10.1145/1456223.1456338",
+   "match": "crossref"
+  },
+  "conference-390": {
+   "doi": "10.1145/1456223.1456263",
+   "match": "crossref"
+  },
+  "conference-392": {
+   "doi": "10.1109/isda.2008.199",
+   "match": "crossref"
+  },
+  "conference-393": {
+   "doi": "10.1109/isda.2008.273",
+   "match": "crossref"
+  },
+  "conference-394": {
+   "doi": "10.1109/isda.2008.71",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://hdl.handle.net/1942/8398",
+    "version": "submittedVersion",
+    "license": "other-oa",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-395": {
+   "doi": "10.1109/isda.2008.312",
+   "match": "crossref"
+  },
+  "conference-396": {
+   "doi": "10.1109/isda.2008.311",
+   "match": "crossref"
+  },
+  "conference-397": {
+   "doi": "10.1109/ems.2008.89",
+   "match": "crossref"
+  },
+  "conference-398": {
+   "doi": "10.1007/978-3-540-87656-4_35",
+   "match": "crossref"
+  },
+  "conference-399": {
+   "doi": "10.1007/978-3-540-87656-4_36",
+   "match": "crossref"
+  },
+  "conference-401": {
+   "doi": "10.1109/his.2008.131",
+   "match": "crossref"
+  },
+  "conference-402": {
+   "doi": "10.1109/ias.2008.35",
+   "match": "crossref"
+  },
+  "conference-403": {
+   "doi": "10.1109/ias.2008.53",
+   "match": "crossref"
+  },
+  "conference-404": {
+   "doi": "10.1109/dexa.2008.70",
+   "match": "crossref"
+  },
+  "conference-405": {
+   "doi": "10.1109/icetet.2008.35",
+   "match": "crossref"
+  },
+  "conference-409": {
+   "doi": "10.1109/cisim.2008.49",
+   "match": "crossref"
+  },
+  "conference-410": {
+   "doi": "10.1109/cisim.2008.31",
+   "match": "crossref"
+  },
+  "conference-411": {
+   "doi": "10.1109/cisim.2008.59",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://upcommons.upc.edu/bitstream/2117/119792/1/04557876.pdf",
+    "landing": "http://hdl.handle.net/2117/119792",
+    "version": "submittedVersion",
+    "license": "public-domain",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-412": {
+   "doi": "10.1109/cisim.2008.55",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://upcommons.upc.edu/bitstream/2117/118006/1/04557878.pdf",
+    "landing": "http://hdl.handle.net/2117/118006",
+    "version": "submittedVersion",
+    "license": "public-domain",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-413": {
+   "doi": "10.1109/cisim.2008.33",
+   "match": "crossref"
+  },
+  "conference-414": {
+   "doi": "10.1109/cisim.2008.54",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://upcommons.upc.edu/bitstream/2117/119796/1/04557877.pdf",
+    "landing": "https://hdl.handle.net/2117/119796",
+    "version": "submittedVersion",
+    "license": "other-oa",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-417": {
+   "doi": "10.1109/fuzzy.2008.4630665",
+   "match": "crossref"
+  },
+  "conference-418": {
+   "doi": "10.1109/cec.2008.4630983",
+   "match": "crossref"
+  },
+  "conference-419": {
+   "doi": "10.1109/cec.2008.4631204",
+   "match": "crossref"
+  },
+  "conference-420": {
+   "doi": "10.1109/ams.2008.169",
+   "match": "crossref"
+  },
+  "conference-421": {
+   "doi": "10.1109/ams.2008.120",
+   "match": "crossref"
+  },
+  "conference-422": {
+   "doi": "10.1109/ams.2008.123",
+   "match": "crossref"
+  },
+  "conference-423": {
+   "doi": "10.1109/ams.2008.40",
+   "match": "crossref"
+  },
+  "conference-426": {
+   "doi": "10.1109/uksim.2008.30",
+   "match": "crossref"
+  },
+  "conference-428": {
+   "doi": "10.1109/cisis.2008.120",
+   "match": "crossref"
+  },
+  "conference-429": {
+   "doi": "10.1109/cisis.2008.6",
+   "match": "crossref"
+  },
+  "conference-430": {
+   "doi": "10.1109/cisis.2008.5",
+   "match": "crossref"
+  },
+  "conference-431": {
+   "doi": "10.1007/978-3-540-77220-0_41",
+   "match": "crossref"
+  },
+  "conference-434": {
+   "doi": "10.1109/icdim.2007.4444213",
+   "match": "crossref"
+  },
+  "conference-435": {
+   "doi": "10.1109/icdim.2007.4444214",
+   "match": "crossref"
+  },
+  "conference-436": {
+   "doi": "10.1109/cec.2007.4424593",
+   "match": "crossref"
+  },
+  "conference-437": {
+   "doi": "10.1109/cec.2007.4424594",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/0712.0744",
+    "landing": "http://arxiv.org/abs/0712.0744",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-438": {
+   "doi": "10.1109/cec.2007.4424687",
+   "match": "crossref"
+  },
+  "conference-439": {
+   "doi": "10.1007/978-3-540-74972-1_34",
+   "match": "crossref"
+  },
+  "conference-441": {
+   "doi": "10.1007/978-3-540-74972-1_42",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://hdl.handle.net/10366/135035",
+    "version": "submittedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-447": {
+   "doi": "10.1007/978-3-540-73053-8_21",
+   "match": "crossref"
+  },
+  "conference-448": {
+   "doi": "10.1007/978-3-540-73053-8_40",
+   "match": "crossref"
+  },
+  "conference-449": {
+   "doi": "10.1109/cisim.2007.6",
+   "match": "crossref"
+  },
+  "conference-453": {
+   "doi": "10.1007/978-3-540-70706-6_20",
+   "match": "crossref"
+  },
+  "conference-454": {
+   "doi": "10.1109/ams.2007.14",
+   "match": "crossref"
+  },
+  "conference-455": {
+   "doi": "10.1109/ams.2007.96",
+   "match": "crossref"
+  },
+  "conference-456": {
+   "doi": "10.1109/ams.2007.68",
+   "match": "crossref"
+  },
+  "conference-463": {
+   "doi": "10.1109/ichit.2006.253458",
+   "match": "crossref"
+  },
+  "conference-464": {
+   "doi": "10.1109/his.2006.264909",
+   "match": "crossref"
+  },
+  "conference-465": {
+   "doi": "10.1007/11925231_27",
+   "match": "crossref"
+  },
+  "conference-466": {
+   "doi": "10.1007/11903697_26",
+   "match": "crossref"
+  },
+  "conference-467": {
+   "doi": "10.1007/11875581_133",
+   "match": "crossref"
+  },
+  "conference-468": {
+   "doi": "10.1007/11875581_85",
+   "match": "crossref"
+  },
+  "conference-469": {
+   "doi": "10.1109/isda.2006.253877",
+   "match": "crossref"
+  },
+  "conference-470": {
+   "doi": "10.1109/isda.2006.253915",
+   "match": "crossref"
+  },
+  "conference-472": {
+   "doi": "10.1007/11893011_51",
+   "match": "crossref"
+  },
+  "conference-474": {
+   "doi": "10.1007/11893011_142",
+   "match": "crossref"
+  },
+  "conference-475": {
+   "doi": "10.1007/11893011_86",
+   "match": "crossref"
+  },
+  "conference-476": {
+   "doi": "10.1109/cec.2006.1688523",
+   "match": "crossref"
+  },
+  "conference-484": {
+   "doi": "10.1007/11759966_128",
+   "match": "crossref"
+  },
+  "conference-485": {
+   "doi": "10.1007/11760191_76",
+   "match": "crossref"
+  },
+  "conference-487": {
+   "doi": "10.1007/11751632_5",
+   "match": "crossref"
+  },
+  "conference-491": {
+   "doi": "10.1109/icnnb.2005.1614906",
+   "match": "crossref"
+  },
+  "conference-493": {
+   "doi": "10.1109/ichis.2005.36",
+   "match": "crossref"
+  },
+  "conference-494": {
+   "doi": "10.1109/synasc.2005.35",
+   "match": "crossref"
+  },
+  "conference-495": {
+   "doi": "10.1109/synasc.2005.57",
+   "match": "crossref"
+  },
+  "conference-496": {
+   "doi": "10.1109/epia.2005.341268",
+   "match": "crossref"
+  },
+  "conference-497": {
+   "doi": "10.1109/nwesp.2005.39",
+   "match": "crossref"
+  },
+  "conference-498": {
+   "doi": "10.1109/nwesp.2005.68",
+   "match": "crossref"
+  },
+  "conference-499": {
+   "doi": "10.1109/nwesp.2005.48",
+   "match": "crossref"
+  },
+  "conference-500": {
+   "doi": "10.1109/nwesp.2005.22",
+   "match": "crossref"
+  },
+  "conference-502": {
+   "doi": "10.1007/11579427_68",
+   "match": "crossref"
+  },
+  "conference-503": {
+   "doi": "10.1007/11579427_63",
+   "match": "crossref"
+  },
+  "conference-505": {
+   "doi": "10.1109/isda.2005.69",
+   "match": "crossref"
+  },
+  "conference-506": {
+   "doi": "10.1109/isda.2005.53",
+   "match": "crossref"
+  },
+  "conference-507": {
+   "doi": "10.1109/isda.2005.51",
+   "match": "crossref"
+  },
+  "conference-508": {
+   "doi": "10.1109/isda.2005.49",
+   "match": "crossref"
+  },
+  "conference-510": {
+   "doi": "10.1007/11499305_17",
+   "match": "crossref"
+  },
+  "conference-511": {
+   "doi": "10.1007/11427469_71",
+   "match": "crossref"
+  },
+  "conference-512": {
+   "doi": "10.1007/3-540-32391-0_18",
+   "match": "crossref"
+  },
+  "conference-515": {
+   "doi": "10.1109/itcc.2005.238",
+   "match": "crossref"
+  },
+  "conference-517": {
+   "doi": "10.1109/itcc.2005.107",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/1111.3753",
+    "landing": "http://arxiv.org/abs/1111.3753",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-518": {
+   "doi": "10.1109/itcc.2005.275",
+   "match": "crossref"
+  },
+  "conference-520": {
+   "doi": "10.1007/978-3-540-30536-1_29",
+   "match": "crossref"
+  },
+  "conference-521": {
+   "doi": "10.1007/978-3-540-30536-1_68",
+   "match": "crossref"
+  },
+  "conference-522": {
+   "doi": "10.1007/978-3-540-30499-9_95",
+   "match": "crossref"
+  },
+  "conference-523": {
+   "doi": "10.1007/978-3-540-30499-9_158",
+   "match": "crossref"
+  },
+  "conference-528": {
+   "doi": "10.1007/978-3-540-24677-0_112",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/cs/0405017",
+    "landing": "http://arxiv.org/abs/cs/0405017",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-529": {
+   "doi": "10.1007/978-3-540-24677-0_65",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://researchonline.federation.edu.au/vital/access/HandleResolver/1959.17/43613",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-531": {
+   "doi": "10.1109/itcc.2004.1286424",
+   "match": "crossref"
+  },
+  "conference-532": {
+   "doi": "10.1109/itcc.2004.1286428",
+   "match": "crossref"
+  },
+  "conference-534": {
+   "doi": "10.1109/itcc.2004.1286660",
+   "match": "crossref"
+  },
+  "conference-537": {
+   "doi": "10.1016/j.neucom.2004.03.006",
+   "match": "crossref"
+  },
+  "conference-541": {
+   "doi": "10.1007/978-3-540-44999-7_4",
+   "match": "crossref"
+  },
+  "conference-542": {
+   "doi": "10.1007/978-3-540-44999-7_23",
+   "match": "crossref"
+  },
+  "conference-543": {
+   "doi": "10.1007/3-540-44869-1_98",
+   "match": "crossref"
+  },
+  "conference-544": {
+   "doi": "10.1007/3-540-44868-3_27",
+   "match": "crossref"
+  },
+  "conference-545": {
+   "doi": "10.1007/3-540-44869-1_65",
+   "match": "crossref"
+  },
+  "conference-550": {
+   "doi": "10.1007/978-1-4471-3744-3_6",
+   "match": "crossref"
+  },
+  "conference-551": {
+   "doi": "10.1007/978-1-4471-3744-3_3",
+   "match": "crossref"
+  },
+  "conference-555": {
+   "doi": "10.1007/3-540-36187-1_59",
+   "match": "crossref"
+  },
+  "conference-556": {
+   "doi": "10.1109/isic.2002.1157784",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/cs/0405032",
+    "landing": "http://arxiv.org/abs/cs/0405032",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-560": {
+   "doi": "10.1109/ijcnn.2002.1007591",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/cs/0405033",
+    "landing": "http://arxiv.org/abs/cs/0405033",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-561": {
+   "doi": "10.1109/fuzz.2002.1006749",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/cs/0405028",
+    "landing": "http://arxiv.org/abs/cs/0405028",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-563": {
+   "doi": "10.1007/978-3-7908-1782-9_20",
+   "match": "crossref"
+  },
+  "conference-565": {
+   "doi": "10.1007/978-3-7908-1782-9_28",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://dx.doi.org/10.2139/ssrn.4876995",
+    "version": "acceptedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-566": {
+   "doi": "10.1007/978-3-7908-1782-9_18",
+   "match": "crossref"
+  },
+  "conference-567": {
+   "doi": "10.1109/fuzz.2001.1009012",
+   "match": "crossref"
+  },
+  "conference-568": {
+   "doi": "10.1109/icii.2001.983110",
+   "match": "crossref"
+  },
+  "conference-575": {
+   "doi": "10.1007/3-540-45718-6_19",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://link.springer.com/content/pdf/10.1007%2F3-540-45718-6_19.pdf",
+    "landing": "https://doi.org/10.1007/3-540-45718-6_19",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "conference-576": {
+   "doi": "10.1007/3-540-45718-6_27",
+   "match": "crossref"
+  },
+  "conference-577": {
+   "doi": "10.1007/3-540-45718-6_38",
+   "match": "crossref"
+  },
+  "conference-585": {
+   "doi": "10.1007/3-540-44533-1_52",
+   "match": "crossref"
+  },
+  "edited-book-10": {
+   "doi": "10.1201/9781003156406",
+   "match": "crossref"
+  },
+  "edited-book-15": {
+   "doi": "10.1201/9781003161233",
+   "match": "crossref"
+  },
+  "edited-book-25": {
+   "doi": "10.1007/978-3-319-05885-6_1",
+   "match": "crossref"
+  },
+  "edited-book-28": {
+   "doi": "10.1007/978-1-4471-4051-1_1",
+   "match": "crossref"
+  },
+  "edited-book-31": {
+   "doi": "10.1007/978-3-642-21705-0_1",
+   "match": "crossref"
+  },
+  "edited-book-55": {
+   "doi": "10.1007/978-3-540-34690-6",
+   "match": "crossref"
+  },
+  "journal-1": {
+   "doi": "10.1007/s44187-026-00935-8",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://link.springer.com/content/pdf/10.1007/s44187-026-00935-8.pdf",
+    "landing": "https://doi.org/10.1007/s44187-026-00935-8",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-2": {
+   "doi": "10.1109/lsp.2026.3700559",
+   "match": "crossref"
+  },
+  "journal-3": {
+   "doi": "10.1109/ojcs.2026.3692803",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/ojcs.2026.3692803",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-4": {
+   "doi": "10.1038/s41598-026-54558-1",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://www.nature.com/articles/s41598-026-54558-1_reference.pdf",
+    "landing": "https://doi.org/10.1038/s41598-026-54558-1",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-5": {
+   "doi": "10.1016/j.knosys.2026.116155",
+   "match": "crossref"
+  },
+  "journal-6": {
+   "doi": "10.1109/tnnls.2026.3685408",
+   "match": "crossref"
+  },
+  "journal-7": {
+   "doi": "10.1109/lsp.2026.3675916",
+   "match": "crossref"
+  },
+  "journal-8": {
+   "doi": "10.1109/access.2026.3663498",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2026.3663498",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-9": {
+   "doi": "10.1109/access.2026.3660305",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2026.3660305",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-10": {
+   "doi": "10.1016/j.engappai.2026.114334",
+   "match": "crossref"
+  },
+  "journal-11": {
+   "doi": "10.1007/s00521-025-11805-2",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://link.springer.com/content/pdf/10.1007/s00521-025-11805-2.pdf",
+    "landing": "https://doi.org/10.1007/s00521-025-11805-2",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-13": {
+   "doi": "10.1109/jstars.2025.3622412",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/jstars.2025.3622412",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-14": {
+   "doi": "10.1177/14485869251362065",
+   "match": "crossref"
+  },
+  "journal-15": {
+   "doi": "10.1007/s11042-025-20956-2",
+   "match": "crossref"
+  },
+  "journal-16": {
+   "doi": "10.1007/s11042-024-20122-0",
+   "match": "crossref"
+  },
+  "journal-17": {
+   "doi": "10.1016/j.engappai.2025.112244",
+   "match": "crossref"
+  },
+  "journal-18": {
+   "doi": "10.1007/s00521-025-11619-2",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://link.springer.com/content/pdf/10.1007/s00521-025-11619-2.pdf",
+    "landing": "https://doi.org/10.1007/s00521-025-11619-2",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-19": {
+   "doi": "10.1080/23302674.2025.2547756",
+   "match": "crossref"
+  },
+  "journal-20": {
+   "doi": "10.1109/access.2025.3591622",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2025.3591622",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-21": {
+   "doi": "10.1561/2000000136",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/2509.18461",
+    "landing": "http://arxiv.org/abs/2509.18461",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-22": {
+   "doi": "10.3991/ijoe.v21i09.55677",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://online-journals.org/index.php/i-joe/article/download/55677/16389",
+    "landing": "https://doi.org/10.3991/ijoe.v21i09.55677",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-23": {
+   "doi": "10.3233/his-240028",
+   "match": "crossref"
+  },
+  "journal-24": {
+   "doi": "10.1109/access.2025.3570643",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2025.3570643",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-25": {
+   "doi": "10.1109/access.2025.3583757",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2025.3583757",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-26": {
+   "doi": "10.1007/s12145-024-01532-y",
+   "match": "crossref"
+  },
+  "journal-27": {
+   "doi": "10.3390/jimaging11030069",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/jimaging11030069",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-28": {
+   "doi": "10.1007/s11042-024-19461-9",
+   "match": "crossref"
+  },
+  "journal-29": {
+   "doi": "10.1007/s00521-024-10749-3",
+   "match": "crossref"
+  },
+  "journal-30": {
+   "doi": "10.1007/s00521-025-11100-0",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1007/s00521-025-11100-0",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-31": {
+   "doi": "10.70917/ijcisim-2025-0002",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://cspub-ijcisim.org/index.php/ijcisim/article/download/1013/622",
+    "landing": "https://doi.org/10.70917/ijcisim-2025-0002",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-32": {
+   "doi": "10.70917/ijcisim-2025-0007",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://cspub-ijcisim.org/index.php/ijcisim/article/download/1018/628",
+    "landing": "https://doi.org/10.70917/ijcisim-2025-0007",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-33": {
+   "doi": "10.1186/s40854-024-00652-0",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://jfin-swufe.springeropen.com/counter/pdf/10.1186/s40854-024-00652-0",
+    "landing": "https://doi.org/10.1186/s40854-024-00652-0",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-34": {
+   "doi": "10.34028/iajit/21/6/14",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://doi.org/10.34028/iajit/21/6/14",
+    "landing": "https://doi.org/10.34028/iajit/21/6/14",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-35": {
+   "doi": "10.1007/s11042-023-15668-4",
+   "match": "crossref"
+  },
+  "journal-36": {
+   "doi": "10.1007/s11042-023-16306-9",
+   "match": "crossref"
+  },
+  "journal-37": {
+   "doi": "10.1007/s11042-023-16815-7",
+   "match": "crossref"
+  },
+  "journal-38": {
+   "doi": "10.1007/s11042-023-17437-9",
+   "match": "crossref"
+  },
+  "journal-39": {
+   "doi": "10.7717/peerj-cs.1769",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.7717/peerj-cs.1769",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-42": {
+   "doi": "10.1109/access.2024.3422261",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://dx.doi.org/10.1109/access.2024.3422261",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-43": {
+   "doi": "10.1109/access.2024.3458795",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2024.3458795",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-47": {
+   "doi": "10.3390/diagnostics14141534",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/diagnostics14141534",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-48": {
+   "doi": "10.1016/j.acags.2024.100176",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.acags.2024.100176",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-49": {
+   "doi": "10.1007/s10462-024-10884-2",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1007/s10462-024-10884-2",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-51": {
+   "doi": "10.1109/access.2024.3408311",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://dx.doi.org/10.1109/access.2024.3408311",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-52": {
+   "doi": "10.1109/access.2024.3381956",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10480434.pdf",
+    "landing": "https://doi.org/10.1109/access.2024.3381956",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-53": {
+   "doi": "10.1109/access.2024.3353794",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10399479.pdf",
+    "landing": "https://doi.org/10.1109/access.2024.3353794",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-54": {
+   "doi": "10.3233/his-230017",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3233/his-230017",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-55": {
+   "doi": "10.3233/his-240001",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3233/his-240001",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-56": {
+   "doi": "10.3233/his-240016",
+   "match": "crossref"
+  },
+  "journal-57": {
+   "doi": "10.1007/s10554-024-03100-3",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://hdl.handle.net/11584/397323",
+    "version": "submittedVersion",
+    "license": "other-oa",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-58": {
+   "doi": "10.1016/j.engappai.2024.108116",
+   "match": "crossref"
+  },
+  "journal-59": {
+   "doi": "10.1016/j.engappai.2024.109265",
+   "match": "crossref"
+  },
+  "journal-60": {
+   "doi": "10.1016/j.engappai.2024.109452",
+   "match": "crossref"
+  },
+  "journal-61": {
+   "doi": "10.1016/j.engappai.2023.107694",
+   "match": "crossref"
+  },
+  "journal-62": {
+   "doi": "10.1016/j.engappai.2024.107922",
+   "match": "crossref"
+  },
+  "journal-63": {
+   "doi": "10.1007/s00034-023-02491-3",
+   "match": "crossref"
+  },
+  "journal-64": {
+   "doi": "10.1109/access.2024.3354708",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10400470.pdf",
+    "landing": "https://doi.org/10.1109/access.2024.3354708",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-65": {
+   "doi": "10.1016/j.teler.2024.100116",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/2401.02469",
+    "landing": "http://arxiv.org/abs/2401.02469",
+    "version": "submittedVersion",
+    "license": "cc-by",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-66": {
+   "doi": "10.1002/ett.4884",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1002/ett.4884",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-67": {
+   "doi": "10.1109/access.2023.3347200",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10373843.pdf",
+    "landing": "https://doi.org/10.1109/access.2023.3347200",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-68": {
+   "doi": "10.1109/access.2023.3339635",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10342692.pdf",
+    "landing": "https://doi.org/10.1109/access.2023.3339635",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-69": {
+   "doi": "10.1109/access.2023.3329069",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10308570.pdf",
+    "landing": "https://doi.org/10.1109/access.2023.3329069",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-70": {
+   "doi": "10.1016/j.asoc.2023.110715",
+   "match": "crossref"
+  },
+  "journal-71": {
+   "doi": "10.1109/access.2023.3325056",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10286482.pdf",
+    "landing": "https://doi.org/10.1109/access.2023.3325056",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-72": {
+   "doi": "10.1109/access.2023.3320562",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10268392.pdf",
+    "landing": "https://doi.org/10.1109/access.2023.3320562",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-73": {
+   "doi": "10.1109/access.2023.3320570",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10266318.pdf",
+    "landing": "https://doi.org/10.1109/access.2023.3320570",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-74": {
+   "doi": "10.1109/access.2023.3313000",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10242795.pdf",
+    "landing": "https://doi.org/10.1109/access.2023.3313000",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-75": {
+   "doi": "10.1109/access.2023.3295833",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2023.3295833",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-76": {
+   "doi": "10.1109/access.2023.3319438",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10264077.pdf",
+    "landing": "https://doi.org/10.1109/access.2023.3319438",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-77": {
+   "doi": "10.1007/s10489-023-04455-1",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1007/s10489-023-04455-1",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-78": {
+   "doi": "10.1007/s11045-023-00870-2",
+   "match": "crossref"
+  },
+  "journal-79": {
+   "doi": "10.1002/ima.22916",
+   "match": "crossref"
+  },
+  "journal-83": {
+   "doi": "10.1016/j.iotcps.2023.06.002",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.iotcps.2023.06.002",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-84": {
+   "doi": "10.1109/access.2023.3291406",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2023.3291406",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-86": {
+   "doi": "10.3390/s23125659",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/s23125659",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-87": {
+   "doi": "10.1016/j.bspc.2023.105129",
+   "match": "crossref"
+  },
+  "journal-88": {
+   "doi": "10.1007/s11030-022-10410-y",
+   "match": "crossref"
+  },
+  "journal-89": {
+   "doi": "10.1007/s12065-021-00688-6",
+   "match": "crossref"
+  },
+  "journal-90": {
+   "doi": "10.1007/s10489-022-03910-9",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1007/s10489-022-03910-9",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-91": {
+   "doi": "10.1007/s11227-023-05112-7",
+   "match": "crossref"
+  },
+  "journal-92": {
+   "doi": "10.1016/j.engappai.2023.106139",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/2206.14153",
+    "landing": "http://arxiv.org/abs/2206.14153",
+    "version": "submittedVersion",
+    "license": "cc-by-sa",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-93": {
+   "doi": "10.1016/j.bspc.2023.104979",
+   "match": "crossref"
+  },
+  "journal-94": {
+   "doi": "10.1038/s41598-023-35133-4",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://www.nature.com/articles/s41598-023-35133-4.pdf",
+    "landing": "https://doi.org/10.1038/s41598-023-35133-4",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-95": {
+   "doi": "10.1016/j.engappai.2023.106305",
+   "match": "crossref"
+  },
+  "journal-96": {
+   "doi": "10.1109/access.2023.3282322",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/10005208/10143186.pdf",
+    "landing": "https://doi.org/10.1109/access.2023.3282322",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-97": {
+   "doi": "10.1109/access.2022.3233671",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/10005208/10004966.pdf",
+    "landing": "https://doi.org/10.1109/access.2022.3233671",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-98": {
+   "doi": "10.1109/access.2023.3251892",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/2203.11724",
+    "landing": "http://arxiv.org/abs/2203.11724",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-99": {
+   "doi": "10.1109/access.2023.3268545",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2023.3268545",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-100": {
+   "doi": "10.1007/s00521-022-07922-x",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1007/s00521-022-07922-x",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-101": {
+   "doi": "10.1007/s10489-022-03890-w",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/1811.00323",
+    "landing": "http://arxiv.org/abs/1811.00323",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-102": {
+   "doi": "10.1088/1361-6668/acbb34",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://iopscience.iop.org/article/10.1088/1361-6668/acbb34/pdf",
+    "landing": "https://doi.org/10.1088/1361-6668/acbb34",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-103": {
+   "doi": "10.3390/ijerph20054244",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/ijerph20054244",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-104": {
+   "doi": "10.3390/s23010423",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/s23010423",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-105": {
+   "doi": "10.3390/electronics12010014",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/electronics12010014",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-106": {
+   "doi": "10.1016/j.future.2022.11.002",
+   "match": "crossref"
+  },
+  "journal-107": {
+   "doi": "10.1007/s11042-022-13453-3",
+   "match": "crossref"
+  },
+  "journal-110": {
+   "doi": "10.2174/1573405618666220426100944",
+   "match": "crossref"
+  },
+  "journal-111": {
+   "doi": "10.4018/ijsir.314210",
+   "match": "crossref"
+  },
+  "journal-112": {
+   "doi": "10.1142/s0218488522500209",
+   "match": "crossref"
+  },
+  "journal-113": {
+   "doi": "10.1016/j.compbiomed.2022.106214",
+   "match": "crossref"
+  },
+  "journal-114": {
+   "doi": "10.1007/s00521-022-07260-y",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://link.springer.com/content/pdf/10.1007/s00521-022-07260-y.pdf",
+    "landing": "https://doi.org/10.1007/s00521-022-07260-y",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-115": {
+   "doi": "10.1007/s10489-022-03776-x",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1007/s10489-022-03776-x",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-116": {
+   "doi": "10.1016/j.apm.2021.12.023",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.apm.2021.12.023",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-117": {
+   "doi": "10.1016/j.apm.2022.08.003",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://www.ncbi.nlm.nih.gov/pmc/articles/9352651",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-118": {
+   "doi": "10.1007/s10489-022-03185-0",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1007/s10489-022-03185-0",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-119": {
+   "doi": "10.1016/j.neucom.2022.07.030",
+   "match": "crossref"
+  },
+  "journal-120": {
+   "doi": "10.1016/j.jksuci.2020.10.030",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.jksuci.2020.10.030",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-121": {
+   "doi": "10.1007/s10479-021-04238-2",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://link.springer.com/content/pdf/10.1007/s10479-021-04238-2.pdf",
+    "landing": "https://doi.org/10.1007/s10479-021-04238-2",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-122": {
+   "doi": "10.1016/j.jestch.2021.06.017",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.jestch.2021.06.017",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-123": {
+   "doi": "10.1007/s00366-020-01237-y",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://hdl.handle.net/10396/35377",
+    "version": "submittedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-125": {
+   "doi": "10.1016/j.isatra.2021.04.035",
+   "match": "crossref"
+  },
+  "journal-126": {
+   "doi": "10.1016/j.jksuci.2020.03.015",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.jksuci.2020.03.015",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-127": {
+   "doi": "10.1109/tcyb.2021.3062152",
+   "match": "crossref"
+  },
+  "journal-128": {
+   "doi": "10.1109/rbme.2021.3055556",
+   "match": "crossref"
+  },
+  "journal-129": {
+   "doi": "10.1016/j.knosys.2022.108172",
+   "match": "crossref"
+  },
+  "journal-130": {
+   "doi": "10.1016/j.knosys.2021.107603",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://hdl.handle.net/10072/412109",
+    "version": "submittedVersion",
+    "license": "other-oa",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-131": {
+   "doi": "10.1016/j.engappai.2021.104599",
+   "match": "crossref"
+  },
+  "journal-132": {
+   "doi": "10.1016/j.engappai.2022.104773",
+   "match": "crossref"
+  },
+  "journal-133": {
+   "doi": "10.1145/3476102",
+   "match": "crossref"
+  },
+  "journal-134": {
+   "doi": "10.1007/s00500-021-06140-2",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://www.researchsquare.com/article/rs-724180/v1.pdf?c=1631889661000",
+    "landing": "https://doi.org/10.21203/rs.3.rs-724180/v1",
+    "version": "acceptedVersion",
+    "license": "cc-by",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-135": {
+   "doi": "10.1016/j.iot.2022.100514",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/2203.04159",
+    "landing": "http://arxiv.org/abs/2203.04159",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-136": {
+   "doi": "10.1109/access.2022.3196037",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2022.3196037",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-137": {
+   "doi": "10.1109/access.2022.3210543",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2022.3210543",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-138": {
+   "doi": "10.1109/access.2022.3209825",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2022.3209825",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-139": {
+   "doi": "10.1109/access.2022.3205744",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2022.3205744",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-140": {
+   "doi": "10.1109/access.2022.3201144",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2022.3201144",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-141": {
+   "doi": "10.1109/access.2022.3227962",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2022.3227962",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-142": {
+   "doi": "10.1109/access.2022.3205031",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/9668973/09881499.pdf",
+    "landing": "https://doi.org/10.1109/access.2022.3205031",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-143": {
+   "doi": "10.1109/access.2022.3217226",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2022.3217226",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-144": {
+   "doi": "10.1109/access.2022.3194672",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2022.3194672",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-145": {
+   "doi": "10.1109/access.2022.3215082",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/9668973/09921299.pdf",
+    "landing": "https://doi.org/10.1109/access.2022.3215082",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-146": {
+   "doi": "10.1109/access.2022.3223379",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2022.3223379",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-147": {
+   "doi": "10.1109/access.2022.3175522",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2022.3175522",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-148": {
+   "doi": "10.3390/axioms11010015",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/axioms11010015",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-149": {
+   "doi": "10.3390/s23010423",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/s23010423",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-150": {
+   "doi": "10.3390/s22207824",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/s22207824",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-151": {
+   "doi": "10.3390/s22208066",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/s22208066",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-152": {
+   "doi": "10.3390/s22218210",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/s22218210",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-155": {
+   "doi": "10.1007/s00500-022-07121-9",
+   "match": "crossref"
+  },
+  "journal-157": {
+   "doi": "10.1016/j.engappai.2022.105345",
+   "match": "crossref"
+  },
+  "journal-158": {
+   "doi": "10.1002/ima.22713",
+   "match": "crossref"
+  },
+  "journal-159": {
+   "doi": "10.1016/j.chemolab.2022.104635",
+   "match": "crossref"
+  },
+  "journal-160": {
+   "doi": "10.1016/j.chemolab.2022.104574",
+   "match": "crossref"
+  },
+  "journal-162": {
+   "doi": "10.3390/s22093547",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/s22093547",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-163": {
+   "doi": "10.1007/s00500-022-06837-y",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://uwe-repository.worktribe.com/output/9005002",
+    "version": "submittedVersion",
+    "license": "cc-by",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-164": {
+   "doi": "10.1007/s11042-021-11823-x",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1007/s11042-021-11823-x",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-166": {
+   "doi": "10.1007/s11042-020-10467-7",
+   "match": "crossref"
+  },
+  "journal-167": {
+   "doi": "10.1007/s40747-021-00314-z",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://link.springer.com/content/pdf/10.1007/s40747-021-00314-z.pdf",
+    "landing": "https://doi.org/10.1007/s40747-021-00314-z",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-168": {
+   "doi": "10.1007/s13735-021-00210-9",
+   "match": "crossref"
+  },
+  "journal-171": {
+   "doi": "10.1007/s00521-021-05997-6",
+   "match": "crossref"
+  },
+  "journal-172": {
+   "doi": "10.1109/access.2021.3131741",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2021.3131741",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-173": {
+   "doi": "10.1016/j.asoc.2021.107955",
+   "match": "crossref"
+  },
+  "journal-174": {
+   "doi": "10.2174/2210327910999201120092512",
+   "match": "crossref"
+  },
+  "journal-175": {
+   "doi": "10.1109/tcyb.2020.2994235",
+   "match": "crossref"
+  },
+  "journal-176": {
+   "doi": "10.1016/j.swevo.2021.100907",
+   "match": "crossref"
+  },
+  "journal-177": {
+   "doi": "10.1007/s00521-020-05555-6",
+   "match": "crossref"
+  },
+  "journal-178": {
+   "doi": "10.1093/jcde/qwab057",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1093/jcde/qwab057",
+    "version": "publishedVersion",
+    "license": "cc-by-nc",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-179": {
+   "doi": "10.1007/s00500-021-05711-7",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://uwe-repository.worktribe.com/output/7156626",
+    "version": "submittedVersion",
+    "license": "cc-by",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-180": {
+   "doi": "10.1109/access.2021.3089538",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2021.3089538",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-181": {
+   "doi": "10.1007/s00500-021-05973-1",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://www.researchsquare.com/article/rs-547532/v1.pdf?c=1623091733000",
+    "landing": "https://doi.org/10.21203/rs.3.rs-547532/v1",
+    "version": "acceptedVersion",
+    "license": "cc-by",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-182": {
+   "doi": "10.1002/2050-7038.13010",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1002/2050-7038.13010",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-183": {
+   "doi": "10.1016/j.neucom.2021.06.024",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://www.ncbi.nlm.nih.gov/pmc/articles/8206574",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-184": {
+   "doi": "10.1016/j.engappai.2021.104293",
+   "match": "crossref"
+  },
+  "journal-185": {
+   "doi": "10.1038/s41598-021-94661-z",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://www.nature.com/articles/s41598-021-94661-z.pdf",
+    "landing": "https://doi.org/10.1038/s41598-021-94661-z",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-186": {
+   "doi": "10.1016/j.engappai.2021.104280",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.engappai.2021.104280",
+    "version": "acceptedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-187": {
+   "doi": "10.1016/j.eswa.2021.115753",
+   "match": "crossref"
+  },
+  "journal-188": {
+   "doi": "10.1016/j.neucom.2021.04.045",
+   "match": "crossref"
+  },
+  "journal-189": {
+   "doi": "10.1016/j.bbe.2021.04.003",
+   "match": "crossref"
+  },
+  "journal-191": {
+   "doi": "10.3390/app11083325",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/app11083325",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-192": {
+   "doi": "10.1016/j.eswa.2020.114426",
+   "match": "crossref"
+  },
+  "journal-193": {
+   "doi": "10.1016/j.engappai.2021.104188",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://www.ncbi.nlm.nih.gov/pmc/articles/7890303",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-194": {
+   "doi": "10.4018/ijcini.20210401.oa6",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.4018/ijcini.20210401.oa6",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-195": {
+   "doi": "10.1093/jcde/qwaa089",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1093/jcde/qwaa089",
+    "version": "publishedVersion",
+    "license": "cc-by-nc",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-196": {
+   "doi": "10.1007/s00500-020-05406-5",
+   "match": "crossref"
+  },
+  "journal-197": {
+   "doi": "10.1016/j.engappai.2020.104118",
+   "match": "crossref"
+  },
+  "journal-198": {
+   "doi": "10.1016/j.engappai.2020.104122",
+   "match": "crossref"
+  },
+  "journal-199": {
+   "doi": "10.1080/00295450.2020.1740562",
+   "match": "crossref"
+  },
+  "journal-200": {
+   "doi": "10.1007/s11069-020-04454-2",
+   "match": "crossref"
+  },
+  "journal-201": {
+   "doi": "10.1016/j.engappai.2020.104049",
+   "match": "crossref"
+  },
+  "journal-202": {
+   "doi": "10.1007/s00521-020-05409-1",
+   "match": "crossref"
+  },
+  "journal-203": {
+   "doi": "10.1016/j.engappai.2020.103479",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://hdl.handle.net/10396/35376",
+    "version": "submittedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-204": {
+   "doi": "10.1016/j.isatra.2019.12.011",
+   "match": "crossref"
+  },
+  "journal-205": {
+   "doi": "10.1109/tsmc.2018.2859429",
+   "match": "crossref"
+  },
+  "journal-207": {
+   "doi": "10.1186/s12967-020-02364-2",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://translational-medicine.biomedcentral.com/counter/pdf/10.1186/s12967-020-02364-2",
+    "landing": "https://doi.org/10.1186/s12967-020-02364-2",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-208": {
+   "doi": "10.1007/s00500-020-05065-6",
+   "match": "crossref"
+  },
+  "journal-209": {
+   "doi": "10.1016/j.engappai.2020.104000",
+   "match": "crossref"
+  },
+  "journal-210": {
+   "doi": "10.1016/j.engappai.2020.103924",
+   "match": "crossref"
+  },
+  "journal-211": {
+   "doi": "10.1016/j.asoc.2020.106524",
+   "match": "crossref"
+  },
+  "journal-212": {
+   "doi": "10.1016/j.asoc.2020.106526",
+   "match": "crossref"
+  },
+  "journal-213": {
+   "doi": "10.1016/j.engappai.2020.103847",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/2005.04599",
+    "landing": "http://arxiv.org/abs/2005.04599",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-214": {
+   "doi": "10.1109/access.2020.3022865",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/8948470/09189771.pdf",
+    "landing": "https://doi.org/10.1109/access.2020.3022865",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-215": {
+   "doi": "10.1016/j.engappai.2020.103836",
+   "match": "crossref"
+  },
+  "journal-216": {
+   "doi": "10.1016/j.intimp.2020.106711",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://www.ncbi.nlm.nih.gov/pmc/articles/7307981",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-217": {
+   "doi": "10.1002/ima.22395",
+   "match": "crossref"
+  },
+  "journal-218": {
+   "doi": "10.18280/ria.340302",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://www.iieta.org/download/file/fid/37692",
+    "landing": "https://doi.org/10.18280/ria.340302",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-219": {
+   "doi": "10.1007/s11192-020-03511-8",
+   "match": "crossref"
+  },
+  "journal-220": {
+   "doi": "10.1108/ijwis-05-2020-0027",
+   "match": "crossref"
+  },
+  "journal-221": {
+   "doi": "10.1109/access.2020.3010577",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://ieeexplore.ieee.org/ielx7/6287639/8948470/09144591.pdf",
+    "landing": "https://doi.org/10.1109/access.2020.3010577",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-222": {
+   "doi": "10.1109/access.2020.2981834",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1109/access.2020.2981834",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-223": {
+   "doi": "10.1007/s00500-019-04473-7",
+   "match": "crossref"
+  },
+  "journal-224": {
+   "doi": "10.1007/s13198-019-00919-1",
+   "match": "crossref"
+  },
+  "journal-225": {
+   "doi": "10.1016/j.engappai.2019.103378",
+   "match": "crossref"
+  },
+  "journal-226": {
+   "doi": "10.1016/j.eswa.2019.112916",
+   "match": "crossref"
+  },
+  "journal-227": {
+   "doi": "10.1007/s12652-020-01698-5",
+   "match": "crossref"
+  },
+  "journal-236": {
+   "doi": "10.1177/1550147719895210",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1177/1550147719895210",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-237": {
+   "doi": "10.1007/s12652-019-01265-7",
+   "match": "crossref"
+  },
+  "journal-238": {
+   "doi": "10.1007/s00500-019-04129-6",
+   "match": "crossref"
+  },
+  "journal-239": {
+   "doi": "10.1016/j.engappai.2019.103324",
+   "match": "crossref"
+  },
+  "journal-241": {
+   "doi": "10.1109/rbme.2019.2917780",
+   "match": "crossref"
+  },
+  "journal-242": {
+   "doi": "10.1016/j.jksuci.2017.12.011",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.jksuci.2017.12.011",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-243": {
+   "doi": "10.1007/s00521-019-04104-0",
+   "match": "crossref"
+  },
+  "journal-244": {
+   "doi": "10.1007/s12530-019-09312-6",
+   "match": "crossref"
+  },
+  "journal-245": {
+   "doi": "10.3233/idt-180003",
+   "match": "crossref"
+  },
+  "journal-246": {
+   "doi": "10.1007/s00521-018-03990-0",
+   "match": "crossref"
+  },
+  "journal-247": {
+   "doi": "10.1007/s10115-018-1318-3",
+   "match": "crossref"
+  },
+  "journal-248": {
+   "doi": "10.1007/s10489-019-01476-7",
+   "match": "crossref"
+  },
+  "journal-249": {
+   "doi": "10.1016/j.engappai.2019.08.010",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/1908.10122",
+    "landing": "http://arxiv.org/abs/1908.10122",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-252": {
+   "doi": "10.1007/s00521-018-03990-0",
+   "match": "crossref"
+  },
+  "journal-254": {
+   "doi": "10.1016/j.engappai.2019.06.010",
+   "match": "crossref"
+  },
+  "journal-255": {
+   "doi": "10.3233/jifs-181383",
+   "match": "crossref"
+  },
+  "journal-256": {
+   "doi": "10.1016/j.engappai.2019.01.017",
+   "match": "crossref"
+  },
+  "journal-257": {
+   "doi": "10.4018/ijdst.2019010105",
+   "match": "crossref"
+  },
+  "journal-258": {
+   "doi": "10.1016/j.engappai.2018.11.007",
+   "match": "crossref"
+  },
+  "journal-259": {
+   "doi": "10.1016/j.inffus.2018.07.010",
+   "match": "crossref"
+  },
+  "journal-261": {
+   "doi": "10.1080/00207543.2018.1471236",
+   "match": "crossref"
+  },
+  "journal-262": {
+   "doi": "10.3233/his-180258",
+   "match": "crossref"
+  },
+  "journal-263": {
+   "doi": "10.1016/j.jksuci.2016.12.005",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.jksuci.2016.12.005",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-264": {
+   "doi": "10.13052/jwe1540-9589.1782",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.13052/jwe1540-9589.1782",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-265": {
+   "doi": "10.3390/publications6030032",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/publications6030032",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-267": {
+   "doi": "10.1016/j.eswa.2018.02.026",
+   "match": "crossref"
+  },
+  "journal-268": {
+   "doi": "10.1016/j.engappai.2018.03.013",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://hdl.handle.net/10072/380016",
+    "version": "submittedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-269": {
+   "doi": "10.1016/j.engappai.2018.03.006",
+   "match": "crossref"
+  },
+  "journal-270": {
+   "doi": "10.1016/j.engappai.2018.01.005",
+   "match": "crossref"
+  },
+  "journal-271": {
+   "doi": "10.1109/tfuzz.2017.2698399",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/1705.05769",
+    "landing": "http://arxiv.org/abs/1705.05769",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-274": {
+   "doi": "10.1007/s10922-017-9419-y",
+   "match": "crossref"
+  },
+  "journal-278": {
+   "doi": "10.1016/j.engappai.2017.10.023",
+   "match": "crossref"
+  },
+  "journal-280": {
+   "doi": "10.3906/elk-1706-104",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3906/elk-1706-104",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-281": {
+   "doi": "10.3233/his-180254",
+   "match": "crossref"
+  },
+  "journal-282": {
+   "doi": "10.29007/lm11",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.29007/lm11",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-284": {
+   "doi": "10.1016/j.eswa.2018.07.039",
+   "match": "crossref"
+  },
+  "journal-287": {
+   "doi": "10.1007/s00521-016-2379-4",
+   "match": "crossref"
+  },
+  "journal-288": {
+   "doi": "10.1016/j.eswa.2017.05.035",
+   "match": "crossref"
+  },
+  "journal-289": {
+   "doi": "10.1007/s10910-017-0775-3",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://hdl.handle.net/11104/0275489",
+    "version": "submittedVersion",
+    "license": "public-domain",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-290": {
+   "doi": "10.1007/s11042-016-4021-y",
+   "match": "crossref"
+  },
+  "journal-291": {
+   "doi": "10.3233/his-180248",
+   "match": "crossref"
+  },
+  "journal-292": {
+   "doi": "10.1016/j.pmcj.2017.06.008",
+   "match": "crossref"
+  },
+  "journal-293": {
+   "doi": "10.1016/j.apm.2017.02.042",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.apm.2017.02.042",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-294": {
+   "doi": "10.1016/j.eswa.2017.02.037",
+   "match": "crossref"
+  },
+  "journal-295": {
+   "doi": "10.1109/rbme.2017.2715350",
+   "match": "crossref"
+  },
+  "journal-296": {
+   "doi": "10.1016/j.engappai.2017.04.011",
+   "match": "crossref"
+  },
+  "journal-297": {
+   "doi": "10.1016/j.engappai.2017.01.013",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/1705.05584",
+    "landing": "http://arxiv.org/abs/1705.05584",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-298": {
+   "doi": "10.1016/j.asoc.2016.09.035",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/1705.05592",
+    "landing": "http://arxiv.org/abs/1705.05592",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-302": {
+   "doi": "10.1016/j.asoc.2016.11.011",
+   "match": "crossref"
+  },
+  "journal-303": {
+   "doi": "10.3233/jifs-15372",
+   "match": "crossref"
+  },
+  "journal-304": {
+   "doi": "10.1016/j.neucom.2016.06.019",
+   "match": "crossref"
+  },
+  "journal-306": {
+   "doi": "10.1016/j.asoc.2016.03.006",
+   "match": "crossref"
+  },
+  "journal-307": {
+   "doi": "10.1016/j.neucom.2016.05.077",
+   "match": "crossref"
+  },
+  "journal-309": {
+   "doi": "10.3233/idt-150243",
+   "match": "crossref"
+  },
+  "journal-310": {
+   "doi": "10.1016/j.neucom.2015.04.088",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.neucom.2015.04.088",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-311": {
+   "doi": "10.22266/ijies2016.1231.06",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://doi.org/10.22266/ijies2016.1231.06",
+    "landing": "https://doi.org/10.22266/ijies2016.1231.06",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-312": {
+   "doi": "10.1080/1206212x.2016.1188563",
+   "match": "crossref"
+  },
+  "journal-313": {
+   "doi": "10.1007/s00500-015-1723-4",
+   "match": "crossref"
+  },
+  "journal-314": {
+   "doi": "10.1016/j.compenvurbsys.2015.10.009",
+   "match": "crossref"
+  },
+  "journal-315": {
+   "doi": "10.1016/j.neucom.2015.11.051",
+   "match": "crossref"
+  },
+  "journal-316": {
+   "doi": "10.11113/jt.v78.4657",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.11113/jt.v78.4657",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-319": {
+   "doi": "10.2147/ijn.s71847",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://centaur.reading.ac.uk/82149/1/ijn-10-1119.pdf",
+    "landing": "https://centaur.reading.ac.uk/view/creators/90009423.html>",
+    "version": "acceptedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-320": {
+   "doi": "10.1007/s00521-014-1673-2",
+   "match": "crossref"
+  },
+  "journal-327": {
+   "doi": "10.1016/j.asoc.2015.07.032",
+   "match": "crossref"
+  },
+  "journal-328": {
+   "doi": "10.1007/s10489-015-0663-0",
+   "match": "crossref"
+  },
+  "journal-329": {
+   "doi": "10.1155/2015/894171",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1155/2015/894171",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-330": {
+   "doi": "10.1007/s11227-014-1373-9",
+   "match": "crossref"
+  },
+  "journal-331": {
+   "doi": "10.1007/s00521-014-1673-2",
+   "match": "crossref"
+  },
+  "journal-334": {
+   "doi": "10.2147/ijn.s71847",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://centaur.reading.ac.uk/82149/1/ijn-10-1119.pdf",
+    "landing": "https://centaur.reading.ac.uk/view/creators/90009423.html>",
+    "version": "acceptedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-335": {
+   "doi": "10.3233/ifs-141419",
+   "match": "crossref"
+  },
+  "journal-339": {
+   "doi": "10.1016/j.neucom.2015.04.088",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.neucom.2015.04.088",
+    "version": "publishedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-341": {
+   "doi": "10.1155/2015/948512",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1155/2015/948512",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-342": {
+   "doi": "10.1016/j.neucom.2014.03.079",
+   "match": "crossref"
+  },
+  "journal-344": {
+   "doi": "10.1504/ijtmcc.2014.067305",
+   "match": "crossref"
+  },
+  "journal-345": {
+   "doi": "10.5772/56827",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.5772/56827",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-347": {
+   "doi": "10.1016/j.asoc.2014.09.031",
+   "match": "crossref"
+  },
+  "journal-348": {
+   "doi": "10.1142/s0219649214500221",
+   "match": "crossref"
+  },
+  "journal-349": {
+   "doi": "10.1177/1077546313481001",
+   "match": "crossref"
+  },
+  "journal-352": {
+   "doi": "10.3233/ifs-130988",
+   "match": "crossref"
+  },
+  "journal-353": {
+   "doi": "10.1007/s10044-013-0335-9",
+   "match": "crossref"
+  },
+  "journal-354": {
+   "doi": "10.1109/tcst.2013.2281936",
+   "match": "crossref"
+  },
+  "journal-355": {
+   "doi": "10.14311/nnw.2014.24.018",
+   "match": "crossref"
+  },
+  "journal-356": {
+   "doi": "10.1016/j.engappai.2014.06.011",
+   "match": "crossref"
+  },
+  "journal-358": {
+   "doi": "10.1016/j.trc.2014.03.003",
+   "match": "crossref"
+  },
+  "journal-360": {
+   "doi": "10.1016/j.neucom.2013.11.001",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://hdl.handle.net/10366/134310",
+    "version": "submittedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-361": {
+   "doi": "10.1504/ijguc.2014.065384",
+   "match": "crossref"
+  },
+  "journal-362": {
+   "doi": "10.1016/j.engappai.2014.02.001",
+   "match": "crossref"
+  },
+  "journal-364": {
+   "doi": "10.1155/2014/872929",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1155/2014/872929",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-365": {
+   "doi": "10.1016/j.engappai.2013.12.009",
+   "match": "crossref"
+  },
+  "journal-366": {
+   "doi": "10.1002/int.21631",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://urn.kb.se/resolve?urn=urn:nbn:se:his:diva-11911",
+    "version": "submittedVersion",
+    "license": "other-oa",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-367": {
+   "doi": "10.1016/j.neucom.2013.10.032",
+   "match": "crossref"
+  },
+  "journal-368": {
+   "doi": "10.1016/j.engappai.2013.08.013",
+   "match": "crossref"
+  },
+  "journal-369": {
+   "doi": "10.3233/ifs-131020",
+   "match": "crossref"
+  },
+  "journal-371": {
+   "doi": "10.1016/j.neucom.2013.07.001",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://hdl.handle.net/10366/134305",
+    "version": "submittedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-372": {
+   "doi": "10.1016/j.neucom.2013.07.003",
+   "match": "crossref"
+  },
+  "journal-377": {
+   "doi": "10.3233/ifs-120693",
+   "match": "crossref"
+  },
+  "journal-378": {
+   "doi": "10.1155/2013/364575",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1155/2013/364575",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-379": {
+   "doi": "10.14311/nnw.2013.23.027",
+   "match": "crossref"
+  },
+  "journal-380": {
+   "doi": "10.1007/978-3-642-45318-2_15",
+   "match": "crossref"
+  },
+  "journal-381": {
+   "doi": "10.4304/jcp.8.12.3039-3046",
+   "match": "crossref"
+  },
+  "journal-384": {
+   "doi": "10.1007/978-3-642-45318-2_5",
+   "match": "crossref"
+  },
+  "journal-385": {
+   "doi": "10.1007/978-3-642-45318-2_8",
+   "match": "crossref"
+  },
+  "journal-388": {
+   "doi": "10.1016/j.neucom.2013.03.065",
+   "match": "crossref"
+  },
+  "journal-389": {
+   "doi": "10.14311/nnw.2013.23.013",
+   "match": "crossref"
+  },
+  "journal-390": {
+   "doi": "10.1016/j.amc.2012.10.053",
+   "match": "crossref"
+  },
+  "journal-391": {
+   "doi": "10.1016/j.neucom.2013.01.024",
+   "match": "crossref"
+  },
+  "journal-392": {
+   "doi": "10.1016/j.patrec.2013.04.015",
+   "match": "crossref"
+  },
+  "journal-393": {
+   "doi": "10.1109/tsc.2012.6",
+   "match": "crossref"
+  },
+  "journal-394": {
+   "doi": "10.1007/s00500-012-0957-7",
+   "match": "crossref"
+  },
+  "journal-397": {
+   "doi": "10.1016/j.neucom.2012.03.021",
+   "match": "crossref"
+  },
+  "journal-403": {
+   "doi": "10.1016/j.neucom.2012.04.008",
+   "match": "crossref"
+  },
+  "journal-406": {
+   "doi": "10.1080/08839514.2012.721696",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1080/08839514.2012.721696",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-407": {
+   "doi": "10.1093/jigpal/jzr017",
+   "match": "crossref"
+  },
+  "journal-408": {
+   "doi": "10.1145/2240166.2240170",
+   "match": "crossref"
+  },
+  "journal-409": {
+   "doi": "10.1177/0142331211403032",
+   "match": "crossref"
+  },
+  "journal-410": {
+   "doi": "10.1016/j.asoc.2011.11.025",
+   "match": "crossref"
+  },
+  "journal-413": {
+   "doi": "10.14311/nnw.2012.22.013",
+   "match": "crossref"
+  },
+  "journal-414": {
+   "doi": "10.1142/s0218213012400131",
+   "match": "crossref"
+  },
+  "journal-416": {
+   "doi": "10.1002/asi.21651",
+   "match": "crossref"
+  },
+  "journal-418": {
+   "doi": "10.1007/s10115-011-0410-8",
+   "match": "crossref"
+  },
+  "journal-419": {
+   "doi": "10.3233/ifs-2012-0495",
+   "match": "crossref"
+  },
+  "journal-420": {
+   "doi": "10.3233/ifs-2012-0498",
+   "match": "crossref"
+  },
+  "journal-421": {
+   "doi": "10.1016/j.ins.2012.02.062",
+   "match": "crossref"
+  },
+  "journal-423": {
+   "doi": "10.1093/jigpal/jzr002",
+   "match": "crossref"
+  },
+  "journal-424": {
+   "doi": "10.1166/jctn.2012.2019",
+   "match": "crossref"
+  },
+  "journal-425": {
+   "doi": "10.1166/jctn.2012.2023",
+   "match": "crossref"
+  },
+  "journal-429": {
+   "doi": "10.4304/jcp.7.5.1099-1103",
+   "match": "crossref"
+  },
+  "journal-430": {
+   "doi": "10.1093/jigpal/jzq031",
+   "match": "crossref"
+  },
+  "journal-434": {
+   "doi": "10.14311/nnw.2011.21.017",
+   "match": "crossref"
+  },
+  "journal-436": {
+   "doi": "10.14311/nnw.2011.21.025",
+   "match": "crossref"
+  },
+  "journal-439": {
+   "doi": "10.1587/transfun.e94.a.2048",
+   "match": "crossref"
+  },
+  "journal-442": {
+   "doi": "10.1016/j.ins.2010.12.015",
+   "match": "crossref"
+  },
+  "journal-443": {
+   "doi": "10.1504/ijbic.2011.038701",
+   "match": "crossref"
+  },
+  "journal-444": {
+   "doi": "10.1016/j.amc.2010.12.053",
+   "match": "crossref"
+  },
+  "journal-446": {
+   "doi": "10.1007/s11235-010-9288-0",
+   "match": "crossref"
+  },
+  "journal-449": {
+   "doi": "10.1016/j.ins.2010.11.036",
+   "match": "crossref"
+  },
+  "journal-450": {
+   "doi": "10.1109/tsmcb.2010.2046035",
+   "match": "crossref"
+  },
+  "journal-452": {
+   "doi": "10.1016/j.eswa.2010.07.112",
+   "match": "crossref"
+  },
+  "journal-453": {
+   "doi": "10.1016/j.ins.2010.09.006",
+   "match": "crossref"
+  },
+  "journal-457": {
+   "doi": "10.1007/s12652-009-0006-2",
+   "match": "crossref"
+  },
+  "journal-458": {
+   "doi": "10.1109/titb.2010.2053849",
+   "match": "crossref"
+  },
+  "journal-459": {
+   "doi": "10.1109/titb.2010.2079939",
+   "match": "crossref"
+  },
+  "journal-462": {
+   "doi": "10.1016/j.datak.2010.03.002",
+   "match": "crossref"
+  },
+  "journal-463": {
+   "doi": "10.1016/j.amc.2010.01.071",
+   "match": "crossref"
+  },
+  "journal-464": {
+   "doi": "10.1016/j.engappai.2010.01.020",
+   "match": "crossref"
+  },
+  "journal-468": {
+   "doi": "10.1007/s00500-009-0508-z",
+   "match": "crossref"
+  },
+  "journal-470": {
+   "doi": "10.1109/titb.2009.2034369",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://hdl.handle.net/10366/134409",
+    "version": "submittedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-471": {
+   "doi": "10.1016/j.ins.2009.12.018",
+   "match": "crossref"
+  },
+  "journal-472": {
+   "doi": "10.1016/j.tcs.2010.03.005",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.tcs.2010.03.005",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-473": {
+   "doi": "10.1016/j.amc.2009.10.023",
+   "match": "crossref"
+  },
+  "journal-474": {
+   "doi": "10.1016/j.future.2009.11.005",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1016/j.future.2009.11.005",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-477": {
+   "doi": "10.1016/j.future.2009.08.010",
+   "match": "crossref"
+  },
+  "journal-479": {
+   "doi": "10.1016/j.ins.2010.02.019",
+   "match": "crossref"
+  },
+  "journal-482": {
+   "doi": "10.1109/titb.2009.2017017",
+   "match": "crossref"
+  },
+  "journal-485": {
+   "doi": "10.1109/tevc.2009.2021982",
+   "match": "crossref"
+  },
+  "journal-486": {
+   "doi": "10.3233/fi-2009-157",
+   "match": "crossref"
+  },
+  "journal-489": {
+   "doi": "10.3233/fi-2009-160",
+   "match": "crossref"
+  },
+  "journal-491": {
+   "doi": "10.3390/s90705339",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/s90705339",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-492": {
+   "doi": "10.1016/j.microrel.2009.03.005",
+   "match": "crossref"
+  },
+  "journal-493": {
+   "doi": "10.1109/tsmca.2008.2011474",
+   "match": "crossref"
+  },
+  "journal-494": {
+   "doi": "10.1109/tevc.2008.2009457",
+   "match": "crossref"
+  },
+  "journal-495": {
+   "doi": "10.1016/j.neucom.2008.12.033",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "http://hdl.handle.net/10366/134428",
+    "version": "submittedVersion",
+    "license": "cc-by-nc-nd",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-497": {
+   "doi": "10.1007/978-3-642-01004-0_8",
+   "match": "crossref"
+  },
+  "journal-498": {
+   "doi": "10.1016/j.ins.2008.11.007",
+   "match": "crossref"
+  },
+  "journal-500": {
+   "doi": "10.3390/s90503981",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/s90503981",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-501": {
+   "doi": "10.1002/int.20343",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1002/int.20343",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-502": {
+   "doi": "10.1016/j.engappai.2008.06.003",
+   "match": "crossref"
+  },
+  "journal-504": {
+   "doi": "10.1016/j.asoc.2008.09.010",
+   "match": "crossref"
+  },
+  "journal-505": {
+   "doi": "10.1016/j.asoc.2008.11.009",
+   "match": "crossref"
+  },
+  "journal-506": {
+   "doi": "10.1007/s00500-008-0324-x",
+   "match": "crossref"
+  },
+  "journal-507": {
+   "doi": "10.1007/s11235-008-9139-4",
+   "match": "crossref"
+  },
+  "journal-510": {
+   "doi": "10.1016/j.neucom.2009.02.017",
+   "match": "crossref"
+  },
+  "journal-511": {
+   "doi": "10.1142/s1469026808002181",
+   "match": "crossref"
+  },
+  "journal-514": {
+   "doi": "10.1109/cisim.2008.54",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://upcommons.upc.edu/bitstream/2117/119796/1/04557877.pdf",
+    "landing": "https://hdl.handle.net/2117/119796",
+    "version": "submittedVersion",
+    "license": "other-oa",
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-515": {
+   "doi": "10.1016/j.asoc.2007.10.014",
+   "match": "crossref"
+  },
+  "journal-518": {
+   "doi": "10.1109/tsmca.2008.918599",
+   "match": "crossref"
+  },
+  "journal-520": {
+   "doi": "10.1109/tsmca.2007.909595",
+   "match": "crossref"
+  },
+  "journal-521": {
+   "doi": "10.1016/j.patrec.2007.12.002",
+   "match": "crossref"
+  },
+  "journal-532": {
+   "doi": "10.1007/s00521-007-0090-1",
+   "match": "crossref"
+  },
+  "journal-533": {
+   "doi": "10.1109/tfuzz.2006.882472",
+   "match": "crossref"
+  },
+  "journal-534": {
+   "doi": "10.3390/s7050730",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.3390/s7050730",
+    "version": "publishedVersion",
+    "license": "cc-by",
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-535": {
+   "doi": "10.1016/j.ins.2007.04.002",
+   "match": "crossref"
+  },
+  "journal-536": {
+   "doi": "10.1016/j.asoc.2005.12.002",
+   "match": "crossref"
+  },
+  "journal-537": {
+   "doi": "10.1504/ijica.2007.013400",
+   "match": "crossref"
+  },
+  "journal-538": {
+   "doi": "10.1016/j.asoc.2006.10.006",
+   "match": "crossref"
+  },
+  "journal-539": {
+   "doi": "10.1007/s00500-006-0118-y",
+   "match": "crossref"
+  },
+  "journal-540": {
+   "doi": "10.1016/j.asoc.2006.06.005",
+   "match": "crossref"
+  },
+  "journal-542": {
+   "doi": "10.1016/j.neucom.2006.10.005",
+   "match": "crossref"
+  },
+  "journal-543": {
+   "doi": "10.1007/s00500-006-0116-0",
+   "match": "crossref"
+  },
+  "journal-544": {
+   "doi": "10.1002/int.20203",
+   "match": "crossref",
+   "oa": {
+    "pdf": null,
+    "landing": "https://doi.org/10.1002/int.20203",
+    "version": "publishedVersion",
+    "license": null,
+    "host": "publisher",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-545": {
+   "doi": "10.1016/j.jnca.2005.06.001",
+   "match": "crossref"
+  },
+  "journal-548": {
+   "doi": "10.1016/j.jnca.2005.06.003",
+   "match": "crossref"
+  },
+  "journal-552": {
+   "doi": "10.1007/s00500-006-0113-3",
+   "match": "crossref"
+  },
+  "journal-553": {
+   "doi": "10.1007/s00521-007-0083-0",
+   "match": "crossref"
+  },
+  "journal-554": {
+   "doi": "10.1016/j.jnca.2005.06.004",
+   "match": "crossref"
+  },
+  "journal-555": {
+   "doi": "10.1142/s0219649206001566",
+   "match": "crossref"
+  },
+  "journal-556": {
+   "doi": "10.1016/j.neucom.2006.01.022",
+   "match": "crossref"
+  },
+  "journal-560": {
+   "doi": "10.1016/j.cose.2005.09.003",
+   "match": "crossref"
+  },
+  "journal-572": {
+   "doi": "10.1016/j.cose.2004.09.008",
+   "match": "crossref"
+  },
+  "journal-576": {
+   "doi": "10.1016/j.ins.2004.10.005",
+   "match": "crossref"
+  },
+  "journal-578": {
+   "doi": "10.1016/j.jnca.2004.01.006",
+   "match": "crossref"
+  },
+  "journal-581": {
+   "doi": "10.1002/asi.20221",
+   "match": "crossref"
+  },
+  "journal-591": {
+   "doi": "10.1016/s0925-2312(03)00369-2",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/cs/0405024",
+    "landing": "http://arxiv.org/abs/cs/0405024",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-594": {
+   "doi": "10.1016/j.neucom.2004.03.006",
+   "match": "crossref"
+  },
+  "journal-598": {
+   "doi": "10.1145/1031859.1031864",
+   "match": "crossref"
+  },
+  "journal-599": {
+   "doi": "10.1007/3-540-44869-1_65",
+   "match": "crossref"
+  },
+  "journal-604": {
+   "doi": "10.1142/s0219649203000565",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/cs/0405030",
+    "landing": "http://arxiv.org/abs/cs/0405030",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "journal-613": {
+   "doi": "10.1016/s1568-4946(01)00013-8",
+   "match": "crossref",
+   "oa": {
+    "pdf": "https://arxiv.org/pdf/cs/0405010",
+    "landing": "http://arxiv.org/abs/cs/0405010",
+    "version": "submittedVersion",
+    "license": null,
+    "host": "repository",
+    "checked": "2026-10-18"
+   }
+  },
+  "other-3": {
+   "doi": "10.1109/synasc.2005.48",
+   "match": "crossref"
+  }
+ }
+}

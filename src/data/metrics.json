@@ -1,0 +1,33 @@
+{
+  "updated": "5 June 2026",
+  "note": "Figures from the CV",
+  "sources": [
+    {
+      "name": "Google Scholar",
+      "citations": "71,71",
+      "stats": [
+        { "label": "H-index", "value": "126" },
+        { "label": "i10-index", "value": "901" },
+        { "label": "Avg. citations / year (5 yrs)", "value": "5,000+" }
+      ]
+    },
+    {
+      "name": "Scopus",
+      "citations": "39,199",
+      "stats": [
+        { "label": "H-index", "value": "94" },
+        { "label": "Indexed records", "value": "1,511" },
+        { "label": "Avg. citations / year (5 yrs)", "value": "2,500+" }
+      ]
+    },
+    {
+      "name": "Web of Science",
+      "citations": "24,476",
+      "stats": [
+        { "label": "H-index", "value": "72" },
+        { "label": "Indexed records", "value": "1,046" },
+        { "label": "Avg. citations / year (5 yrs)", "value": "2,000+" }
+      ]
+    }
+  ]
+}

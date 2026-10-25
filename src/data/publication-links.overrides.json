@@ -1,0 +1,3 @@
+{
+  "_comment": "Manual corrections for npm run publications:links. Confirm a DOI: \"journal-494\": { \"doi\": \"10.1109/tevc.2008.2009457\" }. Remove a wrong one: \"chapter-82\": { \"doi\": null }. Hide an open-access link: \"journal-12\": { \"oa\": null }."
+}

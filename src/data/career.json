@@ -1,0 +1,101 @@
+{
+  "title": "Career",
+  "entries": [
+    {
+      "period": "Feb 2025 – Present",
+      "role": "Vice Chancellor",
+      "institution": "Sai University, Chennai",
+      "logo": "/logos/sai-university.png",
+      "current": true
+    },
+    {
+      "period": "Aug 2023 – Jan 2025",
+      "institution": "Bennett University, Greater Noida",
+      "logo": "/logos/bennett-university.png",
+      "roles": [
+        {
+          "period": "Apr 2024 – Jan 2025",
+          "role": "Vice Chancellor"
+        },
+        {
+          "period": "Oct 2023 – Mar 2024",
+          "role": "Officiating Vice Chancellor"
+        },
+        {
+          "period": "From Oct 2023",
+          "role": "Founding Dean, School of Artificial Intelligence"
+        },
+        {
+          "period": "Aug 2023 – Oct 2023",
+          "role": "Pro Vice Chancellor (Academics, Research, Incubation & International Relations); Professor of AI"
+        }
+      ]
+    },
+    {
+      "period": "Jan 2023 – Jul 2023",
+      "role": "Dean, Faculty of Computer Science and Mathematics; Professor of AI",
+      "institution": "FLAME University, Pune",
+      "logo": "/logos/flame-university.png"
+    },
+    {
+      "period": "Sep 2021 – Jun 2023",
+      "role": "Yayasan Tun Ismail Mohamed Ali Professorial Chair in AI",
+      "institution": "UCSI University, Malaysia",
+      "logo": "/logos/ucsi-university.png"
+    },
+    {
+      "period": "Aug 2021 – Jul 2024",
+      "role": "Professor of Artificial Intelligence",
+      "institution": "Innopolis University, Russia",
+      "logo": "/logos/innopolis-university.png"
+    },
+    {
+      "period": "Jun 2009 – Dec 2017",
+      "role": "Research Professor",
+      "institution": "VSB–Technical University of Ostrava, Czech Republic",
+      "logo": "/logos/vsb-ostrava.png"
+    },
+    {
+      "period": "Jul 2008 – Dec 2022",
+      "role": "Founding Director / Director",
+      "institution": "Machine Intelligence Research Labs (MIR Labs), USA",
+      "logo": "/logos/mir-labs.png"
+    },
+    {
+      "period": "Jan 2007 – 2010",
+      "role": "Research Professor",
+      "institution": "Norwegian University of Science and Technology, Norway",
+      "logo": "/logos/ntnu.png"
+    },
+    {
+      "period": "Aug 2004 – Dec 2006",
+      "role": "Distinguished Visiting Professor",
+      "institution": "Chung-Ang University and Yonsei University, South Korea",
+      "logo": [
+        "/logos/chung-ang-university.png",
+        "/logos/yonsei-university.png"
+      ]
+    },
+    {
+      "period": "Aug 2002 – Jul 2004",
+      "role": "Assistant Professor",
+      "institution": "Oklahoma State University, USA",
+      "logo": "/logos/oklahoma-state-university.png"
+    },
+    {
+      "period": "Mar 1999 – Jul 2002",
+      "institution": "Monash University, Australia",
+      "logo": "/logos/monash-university.png",
+      "roles": [
+        {
+          "period": "Feb 2002 – Jul 2002",
+          "role": "Research Fellow"
+        },
+        {
+          "period": "Mar 1999 – Jan 2002",
+          "role": "Lecturer"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "source": "Google Scholar",
+  "profileUrl": "https://scholar.google.com/citations?user=i95DGLQAAAAJ",
+  "scholarId": "i95DGLQAAAAJ",
+  "retrieved": "2026-10-19",
+  "items": [
+    {
+      "id": "qjMakFHDy7sC",
+      "title": "Differential evolution using a neighborhood-based mutation operator",
+      "authors": "S Das, A Abraham, UK Chakraborty, A Konar",
+      "venue": "IEEE transactions on evolutionary computation",
+      "year": 2009,
+      "citations": 1441
+    },
+    {
+      "id": "JzGFD3-rS6kC",
+      "title": "Differential Evolution: A review of more than two decades of research",
+      "authors": "M Pant, H Zaheer, L Garcia-Hernandez, A Abraham",
+      "venue": "Engineering Applications of Artificial Intelligence",
+      "year": 2020,
+      "citations": 1271
+    },
+    {
+      "id": "zYLM7Y9cAGgC",
+      "title": "Automatic clustering using an improved differential evolution algorithm",
+      "authors": "S Das, A Abraham, A Konar",
+      "venue": "IEEE Transactions on systems, man, and cybernetics-Part A: Systems and …",
+      "year": 2008,
+      "citations": 968
+    },
+    {
+      "id": "aGxtzYPGyQEC",
+      "title": "AI for next generation computing: Emerging trends and future directions",
+      "authors": "SS Gill, M Xu, C Ottaviani, P Patros, R Bahsoon, A Shaghaghi, M Golec, ...",
+      "venue": "Internet of Things",
+      "year": 2022,
+      "citations": 958
+    },
+    {
+      "id": "abG-DnoFyZgC",
+      "title": "129: artificial neural networks",
+      "authors": "A Abraham",
+      "venue": "Handbook of measuring system design",
+      "year": 2005,
+      "citations": 910
+    },
+    {
+      "id": "u-x6o8ySG0sC",
+      "title": "Feature deduction and ensemble design of intrusion detection systems",
+      "authors": "S Chebrolu, A Abraham, JP Thomas",
+      "venue": "Computers & security",
+      "year": 2005,
+      "citations": 906
+    },
+    {
+      "id": "wsYPZf_qF0UC",
+      "title": "Transformative effects of ChatGPT on modern education: Emerging Era of AI Chatbots",
+      "authors": "SS Gill, M Xu, P Patros, H Wu, R Kaur, K Kaur, S Fuller, M Singh, P Arora, ...",
+      "venue": "Internet of Things and Cyber-Physical Systems",
+      "year": 2024,
+      "citations": 897
+    },
+    {
+      "id": "FnaCo-ypupUC",
+      "title": "Metaheuristic design of feedforward neural networks: A review of two decades of research",
+      "authors": "VK Ojha, A Abraham, V Snášel",
+      "venue": "Engineering Applications of Artificial Intelligence",
+      "year": 2017,
+      "citations": 837
+    },
+    {
+      "id": "jRIwE-1ttnoC",
+      "title": "Inertia weight strategies in particle swarm optimization",
+      "authors": "JC Bansal, PK Singh, M Saraswat, A Verma, SS Jadon, A Abraham",
+      "venue": "2011 Third world congress on nature and biologically inspired computing",
+      "year": 2011,
+      "citations": 835
+    },
+    {
+      "id": "2osOgNQ5qMEC",
+      "title": "Evolutionary multiobjective optimization",
+      "authors": "A Abraham, L Jain",
+      "venue": "Evolutionary Multiobjective Optimization",
+      "year": 2005,
+      "citations": 833
+    },
+    {
+      "id": "uQrt9rju91QC",
+      "title": "Industry 4.0: A bibliometric analysis and detailed overview",
+      "authors": "PK Muhuri, AK Shukla, A Abraham",
+      "venue": "Engineering applications of artificial intelligence",
+      "year": 2019,
+      "citations": 822
+    },
+    {
+      "id": "fQNAKQ3IYiAC",
+      "title": "Bacterial foraging optimization algorithm: theoretical foundations, analysis, and applications",
+      "authors": "S Das, A Biswas, S Dasgupta, A Abraham",
+      "venue": "Foundations of computational intelligence volume",
+      "year": 2009,
+      "citations": 751
+    },
+    {
+      "id": "hqOjcs7Dif8C",
+      "title": "Particle swarm optimization and differential evolution algorithms: technical analysis, applications and hybridization perspectives",
+      "authors": "S Das, A Abraham, A Konar",
+      "venue": "Advances of computational intelligence in industrial systems",
+      "year": 2008,
+      "citations": 675
+    },
+    {
+      "id": "Y0pCki6q_DkC",
+      "title": "Modeling intrusion detection system using hybrid intelligent systems",
+      "authors": "S Peddabachigari, A Abraham, C Grosan, J Thomas",
+      "venue": "Journal of network and computer applications",
+      "year": 2007,
+      "citations": 662
+    },
+    {
+      "id": "UeHWp8X0CEIC",
+      "title": "A hybrid genetic algorithm and bacterial foraging approach for global optimization",
+      "authors": "DH Kim, A Abraham, JH Cho",
+      "venue": "Information Sciences",
+      "year": 2007,
+      "citations": 632
+    },
+    {
+      "id": "9yKSN-GCB0IC",
+      "title": "Intrusion detection using an ensemble of intelligent paradigms",
+      "authors": "S Mukkamala, AH Sung, A Abraham",
+      "venue": "Journal of network and computer applications",
+      "year": 2005,
+      "citations": 576
+    },
+    {
+      "id": "u5HHmVD_uO8C",
+      "title": "Nature’s heuristics for scheduling jobs on computational grids",
+      "authors": "A Abraham, R Buyya, B Nath",
+      "venue": "The",
+      "year": 2000,
+      "citations": 561
+    },
+    {
+      "id": "Se3iqnhoufwC",
+      "title": "An ensemble of neural networks for weather forecasting",
+      "authors": "I Maqsood, MR Khan, A Abraham",
+      "venue": "Neural Computing & Applications",
+      "year": 2004,
+      "citations": 505
+    },
+    {
+      "id": "48xauSegjOkC",
+      "title": "Understanding plagiarism linguistic patterns, textual features, and detection methods",
+      "authors": "SM Alzahrani, N Salim, A Abraham",
+      "venue": "IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and …",
+      "year": 2011,
+      "citations": 503
+    },
+    {
+      "id": "Iq19BMNozs4C",
+      "title": "A review of class imbalance problem",
+      "authors": "SM Abd Elrahman, A Abraham",
+      "venue": "Journal of Network and Innovative Computing",
+      "year": 2013,
+      "citations": 499
+    }
+  ]
+}

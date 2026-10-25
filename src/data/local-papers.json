@@ -1,0 +1,11 @@
+{
+  "_comment": "PDFs offered for download on the Publications page. Add an entry only when sharing the file is allowed, e.g. an accepted manuscript under the publisher's author-sharing policy, or an open-access (CC BY) article. Put the file in public/papers/. version: published | accepted | submitted. The id is the publication's id in publications.json. Entries are checked before every build.",
+  "_example": {
+    "journal-203": {
+      "file": "journal-203.pdf",
+      "version": "accepted",
+      "permission": "Elsevier sharing policy: accepted manuscript on the author's personal website, with a link to the published article (CC BY-NC-ND).",
+      "checkedBy": "name, date"
+    }
+  }
+}

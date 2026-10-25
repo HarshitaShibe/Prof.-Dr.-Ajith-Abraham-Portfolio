@@ -1,0 +1,6714 @@
+{
+ "generated": "2026-10-19",
+ "sources": {
+  "scholar": "Google Scholar profile i95DGLQAAAAJ (read through SerpAPI)",
+  "openalex": "OpenAlex (openalex.org), for papers not found on the Scholar profile"
+ },
+ "scholarId": "i95DGLQAAAAJ",
+ "orcid": "0000-0002-0169-6738",
+ "counts": {
+  "entries": 1580,
+  "matched": 1116,
+  "scholar": 1028,
+  "openalex": 88,
+  "review": 464
+ },
+ "items": {
+  "book-1": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rv71eUSj1K8C",
+   "cites": 0,
+   "method": "title"
+  },
+  "book-2": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6fs0NoO7GbkC",
+   "cites": 15,
+   "method": "title"
+  },
+  "book-3": {
+   "source": "openalex",
+   "work": "W2904730701",
+   "cites": 19,
+   "method": "doi"
+  },
+  "book-4": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Rj7SuZOA3CsC",
+   "cites": 67,
+   "method": "title"
+  },
+  "book-5": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rlwtDmSc194C",
+   "cites": 0,
+   "method": "title"
+  },
+  "book-6": {
+   "source": "openalex",
+   "work": "W1444631522",
+   "cites": 9,
+   "method": "doi"
+  },
+  "book-7": {
+   "source": "openalex",
+   "work": "W2294886723",
+   "cites": 78,
+   "method": "doi"
+  },
+  "book-8": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:s2G-WRnXBicC",
+   "cites": 25,
+   "method": "title"
+  },
+  "book-9": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:sbeIDTyQOFgC",
+   "cites": 152,
+   "method": "title"
+  },
+  "book-10": {
+   "source": "openalex",
+   "work": "W2912426729",
+   "cites": 94,
+   "method": "title"
+  },
+  "chapter-1": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0KrOiVmbFBYC",
+   "cites": 0,
+   "method": "title"
+  },
+  "chapter-4": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9hYaGTfn7EkC",
+   "cites": 6,
+   "method": "title"
+  },
+  "chapter-5": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:dVnQPkO1q_gC",
+   "cites": 14,
+   "method": "title"
+  },
+  "chapter-6": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:dDz6LBb16w8C",
+   "cites": 6,
+   "method": "title"
+  },
+  "chapter-7": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:WIzaTCs-0dQC",
+   "cites": 2,
+   "method": "title"
+  },
+  "chapter-10": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:YanO1q2l3soC",
+   "cites": 0,
+   "method": "title"
+  },
+  "chapter-11": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:x8G803Bi31IC",
+   "cites": 30,
+   "method": "title"
+  },
+  "chapter-12": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:JaLtl8ASYokC",
+   "cites": 9,
+   "method": "title"
+  },
+  "chapter-13": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:654Jc7Ppz2kC",
+   "cites": 1,
+   "method": "title"
+  },
+  "chapter-14": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:f2PrUAIjnKUC",
+   "cites": 1,
+   "method": "title"
+  },
+  "chapter-15": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:eIKNFFVQvJAC",
+   "cites": 69,
+   "method": "title"
+  },
+  "chapter-17": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_n8fIOMweQoC",
+   "cites": 6,
+   "method": "title"
+  },
+  "chapter-18": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:RJujIP1NYNUC",
+   "cites": 4,
+   "method": "title"
+  },
+  "chapter-19": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:R6EwkKsDylYC",
+   "cites": 4,
+   "method": "title"
+  },
+  "chapter-20": {
+   "source": "openalex",
+   "work": "W4234803546",
+   "cites": 2,
+   "method": "title"
+  },
+  "chapter-23": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:F1b5ZUV5XREC",
+   "cites": 11,
+   "method": "title"
+  },
+  "chapter-26": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LXmCCkuhhTsC",
+   "cites": 11,
+   "method": "title"
+  },
+  "chapter-27": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:NnTm98qLMbgC",
+   "cites": 40,
+   "method": "title"
+  },
+  "chapter-28": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4hFrxpcac9AC",
+   "cites": 16,
+   "method": "title"
+  },
+  "chapter-29": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:pS0ncopqnHgC",
+   "cites": 9,
+   "method": "title"
+  },
+  "chapter-30": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:M0j1y4EgrScC",
+   "cites": 3,
+   "method": "title"
+  },
+  "chapter-31": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CB2v5VPnA5kC",
+   "cites": 13,
+   "method": "title"
+  },
+  "chapter-32": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:jgBuDB5drN8C",
+   "cites": 23,
+   "method": "title"
+  },
+  "chapter-33": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:fQNAKQ3IYiAC",
+   "cites": 751,
+   "method": "title"
+  },
+  "chapter-34": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:nrtMV_XWKgEC",
+   "cites": 106,
+   "method": "title"
+  },
+  "chapter-35": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SGW5VrABaM0C",
+   "cites": 10,
+   "method": "title"
+  },
+  "chapter-36": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vjZqxyZ7hS4C",
+   "cites": 4,
+   "method": "title"
+  },
+  "chapter-37": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HKviVsUxM5wC",
+   "cites": 11,
+   "method": "title"
+  },
+  "chapter-38": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LdasjJ6CEcoC",
+   "cites": 4,
+   "method": "title"
+  },
+  "chapter-39": {
+   "source": "openalex",
+   "work": "W1879534260",
+   "cites": 0,
+   "method": "doi"
+  },
+  "chapter-41": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:wLxue7F8ec0C",
+   "cites": 5,
+   "method": "title"
+  },
+  "chapter-42": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:dBIO0h50nwkC",
+   "cites": 16,
+   "method": "title"
+  },
+  "chapter-43": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uDGL6kOW6j0C",
+   "cites": 10,
+   "method": "title"
+  },
+  "chapter-45": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:pAkWuXOU-OoC",
+   "cites": 10,
+   "method": "title"
+  },
+  "chapter-46": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9pM33mqn1YgC",
+   "cites": 26,
+   "method": "title"
+  },
+  "chapter-48": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:A_xf8jiGkywC",
+   "cites": 0,
+   "method": "title"
+  },
+  "chapter-50": {
+   "source": "openalex",
+   "work": "W1598626270",
+   "cites": 22,
+   "method": "doi"
+  },
+  "chapter-51": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:EkHepimYqZsC",
+   "cites": 25,
+   "method": "title"
+  },
+  "chapter-52": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:b0M2c_1WBrUC",
+   "cites": 64,
+   "method": "title"
+  },
+  "chapter-53": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:F2UWTTQJPOcC",
+   "cites": 3,
+   "method": "title"
+  },
+  "chapter-54": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:TQgYirikUcIC",
+   "cites": 113,
+   "method": "title"
+  },
+  "chapter-55": {
+   "source": "openalex",
+   "work": "W2219463903",
+   "cites": 90,
+   "method": "doi"
+  },
+  "chapter-56": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hqOjcs7Dif8C",
+   "cites": 675,
+   "method": "title"
+  },
+  "chapter-58": {
+   "source": "openalex",
+   "work": "W1487311536",
+   "cites": 12,
+   "method": "doi"
+  },
+  "chapter-59": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:dshw04ExmUIC",
+   "cites": 158,
+   "method": "title"
+  },
+  "chapter-60": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:v_tt_AnqfNMC",
+   "cites": 27,
+   "method": "title"
+  },
+  "chapter-62": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9ZlFYXVOiuMC",
+   "cites": 423,
+   "method": "title"
+  },
+  "chapter-63": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:roLk4NBRz8UC",
+   "cites": 486,
+   "method": "title"
+  },
+  "chapter-64": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:D_YRMw8gybsC",
+   "cites": 60,
+   "method": "title"
+  },
+  "chapter-65": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:YsMSGLbcyi4C",
+   "cites": 362,
+   "method": "title"
+  },
+  "chapter-66": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HE397vMXCloC",
+   "cites": 96,
+   "method": "title"
+  },
+  "chapter-67": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rO6llkc54NcC",
+   "cites": 48,
+   "method": "title"
+  },
+  "chapter-68": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:P5F9QuxV20EC",
+   "cites": 73,
+   "method": "title"
+  },
+  "chapter-69": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:MLfJN-KU85MC",
+   "cites": 15,
+   "method": "title"
+  },
+  "chapter-70": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:IWHjjKOFINEC",
+   "cites": 127,
+   "method": "title"
+  },
+  "chapter-72": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SgM-ki2adj0C",
+   "cites": 92,
+   "method": "title"
+  },
+  "chapter-73": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0KyAp5RtaNEC",
+   "cites": 39,
+   "method": "title"
+  },
+  "chapter-75": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:08ZZubdj9fEC",
+   "cites": 25,
+   "method": "title"
+  },
+  "chapter-76": {
+   "source": "openalex",
+   "work": "W266621144",
+   "cites": 374,
+   "method": "title"
+  },
+  "chapter-78": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:maZDTaKrznsC",
+   "cites": 75,
+   "method": "title"
+  },
+  "chapter-79": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:wyM6WWKXmoIC",
+   "cites": 3,
+   "method": "title"
+  },
+  "chapter-80": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:dhFuZR0502QC",
+   "cites": 497,
+   "method": "title"
+  },
+  "chapter-81": {
+   "source": "openalex",
+   "work": "W1823738847",
+   "cites": 12,
+   "method": "doi"
+  },
+  "chapter-82": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:kAoMiUvgv_QC",
+   "cites": 41,
+   "method": "title"
+  },
+  "chapter-84": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LNjCCq68lIgC",
+   "cites": 48,
+   "method": "title"
+  },
+  "chapter-85": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:gV6rEsy15s0C",
+   "cites": 0,
+   "method": "title"
+  },
+  "chapter-86": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:h-fwNd0rmTkC",
+   "cites": 32,
+   "method": "title"
+  },
+  "chapter-87": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:o9ULDYDKYbIC",
+   "cites": 0,
+   "method": "title"
+  },
+  "chapter-88": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cTLm0pkq19gC",
+   "cites": 31,
+   "method": "title"
+  },
+  "chapter-89": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LzOrNEA7mwcC",
+   "cites": 123,
+   "method": "title"
+  },
+  "conference-1": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:n35PH7pn8T4C",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-2": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:UOgPUojWnykC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-3": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ShM3enpx8HwC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-16": {
+   "source": "openalex",
+   "work": "W4410050478",
+   "cites": 0,
+   "method": "doi"
+  },
+  "conference-17": {
+   "source": "openalex",
+   "work": "W4410050547",
+   "cites": 1,
+   "method": "doi"
+  },
+  "conference-18": {
+   "source": "openalex",
+   "work": "W4410050506",
+   "cites": 0,
+   "method": "doi"
+  },
+  "conference-19": {
+   "source": "openalex",
+   "work": "W4409749958",
+   "cites": 0,
+   "method": "doi"
+  },
+  "conference-20": {
+   "source": "openalex",
+   "work": "W4409750182",
+   "cites": 0,
+   "method": "doi"
+  },
+  "conference-22": {
+   "source": "openalex",
+   "work": "W4409749951",
+   "cites": 4,
+   "method": "doi"
+  },
+  "conference-23": {
+   "source": "openalex",
+   "work": "W4409750214",
+   "cites": 0,
+   "method": "doi"
+  },
+  "conference-24": {
+   "source": "openalex",
+   "work": "W4409749961",
+   "cites": 1,
+   "method": "doi"
+  },
+  "conference-25": {
+   "source": "openalex",
+   "work": "W4409750108",
+   "cites": 1,
+   "method": "doi"
+  },
+  "conference-26": {
+   "source": "openalex",
+   "work": "W4410062067",
+   "cites": 0,
+   "method": "doi"
+  },
+  "conference-27": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:zAdBnjttzAIC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-28": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:GjQuYujAsN4C",
+   "cites": 9,
+   "method": "title"
+  },
+  "conference-32": {
+   "source": "openalex",
+   "work": "W7167826914",
+   "cites": 0,
+   "method": "doi"
+  },
+  "conference-33": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:g4gGp8M7V98C",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-34": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ClN-LZ0IzgkC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-37": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:pQthLKZIaNQC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-38": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:v-tg9Wi2VGwC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-39": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:62L9AWR-SnwC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-40": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0nST21YUXoUC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-41": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ULSBFf147LAC",
+   "cites": 23,
+   "method": "title"
+  },
+  "conference-42": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:MdMr--dQ_pMC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-43": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:NXjrwPNzFTMC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-44": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:n3sXDxCj2GoC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-45": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:h-OLoDDdPfcC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-46": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:TdcqFaaFpGIC",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-51": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6KBr9xvF6m4C",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-52": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ca9ekAySLm4C",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-53": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:pOP5Rf-i_loC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-54": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:bf7w-NijnqMC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-55": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Qo9Q-PfIzZ0C",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-57": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:siTy-4AL0AwC",
+   "cites": 9,
+   "method": "title"
+  },
+  "conference-58": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Ecsxi449JjsC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-59": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:3_iODIlCio4C",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-60": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_9cyEV96HHsC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-61": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5XSfyxoPzb8C",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-62": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:n0_S8QYMK-AC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-63": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:oXpGQvThPk8C",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-64": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Lr5Uwm59ZTwC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-65": {
+   "source": "openalex",
+   "work": "W2789193751",
+   "cites": 0,
+   "method": "doi"
+  },
+  "conference-66": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9sMhslCZ7ZMC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-67": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Xt3t5HrhCpYC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-68": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:seU1ZbiIO-YC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-69": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6tHXJaRVc1QC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-70": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HWVPSj4JXeEC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-71": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6nNZn6i0kyMC",
+   "cites": 20,
+   "method": "title"
+  },
+  "conference-72": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qkvbYSGtNvkC",
+   "cites": 28,
+   "method": "title"
+  },
+  "conference-75": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:WIVIxizkzXoC",
+   "cites": 6,
+   "method": "title"
+  },
+  "conference-76": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:r7mTg6vxT4gC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-77": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:yY8dUDjMDt8C",
+   "cites": 13,
+   "method": "title"
+  },
+  "conference-78": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CLPBug3NTQYC",
+   "cites": 11,
+   "method": "title"
+  },
+  "conference-79": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:YJSMXgW81ikC",
+   "cites": 17,
+   "method": "title"
+  },
+  "conference-80": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_5pobawY6TYC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-81": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:GZelqfngyKEC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-82": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:-R_Z4shfoosC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-84": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:bcT4vkklUMwC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-85": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:jW3pDOCzWhQC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-86": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:prvsfHNhuEoC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-87": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ziW8EwMpto0C",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-88": {
+   "source": "openalex",
+   "work": "W2589814645",
+   "cites": 6,
+   "method": "doi"
+  },
+  "conference-89": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:2BeMVx_SZpEC",
+   "cites": 24,
+   "method": "title"
+  },
+  "conference-90": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:oQQVFBP0nzwC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-95": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:xqRlItQsuMMC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-96": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:8IsQavbT1M8C",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-97": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:I96H1Mlar6gC",
+   "cites": 6,
+   "method": "title"
+  },
+  "conference-98": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PRLG7g5oK-wC",
+   "cites": 9,
+   "method": "title"
+  },
+  "conference-99": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:OWf_fnsf0g4C",
+   "cites": 9,
+   "method": "title"
+  },
+  "conference-100": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:lAj_JhtUatoC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-101": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:z0_F5_TITjQC",
+   "cites": 18,
+   "method": "title"
+  },
+  "conference-102": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:kFM4V80Y5EsC",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-103": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:bXvxhPDrUX0C",
+   "cites": 31,
+   "method": "title"
+  },
+  "conference-104": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_WP0DvM6eX8C",
+   "cites": 36,
+   "method": "title"
+  },
+  "conference-105": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:YnriW4MgZhwC",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-106": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:GWiaReNCd0YC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-107": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hzvVvKpMvx4C",
+   "cites": 112,
+   "method": "title"
+  },
+  "conference-108": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:jg3FfqxSHJQC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-109": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_IwLajd9sWMC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-110": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:7f0ks1Axv_QC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-111": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Nb0HLiwjfsIC",
+   "cites": 11,
+   "method": "title"
+  },
+  "conference-113": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QxtoOqDH1aQC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-114": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:fhZv66dCuXAC",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-116": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ZM__uENUXnMC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-124": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:-Z8x4v2cOtkC",
+   "cites": 25,
+   "method": "title"
+  },
+  "conference-125": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:knQODA9bSJkC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-126": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SZzxPo9m4nkC",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-127": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Qs68GpkTGbMC",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-128": {
+   "source": "openalex",
+   "work": "W2007664037",
+   "cites": 2,
+   "method": "doi"
+  },
+  "conference-129": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6_6x9JMR98MC",
+   "cites": 12,
+   "method": "title"
+  },
+  "conference-130": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cAUKuAERoUMC",
+   "cites": 24,
+   "method": "title"
+  },
+  "conference-131": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ZpfHopiqs50C",
+   "cites": 11,
+   "method": "title"
+  },
+  "conference-132": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:BzPC9jo9PWgC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-133": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vkDViGfkvYEC",
+   "cites": 61,
+   "method": "title"
+  },
+  "conference-134": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:InLRhUNj-rwC",
+   "cites": 56,
+   "method": "title"
+  },
+  "conference-135": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LYDvBi7O6RsC",
+   "cites": 25,
+   "method": "title"
+  },
+  "conference-136": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LiF7i2gyBHwC",
+   "cites": 25,
+   "method": "title"
+  },
+  "conference-137": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6MVT8mER-OMC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-143": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:geVfx-PNG5EC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-144": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ipSP0SfFaZ8C",
+   "cites": 15,
+   "method": "title"
+  },
+  "conference-145": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cUMtEw7vMgQC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-146": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5McdzzY_mmwC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-147": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:fHS53ZCY-AEC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-148": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vPKCt-r_nWsC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-149": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:N5XbD978G_MC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-150": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5uu-MYFt2EcC",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-151": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0dtNEdnCFDAC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-152": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SC9kKMAi-DoC",
+   "cites": 11,
+   "method": "title"
+  },
+  "conference-153": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:AdGrMoNItN4C",
+   "cites": 28,
+   "method": "title"
+  },
+  "conference-155": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:m8MyhXdlT-4C",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-156": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5-bGDoUgDrYC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-157": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cocyvO7vrcwC",
+   "cites": 6,
+   "method": "title"
+  },
+  "conference-158": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:H8haQKU-3ZsC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-159": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:H0nRGT7Dr7IC",
+   "cites": 123,
+   "method": "title"
+  },
+  "conference-161": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:38eRAUXPO10C",
+   "cites": 20,
+   "method": "title"
+  },
+  "conference-167": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:YXPZ0dOdYS4C",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-173": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:q82PccF7nXcC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-174": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:NObE97JSLecC",
+   "cites": 13,
+   "method": "title"
+  },
+  "conference-175": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:bYbwfsIO_fQC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-176": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:R8TPKZP7usQC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-178": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:f-E_jMG6T4AC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-179": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hXZnTIgIr50C",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-180": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ZyBjE3zI-i8C",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-181": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:EmjvLWWcsQIC",
+   "cites": 47,
+   "method": "title"
+  },
+  "conference-182": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:E10ZYwHxBI8C",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-183": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uQyLbZAWguAC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-184": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Lpa4s8qvUTIC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-188": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:wE8AsS3ykUMC",
+   "cites": 9,
+   "method": "title"
+  },
+  "conference-189": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:DrOLxFoABAwC",
+   "cites": 11,
+   "method": "title"
+  },
+  "conference-190": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:S0RksyIsHSIC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-191": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PcT55Ow6fAIC",
+   "cites": 21,
+   "method": "title"
+  },
+  "conference-192": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:KYgttONoxcsC",
+   "cites": 16,
+   "method": "title"
+  },
+  "conference-193": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:2u1QkWOsl3MC",
+   "cites": 59,
+   "method": "title"
+  },
+  "conference-194": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CB6W3GmKGOEC",
+   "cites": 9,
+   "method": "title"
+  },
+  "conference-196": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:OkrdTXRNpVkC",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-197": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qt-6tCTBDsQC",
+   "cites": 21,
+   "method": "title"
+  },
+  "conference-198": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FKYJxdYMdFIC",
+   "cites": 9,
+   "method": "title"
+  },
+  "conference-199": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:xckinRaLORAC",
+   "cites": 13,
+   "method": "title"
+  },
+  "conference-200": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:pYRxIbzCxX0C",
+   "cites": 11,
+   "method": "title"
+  },
+  "conference-201": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:7nQzp1YiEc4C",
+   "cites": 18,
+   "method": "title"
+  },
+  "conference-202": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ef2wPL15CskC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-203": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:beqBT5984LEC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-204": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:-ZoC36zw86wC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-205": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:djft3U1LymYC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-206": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rp474-M6Y4oC",
+   "cites": 12,
+   "method": "title"
+  },
+  "conference-207": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:mS4qin7VKjkC",
+   "cites": 9,
+   "method": "title"
+  },
+  "conference-208": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Amrzk_ktLr0C",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-209": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:V63Ir2N1OTwC",
+   "cites": 40,
+   "method": "title"
+  },
+  "conference-210": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0urtJCGzaFQC",
+   "cites": 6,
+   "method": "title"
+  },
+  "conference-211": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:UY3hNwcQ290C",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-212": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SEKBqlyTJecC",
+   "cites": 27,
+   "method": "title"
+  },
+  "conference-213": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:xm1hsP5ya-EC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-214": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:TY5xIG7f_2sC",
+   "cites": 20,
+   "method": "title"
+  },
+  "conference-215": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vkz5F8TaVKkC",
+   "cites": 24,
+   "method": "title"
+  },
+  "conference-216": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:gI9wzKcniAoC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-217": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:JoHZYnTS1h4C",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-219": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Zbx7W2Xs4QsC",
+   "cites": 15,
+   "method": "title"
+  },
+  "conference-220": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:sfsSB7lKuh0C",
+   "cites": 55,
+   "method": "title"
+  },
+  "conference-221": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:r56sNq9gaawC",
+   "cites": 25,
+   "method": "title"
+  },
+  "conference-222": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:TNEldfgDb5MC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-223": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LlXTz_FrCmAC",
+   "cites": 24,
+   "method": "title"
+  },
+  "conference-226": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:-fu4zM_6qcIC",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-227": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:10A3hb2jUxYC",
+   "cites": 14,
+   "method": "title"
+  },
+  "conference-228": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:MqTxh1vmwXEC",
+   "cites": 27,
+   "method": "title"
+  },
+  "conference-230": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Yw6v6SrDvuUC",
+   "cites": 11,
+   "method": "title"
+  },
+  "conference-231": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ZYsTHYU9jrMC",
+   "cites": 265,
+   "method": "title"
+  },
+  "conference-232": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:gkldIfsazJcC",
+   "cites": 26,
+   "method": "title"
+  },
+  "conference-234": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ynsZFq2pu0MC",
+   "cites": 26,
+   "method": "title"
+  },
+  "conference-235": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5F1dSjz1ScoC",
+   "cites": 34,
+   "method": "title"
+  },
+  "conference-236": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:U3qCfcK-7lkC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-237": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:o-PowTg_VKEC",
+   "cites": 64,
+   "method": "title"
+  },
+  "conference-238": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5bfplxN71z4C",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-239": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:RVqaWcrwK10C",
+   "cites": 34,
+   "method": "title"
+  },
+  "conference-240": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qCaWouos7ogC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-241": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:37Fl7vPTsUIC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-242": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FQ36aI_S1AEC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-243": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:1_W9tMSvGuwC",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-244": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uEM9VtRl8xsC",
+   "cites": 6,
+   "method": "title"
+  },
+  "conference-245": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qsWQJNntlusC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-246": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9shLKfS_uJEC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-247": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SAZ1SQo2q1kC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-248": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9NZAP19TdFAC",
+   "cites": 21,
+   "method": "title"
+  },
+  "conference-249": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:YGhAHpnIhDoC",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-250": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:BFa5h04uPMwC",
+   "cites": 18,
+   "method": "title"
+  },
+  "conference-251": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4oJvMfeQlr8C",
+   "cites": 24,
+   "method": "title"
+  },
+  "conference-252": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:xm0LlTxljI0C",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-253": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:idthP5jqfYAC",
+   "cites": 9,
+   "method": "title"
+  },
+  "conference-254": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QoJ_w57xiyAC",
+   "cites": 29,
+   "method": "title"
+  },
+  "conference-255": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:JP7YXuLIOvAC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-256": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:jRIwE-1ttnoC",
+   "cites": 835,
+   "method": "title"
+  },
+  "conference-257": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vxA22ZmNLkoC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-258": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:GUYAmugLYisC",
+   "cites": 43,
+   "method": "title"
+  },
+  "conference-259": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:JH5k92_tO-AC",
+   "cites": 26,
+   "method": "title"
+  },
+  "conference-260": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:BmWJbWwHJAwC",
+   "cites": 62,
+   "method": "title"
+  },
+  "conference-261": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Gb6Hms-Uo9kC",
+   "cites": 77,
+   "method": "title"
+  },
+  "conference-262": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QsKbpXNoaWkC",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-263": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:U5uP8zs9lfgC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-264": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cdwqcPQS8ssC",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-265": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:j5aT6aphRxQC",
+   "cites": 9,
+   "method": "title"
+  },
+  "conference-266": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Vr2j17o0sqMC",
+   "cites": 12,
+   "method": "title"
+  },
+  "conference-267": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:yCjxvIMm6_oC",
+   "cites": 38,
+   "method": "title"
+  },
+  "conference-268": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:-uzm3Y7AvW0C",
+   "cites": 15,
+   "method": "title"
+  },
+  "conference-269": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:eAlLMO4JVmQC",
+   "cites": 20,
+   "method": "title"
+  },
+  "conference-270": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:UmS_249rOGwC",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-273": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Kqc1aDSOPooC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-274": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:T_ojBgVMvoEC",
+   "cites": 13,
+   "method": "title"
+  },
+  "conference-275": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hKjooKYXoHIC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-276": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CYCckWUYoCcC",
+   "cites": 21,
+   "method": "title"
+  },
+  "conference-277": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:oYLFIHfuHKwC",
+   "cites": 15,
+   "method": "title"
+  },
+  "conference-278": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HJSXoJQnj-YC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-279": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:orDZ08hpP44C",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-280": {
+   "source": "openalex",
+   "work": "W2037095256",
+   "cites": 5,
+   "method": "doi"
+  },
+  "conference-281": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:MIg0yeAD4ggC",
+   "cites": 225,
+   "method": "title"
+  },
+  "conference-282": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:sJsF-0ZLhtgC",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-283": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rTD5ala9j4wC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-284": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ghEM2AJqZyQC",
+   "cites": 15,
+   "method": "title"
+  },
+  "conference-285": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PaBasH6fAo0C",
+   "cites": 33,
+   "method": "title"
+  },
+  "conference-286": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:as0KMg8qHbkC",
+   "cites": 14,
+   "method": "title"
+  },
+  "conference-287": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ufKn5pxu7C0C",
+   "cites": 12,
+   "method": "title"
+  },
+  "conference-288": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:wuD5JclIwkYC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-289": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:kUhpeDhEZMUC",
+   "cites": 12,
+   "method": "title"
+  },
+  "conference-290": {
+   "source": "openalex",
+   "work": "W2096741096",
+   "cites": 22,
+   "method": "doi"
+  },
+  "conference-291": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:w1MjKQ0l0TYC",
+   "cites": 28,
+   "method": "title"
+  },
+  "conference-292": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FsLZdJ3BAzkC",
+   "cites": 23,
+   "method": "title"
+  },
+  "conference-295": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:NtGNdKbuCngC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-297": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rFyVMFCKTwsC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-298": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Azgs6IHzeyYC",
+   "cites": 11,
+   "method": "title"
+  },
+  "conference-299": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Ul_CLA4dPeMC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-300": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HGTzPopzzJcC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-301": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:B2rIPIGFPLEC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-303": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:oTdOBqtIf_kC",
+   "cites": 6,
+   "method": "title"
+  },
+  "conference-304": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:wkm4DBaukwsC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-305": {
+   "source": "openalex",
+   "work": "W2115128374",
+   "cites": 7,
+   "method": "doi"
+  },
+  "conference-306": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:gKiMpY-AVTkC",
+   "cites": 48,
+   "method": "title"
+  },
+  "conference-307": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HbR8gkJAVGIC",
+   "cites": 97,
+   "method": "title"
+  },
+  "conference-308": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:3MwzVuqRcA0C",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-309": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Aul-kAQHnToC",
+   "cites": 163,
+   "method": "title"
+  },
+  "conference-310": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:7BrZ7Jt4UNcC",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-312": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:1taIhTC69MYC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-313": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CMvovTBb2okC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-314": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CCeGMaHljPEC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-315": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cRMvf6lLvU8C",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-316": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:VnuxuLaQPLMC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-317": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:WwIwg2wKZ0QC",
+   "cites": 12,
+   "method": "title"
+  },
+  "conference-318": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hsZV8lGYWTMC",
+   "cites": 32,
+   "method": "title"
+  },
+  "conference-319": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vD2iS2Kej30C",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-320": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:3vbIHxFL9FgC",
+   "cites": 14,
+   "method": "title"
+  },
+  "conference-321": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tKAzc9rXhukC",
+   "cites": 31,
+   "method": "title"
+  },
+  "conference-323": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rbm3iO8VlycC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-324": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SjuI4pbJlxcC",
+   "cites": 104,
+   "method": "title"
+  },
+  "conference-326": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:natZJ_-F0IUC",
+   "cites": 24,
+   "method": "title"
+  },
+  "conference-327": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:bz8QjSJIRt4C",
+   "cites": 43,
+   "method": "title"
+  },
+  "conference-329": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:8RAEygVn5_EC",
+   "cites": 25,
+   "method": "title"
+  },
+  "conference-330": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:WC23djZS0W4C",
+   "cites": 9,
+   "method": "title"
+  },
+  "conference-331": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:oi2SiIJ9l4AC",
+   "cites": 35,
+   "method": "title"
+  },
+  "conference-332": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:edDO8Oi4QzsC",
+   "cites": 13,
+   "method": "title"
+  },
+  "conference-333": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:UuEBAcK4md4C",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-334": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:kzcSZmkxUKAC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-335": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:2v_ZtQDX9iAC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-336": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Br1UauaknNIC",
+   "cites": 24,
+   "method": "title"
+  },
+  "conference-337": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:IaI1MmNe2tcC",
+   "cites": 21,
+   "method": "title"
+  },
+  "conference-338": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:lgwcVrK6X84C",
+   "cites": 31,
+   "method": "title"
+  },
+  "conference-339": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:AXkvAH5U_nMC",
+   "cites": 23,
+   "method": "title"
+  },
+  "conference-340": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:owLR8QvbtFgC",
+   "cites": 53,
+   "method": "title"
+  },
+  "conference-341": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:MAUkC_7iAq8C",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-342": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:1DsIQWDZLl8C",
+   "cites": 12,
+   "method": "title"
+  },
+  "conference-344": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4fGpz3EwCPoC",
+   "cites": 25,
+   "method": "title"
+  },
+  "conference-345": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:DkZNVXde3BIC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-346": {
+   "source": "openalex",
+   "work": "W1547074987",
+   "cites": 8,
+   "method": "doi"
+  },
+  "conference-347": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FiDNX6EVdGUC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-348": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:-7ulzOJl1JYC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-349": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rqnDXT1GswoC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-350": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:60iIaj97TE0C",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-351": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:BAanoTsO0WEC",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-352": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PkcyUWeTMh0C",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-353": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:mlAyqtXpCwEC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-354": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0izLItjtcgwC",
+   "cites": 37,
+   "method": "title"
+  },
+  "conference-355": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:q1zXlPLtbUIC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-356": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QyXJ3EUuO1IC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-357": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5VjbC5aozO0C",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-358": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:epqYDVWIO7EC",
+   "cites": 28,
+   "method": "title"
+  },
+  "conference-359": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:u0Mu_IsstPMC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-360": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LO7wyVUgiFcC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-361": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PoWvk5oyLR8C",
+   "cites": 31,
+   "method": "title"
+  },
+  "conference-362": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cBPnxVikjH8C",
+   "cites": 19,
+   "method": "title"
+  },
+  "conference-363": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ALROH1vI_8AC",
+   "cites": 28,
+   "method": "title"
+  },
+  "conference-365": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:3s1wT3WcHBgC",
+   "cites": 153,
+   "method": "title"
+  },
+  "conference-367": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:eO3_k5sD8BwC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-368": {
+   "source": "openalex",
+   "work": "W2151999303",
+   "cites": 21,
+   "method": "doi"
+  },
+  "conference-369": {
+   "source": "openalex",
+   "work": "W2157821702",
+   "cites": 1,
+   "method": "doi"
+  },
+  "conference-375": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:-mN3Mh-tlDkC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-376": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:69ZgNCALVd0C",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-377": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:65Yg0jNCQDAC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-381": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ipzZ9siozwsC",
+   "cites": 110,
+   "method": "title"
+  },
+  "conference-382": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:mel-f30kHHgC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-384": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cB__R-XWw9UC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-385": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QaSi33NTfwYC",
+   "cites": 11,
+   "method": "title"
+  },
+  "conference-386": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:eJXPG6dFmWUC",
+   "cites": 64,
+   "method": "title"
+  },
+  "conference-387": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Dip1O2bNi0gC",
+   "cites": 59,
+   "method": "title"
+  },
+  "conference-389": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tzM49s52ZIMC",
+   "cites": 63,
+   "method": "title"
+  },
+  "conference-390": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:zGdJYJv2LkUC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-392": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:AvfA0Oy_GE0C",
+   "cites": 73,
+   "method": "title"
+  },
+  "conference-393": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rHJHxKgnXwkC",
+   "cites": 6,
+   "method": "title"
+  },
+  "conference-394": {
+   "source": "openalex",
+   "work": "W2106076189",
+   "cites": 11,
+   "method": "doi"
+  },
+  "conference-395": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:NZNkWSpQBv0C",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-396": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LgRImbQfgY4C",
+   "cites": 11,
+   "method": "title"
+  },
+  "conference-397": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QUX0mv85b1cC",
+   "cites": 9,
+   "method": "title"
+  },
+  "conference-398": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:YPNY0knpFBYC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-399": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:mUJArPsKIAAC",
+   "cites": 13,
+   "method": "title"
+  },
+  "conference-401": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HhcuHIWmDEUC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-402": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:M7yex6snE4oC",
+   "cites": 40,
+   "method": "title"
+  },
+  "conference-403": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:35r97b3x0nAC",
+   "cites": 17,
+   "method": "title"
+  },
+  "conference-404": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:l7t_Zn2s7bgC",
+   "cites": 87,
+   "method": "title"
+  },
+  "conference-405": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:XUvXOeBm_78C",
+   "cites": 51,
+   "method": "title"
+  },
+  "conference-409": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:z_wVstp3MssC",
+   "cites": 67,
+   "method": "title"
+  },
+  "conference-410": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PELIpwtuRlgC",
+   "cites": 47,
+   "method": "title"
+  },
+  "conference-411": {
+   "source": "openalex",
+   "work": "W2131133663",
+   "cites": 1,
+   "method": "doi"
+  },
+  "conference-412": {
+   "source": "openalex",
+   "work": "W2096900047",
+   "cites": 22,
+   "method": "doi"
+  },
+  "conference-413": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tkaPQYYpVKoC",
+   "cites": 30,
+   "method": "title"
+  },
+  "conference-417": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Ade32sEp0pkC",
+   "cites": 17,
+   "method": "title"
+  },
+  "conference-418": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SpbeaW3--B0C",
+   "cites": 21,
+   "method": "title"
+  },
+  "conference-419": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tOudhMTPpwUC",
+   "cites": 80,
+   "method": "title"
+  },
+  "conference-420": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tH6gc1N1XXoC",
+   "cites": 17,
+   "method": "title"
+  },
+  "conference-421": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:URolC5Kub84C",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-422": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:gsN89kCJA0AC",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-423": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:geHnlv5EZngC",
+   "cites": 53,
+   "method": "title"
+  },
+  "conference-424": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:VRfTbSk87rEC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-425": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vDZJ-YLwNdEC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-426": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_xSYboBqXhAC",
+   "cites": 54,
+   "method": "title"
+  },
+  "conference-427": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tYavs44e6CUC",
+   "cites": 15,
+   "method": "title"
+  },
+  "conference-428": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5MTHONV0fEkC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-429": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:P0sSKRC7TM0C",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-430": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:bnK-pcrLprsC",
+   "cites": 54,
+   "method": "title"
+  },
+  "conference-431": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HtS1dXgVpQUC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-433": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tVg3zZbtnc0C",
+   "cites": 6,
+   "method": "title"
+  },
+  "conference-434": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:k_7cPK9k7w8C",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-435": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:1yQoGdGgb4wC",
+   "cites": 56,
+   "method": "title"
+  },
+  "conference-436": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:nRpfm8aw39MC",
+   "cites": 11,
+   "method": "title"
+  },
+  "conference-437": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:WJVC3Jt7v1AC",
+   "cites": 15,
+   "method": "title"
+  },
+  "conference-438": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:u9iWguZQMMsC",
+   "cites": 77,
+   "method": "title"
+  },
+  "conference-439": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:3fE2CSJIrl8C",
+   "cites": 287,
+   "method": "title"
+  },
+  "conference-441": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cFHS6HbyZ2cC",
+   "cites": 52,
+   "method": "title"
+  },
+  "conference-442": {
+   "source": "openalex",
+   "work": "W2155233997",
+   "cites": 12,
+   "method": "title"
+  },
+  "conference-443": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:buQ7SEKw-1sC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-444": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:KxtntwgDAa4C",
+   "cites": 90,
+   "method": "title"
+  },
+  "conference-447": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:a9-T7VOCCH8C",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-448": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vbGhcppDl1QC",
+   "cites": 45,
+   "method": "title"
+  },
+  "conference-449": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:xtoqd-5pKcoC",
+   "cites": 18,
+   "method": "title"
+  },
+  "conference-450": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:H4IpxOyCX80C",
+   "cites": 45,
+   "method": "title"
+  },
+  "conference-451": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:naSTrk-c4S8C",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-452": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:MGPUR4WVBMEC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-453": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:DJbcl8HfkQkC",
+   "cites": 47,
+   "method": "title"
+  },
+  "conference-454": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_B80troHkn4C",
+   "cites": 56,
+   "method": "title"
+  },
+  "conference-455": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:TeJ9juy8vcMC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-456": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:mNrWkgRL2YcC",
+   "cites": 17,
+   "method": "title"
+  },
+  "conference-459": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:OU6Ihb5iCvQC",
+   "cites": 56,
+   "method": "title"
+  },
+  "conference-461": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LGlY6t8CeOMC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-462": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Z5m8FVwuT1cC",
+   "cites": 31,
+   "method": "title"
+  },
+  "conference-463": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ODE9OILHJdcC",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-464": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:AXPGKjj_ei8C",
+   "cites": 28,
+   "method": "title"
+  },
+  "conference-465": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Ak0FvsSvgGUC",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-466": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:R3hNpaxXUhUC",
+   "cites": 87,
+   "method": "title"
+  },
+  "conference-467": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hCrLmN-GePgC",
+   "cites": 13,
+   "method": "title"
+  },
+  "conference-468": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:DUooU5lO8OsC",
+   "cites": 8,
+   "method": "title"
+  },
+  "conference-469": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ZuybSZzF8UAC",
+   "cites": 57,
+   "method": "title"
+  },
+  "conference-470": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:t7zJ5fGR-2UC",
+   "cites": 24,
+   "method": "title"
+  },
+  "conference-472": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FAceZFleit8C",
+   "cites": 13,
+   "method": "title"
+  },
+  "conference-474": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:TIZ-Mc8IlK0C",
+   "cites": 16,
+   "method": "title"
+  },
+  "conference-475": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:oqD4_j7ulsYC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-476": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:sSrBHYA8nusC",
+   "cites": 87,
+   "method": "title"
+  },
+  "conference-477": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:oNZyr7d5Mn4C",
+   "cites": 21,
+   "method": "title"
+  },
+  "conference-480": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:AubyX3KqGToC",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-483": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:EPG8bYD4jVwC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-484": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tuHXwOkdijsC",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-485": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:VOx2b1Wkg3QC",
+   "cites": 34,
+   "method": "title"
+  },
+  "conference-487": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:dfsIfKJdRG4C",
+   "cites": 40,
+   "method": "title"
+  },
+  "conference-489": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:2KloaMYe4IUC",
+   "cites": 19,
+   "method": "title"
+  },
+  "conference-491": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Tiz5es2fbqcC",
+   "cites": 34,
+   "method": "title"
+  },
+  "conference-493": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:F9fV5C73w3QC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-494": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9Nmd_mFXekcC",
+   "cites": 40,
+   "method": "title"
+  },
+  "conference-495": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:yMeIxYmEMEAC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-496": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vDijr-p_gm4C",
+   "cites": 29,
+   "method": "title"
+  },
+  "conference-497": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ZfRJV9d4-WMC",
+   "cites": 12,
+   "method": "title"
+  },
+  "conference-498": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:-95Q15plzcUC",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-499": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_Ybze24A_UAC",
+   "cites": 18,
+   "method": "title"
+  },
+  "conference-500": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:C-Rn0OCouf8C",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-502": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uJ-U7cs_P_0C",
+   "cites": 23,
+   "method": "title"
+  },
+  "conference-503": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Fu2w8maKXqMC",
+   "cites": 20,
+   "method": "title"
+  },
+  "conference-505": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:olpn-zPbct0C",
+   "cites": 30,
+   "method": "title"
+  },
+  "conference-506": {
+   "source": "openalex",
+   "work": "W2120924570",
+   "cites": 45,
+   "method": "doi"
+  },
+  "conference-507": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:B3FOqHPlNUQC",
+   "cites": 62,
+   "method": "title"
+  },
+  "conference-508": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:8xutWZnSdmoC",
+   "cites": 3,
+   "method": "title"
+  },
+  "conference-510": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:nb7KW1ujOQ8C",
+   "cites": 20,
+   "method": "title"
+  },
+  "conference-511": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_Qo2XoVZTnwC",
+   "cites": 89,
+   "method": "title"
+  },
+  "conference-512": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hQUaER0FWQ4C",
+   "cites": 2,
+   "method": "title"
+  },
+  "conference-515": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:EUQCXRtRnyEC",
+   "cites": 56,
+   "method": "title"
+  },
+  "conference-517": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:fEOibwPWpKIC",
+   "cites": 46,
+   "method": "title"
+  },
+  "conference-518": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tS2w5q8j5-wC",
+   "cites": 48,
+   "method": "title"
+  },
+  "conference-519": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:jFemdcug13IC",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-520": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Y5dfb0dijaUC",
+   "cites": 36,
+   "method": "title"
+  },
+  "conference-521": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cWzG1nlazyYC",
+   "cites": 13,
+   "method": "title"
+  },
+  "conference-522": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ce2CqMG-AY4C",
+   "cites": 1,
+   "method": "title"
+  },
+  "conference-523": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CHSYGLWDkRkC",
+   "cites": 54,
+   "method": "title"
+  },
+  "conference-525": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ZeXyd9-uunAC",
+   "cites": 50,
+   "method": "title"
+  },
+  "conference-528": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:V3AGJWp-ZtQC",
+   "cites": 50,
+   "method": "title"
+  },
+  "conference-529": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:mVmsd5A6BfQC",
+   "cites": 135,
+   "method": "title"
+  },
+  "conference-530": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vq7B84E5p90C",
+   "cites": 0,
+   "method": "title"
+  },
+  "conference-531": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:NJ774b8OgUMC",
+   "cites": 22,
+   "method": "title"
+  },
+  "conference-532": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:MXK_kJrjxJIC",
+   "cites": 243,
+   "method": "title"
+  },
+  "conference-534": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HDshCWvjkbEC",
+   "cites": 165,
+   "method": "title"
+  },
+  "conference-535": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:evX43VCCuoAC",
+   "cites": 218,
+   "method": "title"
+  },
+  "conference-536": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:GFxP56DSvIMC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-541": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_5tno0g5mFcC",
+   "cites": 42,
+   "method": "title"
+  },
+  "conference-542": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:M3ejUd6NZC8C",
+   "cites": 153,
+   "method": "title"
+  },
+  "conference-543": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:VLnqNzywnoUC",
+   "cites": 16,
+   "method": "title"
+  },
+  "conference-544": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LhH-TYMQEocC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-550": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9vf0nzSNQJEC",
+   "cites": 11,
+   "method": "title"
+  },
+  "conference-551": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:3htObqc8RwsC",
+   "cites": 10,
+   "method": "title"
+  },
+  "conference-553": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:8AbLer7MMksC",
+   "cites": 31,
+   "method": "title"
+  },
+  "conference-554": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:VaXvl8Fpj5cC",
+   "cites": 12,
+   "method": "title"
+  },
+  "conference-555": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ye4kPcJQO24C",
+   "cites": 18,
+   "method": "title"
+  },
+  "conference-556": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Wp0gIr-vW9MC",
+   "cites": 63,
+   "method": "title"
+  },
+  "conference-557": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uWiczbcajpAC",
+   "cites": 26,
+   "method": "title"
+  },
+  "conference-558": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:wMgC3FpKEyYC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-559": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:YFjsv_pBGBYC",
+   "cites": 47,
+   "method": "title"
+  },
+  "conference-560": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:r0BpntZqJG4C",
+   "cites": 48,
+   "method": "title"
+  },
+  "conference-561": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:NaGl4SEjCO4C",
+   "cites": 63,
+   "method": "title"
+  },
+  "conference-563": {
+   "source": "openalex",
+   "work": "W1601974289",
+   "cites": 0,
+   "method": "doi"
+  },
+  "conference-565": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:xtRiw3GOFMkC",
+   "cites": 47,
+   "method": "title"
+  },
+  "conference-566": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uWQEDVKXjbEC",
+   "cites": 11,
+   "method": "title"
+  },
+  "conference-567": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:lSLTfruPkqcC",
+   "cites": 53,
+   "method": "title"
+  },
+  "conference-568": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rmuvC79q63oC",
+   "cites": 22,
+   "method": "title"
+  },
+  "conference-573": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LPtt_HFRSbwC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-575": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:UxriW0iASnsC",
+   "cites": 21,
+   "method": "title"
+  },
+  "conference-576": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ns9cj8rnVeAC",
+   "cites": 48,
+   "method": "title"
+  },
+  "conference-577": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_FxGoFyzp5QC",
+   "cites": 249,
+   "method": "title"
+  },
+  "conference-578": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:u5HHmVD_uO8C",
+   "cites": 561,
+   "method": "title"
+  },
+  "conference-580": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:M05iB0D1s5AC",
+   "cites": 30,
+   "method": "title"
+  },
+  "conference-581": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5qfkUJPXOUwC",
+   "cites": 7,
+   "method": "title"
+  },
+  "conference-582": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:WqliGbK-hY8C",
+   "cites": 13,
+   "method": "title"
+  },
+  "conference-583": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:gVv57TyPmFsC",
+   "cites": 4,
+   "method": "title"
+  },
+  "conference-584": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:70eg2SAEIzsC",
+   "cites": 39,
+   "method": "title"
+  },
+  "conference-585": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:L8Ckcad2t8MC",
+   "cites": 48,
+   "method": "title"
+  },
+  "conference-587": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5icHVeHT4IsC",
+   "cites": 5,
+   "method": "title"
+  },
+  "conference-588": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:kzcrU_BdoSEC",
+   "cites": 9,
+   "method": "title"
+  },
+  "conference-589": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:mvPsJ3kp5DgC",
+   "cites": 17,
+   "method": "title"
+  },
+  "conference-590": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:gDB6RRZydyMC",
+   "cites": 1,
+   "method": "title"
+  },
+  "edited-book-1": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:GufwhD5tNfUC",
+   "cites": 2,
+   "method": "title"
+  },
+  "edited-book-2": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ocFeo90gyj0C",
+   "cites": 3,
+   "method": "title"
+  },
+  "edited-book-6": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:94js0qVkt3AC",
+   "cites": 10,
+   "method": "title"
+  },
+  "edited-book-7": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:WrvHtiK_1SgC",
+   "cites": 12,
+   "method": "title"
+  },
+  "edited-book-8": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Ib8FQH8mdS0C",
+   "cites": 8,
+   "method": "title"
+  },
+  "edited-book-9": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hNFvT5Kh_mEC",
+   "cites": 107,
+   "method": "title"
+  },
+  "edited-book-10": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FV77Gu53xKkC",
+   "cites": 16,
+   "method": "title"
+  },
+  "edited-book-11": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:wRp7bqO99tsC",
+   "cites": 6,
+   "method": "title"
+  },
+  "edited-book-12": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4DUywrCQPfoC",
+   "cites": 6,
+   "method": "title"
+  },
+  "edited-book-13": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:25zTQ8aaf3EC",
+   "cites": 7,
+   "method": "title"
+  },
+  "edited-book-14": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:8Wa-k36u3iwC",
+   "cites": 10,
+   "method": "title"
+  },
+  "edited-book-15": {
+   "source": "openalex",
+   "work": "W4256526041",
+   "cites": 10,
+   "method": "doi"
+  },
+  "edited-book-17": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:dONrx3-W1TkC",
+   "cites": 24,
+   "method": "title"
+  },
+  "edited-book-19": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cybebCj9Au0C",
+   "cites": 30,
+   "method": "title"
+  },
+  "edited-book-21": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:YifW7xAlWS4C",
+   "cites": 178,
+   "method": "title"
+  },
+  "edited-book-22": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:n84Jz4DGfQYC",
+   "cites": 22,
+   "method": "title"
+  },
+  "edited-book-23": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:f1xuXVtw34IC",
+   "cites": 8,
+   "method": "title"
+  },
+  "edited-book-24": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Tt9yUAN0l-kC",
+   "cites": 12,
+   "method": "title"
+  },
+  "edited-book-26": {
+   "source": "openalex",
+   "work": "W2738267797",
+   "cites": 1,
+   "method": "title"
+  },
+  "edited-book-27": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6IBXqrN-DEwC",
+   "cites": 31,
+   "method": "title"
+  },
+  "edited-book-29": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:OtrppQHxQ5wC",
+   "cites": 18,
+   "method": "title"
+  },
+  "edited-book-30": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QYmifXMdJWgC",
+   "cites": 114,
+   "method": "title"
+  },
+  "edited-book-33": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qe6vwMD2xtsC",
+   "cites": 4,
+   "method": "title"
+  },
+  "edited-book-35": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:OVe_t5h5bhEC",
+   "cites": 14,
+   "method": "title"
+  },
+  "edited-book-36": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ehoypfNsBj8C",
+   "cites": 27,
+   "method": "title"
+  },
+  "edited-book-37": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:sgsej9ZJWHMC",
+   "cites": 12,
+   "method": "title"
+  },
+  "edited-book-41": {
+   "source": "openalex",
+   "work": "W110261437",
+   "cites": 3,
+   "method": "title"
+  },
+  "edited-book-42": {
+   "source": "openalex",
+   "work": "W165986764",
+   "cites": 3,
+   "method": "title"
+  },
+  "edited-book-43": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9nEbuwLZtFEC",
+   "cites": 3,
+   "method": "title"
+  },
+  "edited-book-44": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ubry08Y2EpUC",
+   "cites": 14,
+   "method": "title"
+  },
+  "edited-book-45": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:foquWX3nUaYC",
+   "cites": 55,
+   "method": "title"
+  },
+  "edited-book-46": {
+   "source": "openalex",
+   "work": "W608935459",
+   "cites": 111,
+   "method": "title"
+  },
+  "edited-book-47": {
+   "source": "openalex",
+   "work": "W1501359538",
+   "cites": 107,
+   "method": "title"
+  },
+  "edited-book-48": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:OmZH4w0uHW8C",
+   "cites": 3,
+   "method": "title"
+  },
+  "edited-book-49": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:t6usbXjVLHcC",
+   "cites": 55,
+   "method": "title"
+  },
+  "edited-book-51": {
+   "source": "openalex",
+   "work": "W1581613712",
+   "cites": 18,
+   "method": "title"
+  },
+  "edited-book-52": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:2VqYfGB8ITEC",
+   "cites": 24,
+   "method": "title"
+  },
+  "edited-book-53": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:e_rmSamDkqQC",
+   "cites": 17,
+   "method": "title"
+  },
+  "edited-book-54": {
+   "source": "openalex",
+   "work": "W4210944918",
+   "cites": 155,
+   "method": "title"
+  },
+  "edited-book-55": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:1sJd4Hv_s6UC",
+   "cites": 43,
+   "method": "title"
+  },
+  "edited-book-56": {
+   "source": "openalex",
+   "work": "W2486785136",
+   "cites": 21,
+   "method": "title"
+  },
+  "edited-book-57": {
+   "source": "openalex",
+   "work": "W1571947545",
+   "cites": 426,
+   "method": "title"
+  },
+  "edited-book-58": {
+   "source": "openalex",
+   "work": "W2736318042",
+   "cites": 2,
+   "method": "title"
+  },
+  "edited-book-59": {
+   "source": "openalex",
+   "work": "W2748082500",
+   "cites": 26,
+   "method": "title"
+  },
+  "edited-book-60": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:KbBQZpvPDL4C",
+   "cites": 9,
+   "method": "title"
+  },
+  "journal-1": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:lLDkS9sB7dAC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-2": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rbgNTKsR3fAC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-3": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PV2Y7XyTJDgC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-4": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:sFh2DmJudxsC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-5": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:gyFZhc6YOh8C",
+   "cites": 1,
+   "method": "title"
+  },
+  "journal-6": {
+   "source": "openalex",
+   "work": "W7159644797",
+   "cites": 0,
+   "method": "doi"
+  },
+  "journal-7": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:lVu93_cgYy4C",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-8": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SuREjsGmJT0C",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-9": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:8k3R5ScbChQC",
+   "cites": 8,
+   "method": "title"
+  },
+  "journal-10": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cwugQcE3IssC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-11": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:2lgwpy1Hu6IC",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-13": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tltQ_bo2KloC",
+   "cites": 3,
+   "method": "title"
+  },
+  "journal-14": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FecvS_q01PcC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-15": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qStMeLs7OP8C",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-16": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ChsjQIg5EFEC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-17": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:My6PM0vftjwC",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-18": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PflRiyi98mgC",
+   "cites": 9,
+   "method": "title"
+  },
+  "journal-19": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PQm_lTwdG-sC",
+   "cites": 1,
+   "method": "title"
+  },
+  "journal-20": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:iC1Mcd5kvfwC",
+   "cites": 13,
+   "method": "title"
+  },
+  "journal-21": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:RLNBYFRFzK0C",
+   "cites": 19,
+   "method": "title"
+  },
+  "journal-22": {
+   "source": "openalex",
+   "work": "W4412427924",
+   "cites": 1,
+   "method": "doi"
+  },
+  "journal-23": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:RaRNlNDkcy8C",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-24": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Dnd9Dw9jpwAC",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-25": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vG0dlTq9_mQC",
+   "cites": 15,
+   "method": "title"
+  },
+  "journal-26": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:M9BB6krhjY8C",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-27": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:L1d--jQnBlAC",
+   "cites": 7,
+   "method": "title"
+  },
+  "journal-28": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:oKUQpTv76aEC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-29": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:K0fIQ6b0NmsC",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-30": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vK1Ni-xiviEC",
+   "cites": 31,
+   "method": "title"
+  },
+  "journal-31": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QC_fukgq8lwC",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-32": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:k_8v9Q84L5sC",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-33": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6daZS1cS2l8C",
+   "cites": 49,
+   "method": "title"
+  },
+  "journal-34": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CQrscp367IIC",
+   "cites": 3,
+   "method": "title"
+  },
+  "journal-35": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:unKmnnpx3RcC",
+   "cites": 13,
+   "method": "title"
+  },
+  "journal-36": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5n9gSBKMxCsC",
+   "cites": 15,
+   "method": "title"
+  },
+  "journal-37": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:x3zuONe3eqIC",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-38": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:EvHYAMKeY9cC",
+   "cites": 36,
+   "method": "title"
+  },
+  "journal-39": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uENYxwZKF5gC",
+   "cites": 10,
+   "method": "title"
+  },
+  "journal-40": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:EIjDW_jUKIQC",
+   "cites": 8,
+   "method": "title"
+  },
+  "journal-41": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:q736b1r0g6UC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-42": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CRQ797xmLJIC",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-43": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6XuKD3u7GOoC",
+   "cites": 36,
+   "method": "title"
+  },
+  "journal-44": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ihjKul7GT4YC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-45": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:EpUiTTZsFn8C",
+   "cites": 9,
+   "method": "title"
+  },
+  "journal-46": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:B-V0BYNYc0AC",
+   "cites": 1,
+   "method": "title"
+  },
+  "journal-47": {
+   "source": "openalex",
+   "work": "W4400734375",
+   "cites": 33,
+   "method": "doi"
+  },
+  "journal-48": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6biGW3np0psC",
+   "cites": 10,
+   "method": "title"
+  },
+  "journal-49": {
+   "source": "openalex",
+   "work": "W4402128718",
+   "cites": 273,
+   "method": "doi"
+  },
+  "journal-50": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:luR84W4EXegC",
+   "cites": 1,
+   "method": "title"
+  },
+  "journal-51": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:scjTk0LcRdsC",
+   "cites": 13,
+   "method": "title"
+  },
+  "journal-52": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:xEWuX1mE_FUC",
+   "cites": 55,
+   "method": "title"
+  },
+  "journal-53": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:7iKzEIWBYlQC",
+   "cites": 30,
+   "method": "title"
+  },
+  "journal-54": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QDEWnZBrHwAC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-55": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:VJOaslTFpLQC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-56": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:btULBOGQ_gcC",
+   "cites": 9,
+   "method": "title"
+  },
+  "journal-57": {
+   "source": "openalex",
+   "work": "W4395697084",
+   "cites": 13,
+   "method": "doi"
+  },
+  "journal-58": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6LI0FKmQuhEC",
+   "cites": 36,
+   "method": "title"
+  },
+  "journal-59": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:sr8OKcTvXucC",
+   "cites": 16,
+   "method": "title"
+  },
+  "journal-60": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:MU1jWE1llqsC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-61": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:jh7fJAhS9AIC",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-62": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:X8aq8RHJ9bUC",
+   "cites": 15,
+   "method": "title"
+  },
+  "journal-63": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:WWyA8FEaYkEC",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-64": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6gD0efnhv6MC",
+   "cites": 12,
+   "method": "title"
+  },
+  "journal-65": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:eIWZJKaDF6kC",
+   "cites": 341,
+   "method": "title"
+  },
+  "journal-66": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4b-LE5UluQcC",
+   "cites": 184,
+   "method": "title"
+  },
+  "journal-67": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4ZjPyBmb-CUC",
+   "cites": 76,
+   "method": "title"
+  },
+  "journal-68": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4I90hQsHr_gC",
+   "cites": 77,
+   "method": "title"
+  },
+  "journal-69": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:zeZllD8TmcoC",
+   "cites": 24,
+   "method": "title"
+  },
+  "journal-70": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:teyi7TG2FwAC",
+   "cites": 7,
+   "method": "title"
+  },
+  "journal-71": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:1UYbAEPjJNAC",
+   "cites": 33,
+   "method": "title"
+  },
+  "journal-72": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cFcI8uaobsAC",
+   "cites": 18,
+   "method": "title"
+  },
+  "journal-73": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:TKVID9p7UpsC",
+   "cites": 55,
+   "method": "title"
+  },
+  "journal-74": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0wD49__q8KEC",
+   "cites": 27,
+   "method": "title"
+  },
+  "journal-75": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:kVZqXsXrJl0C",
+   "cites": 14,
+   "method": "title"
+  },
+  "journal-76": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:GK0_TXnxOL4C",
+   "cites": 10,
+   "method": "title"
+  },
+  "journal-77": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6FFC2c45_UYC",
+   "cites": 23,
+   "method": "title"
+  },
+  "journal-78": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Jnwaj-qfA0gC",
+   "cites": 27,
+   "method": "title"
+  },
+  "journal-79": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:U8aB7V8aZVQC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-80": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:EbDKHhGulSgC",
+   "cites": 1,
+   "method": "title"
+  },
+  "journal-81": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Z4TH09HQ3SoC",
+   "cites": 1,
+   "method": "title"
+  },
+  "journal-82": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9aOYe38lPcwC",
+   "cites": 47,
+   "method": "title"
+  },
+  "journal-83": {
+   "source": "openalex",
+   "work": "W4381252082",
+   "cites": 488,
+   "method": "doi"
+  },
+  "journal-84": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uPwIINvFgpoC",
+   "cites": 70,
+   "method": "title"
+  },
+  "journal-85": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:27qsyVibG6YC",
+   "cites": 54,
+   "method": "title"
+  },
+  "journal-86": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:KvGcghnThk8C",
+   "cites": 49,
+   "method": "title"
+  },
+  "journal-87": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:fkjBimb5U_kC",
+   "cites": 14,
+   "method": "title"
+  },
+  "journal-88": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9xDRhSErrBIC",
+   "cites": 24,
+   "method": "title"
+  },
+  "journal-89": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:2PBQaVm3t-0C",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-90": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:UUAsIpEgjrcC",
+   "cites": 79,
+   "method": "title"
+  },
+  "journal-91": {
+   "source": "openalex",
+   "work": "W4322626662",
+   "cites": 26,
+   "method": "doi"
+  },
+  "journal-92": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_r6PDwDh8pAC",
+   "cites": 388,
+   "method": "title"
+  },
+  "journal-93": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qyimiW2FXDQC",
+   "cites": 35,
+   "method": "title"
+  },
+  "journal-94": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:12oLulcdP1kC",
+   "cites": 16,
+   "method": "title"
+  },
+  "journal-95": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SsmmYIE5d0AC",
+   "cites": 58,
+   "method": "title"
+  },
+  "journal-96": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:aUNTuf31cPIC",
+   "cites": 42,
+   "method": "title"
+  },
+  "journal-97": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:bGhaNo82unsC",
+   "cites": 84,
+   "method": "title"
+  },
+  "journal-98": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5NtQbJVckFQC",
+   "cites": 80,
+   "method": "title"
+  },
+  "journal-99": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:-EqDysdaREAC",
+   "cites": 31,
+   "method": "title"
+  },
+  "journal-100": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:bsl25C5uMOsC",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-101": {
+   "source": "openalex",
+   "work": "W4285726126",
+   "cites": 4,
+   "method": "doi"
+  },
+  "journal-102": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4G0aqHQeUQIC",
+   "cites": 99,
+   "method": "title"
+  },
+  "journal-103": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:lfn0f_u3g34C",
+   "cites": 44,
+   "method": "title"
+  },
+  "journal-105": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rhSvDnGaX0QC",
+   "cites": 43,
+   "method": "title"
+  },
+  "journal-106": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:-2axzXc1YoMC",
+   "cites": 211,
+   "method": "title"
+  },
+  "journal-107": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:kbDB7uaqCfAC",
+   "cites": 39,
+   "method": "title"
+  },
+  "journal-108": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:62yiFa7nMbkC",
+   "cites": 1,
+   "method": "title"
+  },
+  "journal-109": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QuPaituDtm8C",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-110": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uWFADo6cQ7YC",
+   "cites": 10,
+   "method": "title"
+  },
+  "journal-111": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Sb6Hpx6U9PIC",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-112": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:wEOyVsangm4C",
+   "cites": 15,
+   "method": "title"
+  },
+  "journal-113": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:fh9oGOwZoyMC",
+   "cites": 23,
+   "method": "title"
+  },
+  "journal-114": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:m5Mwo8ouzesC",
+   "cites": 44,
+   "method": "title"
+  },
+  "journal-115": {
+   "source": "openalex",
+   "work": "W4281727283",
+   "cites": 58,
+   "method": "doi"
+  },
+  "journal-116": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:r-XlWH_wwbwC",
+   "cites": 72,
+   "method": "title"
+  },
+  "journal-117": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PjKh-f16SfUC",
+   "cites": 68,
+   "method": "title"
+  },
+  "journal-118": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FSl0EHHYj-kC",
+   "cites": 24,
+   "method": "title"
+  },
+  "journal-119": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FuNQ1RLggQIC",
+   "cites": 14,
+   "method": "title"
+  },
+  "journal-120": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0_RpHV3rhqYC",
+   "cites": 78,
+   "method": "title"
+  },
+  "journal-121": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:m1aD9PlKDecC",
+   "cites": 154,
+   "method": "title"
+  },
+  "journal-122": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PNc4OtJD23oC",
+   "cites": 28,
+   "method": "title"
+  },
+  "journal-123": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:JmU_-KX0ghQC",
+   "cites": 40,
+   "method": "title"
+  },
+  "journal-124": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:D2lc7i8A8ooC",
+   "cites": 49,
+   "method": "title"
+  },
+  "journal-125": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:7YMrAF6eRCIC",
+   "cites": 20,
+   "method": "title"
+  },
+  "journal-126": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:oea97a5D_h0C",
+   "cites": 21,
+   "method": "title"
+  },
+  "journal-127": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:jgTXuCzW-kcC",
+   "cites": 142,
+   "method": "title"
+  },
+  "journal-128": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:h6vPvb0CPpsC",
+   "cites": 85,
+   "method": "title"
+  },
+  "journal-129": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rzkGdFpNPO0C",
+   "cites": 27,
+   "method": "title"
+  },
+  "journal-130": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tp0eXr8pwPYC",
+   "cites": 64,
+   "method": "title"
+  },
+  "journal-131": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:EsO17nB32j8C",
+   "cites": 26,
+   "method": "title"
+  },
+  "journal-132": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4IpgxnMJogoC",
+   "cites": 346,
+   "method": "title"
+  },
+  "journal-133": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:D-3shSm-n1oC",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-134": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:s9piBQ-TX4wC",
+   "cites": 102,
+   "method": "title"
+  },
+  "journal-135": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:aGxtzYPGyQEC",
+   "cites": 958,
+   "method": "title"
+  },
+  "journal-136": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SxVRRePJDnEC",
+   "cites": 201,
+   "method": "title"
+  },
+  "journal-137": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:gyhANspY9yIC",
+   "cites": 217,
+   "method": "title"
+  },
+  "journal-138": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:wGcU5kTjeNkC",
+   "cites": 397,
+   "method": "title"
+  },
+  "journal-139": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QV3w6uztVfcC",
+   "cites": 46,
+   "method": "title"
+  },
+  "journal-140": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SN5MtqHu-psC",
+   "cites": 231,
+   "method": "title"
+  },
+  "journal-141": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:njwWRc9PkvUC",
+   "cites": 31,
+   "method": "title"
+  },
+  "journal-142": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HaiYZdWvYCYC",
+   "cites": 19,
+   "method": "title"
+  },
+  "journal-143": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:yIh087D13zsC",
+   "cites": 28,
+   "method": "title"
+  },
+  "journal-144": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:viPVbuMW504C",
+   "cites": 103,
+   "method": "title"
+  },
+  "journal-145": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:V6rzEKW62mYC",
+   "cites": 12,
+   "method": "title"
+  },
+  "journal-146": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:pGq6TLPqxssC",
+   "cites": 37,
+   "method": "title"
+  },
+  "journal-147": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:RTQXeVVbsVUC",
+   "cites": 18,
+   "method": "title"
+  },
+  "journal-148": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HV_RJt6Pqn0C",
+   "cites": 16,
+   "method": "title"
+  },
+  "journal-150": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:kVDlchZkYg4C",
+   "cites": 97,
+   "method": "title"
+  },
+  "journal-151": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uwjMLcW8QH4C",
+   "cites": 63,
+   "method": "title"
+  },
+  "journal-152": {
+   "source": "openalex",
+   "work": "W4307547339",
+   "cites": 72,
+   "method": "doi"
+  },
+  "journal-153": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0765WKWsAZMC",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-154": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:2MSJ22rj538C",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-155": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:2mus-XyGPC0C",
+   "cites": 37,
+   "method": "title"
+  },
+  "journal-157": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:08Fspu5RUkwC",
+   "cites": 86,
+   "method": "title"
+  },
+  "journal-158": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_TIfIljC7OAC",
+   "cites": 15,
+   "method": "title"
+  },
+  "journal-159": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LnJLeQ70pnUC",
+   "cites": 12,
+   "method": "title"
+  },
+  "journal-160": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:dX-nQPao9noC",
+   "cites": 24,
+   "method": "title"
+  },
+  "journal-161": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SAguW2jnL4UC",
+   "cites": 3,
+   "method": "title"
+  },
+  "journal-162": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:W6h41lW4BooC",
+   "cites": 31,
+   "method": "title"
+  },
+  "journal-163": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:M6kHaddf_34C",
+   "cites": 9,
+   "method": "title"
+  },
+  "journal-164": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CY3uIpTmi-gC",
+   "cites": 60,
+   "method": "title"
+  },
+  "journal-165": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:iHaZ0gpiSgoC",
+   "cites": 80,
+   "method": "title"
+  },
+  "journal-166": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hcF2OqvMasEC",
+   "cites": 126,
+   "method": "title"
+  },
+  "journal-167": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hL6j_VNiN9gC",
+   "cites": 30,
+   "method": "title"
+  },
+  "journal-168": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:7jLzoj1EsW0C",
+   "cites": 22,
+   "method": "title"
+  },
+  "journal-169": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:41wR57jXX04C",
+   "cites": 14,
+   "method": "title"
+  },
+  "journal-170": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:JdYeQSb646wC",
+   "cites": 8,
+   "method": "title"
+  },
+  "journal-171": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:YAnBoHO8NTMC",
+   "cites": 84,
+   "method": "title"
+  },
+  "journal-172": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:KUgzLixe4cAC",
+   "cites": 101,
+   "method": "title"
+  },
+  "journal-173": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:viTTOddtVMkC",
+   "cites": 75,
+   "method": "title"
+  },
+  "journal-174": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9PbDelcLwNgC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-175": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:g-FVFPYC6a8C",
+   "cites": 113,
+   "method": "title"
+  },
+  "journal-176": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FcH-RsB9iB0C",
+   "cites": 29,
+   "method": "title"
+  },
+  "journal-177": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:z5I2ou_Dk_MC",
+   "cites": 36,
+   "method": "title"
+  },
+  "journal-178": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:H-nlc5mcmJQC",
+   "cites": 57,
+   "method": "title"
+  },
+  "journal-179": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:RELVpAr6_7wC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-180": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:f9jR0vFhilIC",
+   "cites": 35,
+   "method": "title"
+  },
+  "journal-181": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:fiDIZbHD5NAC",
+   "cites": 23,
+   "method": "title"
+  },
+  "journal-182": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:1In3SbHwanAC",
+   "cites": 19,
+   "method": "title"
+  },
+  "journal-183": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:gFcjaLVeiroC",
+   "cites": 30,
+   "method": "title"
+  },
+  "journal-184": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:iomT83CKXisC",
+   "cites": 44,
+   "method": "title"
+  },
+  "journal-185": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Q7hiZQKJ-pAC",
+   "cites": 22,
+   "method": "title"
+  },
+  "journal-186": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:T5V60G5X4B8C",
+   "cites": 43,
+   "method": "title"
+  },
+  "journal-187": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:3YTBxAczQXIC",
+   "cites": 27,
+   "method": "title"
+  },
+  "journal-188": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CtYknXOfbFEC",
+   "cites": 18,
+   "method": "title"
+  },
+  "journal-189": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rv4tAfkFLVgC",
+   "cites": 19,
+   "method": "title"
+  },
+  "journal-190": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9Df4XUWggEMC",
+   "cites": 10,
+   "method": "title"
+  },
+  "journal-191": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:oHSet2Z0r48C",
+   "cites": 23,
+   "method": "title"
+  },
+  "journal-192": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Id9pRtCSqO0C",
+   "cites": 23,
+   "method": "title"
+  },
+  "journal-193": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ckcx6fjc-GEC",
+   "cites": 281,
+   "method": "title"
+  },
+  "journal-194": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:GL0K47J-u9kC",
+   "cites": 3,
+   "method": "title"
+  },
+  "journal-195": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:bJZ_LSxkz4EC",
+   "cites": 101,
+   "method": "title"
+  },
+  "journal-196": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:RXC-vbXDMdwC",
+   "cites": 111,
+   "method": "title"
+  },
+  "journal-197": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Mb21Z44dZ7IC",
+   "cites": 28,
+   "method": "title"
+  },
+  "journal-198": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:1fM7sLBYaPUC",
+   "cites": 20,
+   "method": "title"
+  },
+  "journal-199": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:pqufTfZDgs0C",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-200": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Yb2T6HvJONwC",
+   "cites": 29,
+   "method": "title"
+  },
+  "journal-201": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:UwBXQvKX0hQC",
+   "cites": 123,
+   "method": "title"
+  },
+  "journal-202": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:MOUuoOoUJb4C",
+   "cites": 28,
+   "method": "title"
+  },
+  "journal-203": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:JzGFD3-rS6kC",
+   "cites": 1271,
+   "method": "title"
+  },
+  "journal-204": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:IyMil-iDmu0C",
+   "cites": 53,
+   "method": "title"
+  },
+  "journal-205": {
+   "source": "openalex",
+   "work": "W3093843100",
+   "cites": 34,
+   "method": "doi"
+  },
+  "journal-206": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FXgMSCUEOHUC",
+   "cites": 12,
+   "method": "title"
+  },
+  "journal-207": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:1xqo9R7SDZkC",
+   "cites": 223,
+   "method": "title"
+  },
+  "journal-208": {
+   "source": "openalex",
+   "work": "W3030610740",
+   "cites": 18,
+   "method": "doi"
+  },
+  "journal-209": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9u2w3wkYHSMC",
+   "cites": 158,
+   "method": "title"
+  },
+  "journal-210": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:yGgOC45Jz5YC",
+   "cites": 25,
+   "method": "title"
+  },
+  "journal-211": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:22N0J9dj6kwC",
+   "cites": 103,
+   "method": "title"
+  },
+  "journal-212": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:DQQjGlBKAuwC",
+   "cites": 75,
+   "method": "title"
+  },
+  "journal-213": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uK1dVpBkok0C",
+   "cites": 29,
+   "method": "title"
+  },
+  "journal-214": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:3A6oGT7R4jcC",
+   "cites": 8,
+   "method": "title"
+  },
+  "journal-215": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:afceBpUbn5YC",
+   "cites": 81,
+   "method": "title"
+  },
+  "journal-216": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:q7hqJx8pYzEC",
+   "cites": 69,
+   "method": "title"
+  },
+  "journal-217": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9jvjDF91bz4C",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-218": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:MOFHY6MwG3AC",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-219": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9wUeeRLfbNYC",
+   "cites": 11,
+   "method": "title"
+  },
+  "journal-220": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Z8CpXElfgm4C",
+   "cites": 34,
+   "method": "title"
+  },
+  "journal-221": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:w_Qt3Pluy5YC",
+   "cites": 22,
+   "method": "title"
+  },
+  "journal-222": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:viYOxJONeN0C",
+   "cites": 93,
+   "method": "title"
+  },
+  "journal-223": {
+   "source": "openalex",
+   "work": "W2988357083",
+   "cites": 56,
+   "method": "doi"
+  },
+  "journal-224": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:aKo_o5XvxeMC",
+   "cites": 19,
+   "method": "title"
+  },
+  "journal-225": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:c3iu29LiD84C",
+   "cites": 32,
+   "method": "title"
+  },
+  "journal-226": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qKtbcrzMvwAC",
+   "cites": 74,
+   "method": "title"
+  },
+  "journal-227": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4PzMk9GH2tkC",
+   "cites": 109,
+   "method": "title"
+  },
+  "journal-228": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:OYCXtYc4maoC",
+   "cites": 19,
+   "method": "title"
+  },
+  "journal-229": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:zMY8q35v6VMC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-230": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:eKGuBlYFiu8C",
+   "cites": 9,
+   "method": "title"
+  },
+  "journal-231": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:7Pm5v_kJJ6IC",
+   "cites": 354,
+   "method": "title"
+  },
+  "journal-232": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:i9zlNfTiRXIC",
+   "cites": 9,
+   "method": "title"
+  },
+  "journal-233": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:JpYjwmnXVqYC",
+   "cites": 17,
+   "method": "title"
+  },
+  "journal-234": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CXI6bF9CpJ4C",
+   "cites": 128,
+   "method": "title"
+  },
+  "journal-235": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:A8NefVh_EAoC",
+   "cites": 99,
+   "method": "title"
+  },
+  "journal-236": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:-Ex_6Thn4vsC",
+   "cites": 51,
+   "method": "title"
+  },
+  "journal-237": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:JO0bfRJr_gQC",
+   "cites": 45,
+   "method": "title"
+  },
+  "journal-238": {
+   "source": "openalex",
+   "work": "W2950947853",
+   "cites": 5,
+   "method": "doi"
+  },
+  "journal-239": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0SnApaDgcCoC",
+   "cites": 10,
+   "method": "title"
+  },
+  "journal-241": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:1KpZK2B-YNUC",
+   "cites": 123,
+   "method": "title"
+  },
+  "journal-242": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qmyJBmpVKbYC",
+   "cites": 14,
+   "method": "title"
+  },
+  "journal-243": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:flnLHN-H2asC",
+   "cites": 21,
+   "method": "title"
+  },
+  "journal-244": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_aaHSq4heJsC",
+   "cites": 41,
+   "method": "title"
+  },
+  "journal-245": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HPvNdXBGwkEC",
+   "cites": 13,
+   "method": "title"
+  },
+  "journal-247": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:yKZlB_2wKysC",
+   "cites": 12,
+   "method": "title"
+  },
+  "journal-248": {
+   "source": "openalex",
+   "work": "W2943739061",
+   "cites": 26,
+   "method": "doi"
+  },
+  "journal-249": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:IqrShC7OVU0C",
+   "cites": 174,
+   "method": "title"
+  },
+  "journal-250": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vlECJaBXBlQC",
+   "cites": 12,
+   "method": "title"
+  },
+  "journal-251": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:gUOu-QWEMMQC",
+   "cites": 14,
+   "method": "title"
+  },
+  "journal-254": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:iHNVki4A1WcC",
+   "cites": 275,
+   "method": "title"
+  },
+  "journal-255": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:753uPZTt4RUC",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-256": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6syOTa9L3GQC",
+   "cites": 8,
+   "method": "title"
+  },
+  "journal-257": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:8igAKu_hPxwC",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-258": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uQrt9rju91QC",
+   "cites": 822,
+   "method": "title"
+  },
+  "journal-259": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:M8Ejg5y-C14C",
+   "cites": 356,
+   "method": "title"
+  },
+  "journal-260": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SSGWEqmz6gUC",
+   "cites": 44,
+   "method": "title"
+  },
+  "journal-261": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:eiwtZcG9oBcC",
+   "cites": 59,
+   "method": "title"
+  },
+  "journal-262": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:8PKVFmgK5mUC",
+   "cites": 10,
+   "method": "title"
+  },
+  "journal-263": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Q9ss7R9eeXsC",
+   "cites": 41,
+   "method": "title"
+  },
+  "journal-264": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ypg3kOuG8gIC",
+   "cites": 39,
+   "method": "title"
+  },
+  "journal-265": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LWUVeqegjeYC",
+   "cites": 36,
+   "method": "title"
+  },
+  "journal-267": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:eTOb990cMygC",
+   "cites": 76,
+   "method": "title"
+  },
+  "journal-268": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:zPkyA21Y468C",
+   "cites": 74,
+   "method": "title"
+  },
+  "journal-269": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:nlmsuG0oqtYC",
+   "cites": 56,
+   "method": "title"
+  },
+  "journal-270": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:oR5SthnA400C",
+   "cites": 42,
+   "method": "title"
+  },
+  "journal-271": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vlMkzkLhH4wC",
+   "cites": 21,
+   "method": "title"
+  },
+  "journal-273": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:L8oS6_awjPoC",
+   "cites": 13,
+   "method": "title"
+  },
+  "journal-274": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:w9HJn4dzO2wC",
+   "cites": 93,
+   "method": "title"
+  },
+  "journal-276": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:r5yabEp13iMC",
+   "cites": 8,
+   "method": "title"
+  },
+  "journal-277": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hEp1lTclR2YC",
+   "cites": 62,
+   "method": "title"
+  },
+  "journal-278": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Q3_nmhWTCy0C",
+   "cites": 13,
+   "method": "title"
+  },
+  "journal-280": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SGnGYi2HwEIC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-281": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:jgpk9vOjLEcC",
+   "cites": 13,
+   "method": "title"
+  },
+  "journal-282": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:l_4PpDxvVJAC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-283": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:fGgrif5g-LMC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-284": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Q4B7mEBXgMkC",
+   "cites": 60,
+   "method": "title"
+  },
+  "journal-285": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:z2g7kDSNNyoC",
+   "cites": 20,
+   "method": "title"
+  },
+  "journal-286": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:b2v3RnpdjZkC",
+   "cites": 59,
+   "method": "title"
+  },
+  "journal-287": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:BxcezVm2apwC",
+   "cites": 104,
+   "method": "title"
+  },
+  "journal-288": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:8QO3eJiZnkEC",
+   "cites": 153,
+   "method": "title"
+  },
+  "journal-289": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:1Lcp1PKUB6cC",
+   "cites": 8,
+   "method": "title"
+  },
+  "journal-290": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:dZbaGXT4iR0C",
+   "cites": 11,
+   "method": "title"
+  },
+  "journal-291": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tDdgxD0hSQMC",
+   "cites": 24,
+   "method": "title"
+  },
+  "journal-292": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:GzlcqhCAosUC",
+   "cites": 84,
+   "method": "title"
+  },
+  "journal-293": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HHUT0vUrEqMC",
+   "cites": 71,
+   "method": "title"
+  },
+  "journal-294": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:f4T9rk490XkC",
+   "cites": 40,
+   "method": "title"
+  },
+  "journal-295": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:2SmvwDDsShQC",
+   "cites": 140,
+   "method": "title"
+  },
+  "journal-296": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:7T_dCfhhGW4C",
+   "cites": 61,
+   "method": "title"
+  },
+  "journal-297": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FnaCo-ypupUC",
+   "cites": 837,
+   "method": "title"
+  },
+  "journal-298": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PpfTWA6RG0gC",
+   "cites": 34,
+   "method": "title"
+  },
+  "journal-299": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:H30kdXGRGPkC",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-300": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:I8ubwoE7ciMC",
+   "cites": 3,
+   "method": "title"
+  },
+  "journal-301": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:H7WDvlwkmv8C",
+   "cites": 156,
+   "method": "title"
+  },
+  "journal-302": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:P7PM_jyRRcwC",
+   "cites": 52,
+   "method": "title"
+  },
+  "journal-303": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:X-Dm1JipzzIC",
+   "cites": 10,
+   "method": "title"
+  },
+  "journal-304": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:d4Uf0zfqV5IC",
+   "cites": 11,
+   "method": "title"
+  },
+  "journal-306": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vNwWLMROEM0C",
+   "cites": 30,
+   "method": "title"
+  },
+  "journal-307": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Et1yZiPVzsMC",
+   "cites": 13,
+   "method": "title"
+  },
+  "journal-309": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Xtec1x7NZGAC",
+   "cites": 8,
+   "method": "title"
+  },
+  "journal-311": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:gubd_9ZgCi8C",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-312": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:lf0D1wPZyaoC",
+   "cites": 7,
+   "method": "title"
+  },
+  "journal-313": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ae0xyBWlIcIC",
+   "cites": 30,
+   "method": "title"
+  },
+  "journal-314": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:f5lEeLvKxmwC",
+   "cites": 72,
+   "method": "title"
+  },
+  "journal-315": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tsQ8sfJ2mf4C",
+   "cites": 46,
+   "method": "title"
+  },
+  "journal-316": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uHQrz-U2knEC",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-318": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:2ZctHUgIzyAC",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-321": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:EfTNjLFZ3b0C",
+   "cites": 13,
+   "method": "title"
+  },
+  "journal-322": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:1W67FsDfIBAC",
+   "cites": 19,
+   "method": "title"
+  },
+  "journal-323": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QSG1pgF8pGAC",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-324": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:KxdiYzj_eL0C",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-325": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ZVmBtQ9RJaQC",
+   "cites": 1,
+   "method": "title"
+  },
+  "journal-326": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hKmHnHMtuq0C",
+   "cites": 24,
+   "method": "title"
+  },
+  "journal-327": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:N7YTE_TVRugC",
+   "cites": 73,
+   "method": "title"
+  },
+  "journal-328": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:8xglSJ46CyEC",
+   "cites": 3,
+   "method": "title"
+  },
+  "journal-329": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LwieBGrN4GEC",
+   "cites": 87,
+   "method": "title"
+  },
+  "journal-330": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:DoBzxrgsGIIC",
+   "cites": 42,
+   "method": "title"
+  },
+  "journal-332": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qOpkhvVCMvUC",
+   "cites": 106,
+   "method": "title"
+  },
+  "journal-333": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Oo_WeVVXg5wC",
+   "cites": 49,
+   "method": "title"
+  },
+  "journal-335": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:IwGqIHSOC8kC",
+   "cites": 20,
+   "method": "title"
+  },
+  "journal-341": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:7q08wCQPkLwC",
+   "cites": 3,
+   "method": "title"
+  },
+  "journal-342": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:o0tJHVzi6PsC",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-343": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:2TuIPqOg0e0C",
+   "cites": 48,
+   "method": "title"
+  },
+  "journal-344": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9mnZQYLiiboC",
+   "cites": 11,
+   "method": "title"
+  },
+  "journal-345": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0vYOBEH00j0C",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-346": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:DGpvO1n63MYC",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-347": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6e4D8M0GhXMC",
+   "cites": 159,
+   "method": "title"
+  },
+  "journal-348": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ThYxFsVAhEkC",
+   "cites": 89,
+   "method": "title"
+  },
+  "journal-349": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:dJ_BR67V0s4C",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-350": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:RgMnzfD6kpIC",
+   "cites": 37,
+   "method": "title"
+  },
+  "journal-352": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:mu2_AnMl8iYC",
+   "cites": 26,
+   "method": "title"
+  },
+  "journal-353": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:TewouNez5YAC",
+   "cites": 35,
+   "method": "title"
+  },
+  "journal-354": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Gs1AF5H0x94C",
+   "cites": 313,
+   "method": "title"
+  },
+  "journal-355": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:esGtpfCv0y8C",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-356": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5kvG9DmRKWYC",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-357": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:3AIi9tQMIrsC",
+   "cites": 9,
+   "method": "title"
+  },
+  "journal-358": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:7CU1mCQUTf4C",
+   "cites": 103,
+   "method": "title"
+  },
+  "journal-360": {
+   "source": "openalex",
+   "work": "W2268589848",
+   "cites": 0,
+   "method": "doi"
+  },
+  "journal-361": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Ltc9rfRcsxEC",
+   "cites": 38,
+   "method": "title"
+  },
+  "journal-362": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:d3xjRt2Mi1YC",
+   "cites": 208,
+   "method": "title"
+  },
+  "journal-363": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FepLwMwnKBMC",
+   "cites": 7,
+   "method": "title"
+  },
+  "journal-364": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cG0OFEevkNgC",
+   "cites": 63,
+   "method": "title"
+  },
+  "journal-365": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PQ6BjWB6CiEC",
+   "cites": 129,
+   "method": "title"
+  },
+  "journal-366": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4pF9x-cDGsoC",
+   "cites": 53,
+   "method": "title"
+  },
+  "journal-367": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Q17yWvk9gpwC",
+   "cites": 76,
+   "method": "title"
+  },
+  "journal-368": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:IF0FbId8XVwC",
+   "cites": 85,
+   "method": "title"
+  },
+  "journal-369": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:xEMdJR0kL_sC",
+   "cites": 50,
+   "method": "title"
+  },
+  "journal-371": {
+   "source": "openalex",
+   "work": "W2271387579",
+   "cites": 48,
+   "method": "doi"
+  },
+  "journal-372": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:MtS25d97-7AC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-373": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ey9_mCyZ-VYC",
+   "cites": 49,
+   "method": "title"
+  },
+  "journal-374": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:RwQ8IgSj6xkC",
+   "cites": 50,
+   "method": "title"
+  },
+  "journal-375": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Qy-rCirNo-8C",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-376": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0d9pApVQ-n0C",
+   "cites": 15,
+   "method": "title"
+  },
+  "journal-377": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:AkvegQHRDQ8C",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-378": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:2SFquFhkCoYC",
+   "cites": 97,
+   "method": "title"
+  },
+  "journal-379": {
+   "source": "openalex",
+   "work": "W2034548009",
+   "cites": 4,
+   "method": "doi"
+  },
+  "journal-380": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:S_Qw7xXuMuIC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-381": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:lBZ7XAAYe3oC",
+   "cites": 3,
+   "method": "title"
+  },
+  "journal-383": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QlnOKEPDpKwC",
+   "cites": 10,
+   "method": "title"
+  },
+  "journal-384": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:KEtq3P1Vf8oC",
+   "cites": 1,
+   "method": "title"
+  },
+  "journal-385": {
+   "source": "openalex",
+   "work": "W969426450",
+   "cites": 8,
+   "method": "doi"
+  },
+  "journal-387": {
+   "source": "openalex",
+   "work": "W2245574331",
+   "cites": 29,
+   "method": "title"
+  },
+  "journal-388": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:C6rTQemI8T8C",
+   "cites": 180,
+   "method": "title"
+  },
+  "journal-389": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:wTekDMGr9GkC",
+   "cites": 11,
+   "method": "title"
+  },
+  "journal-390": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:NKlx0PmyA3cC",
+   "cites": 78,
+   "method": "title"
+  },
+  "journal-391": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FwTEoIZreccC",
+   "cites": 60,
+   "method": "title"
+  },
+  "journal-392": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ZZwcLRaXOV4C",
+   "cites": 27,
+   "method": "title"
+  },
+  "journal-393": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:DUFsPKDdMi0C",
+   "cites": 28,
+   "method": "title"
+  },
+  "journal-394": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CKf5m1HYVjMC",
+   "cites": 53,
+   "method": "title"
+  },
+  "journal-397": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:C5mqfHIFIucC",
+   "cites": 10,
+   "method": "title"
+  },
+  "journal-398": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0paDrhnEFY0C",
+   "cites": 23,
+   "method": "title"
+  },
+  "journal-401": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:aCwMkEyfDy8C",
+   "cites": 8,
+   "method": "title"
+  },
+  "journal-402": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PazO6pb-sMwC",
+   "cites": 11,
+   "method": "title"
+  },
+  "journal-403": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uQVPmWFBlwUC",
+   "cites": 35,
+   "method": "title"
+  },
+  "journal-405": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:eFf2swCANGcC",
+   "cites": 1,
+   "method": "title"
+  },
+  "journal-406": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:RdUpO4xyVKMC",
+   "cites": 10,
+   "method": "title"
+  },
+  "journal-407": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uVUOdF_882EC",
+   "cites": 14,
+   "method": "title"
+  },
+  "journal-408": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ON9TkA72AHEC",
+   "cites": 22,
+   "method": "title"
+  },
+  "journal-409": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:wGzT3bKASkAC",
+   "cites": 43,
+   "method": "title"
+  },
+  "journal-410": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:g30IDTdgJMgC",
+   "cites": 50,
+   "method": "title"
+  },
+  "journal-413": {
+   "source": "openalex",
+   "work": "W2011680602",
+   "cites": 11,
+   "method": "doi"
+  },
+  "journal-414": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:UKB2i6g6GNMC",
+   "cites": 8,
+   "method": "title"
+  },
+  "journal-416": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:pYKElYtJMmwC",
+   "cites": 44,
+   "method": "title"
+  },
+  "journal-417": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:fF_gHTpLxhAC",
+   "cites": 35,
+   "method": "title"
+  },
+  "journal-418": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:u_mOZUIutIEC",
+   "cites": 36,
+   "method": "title"
+  },
+  "journal-419": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uWy0R8PweswC",
+   "cites": 10,
+   "method": "title"
+  },
+  "journal-420": {
+   "source": "openalex",
+   "work": "W2161611238",
+   "cites": 16,
+   "method": "doi"
+  },
+  "journal-421": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:k8to_Y4Q4_EC",
+   "cites": 129,
+   "method": "title"
+  },
+  "journal-422": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:EsrhoZGmrkoC",
+   "cites": 25,
+   "method": "title"
+  },
+  "journal-423": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:OcBU2YAGkTUC",
+   "cites": 38,
+   "method": "title"
+  },
+  "journal-424": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QtA78RmWg5MC",
+   "cites": 138,
+   "method": "title"
+  },
+  "journal-425": {
+   "source": "openalex",
+   "work": "W2053421252",
+   "cites": 3,
+   "method": "doi"
+  },
+  "journal-426": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:3_f9JqYsqVQC",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-427": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9tXw7Op4-u0C",
+   "cites": 27,
+   "method": "title"
+  },
+  "journal-429": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:tFzHCjejgA0C",
+   "cites": 8,
+   "method": "title"
+  },
+  "journal-430": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ruyezt5ZtCIC",
+   "cites": 81,
+   "method": "title"
+  },
+  "journal-431": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hB2aVRuWZNwC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-432": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qmtmRrLr0tkC",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-434": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Q3-QASNKTMEC",
+   "cites": 7,
+   "method": "title"
+  },
+  "journal-435": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:-38epGy1wY0C",
+   "cites": 14,
+   "method": "title"
+  },
+  "journal-436": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:h1pkognVyKwC",
+   "cites": 30,
+   "method": "title"
+  },
+  "journal-437": {
+   "source": "openalex",
+   "work": "W2161377208",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-439": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qbqt7gslDFUC",
+   "cites": 3,
+   "method": "title"
+  },
+  "journal-440": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:adHtZc2wMuEC",
+   "cites": 11,
+   "method": "title"
+  },
+  "journal-441": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:x21FZCSn4ZoC",
+   "cites": 13,
+   "method": "title"
+  },
+  "journal-442": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hEXC_dOfxuUC",
+   "cites": 189,
+   "method": "title"
+  },
+  "journal-443": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0aBXIfxlw9sC",
+   "cites": 25,
+   "method": "title"
+  },
+  "journal-444": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:6bLC7aUMtPcC",
+   "cites": 460,
+   "method": "title"
+  },
+  "journal-446": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:GtqhT-R7ZnwC",
+   "cites": 10,
+   "method": "title"
+  },
+  "journal-447": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:M_lZXyI38BkC",
+   "cites": 1,
+   "method": "title"
+  },
+  "journal-448": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ujxm2eEBZHIC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-449": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:umqufdRvDiIC",
+   "cites": 111,
+   "method": "title"
+  },
+  "journal-450": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5awf1xo2G04C",
+   "cites": 324,
+   "method": "title"
+  },
+  "journal-451": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:xyvS_IvSCKsC",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-452": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_FM0Bhl9EiAC",
+   "cites": 381,
+   "method": "title"
+  },
+  "journal-453": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QD3KBmkZPeQC",
+   "cites": 58,
+   "method": "title"
+  },
+  "journal-456": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:KIRwYnRZzWQC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-457": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ILKRHgRFtOwC",
+   "cites": 191,
+   "method": "title"
+  },
+  "journal-458": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:sszUF3NjhM4C",
+   "cites": 178,
+   "method": "title"
+  },
+  "journal-459": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:P7Ujq4OLJYoC",
+   "cites": 12,
+   "method": "title"
+  },
+  "journal-460": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:z8nqeaKD1nsC",
+   "cites": 3,
+   "method": "title"
+  },
+  "journal-462": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:kz9GbA2Ns4gC",
+   "cites": 126,
+   "method": "title"
+  },
+  "journal-463": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:IUKN3-7HHlwC",
+   "cites": 76,
+   "method": "title"
+  },
+  "journal-464": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SeFeTyx0c_EC",
+   "cites": 165,
+   "method": "title"
+  },
+  "journal-466": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:q-HalDI95KYC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-467": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:za7pDTvVV8kC",
+   "cites": 14,
+   "method": "title"
+  },
+  "journal-468": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LI9QrySNdTsC",
+   "cites": 118,
+   "method": "title"
+  },
+  "journal-470": {
+   "source": "openalex",
+   "work": "W2100591482",
+   "cites": 221,
+   "method": "doi"
+  },
+  "journal-471": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:PYBJJbyH-FwC",
+   "cites": 14,
+   "method": "title"
+  },
+  "journal-472": {
+   "source": "openalex",
+   "work": "W2122905985",
+   "cites": 38,
+   "method": "doi"
+  },
+  "journal-473": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:OTTXONDVkokC",
+   "cites": 48,
+   "method": "title"
+  },
+  "journal-474": {
+   "source": "openalex",
+   "work": "W1965218064",
+   "cites": 351,
+   "method": "doi"
+  },
+  "journal-477": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4OULZ7Gr8RgC",
+   "cites": 157,
+   "method": "title"
+  },
+  "journal-479": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LkGwnXOMwfcC",
+   "cites": 178,
+   "method": "title"
+  },
+  "journal-480": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:43bX7VzcjpAC",
+   "cites": 139,
+   "method": "title"
+  },
+  "journal-482": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:7PzlFSSx8tAC",
+   "cites": 223,
+   "method": "title"
+  },
+  "journal-483": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:i2xiXl-TujoC",
+   "cites": 115,
+   "method": "title"
+  },
+  "journal-484": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:nZcligLrVowC",
+   "cites": 35,
+   "method": "title"
+  },
+  "journal-485": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:TFP_iSt0sucC",
+   "cites": 360,
+   "method": "title"
+  },
+  "journal-486": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hkOj_22Ku90C",
+   "cites": 213,
+   "method": "title"
+  },
+  "journal-488": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:fSKd39tHJ84C",
+   "cites": 24,
+   "method": "title"
+  },
+  "journal-489": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:EYYDruWGBe4C",
+   "cites": 74,
+   "method": "title"
+  },
+  "journal-490": {
+   "source": "openalex",
+   "work": "W2099763826",
+   "cites": 9,
+   "method": "title"
+  },
+  "journal-491": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:uc_IGeMz5qoC",
+   "cites": 47,
+   "method": "title"
+  },
+  "journal-492": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:HoB7MX3m0LUC",
+   "cites": 71,
+   "method": "title"
+  },
+  "journal-494": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qjMakFHDy7sC",
+   "cites": 1441,
+   "method": "title"
+  },
+  "journal-495": {
+   "source": "openalex",
+   "work": "W2148141971",
+   "cites": 51,
+   "method": "doi"
+  },
+  "journal-496": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ji7lAbPyDbYC",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-497": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4X0JR2_MtJMC",
+   "cites": 13,
+   "method": "title"
+  },
+  "journal-498": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:p2g8aNsByqUC",
+   "cites": 153,
+   "method": "title"
+  },
+  "journal-499": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:BPS1z4jHU5cC",
+   "cites": 3,
+   "method": "title"
+  },
+  "journal-500": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Dem6FJhTUoYC",
+   "cites": 58,
+   "method": "title"
+  },
+  "journal-501": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:FiytvqdAVhgC",
+   "cites": 38,
+   "method": "title"
+  },
+  "journal-502": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:qUcmZB5y_30C",
+   "cites": 422,
+   "method": "title"
+  },
+  "journal-504": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:7T2F9Uy0os0C",
+   "cites": 42,
+   "method": "title"
+  },
+  "journal-505": {
+   "source": "openalex",
+   "work": "W2144386207",
+   "cites": 47,
+   "method": "doi"
+  },
+  "journal-506": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:W5xh706n7nkC",
+   "cites": 52,
+   "method": "title"
+  },
+  "journal-507": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:u-coK7KVo8oC",
+   "cites": 21,
+   "method": "title"
+  },
+  "journal-510": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:UebtZRa9Y70C",
+   "cites": 190,
+   "method": "title"
+  },
+  "journal-511": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hMsQuOkrut0C",
+   "cites": 13,
+   "method": "title"
+  },
+  "journal-513": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:LjlpjdlvIbIC",
+   "cites": 41,
+   "method": "title"
+  },
+  "journal-515": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:3NQIlFlcGxIC",
+   "cites": 20,
+   "method": "title"
+  },
+  "journal-516": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:YohjEiUPhakC",
+   "cites": 15,
+   "method": "title"
+  },
+  "journal-517": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:NDuN12AVoxsC",
+   "cites": 63,
+   "method": "title"
+  },
+  "journal-518": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:bFI3QPDXJZMC",
+   "cites": 388,
+   "method": "title"
+  },
+  "journal-519": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:IbYibzvn7iEC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-520": {
+   "source": "openalex",
+   "work": "W2138810473",
+   "cites": 726,
+   "method": "doi"
+  },
+  "journal-521": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:KlAtU1dfN6UC",
+   "cites": 248,
+   "method": "title"
+  },
+  "journal-523": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:rbGdIwl2e6cC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-526": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:sJPMR1oEGYQC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-529": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:j3f4tGmQtD8C",
+   "cites": 93,
+   "method": "title"
+  },
+  "journal-530": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:edV_OwlUe4UC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-531": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hFOr9nPyWt4C",
+   "cites": 11,
+   "method": "title"
+  },
+  "journal-532": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:wvYxNZNCP7wC",
+   "cites": 9,
+   "method": "title"
+  },
+  "journal-533": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:8k81kl-MbHgC",
+   "cites": 175,
+   "method": "title"
+  },
+  "journal-534": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SdhP9T11ey4C",
+   "cites": 29,
+   "method": "title"
+  },
+  "journal-535": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:UeHWp8X0CEIC",
+   "cites": 632,
+   "method": "title"
+  },
+  "journal-536": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:kRWSkSYxWN8C",
+   "cites": 25,
+   "method": "title"
+  },
+  "journal-537": {
+   "source": "openalex",
+   "work": "W2170000328",
+   "cites": 99,
+   "method": "doi"
+  },
+  "journal-538": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QIV2ME_5wuYC",
+   "cites": 131,
+   "method": "title"
+  },
+  "journal-539": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:cMwz8cpHLggC",
+   "cites": 13,
+   "method": "title"
+  },
+  "journal-540": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:738O_yMBCRsC",
+   "cites": 53,
+   "method": "title"
+  },
+  "journal-541": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4JMBOYKVnBMC",
+   "cites": 232,
+   "method": "title"
+  },
+  "journal-542": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:YOwf2qJgpHMC",
+   "cites": 155,
+   "method": "title"
+  },
+  "journal-543": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:bEWYMUwI8FkC",
+   "cites": 70,
+   "method": "title"
+  },
+  "journal-544": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hC7cP41nSMkC",
+   "cites": 166,
+   "method": "title"
+  },
+  "journal-545": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:eQOLeE2rZwMC",
+   "cites": 271,
+   "method": "title"
+  },
+  "journal-546": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:86PQX7AUzd4C",
+   "cites": 24,
+   "method": "title"
+  },
+  "journal-547": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5nxA0vEk-isC",
+   "cites": 180,
+   "method": "title"
+  },
+  "journal-548": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Y0pCki6q_DkC",
+   "cites": 662,
+   "method": "title"
+  },
+  "journal-549": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:3jqAvCjcdfEC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-552": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:SpPTWFSNUtQC",
+   "cites": 1,
+   "method": "title"
+  },
+  "journal-553": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:-jrNzM816MMC",
+   "cites": 7,
+   "method": "title"
+  },
+  "journal-554": {
+   "source": "openalex",
+   "work": "W119232641",
+   "cites": 12,
+   "method": "doi"
+  },
+  "journal-555": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:1Ye0OR6EYb4C",
+   "cites": 5,
+   "method": "title"
+  },
+  "journal-556": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:iH-uZ7U-co4C",
+   "cites": 158,
+   "method": "title"
+  },
+  "journal-557": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:ziOE8S1-AIUC",
+   "cites": 2,
+   "method": "title"
+  },
+  "journal-559": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:VN7nJs4JPk0C",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-560": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:pyW8ca7W8N0C",
+   "cites": 36,
+   "method": "title"
+  },
+  "journal-561": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:3_LpOwP6eMYC",
+   "cites": 7,
+   "method": "title"
+  },
+  "journal-562": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:jU7OWUQzBzMC",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-563": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:_OXeSy2IsFwC",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-564": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hvmnpdAuIbkC",
+   "cites": 3,
+   "method": "title"
+  },
+  "journal-566": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:y7JhAc_VBLgC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-569": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QKtdBID3u5MC",
+   "cites": 4,
+   "method": "title"
+  },
+  "journal-570": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:J-pR_7NvFogC",
+   "cites": 47,
+   "method": "title"
+  },
+  "journal-571": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:9c2xU6iGI7YC",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-572": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:u-x6o8ySG0sC",
+   "cites": 906,
+   "method": "title"
+  },
+  "journal-573": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:pqnbT2bcN3wC",
+   "cites": 40,
+   "method": "title"
+  },
+  "journal-575": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:XiVPGOgt02cC",
+   "cites": 133,
+   "method": "title"
+  },
+  "journal-576": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:IjCSPb-OGe4C",
+   "cites": 424,
+   "method": "title"
+  },
+  "journal-577": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:u_35RYKgDlwC",
+   "cites": 326,
+   "method": "title"
+  },
+  "journal-578": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4DMP91E08xMC",
+   "cites": 124,
+   "method": "title"
+  },
+  "journal-579": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vkuYBMKU6wEC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-581": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:AHdEip9mkN0C",
+   "cites": 3,
+   "method": "title"
+  },
+  "journal-582": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:isC4tDSrTZIC",
+   "cites": 67,
+   "method": "title"
+  },
+  "journal-587": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:H_jBuBxbQIAC",
+   "cites": 0,
+   "method": "title"
+  },
+  "journal-588": {
+   "source": "openalex",
+   "work": "W111961032",
+   "cites": 52,
+   "method": "title"
+  },
+  "journal-590": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:WZBGuue-350C",
+   "cites": 25,
+   "method": "title"
+  },
+  "journal-591": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Tyk-4Ss8FVUC",
+   "cites": 275,
+   "method": "title"
+  },
+  "journal-592": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:vV6vV6tmYwMC",
+   "cites": 119,
+   "method": "title"
+  },
+  "journal-595": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:zzCxg_vo7cAC",
+   "cites": 1,
+   "method": "title"
+  },
+  "journal-596": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:QlYoQ0azr6kC",
+   "cites": 6,
+   "method": "title"
+  },
+  "journal-597": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:BrmTIyaxlBUC",
+   "cites": 37,
+   "method": "title"
+  },
+  "journal-598": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:lmc2jWPfTJgC",
+   "cites": 37,
+   "method": "title"
+  },
+  "journal-604": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:Zph67rFs4hoC",
+   "cites": 132,
+   "method": "title"
+  },
+  "journal-606": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:S16KYo8Pm5AC",
+   "cites": 17,
+   "method": "title"
+  },
+  "journal-607": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:yB1At4FlUx8C",
+   "cites": 44,
+   "method": "title"
+  },
+  "journal-608": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:4TOpqqG69KYC",
+   "cites": 113,
+   "method": "title"
+  },
+  "journal-612": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:5ugPr518TE4C",
+   "cites": 45,
+   "method": "title"
+  },
+  "journal-613": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:WF5omc3nYNoC",
+   "cites": 214,
+   "method": "title"
+  },
+  "other-1": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:hNSvKAmkeYkC",
+   "cites": 3,
+   "method": "title"
+  },
+  "other-2": {
+   "source": "openalex",
+   "work": "W54801590",
+   "cites": 0,
+   "method": "title"
+  },
+  "other-3": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:wbdj-CoPYUoC",
+   "cites": 15,
+   "method": "title"
+  },
+  "other-4": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:bKqednn6t2AC",
+   "cites": 7,
+   "method": "title"
+  },
+  "other-6": {
+   "source": "openalex",
+   "work": "W2002203871",
+   "cites": 121,
+   "method": "title"
+  },
+  "other-7": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:CaZNVDsoPx4C",
+   "cites": 5,
+   "method": "title"
+  },
+  "other-9": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:35N4QoGY0k4C",
+   "cites": 42,
+   "method": "title"
+  },
+  "other-13": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:DwFgw5hZUzMC",
+   "cites": 5,
+   "method": "title"
+  },
+  "proceedings-19": {
+   "source": "openalex",
+   "work": "W4403487710",
+   "cites": 2,
+   "method": "title"
+  },
+  "proceedings-31": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:K8XpiWYAYk8C",
+   "cites": 1,
+   "method": "title"
+  },
+  "proceedings-55": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:xUT3DyvLuJwC",
+   "cites": 0,
+   "method": "title"
+  },
+  "proceedings-59": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:0q7iQwrhYWUC",
+   "cites": 1,
+   "method": "title"
+  },
+  "proceedings-82": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:pk6FPx6l9xIC",
+   "cites": 4,
+   "method": "title"
+  },
+  "proceedings-91": {
+   "source": "openalex",
+   "work": "W2490481021",
+   "cites": 37,
+   "method": "title"
+  },
+  "proceedings-94": {
+   "source": "openalex",
+   "work": "W2488691651",
+   "cites": 32,
+   "method": "title"
+  },
+  "proceedings-172": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:t6hKUfryX1MC",
+   "cites": 2,
+   "method": "title"
+  },
+  "proceedings-175": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:spwacExez6wC",
+   "cites": 0,
+   "method": "title"
+  },
+  "proceedings-184": {
+   "source": "scholar",
+   "scholar": "i95DGLQAAAAJ:iINcni2fUZgC",
+   "cites": 0,
+   "method": "title"
+  }
+ }
+}

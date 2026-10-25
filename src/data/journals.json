@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "source": "OpenAlex",
+    "retrievedAt": "2026-10-25T08:23:36.084Z",
+    "retrievedAtNote": "Downloaded from the OpenAlex API during this run.",
+    "generatedAt": "2026-10-25T08:23:39.212Z",
+    "orcid": "0000-0002-0169-6738",
+    "openAlexWorks": 1573,
+    "cvJournalEntries": 613,
+    "verifiedJournalWorks": 73,
+    "crossref": "DOIs confirmed against the Crossref match already stored for each CV entry (publication-links.json)",
+    "note": "Citation counts reflect OpenAlex records for matched publications attributed to Prof. Ajith Abraham. Counts may differ from Google Scholar, Scopus, and Web of Science."
+  },
+  "journals": [
+    {
+      "key": "eaai",
+      "name": "Engineering Applications of Artificial Intelligence",
+      "publisher": "Elsevier BV",
+      "homepage": "https://www.journals.elsevier.com/engineering-applications-of-artificial-intelligence",
+      "sourceUrl": "https://openalex.org/S900972176",
+      "sourceNames": [
+        "Engineering Applications of Artificial Intelligence"
+      ],
+      "verifiedPublications": 40,
+      "totalCitations": 4888,
+      "topPapers": [
+        {
+          "title": "Differential Evolution: A review of more than two decades of research",
+          "year": 2020,
+          "citations": 1004,
+          "doi": "10.1016/j.engappai.2020.103479",
+          "url": "https://doi.org/10.1016/j.engappai.2020.103479"
+        },
+        {
+          "title": "Metaheuristic design of feedforward neural networks: A review of two decades of research",
+          "year": 2017,
+          "citations": 608,
+          "doi": "10.1016/j.engappai.2017.01.013",
+          "url": "https://doi.org/10.1016/j.engappai.2017.01.013"
+        },
+        {
+          "title": "Industry 4.0: A bibliometric analysis and detailed overview",
+          "year": 2018,
+          "citations": 549,
+          "doi": "10.1016/j.engappai.2018.11.007",
+          "url": "https://doi.org/10.1016/j.engappai.2018.11.007"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "key": "tevc",
+      "name": "IEEE Transactions on Evolutionary Computation",
+      "publisher": "Institute of Electrical and Electronics Engineers",
+      "homepage": "http://cis.ieee.org/ieee-transactions-on-evolutionary-computation.html",
+      "sourceUrl": "https://openalex.org/S93787993",
+      "sourceNames": [
+        "IEEE Transactions on Evolutionary Computation"
+      ],
+      "verifiedPublications": 2,
+      "totalCitations": 1417,
+      "topPapers": [
+        {
+          "title": "Differential Evolution Using a Neighborhood-Based Mutation Operator",
+          "year": 2009,
+          "citations": 1167,
+          "doi": "10.1109/tevc.2008.2009457",
+          "url": "https://doi.org/10.1109/tevc.2008.2009457"
+        },
+        {
+          "title": "Adaptive Computational Chemotaxis in Bacterial Foraging Optimization: An Analysis",
+          "year": 2009,
+          "citations": 250,
+          "doi": "10.1109/tevc.2009.2021982",
+          "url": "https://doi.org/10.1109/tevc.2009.2021982"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "key": "smc",
+      "name": "IEEE Transactions on Systems, Man, and Cybernetics",
+      "publisher": "Institute of Electrical and Electronics Engineers",
+      "homepage": "http://ieeexplore.ieee.org/servlet/opac?punumber=3477",
+      "sourceUrl": "https://openalex.org/S4210201610",
+      "sourceNames": [
+        "IEEE Transactions on Systems Man and Cybernetics - Part A Systems and Humans",
+        "IEEE Transactions on Systems Man and Cybernetics Part B (Cybernetics)",
+        "IEEE Transactions on Systems Man and Cybernetics Systems"
+      ],
+      "verifiedPublications": 4,
+      "totalCitations": 1281,
+      "topPapers": [
+        {
+          "title": "Automatic Clustering Using an Improved Differential Evolution Algorithm",
+          "year": 2007,
+          "citations": 726,
+          "doi": "10.1109/tsmca.2007.909595",
+          "url": "https://doi.org/10.1109/tsmca.2007.909595"
+        },
+        {
+          "title": "A New Approach for Solving Nonlinear Equations Systems",
+          "year": 2008,
+          "citations": 273,
+          "doi": "10.1109/tsmca.2008.918599",
+          "url": "https://doi.org/10.1109/tsmca.2008.918599"
+        },
+        {
+          "title": "Exploratory Power of the Harmony Search Algorithm: Analysis and Improvements for Global Numerical Optimization",
+          "year": 2010,
+          "citations": 248,
+          "doi": "10.1109/tsmcb.2010.2046035",
+          "url": "https://doi.org/10.1109/tsmcb.2010.2046035"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "key": "ins",
+      "name": "Information Sciences",
+      "publisher": "Elsevier BV",
+      "homepage": "https://www.journals.elsevier.com/information-sciences",
+      "sourceUrl": "https://openalex.org/S192650101",
+      "sourceNames": [
+        "Information Sciences"
+      ],
+      "verifiedPublications": 8,
+      "totalCitations": 1329,
+      "topPapers": [
+        {
+          "title": "A hybrid genetic algorithm and bacterial foraging approach for global optimization",
+          "year": 2007,
+          "citations": 469,
+          "doi": "10.1016/j.ins.2007.04.002",
+          "url": "https://doi.org/10.1016/j.ins.2007.04.002"
+        },
+        {
+          "title": "Time-series forecasting using flexible neural tree model",
+          "year": 2004,
+          "citations": 296,
+          "doi": "10.1016/j.ins.2004.10.005",
+          "url": "https://doi.org/10.1016/j.ins.2004.10.005"
+        },
+        {
+          "title": "Hybrid intelligent algorithms and applications",
+          "year": 2010,
+          "citations": 155,
+          "doi": "10.1016/j.ins.2010.02.019",
+          "url": "https://doi.org/10.1016/j.ins.2010.02.019"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "key": "cose",
+      "name": "Computers & Security",
+      "publisher": "Elsevier BV",
+      "homepage": "https://www.journals.elsevier.com/computers-and-security",
+      "sourceUrl": "https://openalex.org/S12529635",
+      "sourceNames": [
+        "Computers & Security"
+      ],
+      "verifiedPublications": 2,
+      "totalCitations": 631,
+      "topPapers": [
+        {
+          "title": "Feature deduction and ensemble design of intrusion detection systems",
+          "year": 2004,
+          "citations": 604,
+          "doi": "10.1016/j.cose.2004.09.008",
+          "url": "https://doi.org/10.1016/j.cose.2004.09.008"
+        },
+        {
+          "title": "A new protocol to counter online dictionary attacks",
+          "year": 2005,
+          "citations": 27,
+          "doi": "10.1016/j.cose.2005.09.003",
+          "url": "https://doi.org/10.1016/j.cose.2005.09.003"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "key": "jnca",
+      "name": "Journal of Network and Computer Applications",
+      "publisher": "Elsevier BV",
+      "homepage": "https://www.journals.elsevier.com/journal-of-network-and-computer-applications",
+      "sourceUrl": "https://openalex.org/S30128005",
+      "sourceNames": [
+        "Journal of Network and Computer Applications"
+      ],
+      "verifiedPublications": 4,
+      "totalCitations": 699,
+      "topPapers": [
+        {
+          "title": "Modeling intrusion detection system using hybrid intelligent systems",
+          "year": 2005,
+          "citations": 434,
+          "doi": "10.1016/j.jnca.2005.06.003",
+          "url": "https://doi.org/10.1016/j.jnca.2005.06.003"
+        },
+        {
+          "title": "D-SCIDS: Distributed soft computing intrusion detection system",
+          "year": 2005,
+          "citations": 161,
+          "doi": "10.1016/j.jnca.2005.06.001",
+          "url": "https://doi.org/10.1016/j.jnca.2005.06.001"
+        },
+        {
+          "title": "Intelligent web traffic mining and analysis",
+          "year": 2004,
+          "citations": 92,
+          "doi": "10.1016/j.jnca.2004.01.006",
+          "url": "https://doi.org/10.1016/j.jnca.2004.01.006"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "key": "iot",
+      "name": "Internet of Things",
+      "publisher": null,
+      "homepage": null,
+      "sourceUrl": null,
+      "sourceNames": [],
+      "verifiedPublications": 0,
+      "totalCitations": 0,
+      "topPapers": [],
+      "status": "no-verified-records"
+    },
+    {
+      "key": "nca",
+      "name": "Neural Computing & Applications",
+      "publisher": "Springer Science+Business Media",
+      "homepage": "https://www.springer.com/journal/521",
+      "sourceUrl": "https://openalex.org/S147897268",
+      "sourceNames": [
+        "Neural Computing and Applications"
+      ],
+      "verifiedPublications": 13,
+      "totalCitations": 300,
+      "topPapers": [
+        {
+          "title": "Ideology algorithm: a socio-inspired optimization methodology",
+          "year": 2016,
+          "citations": 91,
+          "doi": "10.1007/s00521-016-2379-4",
+          "url": "https://doi.org/10.1007/s00521-016-2379-4"
+        },
+        {
+          "title": "A hybrid artificial bee colony with whale optimization algorithm for improved breast cancer diagnosis",
+          "year": 2021,
+          "citations": 72,
+          "doi": "10.1007/s00521-021-05997-6",
+          "url": "https://doi.org/10.1007/s00521-021-05997-6"
+        },
+        {
+          "title": "Dynamic scheduling of heterogeneous resources across mobile edge-cloud continuum using fruit fly-based simulated annealing optimization scheme",
+          "year": 2022,
+          "citations": 32,
+          "doi": "10.1007/s00521-022-07260-y",
+          "url": "https://doi.org/10.1007/s00521-022-07260-y"
+        }
+      ],
+      "status": "ok"
+    }
+  ]
+}

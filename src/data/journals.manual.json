@@ -1,0 +1,15 @@
+{
+  "_help": "Add journals by hand here. Each one shows on the Journals page after the verified ones, marked 'Added manually' and NOT included in the verified totals. Only 'name' is required. 'footerNote' is the line under the cards; {date} becomes the last-updated date (delete footerNote to use the default). Delete this _help line if you like. To switch an example on, copy it into the list below.",
+  "footerNote": "Citation counts reflect OpenAlex records for matched publications attributed to Prof. Ajith Abraham. Counts may differ from Google Scholar, Scopus, and Web of Science. Source: OpenAlex. Last updated: {date}.",
+  "journals": [],
+  "_example": {
+    "name": "Journal of Example Studies",
+    "publisher": "Example Press",
+    "homepage": "https://example.org/journal",
+    "publications": 3,
+    "citations": 120,
+    "topPapers": [
+      { "title": "Paper title", "year": 2021, "citations": 80, "doi": "10.1000/example", "url": "https://doi.org/10.1000/example" }
+    ]
+  }
+}

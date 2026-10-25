@@ -1,0 +1,229 @@
+{
+  "source": "OpenAlex",
+  "retrievedAt": "2026-10-25T08:23:36.124Z",
+  "works": 1573,
+  "coAuthors": 1951,
+  "countries": 72,
+  "countryList": [
+    {
+      "code": "IN",
+      "name": "India",
+      "coAuthors": 475
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "coAuthors": 192
+    },
+    {
+      "code": "IR",
+      "name": "Iran",
+      "coAuthors": 101
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "coAuthors": 92
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "coAuthors": 48
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "coAuthors": 47
+    },
+    {
+      "code": "CZ",
+      "name": "Czechia",
+      "coAuthors": 47
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "coAuthors": 45
+    },
+    {
+      "code": "TN",
+      "name": "Tunisia",
+      "coAuthors": 30
+    },
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "coAuthors": 28
+    }
+  ],
+  "collaborators": [
+    {
+      "name": "Václav Snåšel",
+      "institution": "VSB - Technical University of Ostrava",
+      "country": "CZ",
+      "papers": 150,
+      "openAlex": "https://openalex.org/A5011543714"
+    },
+    {
+      "name": "Crina Groşan",
+      "institution": "Babeș-Bolyai University",
+      "country": "RO",
+      "papers": 89,
+      "openAlex": "https://openalex.org/A5055004602"
+    },
+    {
+      "name": "Swagatam Das",
+      "institution": "Jadavpur University",
+      "country": "IN",
+      "papers": 85,
+      "openAlex": "https://openalex.org/A5000078546"
+    },
+    {
+      "name": "Millie Pant",
+      "institution": "Indian Institute of Technology Roorkee",
+      "country": "IN",
+      "papers": 61,
+      "openAlex": "https://openalex.org/A5081953081"
+    },
+    {
+      "name": "Hongbo Liu",
+      "institution": "Dalian Maritime University",
+      "country": "CN",
+      "papers": 56,
+      "openAlex": "https://openalex.org/A5039907870"
+    },
+    {
+      "name": "Rutuparna Panda",
+      "institution": "Veer Surendra Sai University of Technology",
+      "country": "IN",
+      "papers": 52,
+      "openAlex": "https://openalex.org/A5072703440"
+    },
+    {
+      "name": "Aboul Ella Hassanien",
+      "institution": "Cairo University",
+      "country": "EG",
+      "papers": 47,
+      "openAlex": "https://openalex.org/A5085432173"
+    },
+    {
+      "name": "Kun Ma",
+      "institution": "University of Jinan",
+      "country": "CN",
+      "papers": 44,
+      "openAlex": "https://openalex.org/A5039282629"
+    },
+    {
+      "name": "Pavel Krömer",
+      "institution": "VSB - Technical University of Ostrava",
+      "country": "CZ",
+      "papers": 44,
+      "openAlex": "https://openalex.org/A5088934266"
+    },
+    {
+      "name": "Yuehui Chen",
+      "institution": "University of Jinan",
+      "country": "CN",
+      "papers": 43,
+      "openAlex": "https://openalex.org/A5036479222"
+    },
+    {
+      "name": "Adel M. Alimi",
+      "institution": "University of Sfax",
+      "country": "TN",
+      "papers": 41,
+      "openAlex": "https://openalex.org/A5053613060"
+    },
+    {
+      "name": "Ketan V. Kotecha",
+      "institution": "Symbiosis International University",
+      "country": "IN",
+      "papers": 40,
+      "openAlex": "https://openalex.org/A5077770842"
+    },
+    {
+      "name": "Emilio Corchado",
+      "institution": "Universidad de Salamanca",
+      "country": "ES",
+      "papers": 37,
+      "openAlex": "https://openalex.org/A5037077763"
+    },
+    {
+      "name": "Jan Platoš",
+      "institution": "VSB - Technical University of Ostrava",
+      "country": "CZ",
+      "papers": 36,
+      "openAlex": "https://openalex.org/A5038161265"
+    },
+    {
+      "name": "Bo Yang",
+      "institution": "University of Jinan",
+      "country": "CN",
+      "papers": 35,
+      "openAlex": "https://openalex.org/A5065368480"
+    },
+    {
+      "name": "Anand Jayant Kulkarni",
+      "institution": "Symbiosis International University",
+      "country": "IN",
+      "papers": 31,
+      "openAlex": "https://openalex.org/A5080691948"
+    },
+    {
+      "name": "Sanjay Agrawal",
+      "institution": "Veer Surendra Sai University of Technology",
+      "country": "IN",
+      "papers": 27,
+      "openAlex": "https://openalex.org/A5021901662"
+    },
+    {
+      "name": "Azah Kamilah Muda",
+      "institution": "Universiti Teknikal Malaysia Melaka",
+      "country": "MY",
+      "papers": 26,
+      "openAlex": "https://openalex.org/A5001690160"
+    },
+    {
+      "name": "Radha Thangaraj",
+      "institution": "Indian Institute of Technology Roorkee",
+      "country": "IN",
+      "papers": 26,
+      "openAlex": "https://openalex.org/A5103552096"
+    },
+    {
+      "name": "Yajnaseni Dash",
+      "institution": "Bennett University",
+      "country": "IN",
+      "papers": 24,
+      "openAlex": "https://openalex.org/A5087546574"
+    },
+    {
+      "name": "Fariba Goodarzian",
+      "institution": "Machine Intelligence Research Labs",
+      "country": "US",
+      "papers": 23,
+      "openAlex": "https://openalex.org/A5000283082"
+    },
+    {
+      "name": "Meera Ramadas",
+      "institution": "University College of Bahrain",
+      "country": "BH",
+      "papers": 22,
+      "openAlex": "https://openalex.org/A5033914283"
+    },
+    {
+      "name": "Siti Mariyam Shamsuddin",
+      "institution": "University of Technology Malaysia",
+      "country": "MY",
+      "papers": 21,
+      "openAlex": "https://openalex.org/A5082730131"
+    },
+    {
+      "name": "Sugata Sanyal",
+      "institution": "Tata Institute of Fundamental Research",
+      "country": "IN",
+      "papers": 21,
+      "openAlex": "https://openalex.org/A5110030981"
+    }
+  ]
+}
