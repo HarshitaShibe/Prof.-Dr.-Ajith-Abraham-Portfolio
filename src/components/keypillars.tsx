@@ -22,8 +22,6 @@ interface Pillar {
 const TEASERS: Record<string, string> = {
   'global-academic-leadership':
     'Senior academic leadership across Asia, Africa, Europe, Australia, and North America, leading research programmes with more than USD 110 million in competitive funding.',
-  'research-excellence':
-    'More than 1,500 scholarly publications and over 71,000 citations, with research recognised in the Stanford–Elsevier top 2% list.',
   'ai-healthcare-society':
     'Applying AI to clinical diagnostics, medical imaging, and decision support, with a focus on validation, transparency, and responsible deployment.',
   'institution-building':
@@ -45,25 +43,10 @@ const PILLARS: Pillar[] = [
     sections: [
       {
         paragraphs: [
-          "Professor Abraham’s academic leadership career reflects sustained engagement with institutional development, research strategy, and international collaboration across diverse academic environments. Throughout his career, he has held senior leadership positions at higher education institutions, contributing to academic restructuring, research expansion, governance modernization, and the development of research-oriented academic ecosystems.",
+          "Prof. Dr. Abraham’s academic leadership career reflects sustained engagement with institutional development, research strategy, and international collaboration across diverse academic environments. Throughout his career, he has held senior leadership positions at higher education institutions, contributing to academic restructuring, research expansion, governance modernization, and the development of research-oriented academic ecosystems.",
           "His international experience spans Asia, Africa, Europe, Australia, and North America, providing a broad perspective on the challenges and opportunities facing universities in different educational and research environments.",
           "A significant dimension of his leadership has been directing and co-directing large-scale research programmes supported by national and supranational funding agencies across the United States, the European Union, Asia-Pacific, and Australia. He has led or co-led research programmes exceeding USD 110 million in competitive funding. These initiatives have involved coordinating multinational research consortia, establishing interdisciplinary research centres, and developing partnerships connecting universities, governments, and industry stakeholders.",
           "His approach to academic leadership emphasizes strategic planning, institutional effectiveness, international engagement, and the integration of research with academic development. Through these efforts, he has contributed to strengthening institutional capabilities and fostering collaborative environments that support sustained scientific progress.",
-        ],
-      },
-    ],
-  },
-  {
-    id: 'research-excellence',
-    title: 'Research Excellence & Influence',
-    sections: [
-      {
-        paragraphs: [
-          "Professor Abraham is widely recognized for his contributions to Artificial Intelligence, Computational Intelligence, Machine Learning, and Intelligent Systems. His research encompasses foundational computational methodologies as well as applied intelligent systems addressing challenges in engineering, healthcare, and data-driven decision-making.",
-          "He has authored or co-authored more than 1,500 scholarly publications, including journal articles, conference papers, books, and edited research volumes. His work has received more than 71,000 citations on Google Scholar, with an H-index exceeding 126. His scholarly contributions are also represented in major research databases, including Scopus and Web of Science.",
-          "His research recognition includes consistent inclusion in the Stanford–Elsevier list of the world’s top 2% most-cited scientists. In 2025, ScholarGPS ranked him among the top 0.01% of researchers worldwide in Engineering and Computer Science.",
-          "His contributions have advanced research in hybrid intelligent systems, global optimization, adaptive machine learning frameworks, and computational intelligence. These areas bring together intelligent algorithms, optimization techniques, and data-driven approaches to address complex problems across scientific and industrial settings.",
-          "Through his research, Professor Abraham has contributed to the development of computational methodologies that connect theoretical advances with practical applications, strengthening the role of intelligent systems in contemporary research and technological innovation.",
         ],
       },
     ],
@@ -74,10 +57,10 @@ const PILLARS: Pillar[] = [
     sections: [
       {
         paragraphs: [
-          "Professor Abraham’s work explores the application of Artificial Intelligence to societal challenges, with particular emphasis on healthcare innovation. His research examines how intelligent computational systems can support clinical diagnostics, treatment-related decision-making, and improvements in healthcare delivery through predictive analytics and data-driven approaches.",
+          "Prof. Dr. Abraham’s work explores the application of Artificial Intelligence to societal challenges, with particular emphasis on healthcare innovation. His research examines how intelligent computational systems can support clinical diagnostics, treatment-related decision-making, and improvements in healthcare delivery through predictive analytics and data-driven approaches.",
           "His areas of interest include medical image analysis, clinical decision-support systems, personalized medicine, explainable Artificial Intelligence, and privacy-preserving machine learning. These areas address the potential of AI to support healthcare professionals, extract meaningful insights from complex medical data, and improve the reliability of computational assistance in clinical settings.",
           "An important aspect of his approach is the responsible deployment of AI in high-impact domains. He emphasizes validation, transparency, and ethical safeguards when developing systems that may influence healthcare decisions. This perspective recognizes that technological capability must be accompanied by appropriate evaluation, accountability, and consideration of societal consequences.",
-          "Professor Abraham has presented perspectives on AI-enabled healthcare and responsible technological innovation at international forums, including the St. Petersburg International Economic Forum (SPIEF-2025) and the Artificial Intelligence Journey Conference 2025 in Moscow. During the latter event, he participated in expert sessions and interacted with President Vladimir Putin on topics relating to AI innovation, governance, scientific cooperation, and talent development.",
+          "Prof. Dr. Abraham has presented perspectives on AI-enabled healthcare and responsible technological innovation at international forums, including the St. Petersburg International Economic Forum (SPIEF-2025) and the Artificial Intelligence Journey Conference 2025 in Moscow. During the latter event, he participated in expert sessions and interacted with President Vladimir Putin on topics relating to AI innovation, governance, scientific cooperation, and talent development.",
           "His work highlights the importance of connecting advances in intelligent systems with practical societal needs while maintaining an emphasis on trustworthy and responsible innovation.",
         ],
       },
@@ -89,7 +72,7 @@ const PILLARS: Pillar[] = [
     sections: [
       {
         paragraphs: [
-          "Professor Abraham has contributed to the development of research organizations and universities through institution building, academic restructuring, research infrastructure development, and strategic expansion.",
+          "Prof. Dr. Abraham has contributed to the development of research organizations and universities through institution building, academic restructuring, research infrastructure development, and strategic expansion.",
         ],
       },
       {
@@ -101,7 +84,7 @@ const PILLARS: Pillar[] = [
       {
         heading: 'Bennett University',
         paragraphs: [
-          "During his tenure at Bennett University, Professor Abraham founded the School of Artificial Intelligence, developing it as a transdisciplinary academic unit integrating Artificial Intelligence with engineering, management, and emerging technologies. Under his leadership, student enrolment nearly doubled within two years. He also introduced performance-driven academic and research policies intended to strengthen research productivity while maintaining quality.",
+          "During his tenure at Bennett University, Prof. Dr. Abraham founded the School of Artificial Intelligence, developing it as a transdisciplinary academic unit integrating Artificial Intelligence with engineering, management, and emerging technologies. Under his leadership, student enrolment nearly doubled within two years. He also introduced performance-driven academic and research policies intended to strengthen research productivity while maintaining quality.",
           "He spearheaded the university’s NAAC accreditation process, under which Bennett University achieved an A+ grade with a score of 3.47.",
         ],
       },
@@ -124,10 +107,10 @@ const PILLARS: Pillar[] = [
     sections: [
       {
         paragraphs: [
-          "Professor Abraham contributes to international discussions on Artificial Intelligence governance, scientific cooperation, and cross-border research collaboration. His participation in international forums reflects the role of academic leadership in connecting scientific expertise with broader conversations about technology policy and global innovation.",
+          "Prof. Dr. Abraham contributes to international discussions on Artificial Intelligence governance, scientific cooperation, and cross-border research collaboration. His participation in international forums reflects the role of academic leadership in connecting scientific expertise with broader conversations about technology policy and global innovation.",
           "Through engagements such as the BRICS+ Artificial Intelligence Forum, he has contributed expert perspectives on responsible AI development, international research frameworks, and collaborative approaches to emerging technological challenges.",
           "His work in this area encompasses discussions on research partnerships, innovation ecosystems, talent development, and the exchange of scientific knowledge across national and institutional boundaries. These engagements support dialogue among researchers, academic institutions, and stakeholders working to advance Artificial Intelligence and related technologies.",
-          "International scientific cooperation is particularly important in fields where technological developments have implications extending beyond individual institutions or countries. Professor Abraham’s participation in these platforms contributes an academic perspective to discussions about the opportunities, governance considerations, and collaborative structures shaping the future of AI.",
+          "International scientific cooperation is particularly important in fields where technological developments have implications extending beyond individual institutions or countries. Prof. Dr. Abraham’s participation in these platforms contributes an academic perspective to discussions about the opportunities, governance considerations, and collaborative structures shaping the future of AI.",
           "His engagement in science diplomacy complements his research and institutional leadership by supporting international knowledge exchange and encouraging cooperation in addressing shared technological challenges.",
         ],
       },
@@ -139,7 +122,7 @@ const PILLARS: Pillar[] = [
     sections: [
       {
         paragraphs: [
-          "Professor Abraham has made sustained contributions to the international scientific community through the development and long-term leadership of scientific conference series. These conferences bring together researchers, industry experts, and practitioners to exchange knowledge, present new findings, and strengthen international research networks.",
+          "Prof. Dr. Abraham has made sustained contributions to the international scientific community through the development and long-term leadership of scientific conference series. These conferences bring together researchers, industry experts, and practitioners to exchange knowledge, present new findings, and strengthen international research networks.",
           "As founder and long-term steering chair of several conference series, he has helped establish recurring platforms for collaboration in Artificial Intelligence, intelligent systems, computational intelligence, information security, data mining, and related disciplines. According to the provided resume, these events have been organized across Asia, Europe, North America, South America, Africa, and Oceania.",
         ],
       },
@@ -176,7 +159,7 @@ const PILLARS: Pillar[] = [
     sections: [
       {
         paragraphs: [
-          "Professor Abraham has held professional leadership roles in scientific societies, academic publishing, and international research organizations. His contributions have focused on strengthening scholarly communication, supporting research quality, and advancing professional engagement within the Artificial Intelligence community.",
+          "Prof. Dr. Abraham has held professional leadership roles in scientific societies, academic publishing, and international research organizations. His contributions have focused on strengthening scholarly communication, supporting research quality, and advancing professional engagement within the Artificial Intelligence community.",
         ],
       },
       {
@@ -189,7 +172,7 @@ const PILLARS: Pillar[] = [
       {
         heading: 'Editorial responsibilities',
         paragraphs: [
-          "Professor Abraham has also held editorial leadership responsibilities in Artificial Intelligence publishing. He served as Editor-in-Chief of Engineering Applications of Artificial Intelligence, an Elsevier journal, and contributed to its interdisciplinary reach and research visibility during his tenure. He continues to contribute to scholarly publishing through editorial board positions at more than 15 internationally recognized journals indexed by Thomson Reuters ISI/Web of Science, according to the provided resume.",
+          "Prof. Dr. Abraham has also held editorial leadership responsibilities in Artificial Intelligence publishing. He served as Editor-in-Chief of Engineering Applications of Artificial Intelligence, an Elsevier journal, and contributed to its interdisciplinary reach and research visibility during his tenure. He continues to contribute to scholarly publishing through editorial board positions at more than 15 internationally recognized journals indexed by Thomson Reuters ISI/Web of Science, according to the provided resume.",
           "These responsibilities involve supporting peer review, maintaining scholarly standards, and facilitating the dissemination of research across disciplinary and geographical boundaries. His professional service reflects sustained engagement with the institutions and processes that underpin international scientific communication.",
         ],
       },
@@ -201,7 +184,7 @@ const PILLARS: Pillar[] = [
     sections: [
       {
         paragraphs: [
-          "Professor Abraham advocates a model of higher education that integrates research excellence, technological innovation, interdisciplinary learning, and societal impact. His leadership philosophy positions universities as globally connected institutions that develop knowledge, cultivate innovation ecosystems, and support responsible technological advancement.",
+          "Prof. Dr. Abraham advocates a model of higher education that integrates research excellence, technological innovation, interdisciplinary learning, and societal impact. His leadership philosophy positions universities as globally connected institutions that develop knowledge, cultivate innovation ecosystems, and support responsible technological advancement.",
           "His vision emphasizes the importance of creating research-intensive academic environments in which faculty and students can engage with challenging questions, pursue meaningful inquiry, and contribute to the development of new knowledge. He also highlights the value of international institutional partnerships in expanding research opportunities and encouraging the exchange of expertise across academic systems.",
           "A central element of this philosophy is strengthening doctoral education and faculty research capacity. Sustainable academic progress, in this view, depends on supporting researchers, developing institutional capabilities, and creating environments where high-quality research and teaching reinforce one another.",
           "He also advocates interdisciplinary and technology-enabled learning, recognizing the importance of connecting different fields of knowledge to address complex contemporary challenges. Digital transformation in higher education and the responsible development of Artificial Intelligence form additional priorities within this vision.",
@@ -264,6 +247,7 @@ const CSS = `
 }
 .kp-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
 @media (min-width: 640px) { .kp-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 640px) { .kp-grid > :last-child:nth-child(odd) { grid-column: 1 / -1; } }
 
 .kp-card {
   display: flex; flex-direction: column; gap: 10px; min-height: 180px;

@@ -1,3 +1,4 @@
+import { BrandBadge, type Brand } from './brandicons'
 import { useEffect } from 'react'
 import type { ReactNode } from 'react'
 
@@ -26,11 +27,11 @@ const PHONES = [
 ]
 
 const PROFILES = [
-  { label: 'Google Scholar', short: 'GS', url: 'https://scholar.google.com/citations?user=i95DGLQAAAAJ' },
-  { label: 'ORCID', short: 'ID', url: 'https://orcid.org/0000-0002-0169-6738' },
-  { label: 'Scopus', short: 'Sc', url: 'https://www.scopus.com/authid/detail.uri?authorId=7202760099' },
-  { label: 'Web of Science', short: 'WoS', url: 'https://www.webofscience.com/wos/author/record/A-1416-2008' },
-  { label: 'LinkedIn', short: 'in', url: 'https://www.linkedin.com/in/ajithabraham/' },
+  { label: 'Google Scholar', brand: 'scholar' as Brand, short: 'GS', url: 'https://scholar.google.com/citations?user=i95DGLQAAAAJ' },
+  { label: 'ORCID', brand: 'orcid' as Brand, short: 'ID', url: 'https://orcid.org/0000-0002-0169-6738' },
+  { label: 'Scopus', brand: 'scopus' as Brand, short: 'Sc', url: 'https://www.scopus.com/authid/detail.uri?authorId=7202760099' },
+  { label: 'Web of Science', brand: 'wos' as Brand, short: 'WoS', url: 'https://www.webofscience.com/wos/author/record/A-1416-2008' },
+  { label: 'LinkedIn', brand: 'linkedin' as Brand, short: 'in', url: 'https://www.linkedin.com/in/ajithabraham/' },
   { label: 'Personal website', short: 'www', url: 'https://softcomputing.net' },
   { label: 'MIR Labs', short: 'MIR', url: 'https://www.mirlabs.org' },
 ]
@@ -91,7 +92,9 @@ const CSS = `
 .ct-tile { display: flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 12px; border-radius: 10px; color: #fff; text-decoration: none; font-size: .82rem; font-weight: 400;
   background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.28); box-shadow: inset 0 1px 0 rgba(255,255,255,.2); transition: background-color .25s, border-color .25s, transform .3s cubic-bezier(.16,1,.3,1); }
 .ct-tile:hover { background: rgba(255,255,255,.2); border-color: rgba(255,255,255,.4); transform: translateY(-2px); }
+.ct-tile { gap: 10px; }
 .ct-tile span { flex: 1; min-width: 0; text-align: center; }
+.ct-tile > span:first-child:not(:last-child) { flex: 0 0 auto; }
 
 @media (prefers-reduced-motion: reduce) { .ct-tile { transition: none; } .ct-tile:hover { transform: none; } }
 `
@@ -137,6 +140,7 @@ export default function ContactPage() {
                 {PROFILES.map((p) => (
                   <li key={p.label}>
                     <a className="ct-tile" href={p.url} target="_blank" rel="noopener noreferrer">
+                      {'brand' in p && p.brand ? <BrandBadge brand={p.brand} size={20} /> : null}
                       <span>{p.label}</span>
                     </a>
                   </li>

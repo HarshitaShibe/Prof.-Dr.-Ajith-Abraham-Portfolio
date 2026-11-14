@@ -1,0 +1,183 @@
+{
+ "total": 1580,
+ "mapped": 577,
+ "method": "Keyword match on publication title and venue (CV, June 2026)",
+ "goals": [
+  {
+   "n": 1,
+   "name": "No Poverty",
+   "color": "#E5243B",
+   "count": 0,
+   "examples": []
+  },
+  {
+   "n": 2,
+   "name": "Zero Hunger",
+   "color": "#DDA63A",
+   "count": 8,
+   "examples": [
+    "Artificial intelligence and internet of things interventions for improving antioxidant levels in heritage crops: a perspective review",
+    "Hybrid meta-heuristic algorithms for optimising a sustainable agricultural supply chain network considering CO2 emissions and water consumption",
+    "Machine intelligent forecasting based penalty cost minimization in hybrid wind-battery farms"
+   ]
+  },
+  {
+   "n": 3,
+   "name": "Good Health and Well-being",
+   "color": "#4C9F38",
+   "count": 161,
+   "examples": [
+    "Generative Artificial Intelligence and Ethics for Healthcare",
+    "Edge-Aware PDE Semantic Fields for Zero-Shot Medical Image Classification",
+    "Quantum Machine Learning in Medical Image Analysis: From Diagnostics to Surgery Planning"
+   ]
+  },
+  {
+   "n": 4,
+   "name": "Quality Education",
+   "color": "#C5192D",
+   "count": 5,
+   "examples": [
+    "Transformative effects of ChatGPT on modern education: Emerging Era of AI Chatbots",
+    "Granular Mining of Student's Learning Behavior in Learning Management System Using Rough Set Technique",
+    "Intelligent and Interactive Web-based Tutoring System in Engineering Education: Reviews, Perspectives and Development"
+   ]
+  },
+  {
+   "n": 5,
+   "name": "Gender Equality",
+   "color": "#FF3A21",
+   "count": 1,
+   "examples": [
+    "Rough set- BPSO model for predicting vitamin D deficiency in apparently healthy Kuwaiti women based on hair mineral analysis"
+   ]
+  },
+  {
+   "n": 6,
+   "name": "Clean Water and Sanitation",
+   "color": "#26BDE2",
+   "count": 4,
+   "examples": [
+    "Hybrid meta-heuristic algorithms for optimising a sustainable agricultural supply chain network considering CO2 emissions and water consumption",
+    "Solving unconstrained, constrained optimization and constrained engineering problems using reconfigured water cycle algorithm",
+    "Spiral water cycle algorithm for solving multi-objective optimization and truss optimization problems"
+   ]
+  },
+  {
+   "n": 7,
+   "name": "Affordable and Clean Energy",
+   "color": "#FCC30B",
+   "count": 20,
+   "examples": [
+    "Multi-head attention transformer and Bayesian inference recommendation engine-based blade icing detection framework for wind turbines",
+    "A Hybrid Multi-Hop Clustering and Energy- Aware Routing Protocol for Efficient Resource Management in Renewable Energy Harvesting Wireless Sensor Networks",
+    "An Ingenious Technique to Track the Maximum Power Point for a Wind Energy System"
+   ]
+  },
+  {
+   "n": 8,
+   "name": "Decent Work and Economic Growth",
+   "color": "#A21942",
+   "count": 32,
+   "examples": [
+    "Alternative data in finance and business: emerging applications and theory analysis",
+    "A multi-attribute decision-making fusion model for stock trading with customizable investor personality traits in a picture fuzzy environment",
+    "Attentionbased learning of self-media data for marketing intention detection"
+   ]
+  },
+  {
+   "n": 9,
+   "name": "Industry, Innovation and Infrastructure",
+   "color": "#FD6925",
+   "count": 266,
+   "examples": [
+    "Intelligent Web Data Management: Software architectures and emerging technologies",
+    "A comparative study of slope stability analysis via Geo5 using IoT framework",
+    "A Comprehensive Analysis for Dark Pattern Detection Using Structural, Visual and Textual Information"
+   ]
+  },
+  {
+   "n": 10,
+   "name": "Reduced Inequalities",
+   "color": "#DD1367",
+   "count": 0,
+   "examples": []
+  },
+  {
+   "n": 11,
+   "name": "Sustainable Cities and Communities",
+   "color": "#FD9D24",
+   "count": 33,
+   "examples": [
+    "Emerging standards and the hybrid model for organizing scientific events during and after the COVID- 19 pandemic",
+    "Automated clustering of trajectory data using a particle swarm optimization",
+    "A Trajectory Tracking Robust Controller of Surface Vessels with Disturbance Uncertainties"
+   ]
+  },
+  {
+   "n": 12,
+   "name": "Responsible Consumption and Production",
+   "color": "#BF8B2E",
+   "count": 20,
+   "examples": [
+    "A multi-objective mathematical model to solve a closed-loop pistachios supply chain network problem considering purchasing substitution and discount levels: multi-objective algorithms",
+    "A bi-level mathematical model for logistic management considering the evolutionary game with environmental feedbacks",
+    "A new humanitarian relief logistic network for multi-objective optimization under stochastic programming"
+   ]
+  },
+  {
+   "n": 13,
+   "name": "Climate Action",
+   "color": "#3F7E44",
+   "count": 16,
+   "examples": [
+    "Climate predictors in Indian summer monsoon forecasting: a novel De-correlated RVFL ensemble strategy",
+    "Deep Learning Approach for Predicting Monsoon Dynamics of Regional Climate Zones of India",
+    "Synergy of climate change with country success and city quality of life"
+   ]
+  },
+  {
+   "n": 14,
+   "name": "Life Below Water",
+   "color": "#0A97D9",
+   "count": 2,
+   "examples": [
+    "Fractional-order comprehensive learning marine predators algorithm for global optimization and feature selection",
+    "Automated Detection and Classification of Meningioma Tumor from MR Images Using Sea Lion Optimization and Deep Learning Models"
+   ]
+  },
+  {
+   "n": 15,
+   "name": "Life on Land",
+   "color": "#56C02B",
+   "count": 3,
+   "examples": [
+    "Plant species identification using leaf biometrics and swarm optimization: A hybrid PSO, GWO, SVM model",
+    "Decision Forest Classifier with Flower Search Optimization Algorithm for Efficient Detection of BHP Flooding Attacks in Optical Burst Switching Network",
+    "Intelligent Web Caching Using Adaptive Regression Trees, Splines, Random Forests and Tree Net"
+   ]
+  },
+  {
+   "n": 16,
+   "name": "Peace, Justice and Strong Institutions",
+   "color": "#00689D",
+   "count": 21,
+   "examples": [
+    "Intra-graph and Inter-graph joint information propagation network with third-order text graph tensor for fake news detection",
+    "DC-CNN: Dual-channel Convolutional Neural Networks with attention-pooling for fake news detection",
+    "Explainable Misinformation Detection Across Multiple Social Media Platforms"
+   ]
+  },
+  {
+   "n": 17,
+   "name": "Partnerships for the Goals",
+   "color": "#19486A",
+   "count": 18,
+   "examples": [
+    "Co-FQL:Anomaly Detection Using Cooperative Fuzzy Q-learning in Network",
+    "A Human-Computer Cooperative PSO-based Immune Algorithm for Layout Design",
+    "Cooperative Game Theoretic Approach using Fuzzy Q-learning for Detecting and Preventing Intrusions in Wireless Sensor Networks"
+   ]
+  }
+ ]
+}

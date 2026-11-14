@@ -15,7 +15,11 @@ const LINKEDIN_URL = 'https://www.linkedin.com/in/ajithabraham/'
 
 const LINKS = [
   { label: 'Career and Leadership', href: '#career' },
+  { label: 'Research', href: '#research' },
+  { label: 'Research Funding', href: '#funding' },
+  { label: 'Entrepreneurship', href: '#entrepreneurship' },
   { label: 'Publications', href: '#publications' },
+  { label: 'Most Cited', href: '#mostcited' },
   { label: 'Journals and Publishers', href: '#journals' },
   { label: 'Media and Gallery', href: '#media' },
   { label: 'Contact', href: '#contact' },
@@ -97,24 +101,24 @@ const CSS = `
 }
 
 /* Dark footer on the Career, Publications and Journals pages */
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-wrap { background: #24476B; color: #fff; }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-name,
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-head,
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-sub,
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-strong { color: #fff; }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-about { color: rgba(255,255,255,.75); }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-list li,
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-text { color: rgba(255,255,255,.78); }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-tag { color: rgba(255,255,255,.7); opacity: 1; }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-wrap a { color: rgba(255,255,255,.78); }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-wrap a:hover { color: #fff; }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-wrap a:focus-visible { outline-color: #cdd9ff; }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-by { color: rgba(255,255,255,.78); }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-logo-light { display: none; }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-logo-dark { display: block; }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-wrap .ft-name a { color: #fff; }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-lab, :is(.on-career, .on-publications, .on-journals, .on-contact) .ft-by { color: rgba(255,255,255,.7); }
-:is(.on-career, .on-publications, .on-journals, .on-contact) .ft-bottom { background: transparent; color: rgba(255,255,255,.85); border-top: 1px solid rgba(255,255,255,.28); }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-wrap { background: #24476B; color: #fff; }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-name,
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-head,
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-sub,
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-strong { color: #fff; }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-about { color: rgba(255,255,255,.75); }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-list li,
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-text { color: rgba(255,255,255,.78); }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-tag { color: rgba(255,255,255,.7); opacity: 1; }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-wrap a { color: rgba(255,255,255,.78); }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-wrap a:hover { color: #fff; }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-wrap a:focus-visible { outline-color: #cdd9ff; }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-by { color: rgba(255,255,255,.78); }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-logo-light { display: none; }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-logo-dark { display: block; }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-wrap .ft-name a { color: #fff; }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-lab, :is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-by { color: rgba(255,255,255,.7); }
+:is(.on-career, .on-publications, .on-journals, .on-contact, .on-research-overview, .on-funding, .on-entrepreneurship, .on-research) .ft-bottom { background: transparent; color: rgba(255,255,255,.85); border-top: 1px solid rgba(255,255,255,.28); }
 `
 
 export default function Footer() {
@@ -133,7 +137,7 @@ export default function Footer() {
                 requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: 'smooth' }))
               }}
             >
-              Prof. Ajith Abraham
+              Prof. Dr. Ajith Abraham
             </a>
           </h2>
           <p className="ft-text ft-gap">
@@ -204,7 +208,7 @@ export default function Footer() {
         </div>
 
       <div className="ft-bottom">
-        © {new Date().getFullYear()} Prof. Ajith Abraham. All rights reserved.
+        © {new Date().getFullYear()} Prof. Dr. Ajith Abraham. All rights reserved.
       </div>
     </footer>
   )

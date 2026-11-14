@@ -1,8 +1,11 @@
+import { BrandBadge } from './brandicons'
 import { useCallback, useDeferredValue, useEffect, useId, useMemo, useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import scholarTop from '../data/scholar-top.json'
 import localPapers from '../data/local-papers.generated.json'
 import FIGURES_DATA from '../data/publication-figures.json'
 import PER_YEAR from '../data/publications-per-year.json'
+import SDG from '../data/sdg.json'
+import SDG_MAP from '../data/sdg-map.json'
 import GradientASCII from './GradientASCII'
 
 /* ==========================================================================
@@ -394,6 +397,12 @@ const CSS = `
 @media (min-width: 760px) { .ls-kind { margin: 3px 0 0; } .ls-kind span { display: block; margin-top: 2px; } .ls-kind-year::before { content: none; } }
 .ls-title { margin: 0; font-size: 1rem; font-weight: 600; line-height: 1.42; letter-spacing: -.012em; color: #24476B; }
 .ls-authors { margin: 6px 0 0; font-size: .84rem; line-height: 1.55; color: #2f4d68; }
+.ls-sdgs { margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.ls-sdg { display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 10px 0 3px; border-radius: 999px; border: 1px solid rgba(36,71,107,.22); background: #fff; color: #24476B; font: inherit; font-size: .68rem; font-weight: 500; cursor: pointer; }
+.ls-sdg b { width: 18px; height: 18px; border-radius: 50%; display: grid; place-items: center; background: var(--c); color: #fff; font-size: .62rem; font-weight: 700; line-height: 1; }
+.ls-sdg:hover { border-color: #24476B; }
+.ls-sdg[aria-pressed="true"] { background: #24476B; border-color: #24476B; color: #fff; }
+.ls-sdg:focus-visible { outline: 2px solid #24476B; outline-offset: 2px; }
 .ls-authors strong { font-weight: 600; color: #24476B; }
 .ls-venue { margin: 4px 0 0; font-size: .82rem; line-height: 1.55; color: #3a5f86; overflow-wrap: anywhere; }
 .ls-links { margin: 8px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; font-size: .78rem; }
@@ -627,6 +636,7 @@ export default function Publications() {
   const [yearFrom, setYearFrom] = useState<number | null>(null)
   const [yearTo, setYearTo] = useState<number | null>(null)
   const [access, setAccess] = useState<Access>('all')
+  const [goal, setGoal] = useState(0)
   const [sort, setSort] = useState<Sort>('newest')
   const [page, setPage] = useState(1)
   const q = useDeferredValue(query)
@@ -715,11 +725,13 @@ export default function Publications() {
     [access, linkOf, isFree],
   )
 
+  const goalsOf = useCallback((id: string) => (SDG_MAP as Record<string, number[]>)[id] ?? [], [])
   const byQuery = useMemo(() => {
     const terms = norm(q).split(/\s+/).filter(Boolean)
-    if (!terms.length) return items
-    return items.filter((_, i) => terms.every((t) => searchIndex[i].includes(t)))
-  }, [items, searchIndex, q])
+    const base = goal ? items.filter((it) => goalsOf(it.id).includes(goal)) : items
+    if (!terms.length) return base
+    return base.filter((it) => terms.every((t) => searchIndex[items.indexOf(it)].includes(t)))
+  }, [items, searchIndex, q, goal, goalsOf])
 
   const typeCounts = useMemo(() => {
     const c = Object.fromEntries(TYPES.map((t) => [t.id, 0])) as Record<PubType, number>
@@ -780,7 +792,7 @@ export default function Publications() {
   }, [shown, sort])
 
   const yearSet = yearFrom !== null || yearTo !== null
-  const filtered = query.trim() !== '' || type !== 'all' || yearSet || access !== 'all'
+  const filtered = query.trim() !== '' || type !== 'all' || yearSet || access !== 'all' || goal !== 0
   const resetPaging = () => setPage(1)
   const clearAll = () => {
     setQuery('')
@@ -788,6 +800,7 @@ export default function Publications() {
     setYearFrom(null)
     setYearTo(null)
     setAccess('all')
+    setGoal(0)
     resetPaging()
   }
   /** One year from the chart: select it, or clear it when it was the only one selected. */
@@ -830,16 +843,16 @@ export default function Publications() {
           </h1>
           <div className="pb-ctas">
             <a className="pb-btn" href={SCHOLAR.profileUrl} target="_blank" rel="noopener noreferrer" data-grid-avoid>
-              Google Scholar
+              <BrandBadge brand="scholar" size={20} />Google Scholar
             </a>
             <a className="pb-btn" href="https://www.scopus.com/authid/detail.uri?authorId=7202760099" target="_blank" rel="noopener noreferrer" data-grid-avoid>
-              Scopus
+              <BrandBadge brand="scopus" size={20} />Scopus
             </a>
             <a className="pb-btn" href="https://www.webofscience.com/wos/author/record/A-1416-2008" target="_blank" rel="noopener noreferrer" data-grid-avoid>
-              Web of Science
+              <BrandBadge brand="wos" size={20} />Web of Science
             </a>
             <a className="pb-btn" href="https://orcid.org/0000-0002-0169-6738" target="_blank" rel="noopener noreferrer" data-grid-avoid>
-              ORCID
+              <BrandBadge brand="orcid" size={20} />ORCID
             </a>
             <a className="pb-btn" href={CV_URL} download data-grid-avoid>
               Download CV (PDF)
@@ -847,7 +860,7 @@ export default function Publications() {
           </div>
 
           <p className="pb-lede" data-grid-avoid>
-            Journal articles, conference papers, books and edited volumes by Prof. Ajith Abraham, with links to each publisher and free copies where legally available.
+            Journal articles, conference papers, books and edited volumes by Prof. Dr. Ajith Abraham, with links to each publisher and free copies where legally available.
           </p>
 
         </div>
@@ -1079,6 +1092,27 @@ export default function Publications() {
                     </select>
                   </div>
                   <div className="ls-field">
+                    <label className="ls-label" htmlFor={`${ids}-g`}>
+                      SDG
+                    </label>
+                    <select
+                      id={`${ids}-g`}
+                      className="ls-select"
+                      value={goal}
+                      onChange={(e) => {
+                        setGoal(Number(e.target.value))
+                        resetPaging()
+                      }}
+                    >
+                      <option value={0}>All goals</option>
+                      {SDG.goals.filter((g) => g.count > 0).map((g) => (
+                        <option key={g.n} value={g.n}>
+                          {g.n}. {g.name} ({nf.format(g.count)})
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="ls-field">
                     <label className="ls-label" htmlFor={`${ids}-s`}>
                       Sort
                     </label>
@@ -1200,6 +1234,30 @@ export default function Publications() {
                                     {it.authors.length ? (
                                       <p className="ls-authors">
                                         <Authors names={it.authors} query={q} />
+                                      </p>
+                                    ) : null}
+                                    {goalsOf(it.id).length ? (
+                                      <p className="ls-sdgs" aria-label="Sustainable Development Goals">
+                                        {goalsOf(it.id).map((n) => {
+                                          const g = SDG.goals[n - 1]
+                                          return (
+                                            <button
+                                              key={n}
+                                              type="button"
+                                              className="ls-sdg"
+                                              style={{ ['--c' as string]: g.color }}
+                                              aria-pressed={goal === n}
+                                              title={`Filter by SDG ${n}: ${g.name}`}
+                                              onClick={() => {
+                                                setGoal(goal === n ? 0 : n)
+                                                resetPaging()
+                                              }}
+                                            >
+                                              <b>{n}</b>
+                                              {g.name}
+                                            </button>
+                                          )
+                                        })}
                                       </p>
                                     ) : null}
                                     {it.venue ? (

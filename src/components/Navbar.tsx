@@ -10,16 +10,23 @@ import { motion } from 'motion/react'
 const PJS = '"Plus Jakarta Sans", Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif'
 const EASE = [0.16, 1, 0.3, 1] as const
 
+// desktop pill
 const ITEMS = [
-  { label: 'Career and Leadership', id: 'career' },
+  { label: 'Career & Leadership', id: 'career' },
+  { label: 'Research', id: 'research' },
+  { label: 'Entrepreneurship', id: 'entrepreneurship' },
   { label: 'Publications', id: 'publications' },
   { label: 'Journals and Publishers', id: 'journals' },
-  { label: 'Media and Gallery', id: 'media' },
+  { label: 'Most Cited', id: 'mostcited' },
+  { label: 'Media & Gallery', id: 'media' },
   { label: 'Contact', id: 'contact' },
 ]
 
-// the phone menu also has a Homepage entry that goes back to the hero
-const MENU_ITEMS = [{ label: 'Homepage', id: 'top' }, ...ITEMS]
+// Contact sits on its own at the right end, outside the pill (desktop)
+const PILL_ITEMS = ITEMS.filter((i) => i.id !== 'contact')
+
+// phone menu: the full list, with Home first
+const MENU_ITEMS = [{ label: 'Home', id: 'top' }, ...ITEMS]
 
 const CSS = `
 .nv-header {
@@ -94,10 +101,30 @@ const CSS = `
 }
 .nv-link-text { position: relative; z-index: 1; }
 @media (min-width: 640px) { .nv-link { padding: 4px 10px; font-size: .68rem; } }
+@media (min-width: 768px) and (max-width: 1023px) { .nv-link { padding: 4px 4px; font-size: .6rem; } .nv-sep { margin: 0 !important; } }
+
+/* Contact: a separate button at the right end, not part of the pill (desktop only) */
+.nv-contact {
+  margin-left: auto; display: inline-flex; align-items: center; flex-shrink: 0; height: 28px; padding: 0 14px; border-radius: 999px;
+  font-size: .68rem; font-weight: 500; text-decoration: none; white-space: nowrap; color: #fff;
+  border: 1px solid rgba(255,255,255,.2); background: #24476B;
+  box-shadow: 0 10px 30px -10px rgba(18,36,60,.6), inset 0 1px 0 rgba(255,255,255,.22);
+  transition: background .25s;
+}
+.nv-contact:hover { background: #1b3652; }
+.nv-contact.is-active { background: #1b3652; border-color: rgba(255,255,255,.4); }
+.nv-contact:focus-visible { outline: 2px solid #cdd9ff; outline-offset: 2px; }
+@media (min-width: 768px) and (max-width: 1023px) { .nv-contact { padding: 0 10px; font-size: .6rem; } }
 
 /* Career page only (html.on-career): dark brand text + darker pill, for the light background */
+.on-funding .nv-brand .nv-name,
+.on-entrepreneurship .nv-brand .nv-name,
+.on-research-overview .nv-brand .nv-name,
 .on-career .nv-brand .nv-name { color: #24476B; text-shadow: none; font-weight: 600; }
 /* Publications page only: brand name in the hero blue */
+.on-funding .nv-pill,
+.on-entrepreneurship .nv-pill,
+.on-research-overview .nv-pill,
 .on-career .nv-pill {
   background: #24476B;
   border-color: rgba(255,255,255,.14);
@@ -107,12 +134,12 @@ const CSS = `
 @media (min-width: 768px) { .on-publications .nv-brand .nv-name { color: #24476B; text-shadow: none; font-weight: 600; } }
 
 /* Publications page only: after the hero, the pill turns dark and the name stays visible in dark blue */
-.on-publications .nv-header.is-scrolled .nv-pill, .on-journals .nv-header.is-scrolled .nv-pill { background: #24476B; border-color: rgba(255,255,255,.14); }
+.on-publications .nv-header.is-scrolled .nv-pill, .on-journals .nv-header.is-scrolled .nv-pill, .on-research-overview .nv-header.is-scrolled .nv-pill { background: #24476B; border-color: rgba(255,255,255,.14); }
 
 /* ---- Phones and small tablets (below 768px): the pill becomes a menu button + dropdown ---- */
 .nv-burger, .nv-menu { display: none; }
 @media (max-width: 767px) {
-  .nv-nav { display: none; }
+  .nv-nav, .nv-contact { display: none; }
   .nv-name { font-size: .78rem; }
   .nv-burger {
     display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
@@ -166,7 +193,7 @@ const CONTACT = {
 }
 
 // Scroll to a section so its heading lands just under the floating navbar
-const PAGES = ['career', 'publications', 'journals', 'media', 'contact']
+const PAGES = ['career', 'research', 'funding', 'entrepreneurship', 'mostcited', 'publications', 'journals', 'media', 'contact']
 const goTo = (id: string) => (e: MouseEvent<HTMLAnchorElement>) => {
   if (PAGES.includes(id)) return // separate pages: let the hash change open them
   const el = document.getElementById(id)
@@ -266,14 +293,14 @@ export default function Navbar() {
           style={{ opacity: brandOpacity } as CSSProperties}
           tabIndex={pastHero || brandOpacity === 0 ? -1 : 0}
         >
-          <span className="nv-name">Prof. Ajith Abraham</span>
+          <span className="nv-name">Prof. Dr. Ajith Abraham</span>
         </a>
 
         <nav aria-label="Main navigation" className="nv-nav">
           <ul className="nv-pill">
-            {ITEMS.map((item, i) => {
+            {PILL_ITEMS.map((item, i) => {
               const isActive = active === item.id
-              const prevActive = i > 0 && active === ITEMS[i - 1].id
+              const prevActive = i > 0 && active === PILL_ITEMS[i - 1].id
               return (
                 <li key={item.id} className="nv-item">
                   {i > 0 && (
@@ -306,6 +333,15 @@ export default function Navbar() {
             })}
           </ul>
         </nav>
+
+        <a
+          href="#contact"
+          className={`nv-contact${active === 'contact' ? ' is-active' : ''}`}
+          aria-current={active === 'contact' ? 'page' : undefined}
+          onClick={() => setActive('contact')}
+        >
+          Contact
+        </a>
 
         <button
           type="button"

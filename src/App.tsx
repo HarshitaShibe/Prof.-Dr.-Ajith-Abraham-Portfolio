@@ -12,9 +12,14 @@ import CitationMetrics from './components/citationmetrics'
 import Publications from './components/publications'
 import Footer from './components/footer'
 import Collaborations from './components/collaborations'
+import CurrentFocus from './components/currentfocus'
 import CareerPage from './components/careerpage'
 import JournalsPage from './components/journalspage'
 import ContactPage from './components/contactpage'
+import ResearchOverview from './components/researchoverview'
+import FundingPage from './components/fundingpage'
+import EntrepreneurshipPage from './components/entrepreneurshippage'
+import ResearchPage from './components/researchpage'
 import MediaPage from './components/mediapage'
 import BackToTop from './components/backtotop'
 import home from './data/home.json'
@@ -39,7 +44,7 @@ const FADE = 1.4 // s: crossfade
 const MOVE = (HOLD + FADE * 1000) / 1000 // s: slow camera move
 
 type Mo = 'zoomIn' | 'zoomOut' | 'panLeft' | 'panRight'
-type Route = 'home' | 'career' | 'publications' | 'journals' | 'media' | 'contact'
+type Route = 'home' | 'career' | 'research' | 'funding' | 'entrepreneurship' | 'mostcited' | 'publications' | 'journals' | 'media' | 'contact'
 
 function frame(mo: Mo, active: boolean) {
   const start = {
@@ -154,6 +159,11 @@ body { display: block; min-height: 0; }
 
 .hm-icon { width: 17px; height: 17px; flex-shrink: 0; }
 
+.hm-more { margin-top: 18px; max-width: 780px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.hm-more p { margin: 0; text-align: center; color: #fff; }
+.hm-kw { font-size: .76rem; font-weight: 500; letter-spacing: .02em; color: #cdd9ff !important; }
+.hm-exp { font-size: .76rem; font-weight: 400; }
+.hm-rank { margin-top: 6px !important; font-size: .7rem; line-height: 1.55; font-weight: 300; font-style: italic; color: rgba(255,255,255,.88) !important; }
 .hm-btns { margin-top: 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; }
 .hm-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 16px;
   border-radius: 10px; border: 1px solid #fff; background: #fff; color: #24476B; font: 600 .82rem inherit; font-family: inherit; text-decoration: none; white-space: nowrap;
@@ -172,19 +182,26 @@ body { display: block; min-height: 0; }
   .hm-btn { height: 44px; padding: 0 20px; font-size: .88rem; }
 }
 
+@media (min-width: 640px) and (max-width: 899px) {
+  .hm-hero { min-height: 960px; }
+  .hm-content { padding-bottom: 250px; }
+}
 @media (max-width: 639px) {
-  .hm-hero { min-height: 740px; }
-  .hm-content { padding-bottom: 150px; }
+  .hm-hero { min-height: 1010px; }
+  .hm-content { padding-top: 84px; padding-bottom: 255px; }
   .hm-badge { font-size: 1rem; }
-  .hm-hero h1.hm-name { font-size: 2.6rem; margin-top: 20px; white-space: nowrap; }
+  .hm-hero h1.hm-name { font-size: 2.6rem; margin-top: 0; white-space: normal; text-wrap: balance; }
   .hm-tag { font-size: 1.15rem; white-space: normal; flex-wrap: wrap; row-gap: 2px; margin-top: 20px; line-height: 1.4; }
   .hm-aff { margin-top: 32px; gap: 10px; }
   .hm-aff li { font-size: 1rem; line-height: 1.5; }
   .hm-aff li:first-child { white-space: nowrap; font-size: calc((100vw - 56px) / 23.5); }
+  .hm-more { margin-top: 24px; gap: 8px; }
+  .hm-kw { font-size: .9rem; line-height: 1.5; }
+  .hm-exp { font-size: .9rem; }
+  .hm-rank { font-size: .8rem; line-height: 1.6; }
 }
 @media (max-width: 380px) {
-  .hm-hero { min-height: 780px; }
-  .hm-content { padding-top: 70px; }
+  .hm-hero { min-height: 1050px; }
   .hm-hero h1.hm-name { font-size: 2.3rem; }
   .hm-badge { font-size: .92rem; }
   .hm-tag { font-size: 1.05rem; margin-top: 16px; }
@@ -245,8 +262,11 @@ function App() {
 
   // Tiny hash router: "#career" shows the Career page, any other hash shows the
   // home page (and scrolls to that section).
-  const routeFromHash = (): Route =>
-    window.location.hash === '#career' ? 'career' : window.location.hash === '#publications' ? 'publications' : window.location.hash === '#journals' ? 'journals' : window.location.hash === '#media' ? 'media' : window.location.hash === '#contact' ? 'contact' : 'home'
+  const ROUTES: Route[] = ['career', 'research', 'funding', 'entrepreneurship', 'mostcited', 'publications', 'journals', 'media', 'contact']
+  const routeFromHash = (): Route => {
+    const h = window.location.hash.slice(1) as Route
+    return ROUTES.includes(h) ? h : 'home'
+  }
   const [route, setRoute] = useState<Route>(routeFromHash)
   useEffect(() => {
     const onHash = () => setRoute(routeFromHash())
@@ -269,6 +289,54 @@ function App() {
         <style>{CSS}</style>
         <Navbar />
         <CareerPage />
+        <Footer />
+        <BackToTop />
+      </>
+    )
+  }
+
+  if (route === 'research') {
+    return (
+      <>
+        <style>{CSS}</style>
+        <Navbar />
+        <ResearchOverview />
+        <Footer />
+        <BackToTop />
+      </>
+    )
+  }
+
+  if (route === 'funding') {
+    return (
+      <>
+        <style>{CSS}</style>
+        <Navbar />
+        <FundingPage />
+        <Footer />
+        <BackToTop />
+      </>
+    )
+  }
+
+  if (route === 'entrepreneurship') {
+    return (
+      <>
+        <style>{CSS}</style>
+        <Navbar />
+        <EntrepreneurshipPage />
+        <Footer />
+        <BackToTop />
+      </>
+    )
+  }
+
+  if (route === 'mostcited') {
+    return (
+      <>
+        <style>{CSS}</style>
+        <Navbar />
+        <ResearchPage />
         <Footer />
         <BackToTop />
       </>
@@ -356,10 +424,6 @@ function App() {
 
         <div className="hm-content">
           <div className="hm-inner">
-            <div className="hm-in" style={delay(0.35)}>
-              <span className="hm-badge">{home.badge}</span>
-            </div>
-
             <h1 id="home-title" className="hm-name hm-in" style={delay(0.46)}>
               {home.name}
             </h1>
@@ -374,6 +438,12 @@ function App() {
                 <li key={line}>{line}</li>
               ))}
             </ul>
+
+            <div className="hm-more hm-in" style={delay(0.8)}>
+              <p className="hm-kw">{home.keywords}</p>
+              <p className="hm-exp">{home.experience}</p>
+              <p className="hm-rank">{home.ranking}</p>
+            </div>
           </div>
         </div>
         <Stats />
@@ -394,6 +464,8 @@ function App() {
       <FundedAgencies />
 
       <Collaborations />
+
+      <CurrentFocus />
 
       <section id="moments" className="mm-sec" aria-labelledby="mm-title">
         <div className="mm-over">

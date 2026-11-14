@@ -1,0 +1,145 @@
+{
+  "_help": "Research funding list, taken from the CV (public/Ajith-Abraham-CV.pdf). Edit or add entries here.",
+  "asOf": "5 June 2026",
+  "totalNote": "Research programmes led or co-led exceeding USD 110 million in competitive funding from national and supranational agencies across the United States, European Union, Asia-Pacific, and Australia.",
+  "projects": [
+    {
+      "agency": "Generalitat de Catalunya, Spain",
+      "topic": "Evolving Artificial Intelligence Paradigms on Computational Grid for Knowledge Mining",
+      "period": "January - December 2008",
+      "role": "Principal Investigator",
+      "country": "Spain"
+    },
+    {
+      "agency": "Ministry of Education, Spain",
+      "topic": "Evolutionary Neural Network Optimization",
+      "period": "2005-2006",
+      "role": "Principal Investigator",
+      "country": "Spain"
+    },
+    {
+      "agency": "State of Oklahoma, USA",
+      "topic": "Startup fund as Domain Leader",
+      "period": "January - December 2004",
+      "role": "Principal Investigator",
+      "country": "USA",
+      "kind": "Startup fund (not a conventional research project)"
+    },
+    {
+      "agency": "Presidential Challenge Grant, Oklahoma State University",
+      "topic": "Web Based Distributed Data Mining Using Hybrid Intelligent Systems",
+      "period": "2003 - 2005",
+      "role": "Principal Investigator",
+      "country": "USA"
+    },
+    {
+      "agency": "The Analytical Center for the Government of the Russian Federation",
+      "project": "Center for Artificial Intelligence, Innopolis University, Innopolis, Russia",
+      "topic": "Intersectoral Artificial Intelligence Technologies for the Task of Digital Transformation of the Economy Priority Sectors",
+      "period": "2025 - 2026",
+      "role": "Co-Investigator",
+      "country": "Russia"
+    },
+    {
+      "agency": "Research Council of Lithuania",
+      "topic": "Sensitive Cognitive Classroom Emphasizing Improving Learners Academic Performance and Positive Emotions and Reducing Stress and Depression",
+      "period": "2024-2027",
+      "role": "Co-Investigator",
+      "country": "Lithuania"
+    },
+    {
+      "agency": "Government of Malaysia",
+      "topic": "Hybrid Blind Deconvolution and DeepOrganNet Techniques for Reconstructing 3D Molecular Structure of Genuine and Falsified Medicine Microscopic Images",
+      "period": "2021 - 2023",
+      "role": "Co-Investigator",
+      "country": "Malaysia"
+    },
+    {
+      "agency": "Permodalan Nasional Berhad, Government of Malaysia",
+      "project": "Yayasan Tun Ismail Professorial Chair Programme (YTIPCP)",
+      "topic": "An Intelligent Portfolio Management System for Strategic Planning and Investment Decision Making using Artificial Intelligence",
+      "period": "2021 - 2023",
+      "role": "Co-Investigator",
+      "country": "Malaysia"
+    },
+    {
+      "agency": "The Analytical Center for the Government of the Russian Federation",
+      "project": "Center for Artificial Intelligence, Innopolis University, Innopolis, Russia",
+      "topic": "Intersectoral Artificial Intelligence Technologies for the Task of Digital Transformation of the Economy Priority Sectors",
+      "period": "2021 - 2024",
+      "role": "Co-Investigator",
+      "country": "Russia"
+    },
+    {
+      "agency": "European Commission, Horizon 2020",
+      "topic": "Regeneration and Optimisation of Cultural Heritage in Creative and Knowledge Cities",
+      "period": "2017 - 2020",
+      "role": "Co-Investigator",
+      "country": "European Union"
+    },
+    {
+      "agency": "The International Centre for Genetic Engineering and Biotechnology, Italy",
+      "topic": "A New 3D Descriptor of Synthetic Drug Molecular Structure for Drug Analysis",
+      "period": "2014 - 2015",
+      "role": "Co-Investigator",
+      "country": "Italy"
+    },
+    {
+      "agency": "Government of Malaysia",
+      "topic": "A Novel Swarm Optimized Rough Apriori Model for Mining Significant Resistant Single Nucleotide Polymorphism Subset in Obesity Gene Variants Diagnosis",
+      "period": "2013 - 2014",
+      "role": "Co-Investigator",
+      "country": "Malaysia"
+    },
+    {
+      "agency": "European Commission, FP7-PEOPLE-2012-ITN Programme",
+      "topic": "Development of in-silico process models for roll compaction",
+      "period": "2013 - 2016",
+      "role": "Co-Investigator",
+      "country": "European Union"
+    },
+    {
+      "agency": "Government of Malaysia",
+      "topic": "The Augmented Social Network Benchmark for Web Pre-caching on Solving Trust, Accuracy and Expectation Problems",
+      "period": "2012 - 2014",
+      "role": "Co-Investigator",
+      "country": "Malaysia"
+    },
+    {
+      "agency": "European Social Fund and Czech Republic State Funds",
+      "topic": "BIO-inspired Methods: research, education and knowledge transfer",
+      "period": "2011 - 2014",
+      "role": "Co-Investigator",
+      "country": "Czech Republic"
+    },
+    {
+      "agency": "European Social Fund and Czech Republic State Funds",
+      "topic": "IT4Innovations, Center of Excellence",
+      "period": "2011 - 2015",
+      "role": "Co-Investigator",
+      "country": "Czech Republic"
+    },
+    {
+      "agency": "Malaysian Government Grant, Higher Learning Ministry, Malaysia",
+      "topic": "Tree structural based method for feature selection",
+      "period": "2010 - 2012",
+      "role": "Co-Investigator",
+      "country": "Malaysia"
+    },
+    {
+      "agency": "National Science Foundation of China (NSFC)",
+      "topic": "Research on Hidden Chinese Cognition Model Based on Swarm Intelligence",
+      "period": "2009 - 2011",
+      "role": "Co-Investigator",
+      "grant": "60873054",
+      "country": "China"
+    },
+    {
+      "agency": "MOSTI Science Fund, Malaysia",
+      "topic": "Development of An Integrated Adaptive Web Caching and Prefetching",
+      "period": "2008 - 2010",
+      "role": "Co-Investigator",
+      "country": "Malaysia"
+    }
+  ]
+}

@@ -100,25 +100,33 @@ const CSS = `
   line-height: 1.15; letter-spacing: -.04em; color: #fff;
 }
 
+/* Light variant (used on the Funding page): no outer padding, navy title, white tiles with a soft border */
+.fa-light { padding: 0 !important; color: #24476B; }
+.fa-light .fa-title { color: #24476B; margin-bottom: 32px; }
+.fa-light .fa-tile { border: 1px solid #DCE8F1; box-shadow: 0 8px 22px -16px rgba(36,71,107,.45); }
+.fa-light .fa-tile:hover { box-shadow: 0 14px 28px -14px rgba(36,71,107,.5); }
+.fa-light .fa-logos { margin-bottom: 0; }
+@media (min-width: 1024px) { .fa-light .fa-tile { width: calc((100% - 80px) / 5); } }
+
 @media (max-width: 639px) {
   .fa-wrap { padding-bottom: 80px; }
   .fa-title { margin-bottom: 32px; }
 }
 .fa-logos {
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; list-style: none; margin: 0 0 24px; padding: 0;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; list-style: none; margin: 0 0 24px; padding: 0;
 }
 @media (min-width: 640px) { .fa-logos { gap: 20px; } }
 
 .fa-tile {
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
-  width: calc(50% - 8px); aspect-ratio: 1 / 1; padding: 12px; box-sizing: border-box; background: #ffffff; border-radius: 14px;
+  width: calc((100% - 24px) / 3); aspect-ratio: 1 / 1; padding: 8px; box-sizing: border-box; background: #ffffff; border-radius: 14px;
   box-shadow: 0 10px 26px -14px rgba(18,36,60,.6);
   transition: box-shadow .4s cubic-bezier(.16,1,.3,1);
 }
-@media (min-width: 640px) { .fa-tile { width: calc((100% - 60px) / 4); } }
-@media (min-width: 1024px) { .fa-tile { width: calc((100% - 80px) / 5); } }
+@media (min-width: 640px) { .fa-tile { width: calc((100% - 80px) / 5); padding: 10px; } }
+@media (min-width: 1024px) { .fa-tile { width: calc((100% - 120px) / 7); } }
 .fa-tile img {
-  width: 88%; height: 88%; object-fit: contain; display: block;
+  width: 80%; height: 80%; object-fit: contain; display: block;
   transition: transform .4s cubic-bezier(.16,1,.3,1);
 }
 .fa-tile:hover img { transform: scale(1.15); }
@@ -126,9 +134,9 @@ const CSS = `
 
 `
 
-export default function FundedAgencies() {
+export default function FundedAgencies({ light = false }: { light?: boolean }) {
   return (
-    <section id="funded-agencies" className="fa-wrap" aria-labelledby="fa-title">
+    <section id="funded-agencies" className={light ? 'fa-wrap fa-light' : 'fa-wrap'} aria-labelledby="fa-title">
       <style>{CSS}</style>
 
       <h2 id="fa-title" className="fa-title">Funded Agencies</h2>

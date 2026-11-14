@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import DriftWall, { WALL_ITEMS } from './driftwall'
+import { BrandBadge } from './brandicons'
 
 /* ==========================================================================
    Media page: the whole page is the DriftWall of photos, edge to edge.
@@ -34,7 +35,7 @@ const CSS = `
 .md-grid.in .md-card:nth-child(2) { transition-delay: .08s, 0s, 0s, 0s; }
 .md-grid.in .md-card:nth-child(3) { transition-delay: .16s, 0s, 0s, 0s; }
 .md-grid.in .md-card:hover, .md-grid.in .md-card:focus-visible { background: rgba(255,255,255,.15); transform: scale(1.03); box-shadow: 0 0 0 4px rgba(255,255,255,.14); outline: none; transition-delay: 0s; }
-.md-ic { display: inline-flex; width: 48px; height: 48px; align-items: center; justify-content: center; border-radius: 14px; background: rgba(255,255,255,.14); }
+.md-ic { display: inline-flex; }
 .md-ct { font-size: 1rem; font-weight: 600; letter-spacing: -.01em; margin-top: 4px; }
 .md-cd { font-size: .82rem; font-weight: 300; line-height: 1.6; color: rgba(255,255,255,.85); }
 .md-go { margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 999px; font-size: .78rem; font-weight: 500; background: #fff; color: #24476B; }
@@ -44,16 +45,10 @@ const CSS = `
 @media (max-width: 860px) { .md-grid { grid-template-columns: 1fr; max-width: 460px; } .md-links { padding: 56px 20px 72px; } }
 `
 
-const YT = (
-  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.900.5A3 3 0 0 0 1 7.200C.5 9.100.5 12 .5 12s0 2.900.5 4.800a3 3 0 0 0 2.100 2.100c1.900.5 8.900.5 8.900.5s7 0 8.900-.5a3 3 0 0 0 2.100-2.100c.5-1.900.5-4.800.5-4.800s0-2.900-.5-4.800ZM9.800 15.500v-7l6 3.500-6 3.500Z"/></svg>
-)
-const LI = (
-  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.400 20.400h-3.500v-5.600c0-1.300 0-3-1.800-3s-2.100 1.400-2.100 2.900v5.700H9.500V9h3.400v1.600h.1c.5-.9 1.600-1.800 3.400-1.800 3.600 0 4.300 2.400 4.300 5.500v6.100ZM5.300 7.400a2 2 0 1 1 0-4.100 2 2 0 0 1 0 4.100ZM7.100 20.400H3.600V9h3.500v11.400Z"/></svg>
-)
 const LINKS = [
-  { href: 'https://www.youtube.com/@ajith_abraham', icon: YT, title: 'YouTube Channel', desc: 'Talks, lectures and conversations from Prof. Ajith Abraham.', cta: 'Watch on YouTube' },
-  { href: 'https://www.linkedin.com/posts/ajithabraham_artificialintelligence-researchcollaboration-activity-7482763604186812417-U-ao', icon: LI, title: 'LinkedIn Post', desc: 'Artificial intelligence and research collaboration.', cta: 'View on LinkedIn' },
-  { href: 'https://www.linkedin.com/posts/ajithabraham_activity-7491104519578148864-ynSd', icon: LI, title: 'LinkedIn Post', desc: 'Latest update shared by Prof. Ajith Abraham.', cta: 'View on LinkedIn' },
+  { href: 'https://www.youtube.com/@ajith_abraham', icon: <BrandBadge brand="youtube" size={44} />, title: 'YouTube Channel', desc: 'Talks, lectures and conversations from Prof. Dr. Ajith Abraham.', cta: 'Watch on YouTube' },
+  { href: 'https://www.linkedin.com/posts/ajithabraham_artificialintelligence-researchcollaboration-activity-7482763604186812417-U-ao', icon: <BrandBadge brand="linkedin" size={44} />, title: 'LinkedIn Post', desc: 'Artificial intelligence and research collaboration.', cta: 'View on LinkedIn' },
+  { href: 'https://www.linkedin.com/posts/ajithabraham_activity-7491104519578148864-ynSd', icon: <BrandBadge brand="linkedin" size={44} />, title: 'LinkedIn Post', desc: 'Latest update shared by Prof. Dr. Ajith Abraham.', cta: 'View on LinkedIn' },
 ]
 
 export default function MediaPage() {
@@ -70,6 +65,17 @@ export default function MediaPage() {
     document.documentElement.classList.add('on-media')
     return () => document.documentElement.classList.remove('on-media')
   }, [])
+
+  // desktop: size the tiles so exactly 4 columns fit across the screen (the wall is drawn at 1.18x)
+  const [vw, setVw] = useState(() => (typeof window !== 'undefined' ? window.innerWidth : 1440))
+  useEffect(() => {
+    const on = () => setVw(window.innerWidth)
+    window.addEventListener('resize', on)
+    return () => window.removeEventListener('resize', on)
+  }, [])
+  const WALL_GAP = 14
+  const tileW = phone ? 320 : Math.max(180, Math.round(vw / 4 / 1.18 - WALL_GAP))
+  const tileH = phone ? 210 : Math.round(tileW * 0.66)
 
   const gridRef = useRef<HTMLDivElement>(null)
   const [shown, setShown] = useState(false)
@@ -91,18 +97,19 @@ export default function MediaPage() {
       </div>
       <DriftWall
         items={WALL_ITEMS}
-        columns={phone ? 1 : 9}
-        tileWidth={phone ? 320 : 240}
-        tileHeight={phone ? 210 : 132}
-        gap={phone ? 22 : 18}
-        tilt={phone ? 0 : 16}
-        turn={phone ? 0 : -14}
+        columns={phone ? 1 : 6}
+        tileWidth={tileW}
+        tileHeight={tileH}
+        radius={4}
+        gap={phone ? 22 : WALL_GAP}
+        tilt={0}
+        turn={0}
         perspective={1200}
-        depth={phone ? 0 : 120}
-        speed={phone ? 38 : 42}
+        depth={0}
+        speed={phone ? 12 : 13}
         direction="up"
-        variance={phone ? 0 : 0.45}
-        parallax={phone ? 0 : 0.6}
+        variance={phone ? 0 : 0.3}
+        parallax={0}
         lift={phone ? 0 : 64}
         fade={0.3}
         dim={phone ? 0.8 : 0.92}

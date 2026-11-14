@@ -26,12 +26,12 @@ const CSS = `
 /* Career page only (html.on-career): dark button on the light background */
 .on-career .bt-btn { background: #24476B; color: #fff; }
 .on-publications .bt-btn { background: #24476B; color: #fff; }
-.on-journals .bt-btn { background: #24476B; color: #fff; }
-.on-contact .bt-btn { background: #24476B; color: #fff; }
+.on-journals .bt-btn, .on-research .bt-btn, .on-research-overview .bt-btn { background: #24476B; color: #fff; }
+.on-contact .bt-btn, .on-entrepreneurship .bt-btn, .on-funding .bt-btn { background: #24476B; color: #fff; }
 .on-career .bt-btn:hover { background: #1b3652; }
 .on-publications .bt-btn:hover { background: #1b3652; }
-.on-journals .bt-btn:hover { background: #1b3652; }
-.on-contact .bt-btn:hover { background: #1b3652; }
+.on-journals .bt-btn:hover, .on-research .bt-btn:hover, .on-research-overview .bt-btn:hover { background: #1b3652; }
+.on-contact .bt-btn:hover, .on-entrepreneurship .bt-btn:hover, .on-funding .bt-btn:hover { background: #1b3652; }
 .on-career .bt-btn:focus-visible { outline-color: #24476B; }
 .on-publications .bt-btn:focus-visible { outline-color: #24476B; }
 .on-journals .bt-btn:focus-visible { outline-color: #24476B; }

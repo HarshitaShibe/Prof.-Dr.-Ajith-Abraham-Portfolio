@@ -1,0 +1,528 @@
+{
+ "source": "OpenAlex, works by Ajith Abraham (A5087542455), fetched 12 Nov 2026",
+ "metric": "publications with at least one author from the country / institution",
+ "countries": [
+  {
+   "code": "US",
+   "name": "United States",
+   "papers": 856
+  },
+  {
+   "code": "IN",
+   "name": "India",
+   "papers": 503
+  },
+  {
+   "code": "CZ",
+   "name": "Czechia",
+   "papers": 297
+  },
+  {
+   "code": "NO",
+   "name": "Norway",
+   "papers": 179
+  },
+  {
+   "code": "CN",
+   "name": "China",
+   "papers": 176
+  },
+  {
+   "code": "KR",
+   "name": "South Korea",
+   "papers": 118
+  },
+  {
+   "code": "MY",
+   "name": "Malaysia",
+   "papers": 102
+  },
+  {
+   "code": "AU",
+   "name": "Australia",
+   "papers": 95
+  },
+  {
+   "code": "ES",
+   "name": "Spain",
+   "papers": 93
+  },
+  {
+   "code": "IR",
+   "name": "Iran",
+   "papers": 70
+  },
+  {
+   "code": "RU",
+   "name": "Russia",
+   "papers": 59
+  },
+  {
+   "code": "RO",
+   "name": "Romania",
+   "papers": 54
+  },
+  {
+   "code": "CA",
+   "name": "Canada",
+   "papers": 49
+  },
+  {
+   "code": "SA",
+   "name": "Saudi Arabia",
+   "papers": 43
+  },
+  {
+   "code": "EG",
+   "name": "Egypt",
+   "papers": 42
+  },
+  {
+   "code": "TN",
+   "name": "Tunisia",
+   "papers": 42
+  },
+  {
+   "code": "GB",
+   "name": "United Kingdom",
+   "papers": 31
+  },
+  {
+   "code": "IT",
+   "name": "Italy",
+   "papers": 31
+  },
+  {
+   "code": "PT",
+   "name": "Portugal",
+   "papers": 27
+  },
+  {
+   "code": "FR",
+   "name": "France",
+   "papers": 25
+  },
+  {
+   "code": "SD",
+   "name": "Sudan",
+   "papers": 21
+  },
+  {
+   "code": "BR",
+   "name": "Brazil",
+   "papers": 20
+  },
+  {
+   "code": "PL",
+   "name": "Poland",
+   "papers": 19
+  },
+  {
+   "code": "KW",
+   "name": "Kuwait",
+   "papers": 18
+  },
+  {
+   "code": "ET",
+   "name": "Ethiopia",
+   "papers": 17
+  },
+  {
+   "code": "DE",
+   "name": "Germany",
+   "papers": 15
+  },
+  {
+   "code": "SG",
+   "name": "Singapore",
+   "papers": 15
+  },
+  {
+   "code": "ZA",
+   "name": "South Africa",
+   "papers": 14
+  },
+  {
+   "code": "AT",
+   "name": "Austria",
+   "papers": 12
+  },
+  {
+   "code": "BH",
+   "name": "Bahrain",
+   "papers": 12
+  },
+  {
+   "code": "TW",
+   "name": "Taiwan",
+   "papers": 11
+  },
+  {
+   "code": "JP",
+   "name": "Japan",
+   "papers": 9
+  },
+  {
+   "code": "MX",
+   "name": "Mexico",
+   "papers": 9
+  },
+  {
+   "code": "TR",
+   "name": "Turkey",
+   "papers": 9
+  },
+  {
+   "code": "LT",
+   "name": "Lithuania",
+   "papers": 8
+  },
+  {
+   "code": "AE",
+   "name": "United Arab Emirates",
+   "papers": 7
+  },
+  {
+   "code": "LU",
+   "name": "Luxembourg",
+   "papers": 7
+  },
+  {
+   "code": "IE",
+   "name": "Ireland",
+   "papers": 6
+  },
+  {
+   "code": "OM",
+   "name": "Oman",
+   "papers": 6
+  },
+  {
+   "code": "CH",
+   "name": "Switzerland",
+   "papers": 5
+  },
+  {
+   "code": "NG",
+   "name": "Nigeria",
+   "papers": 5
+  },
+  {
+   "code": "NL",
+   "name": "Netherlands",
+   "papers": 5
+  },
+  {
+   "code": "JO",
+   "name": "Jordan",
+   "papers": 4
+  },
+  {
+   "code": "MA",
+   "name": "Morocco",
+   "papers": 4
+  },
+  {
+   "code": "PK",
+   "name": "Pakistan",
+   "papers": 4
+  },
+  {
+   "code": "CU",
+   "name": "Cuba",
+   "papers": 3
+  },
+  {
+   "code": "HK",
+   "name": "Hong Kong",
+   "papers": 3
+  },
+  {
+   "code": "SE",
+   "name": "Sweden",
+   "papers": 3
+  },
+  {
+   "code": "SI",
+   "name": "Slovenia",
+   "papers": 3
+  },
+  {
+   "code": "BD",
+   "name": "Bangladesh",
+   "papers": 2
+  },
+  {
+   "code": "DZ",
+   "name": "Algeria",
+   "papers": 2
+  },
+  {
+   "code": "EE",
+   "name": "Estonia",
+   "papers": 2
+  },
+  {
+   "code": "FI",
+   "name": "Finland",
+   "papers": 2
+  },
+  {
+   "code": "QA",
+   "name": "Qatar",
+   "papers": 2
+  },
+  {
+   "code": "RS",
+   "name": "Serbia",
+   "papers": 2
+  },
+  {
+   "code": "VN",
+   "name": "Vietnam",
+   "papers": 2
+  },
+  {
+   "code": "YE",
+   "name": "Yemen",
+   "papers": 2
+  },
+  {
+   "code": "BE",
+   "name": "Belgium",
+   "papers": 1
+  },
+  {
+   "code": "BG",
+   "name": "Bulgaria",
+   "papers": 1
+  },
+  {
+   "code": "CL",
+   "name": "Chile",
+   "papers": 1
+  },
+  {
+   "code": "CO",
+   "name": "Colombia",
+   "papers": 1
+  },
+  {
+   "code": "CY",
+   "name": "Cyprus",
+   "papers": 1
+  },
+  {
+   "code": "FJ",
+   "name": "Fiji",
+   "papers": 1
+  },
+  {
+   "code": "GR",
+   "name": "Greece",
+   "papers": 1
+  },
+  {
+   "code": "HR",
+   "name": "Croatia",
+   "papers": 1
+  },
+  {
+   "code": "IL",
+   "name": "Israel",
+   "papers": 1
+  },
+  {
+   "code": "KG",
+   "name": "Kyrgyzstan",
+   "papers": 1
+  },
+  {
+   "code": "LK",
+   "name": "Sri Lanka",
+   "papers": 1
+  },
+  {
+   "code": "NZ",
+   "name": "New Zealand",
+   "papers": 1
+  },
+  {
+   "code": "PG",
+   "name": "Papua New Guinea",
+   "papers": 1
+  },
+  {
+   "code": "PH",
+   "name": "Philippines",
+   "papers": 1
+  },
+  {
+   "code": "SK",
+   "name": "Slovakia",
+   "papers": 1
+  },
+  {
+   "code": "UA",
+   "name": "Ukraine",
+   "papers": 1
+  },
+  {
+   "code": "VE",
+   "name": "Venezuela",
+   "papers": 1
+  }
+ ],
+ "institutions": [
+  {
+   "name": "Machine Intelligence Research Labs",
+   "country": "United States",
+   "papers": 732
+  },
+  {
+   "name": "VSB - Technical University of Ostrava",
+   "country": "Czechia",
+   "papers": 290
+  },
+  {
+   "name": "Norwegian University of Science and Technology",
+   "country": "Norway",
+   "papers": 179
+  },
+  {
+   "name": "Chung-Ang University",
+   "country": "South Korea",
+   "papers": 93
+  },
+  {
+   "name": "Jadavpur University",
+   "country": "India",
+   "papers": 82
+  },
+  {
+   "name": "University of Jinan",
+   "country": "China",
+   "papers": 79
+  },
+  {
+   "name": "Bennett University",
+   "country": "India",
+   "papers": 76
+  },
+  {
+   "name": "Oklahoma State University",
+   "country": "United States",
+   "papers": 74
+  },
+  {
+   "name": "Indian Institute of Technology Roorkee",
+   "country": "India",
+   "papers": 65
+  },
+  {
+   "name": "Symbiosis International University",
+   "country": "India",
+   "papers": 61
+  },
+  {
+   "name": "Dalian Maritime University",
+   "country": "China",
+   "papers": 53
+  },
+  {
+   "name": "Babeș-Bolyai University",
+   "country": "Romania",
+   "papers": 52
+  },
+  {
+   "name": "Innopolis University",
+   "country": "Russia",
+   "papers": 52
+  },
+  {
+   "name": "Monash University",
+   "country": "Australia",
+   "papers": 51
+  },
+  {
+   "name": "Veer Surendra Sai University of Technology",
+   "country": "India",
+   "papers": 49
+  },
+  {
+   "name": "University of Sfax",
+   "country": "Tunisia",
+   "papers": 39
+  },
+  {
+   "name": "Universidad de Salamanca",
+   "country": "Spain",
+   "papers": 37
+  },
+  {
+   "name": "Islamic Azad University, Tehran",
+   "country": "Iran",
+   "papers": 35
+  },
+  {
+   "name": "Flame University",
+   "country": "India",
+   "papers": 34
+  },
+  {
+   "name": "Dalian University of Technology",
+   "country": "China",
+   "papers": 31
+  },
+  {
+   "name": "Cairo University",
+   "country": "Egypt",
+   "papers": 29
+  },
+  {
+   "name": "Adelaide University",
+   "country": "Australia",
+   "papers": 29
+  },
+  {
+   "name": "University of Technology Malaysia",
+   "country": "Malaysia",
+   "papers": 29
+  },
+  {
+   "name": "University of South Australia",
+   "country": "Australia",
+   "papers": 27
+  },
+  {
+   "name": "Vellore Institute of Technology University",
+   "country": "India",
+   "papers": 24
+  },
+  {
+   "name": "Thapar Institute of Engineering & Technology",
+   "country": "India",
+   "papers": 22
+  },
+  {
+   "name": "Siksha O Anusandhan University",
+   "country": "India",
+   "papers": 22
+  },
+  {
+   "name": "Universiti Teknikal Malaysia Melaka",
+   "country": "Malaysia",
+   "papers": 22
+  },
+  {
+   "name": "University of Malaya",
+   "country": "Malaysia",
+   "papers": 22
+  },
+  {
+   "name": "Princess Nourah bint Abdulrahman University",
+   "country": "Saudi Arabia",
+   "papers": 20
+  }
+ ]
+}

@@ -1,8 +1,9 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import MagicRings from './MagicRings'
 import data from '../data/journals.json'
 import manual from '../data/journals.manual.json'
 import network from '../data/network.json'
+import coauthors from '../data/coauthors.json'
 
 /* ==========================================================================
    Journals & Publishers. Reads src/data/journals.json only (no API calls in
@@ -104,6 +105,42 @@ const CSS = `
   .jn-chips .jn-chip em { margin-left: auto; font-size: .95rem; font-weight: 500; color: #fff; }
 }
 
+.jn-co-sub { margin: -4px 0 16px; }
+.jn-co-tools { scroll-margin-top: 96px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 14px; }
+.jn-co-search { flex: 1 1 240px; height: 44px; padding: 0 16px; border-radius: 6px; border: 1px solid rgba(36,71,107,.3); background: #fff; color: #24476B; font: inherit; font-size: .84rem; }
+.jn-co-search:focus-visible { outline: 2px solid #24476B; outline-offset: 2px; }
+.jn-co-total { font-size: .84rem; color: #3a5f86; }
+.jn-net-title + .jn-net-h { margin-top: 18px; }
+.jn-tw { overflow-x: auto; border-radius: 6px; background: #fff; border: 1px solid rgba(36,71,107,.14); box-shadow: 0 14px 34px -24px rgba(18,36,60,.45); }
+.jn-tbl { width: 100%; border-collapse: collapse; font-size: .78rem; color: #24476B; }
+.jn-tbl thead th { padding: 14px 18px; background: #24476B; color: #fff; text-align: center; font-size: .78rem; font-weight: 500; white-space: nowrap; }
+.jn-tbl tbody th, .jn-tbl tbody td { padding: 13px 18px; text-align: center; font-weight: 400; border-top: 1px solid #DCE8F1; vertical-align: top; }
+.jn-tbl tbody th { font-weight: 500; }
+.jn-tbl tbody tr:nth-child(even) { background: #F5F9FD; }
+.jn-tbl tbody tr:hover { background: #EAF2FA; }
+.jn-tbl .jn-t-n { text-align: center; font-variant-numeric: tabular-nums; font-weight: 500; white-space: nowrap; }
+.jn-t-sub { display: none; margin-top: 3px; font-size: .74rem; line-height: 1.5; font-weight: 400; color: #5b7a99; }
+@media (max-width: 759px) {
+  .jn-t-hide { display: none; }
+  .jn-t-sub { display: block; }
+  .jn-tbl thead th, .jn-tbl tbody th, .jn-tbl tbody td { padding: 12px 14px; }
+}
+.jn-co-sel { flex: 0 1 200px; height: 44px; padding: 0 36px 0 12px; border-radius: 6px; border: 1px solid rgba(36,71,107,.3); background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%2324476B' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 16px center; -webkit-appearance: none; appearance: none; color: #24476B; font: inherit; font-size: .84rem; cursor: pointer; }
+.jn-co-sel:focus-visible, .jn-co-clear:focus-visible, .jn-pg-b:focus-visible { outline: 2px solid #24476B; outline-offset: 2px; }
+.jn-co-clear { height: 44px; padding: 0 18px; border-radius: 6px; border: 1px solid rgba(36,71,107,.3); background: transparent; color: #24476B; font: inherit; font-size: .84rem; font-weight: 500; cursor: pointer; }
+.jn-co-clear:hover { background: #DCE8F1; }
+.jn-co-empty { margin: 18px 0 0; padding: 28px; border-radius: 14px; background: #fff; border: 1px solid rgba(36,71,107,.12); text-align: center; font-size: .9rem; color: #3a5f86; }
+.jn-pgw { margin-top: 18px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; padding: 14px 18px; border-radius: 6px; background: #fff; border: 1px solid rgba(36,71,107,.14); }
+.jn-pg-info { margin: 0; font-size: .84rem; color: #2f4d68; }
+.jn-pg { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.jn-pg-rows { display: inline-flex; align-items: center; gap: 10px; font-size: .84rem; color: #3a5f86; }
+.jn-pg-b { height: 38px; padding: 0 16px; border: 1px solid rgba(36,71,107,.28); border-radius: 6px; background: #fff; color: #24476B; font: inherit; font-size: .84rem; font-weight: 500; cursor: pointer; }
+.jn-pg-b:hover:not(:disabled) { background: #DCE8F1; }
+.jn-pg-b:disabled { color: rgba(36,71,107,.35); border-color: rgba(36,71,107,.14); cursor: default; }
+.jn-pg-of { font-size: .84rem; font-weight: 500; color: #24476B; white-space: nowrap; }
+.jn-pg-sel { height: 38px; flex: none; width: auto; }
+@media (max-width: 639px) { .jn-pgw { justify-content: center; text-align: center; } .jn-pg { justify-content: center; } .jn-pg-info { width: 100%; } }
+@media (max-width: 639px) { .jn-co-sel { flex: 1 1 100%; } }
 .jn-people { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr; gap: 16px; }
 @media (min-width: 760px) { .jn-people { grid-template-columns: repeat(2, 1fr); } }
 .jn-person { position: relative; display: flex; align-items: center; gap: 18px; padding: 22px 26px; border-radius: 16px; background: #24476B; color: #fff; overflow: hidden;
@@ -183,10 +220,53 @@ function CountUp({ value, duration = 1600 }: { value: number; duration?: number 
 const DEFAULT_NOTE = `${META.note} Source: OpenAlex. Last updated: {date}.`
 const FOOTER = (((manual as ManualFile).footerNote || DEFAULT_NOTE) as string).replace('{date}', retrieved)
 
-const TOP_PAPERS = Math.max(1, ...network.collaborators.map((p) => p.papers))
-const netDate = new Date(network.retrievedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
+type CoAuthor = { name: string; papers: number; institution?: string; country?: string }
+const CO_ALL = coauthors as CoAuthor[]
+const PAGE_SIZES = [10, 25, 50, 100]
+const BUCKETS: { key: string; label: string; test: (n: number) => boolean }[] = [
+  { key: 'all', label: 'Any number', test: () => true },
+  { key: '50', label: '50+ papers', test: (n) => n >= 50 },
+  { key: '10', label: '10 to 49 papers', test: (n) => n >= 10 && n < 50 },
+  { key: '3', label: '3 to 9 papers', test: (n) => n >= 3 && n < 10 },
+  { key: '2', label: '2 papers', test: (n) => n === 2 },
+  { key: '1', label: '1 paper', test: (n) => n === 1 },
+]
+const REGION = typeof Intl !== 'undefined' && 'DisplayName' + 's' in Intl ? new Intl.DisplayNames(['en'], { type: 'region' }) : null
+const countryName = (c: string) => {
+  try {
+    return c.length === 2 && REGION ? REGION.of(c) ?? c : c
+  } catch {
+    return c
+  }
+}
+
 
 export default function JournalsPage() {
+  const [coQ, setCoQ] = useState('')
+  const [coCountry, setCoCountry] = useState('all')
+  const [coBucket, setCoBucket] = useState('all')
+  const [coPage, setCoPage] = useState(1)
+  const [pageSize, setPageSize] = useState(25)
+  const coTop = useRef<HTMLDivElement>(null)
+  const countryOpts = useMemo(() => {
+    const m = new Map<string, number>()
+    for (const c of CO_ALL) if (c.country) m.set(c.country, (m.get(c.country) ?? 0) + 1)
+    return [...m.entries()].sort((x, y) => y[1] - x[1] || countryName(x[0]).localeCompare(countryName(y[0])))
+  }, [])
+  const coList = (() => {
+    const t = coQ.trim().toLowerCase()
+    const test = BUCKETS.find((x) => x.key === coBucket)?.test ?? (() => true)
+    return CO_ALL.filter((c) =>
+      (!t || c.name.toLowerCase().includes(t) || (c.institution ?? '').toLowerCase().includes(t)) &&
+      (coCountry === 'all' || c.country === coCountry) && test(c.papers))
+  })()
+  const coPages = Math.max(1, Math.ceil(coList.length / pageSize))
+  const page = Math.min(coPage, coPages)
+  const coFiltered = coQ.trim() !== '' || coCountry !== 'all' || coBucket !== 'all'
+  const goPage = (n: number) => {
+    setCoPage(n)
+    coTop.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
   useEffect(() => {
     document.documentElement.classList.add('on-journals')
     return () => document.documentElement.classList.remove('on-journals')
@@ -226,7 +306,7 @@ export default function JournalsPage() {
         <div className="jn-in">
           <div className="jn-sec">
             <h2 id="jn-sec-title" className="jn-sec-title">Journals</h2>
-            <p className="jn-sec-sub">Journals where Prof. Abraham's work is published, with verified article counts and combined citations.</p>
+            <p className="jn-sec-sub">Journals where Prof. Dr. Abraham's work is published, with verified article counts and combined citations.</p>
           </div>
           <div className="jn-grid">
             {JOURNALS.map((j) => (
@@ -301,30 +381,60 @@ export default function JournalsPage() {
 
           <section className="jn-net" aria-labelledby="jn-net-title">
             <h2 id="jn-net-title" className="jn-net-title">Research network</h2>
-            <p className="jn-net-sub">{fmt(network.coAuthors)} co-authors across {network.countries} countries. Source: OpenAlex. Last updated: {netDate}.</p>
 
-            <h3 className="jn-net-h">Top countries by co-authors</h3>
-            <ul className="jn-chips">
-              <li className="jn-chip-h" aria-hidden="true"><span>Country</span><span>Co-authors</span></li>
-              {network.countryList.map((c) => (
-                <li key={c.code} className="jn-chip"><span className="jn-cc">{c.code}</span>{c.name}<em>{fmt(c.coAuthors)}</em></li>
-              ))}
-            </ul>
-
-            <h3 className="jn-net-h">Frequent collaborators</h3>
-            <ul className="jn-people">
-              {network.collaborators.map((p) => (
-                <li key={p.openAlex} className="jn-person">
-                  <span className="jn-av" aria-hidden="true">{p.name.split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join('').toUpperCase()}</span>
-                  <span className="jn-pinfo">
-                    <a href={p.openAlex} target="_blank" rel="noopener noreferrer">{p.name}</a>
-                    <small>{p.institution || 'Affiliation not listed'}{p.country ? ` · ${p.country}` : ''}</small>
-                  </span>
-                  <span className="jn-pn">{p.papers}<small>papers</small></span>
-                  <span className="jn-bar" aria-hidden="true"><span style={{ width: `${Math.max(4, (p.papers / TOP_PAPERS) * 100)}%` }} /></span>
-                </li>
-              ))}
-            </ul>
+            <h3 className="jn-net-h">All co-authors</h3>
+            <p className="jn-net-sub jn-co-sub">{fmt(CO_ALL.length)} co-authors from the publication list, ranked by joint papers. Affiliations are shown where available.</p>
+            <div className="jn-co-tools" ref={coTop}>
+              <input className="jn-co-search" type="search" placeholder="Search co-author or institution" aria-label="Search co-authors"
+                value={coQ} onChange={(e) => { setCoQ(e.target.value); setCoPage(1) }} />
+              <select className="jn-co-sel" aria-label="Filter by country" value={coCountry} onChange={(e) => { setCoCountry(e.target.value); setCoPage(1) }}>
+                <option value="all">All countries</option>
+                {countryOpts.map(([code, n]) => <option key={code} value={code}>{countryName(code)} ({n})</option>)}
+              </select>
+              <select className="jn-co-sel" aria-label="Filter by joint papers" value={coBucket} onChange={(e) => { setCoBucket(e.target.value); setCoPage(1) }}>
+                {BUCKETS.map((x) => <option key={x.key} value={x.key}>{x.label}</option>)}
+              </select>
+              {coFiltered && (
+                <button type="button" className="jn-co-clear" onClick={() => { setCoQ(''); setCoCountry('all'); setCoBucket('all'); setCoPage(1) }}>Clear</button>
+              )}
+              <span className="jn-co-total">{fmt(coList.length)} shown</span>
+            </div>
+            {coList.length === 0 ? (
+              <p className="jn-co-empty">No co-authors match these filters.</p>
+            ) : (
+              <div className="jn-tw">
+                <table className="jn-tbl">
+                  <thead>
+                    <tr><th scope="col">Co-author</th><th scope="col" className="jn-t-hide">Institution</th><th scope="col" className="jn-t-hide">Country</th><th scope="col" className="jn-t-n">Joint papers</th></tr>
+                  </thead>
+                  <tbody>
+                    {coList.slice((page - 1) * pageSize, page * pageSize).map((c) => (
+                      <tr key={c.name}>
+                        <th scope="row">{c.name}{(c.institution || c.country) && <small className="jn-t-sub">{[c.institution, c.country ? countryName(c.country) : ''].filter(Boolean).join(' · ')}</small>}</th>
+                        <td className="jn-t-hide">{c.institution || '-'}</td>
+                        <td className="jn-t-hide">{c.country ? countryName(c.country) : '-'}</td>
+                        <td className="jn-t-n">{c.papers}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+            {coList.length > 0 && (
+              <div className="jn-pgw">
+                <p className="jn-pg-info">Showing {fmt((page - 1) * pageSize + 1)} to {fmt(Math.min(page * pageSize, coList.length))} of {fmt(coList.length)} co-authors</p>
+                <div className="jn-pg">
+                  <label className="jn-pg-rows">Rows per page
+                    <select className="jn-co-sel jn-pg-sel" value={pageSize} onChange={(e) => { setPageSize(Number(e.target.value)); setCoPage(1) }}>
+                      {PAGE_SIZES.map((n) => <option key={n} value={n}>{n}</option>)}
+                    </select>
+                  </label>
+                  <button type="button" className="jn-pg-b" disabled={page === 1} onClick={() => goPage(page - 1)}>&lsaquo; Previous</button>
+                  <span className="jn-pg-of">Page {fmt(page)} of {fmt(coPages)}</span>
+                  <button type="button" className="jn-pg-b" disabled={page === coPages} onClick={() => goPage(page + 1)}>Next &rsaquo;</button>
+                </div>
+              </div>
+            )}
           </section>
         </div>
       </section>

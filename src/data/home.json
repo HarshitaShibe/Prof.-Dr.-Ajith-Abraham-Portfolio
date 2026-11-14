@@ -1,6 +1,5 @@
 {
-  "badge": "Stanford/Elsevier Top 2% Scientist",
-  "name": "Prof. Ajith Abraham",
+  "name": "Prof. Dr. Ajith Abraham",
   "taglinePrefix": "Building intelligent systems for",
   "topics": [
     "Data Mining",
@@ -12,13 +11,28 @@
     "Generative AI in Education"
   ],
   "affiliations": [
-    "Vice Chancellor · Humanitarian · Academician",
+    "Humanitarian · Academician · Entrepreneur",
     "Advancing Research & Innovation · Transformative Education · Global Impact",
-    "Vice Chancellor, Sai University, Chennai · Founding Director, MIR Labs, USA"
+    "Vice Chancellor, Sai University, Chennai",
+    "Founder & Former Director, Machine Intelligence Research Labs (MIR Labs), USA"
   ],
+  "keywords": "Artificial Intelligence | Machine Learning | Data Science | Intelligent Systems",
+  "experience": "35+ years of academic and research experience",
+  "ranking": "According to the Stanford–Elsevier World’s Top 2% Scientists ranking, he is placed within the top 0.037% of researchers worldwide based on career-long scientific impact, and within the top 0.118% globally based on his research performance in 2025.",
   "stats": [
-    { "value": 1581, "label": "Scholarly publications" },
-    { "value": 10, "label": "Authored books" },
-    { "prefix": "$", "value": 110, "suffix": "M+", "label": "Research programmes\nled or co-led" }
+    {
+      "value": 1581,
+      "label": "Scholarly publications"
+    },
+    {
+      "value": 10,
+      "label": "Authored books"
+    },
+    {
+      "prefix": "$",
+      "value": 110,
+      "suffix": "M+",
+      "label": "Research programmes\nled or co-led"
+    }
   ]
 }

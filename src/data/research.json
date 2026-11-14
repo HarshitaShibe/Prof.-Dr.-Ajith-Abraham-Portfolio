@@ -1,0 +1,121 @@
+{
+  "_help": "Content of the Research page. Domains, current research text, excellence text, PhD list and post-doctoral list all live here. Add post-doctoral names to 'postdocs' as {\"name\": \"...\", \"detail\": \"...\"}; the section stays hidden while the list is empty. Add 'patents' under impact when the figure is confirmed.",
+  "asOf": "5 June 2026",
+  "intro": "Prof. Dr. Ajith Abraham's research sits at the intersection of intelligent systems, data and real-world decision-making, from foundational computational intelligence to responsible AI in healthcare.",
+  "domains": [
+    {
+      "name": "Artificial Intelligence",
+      "text": "Foundational and applied work on intelligent systems that learn, reason and adapt. His research brings together hybrid and computational-intelligence methods to build systems that perform reliably in real-world settings."
+    },
+    {
+      "name": "Soft Computing",
+      "text": "A long-standing strand of his work: neural networks, fuzzy systems, evolutionary computation and swarm intelligence, and their hybrids. These techniques handle problems that are uncertain, imprecise or too complex to model exactly."
+    },
+    {
+      "name": "Data Science",
+      "text": "Data mining, feature selection and large-scale knowledge discovery. The focus is on turning heterogeneous, high-volume data into patterns and predictions that people can act on."
+    },
+    {
+      "name": "Deep Learning",
+      "text": "Deep neural architectures for images, signals and sequences, studied together with optimisation and training strategies. Applications range from medical imaging to intelligent analytics."
+    },
+    {
+      "name": "Healthcare AI",
+      "text": "Medical image analysis, clinical decision support, personalised medicine, explainable AI and privacy-preserving learning. The aim is trustworthy tools that assist, rather than replace, clinical expertise."
+    },
+    {
+      "name": "Cybersecurity",
+      "text": "Intelligent approaches to intrusion detection, network defence and secure systems. This was one of the earliest application areas of his computational-intelligence research."
+    },
+    {
+      "name": "Decision Support Systems",
+      "text": "Systems that combine data, models and domain knowledge to support complex decisions, in healthcare, enterprise and strategic planning contexts."
+    }
+  ],
+  "currentResearchTitle": "Current Research",
+  "currentResearch": [
+    "Prof. Dr. Abraham’s research interests in healthcare are grounded in a longstanding body of work at the intersection of artificial intelligence and medical decision-making. His work has explored medical image analysis, clinical decision-support systems, intelligent diagnostic systems, personalized medicine, explainable artificial intelligence, and privacy-preserving machine learning, with the broader objective of translating advances in AI into reliable and clinically meaningful computational tools.",
+    "A significant strand of his research has focused on medical image analysis and computer-aided diagnosis, investigating how machine learning and intelligent computational techniques can extract clinically relevant patterns from complex and heterogeneous medical data. His work in this area reflects an effort to augment the capabilities of healthcare professionals by supporting the interpretation of medical images, identifying subtle patterns that may be difficult to detect through conventional analysis, and developing computational approaches that can contribute to more consistent and timely decision-making.",
+    "This research naturally extends to clinical decision-support systems, where AI is used not as a replacement for clinical expertise but as an intelligent layer of computational assistance. His work has examined how data-driven models can integrate information from different sources, generate diagnostic or predictive insights, and support healthcare professionals in situations involving large volumes of complex clinical information. This perspective places particular emphasis on developing AI systems that are complementary to human expertise and that can improve the quality, efficiency, and consistency of healthcare decision-making.",
+    "Another important dimension of his healthcare research concerns personalized and patient-centric intelligence. Rather than treating patients as homogeneous populations, AI-enabled healthcare systems have the potential to incorporate individual characteristics, medical histories, imaging information, and other relevant data to provide more context-sensitive predictions and recommendations. His research interests therefore extend toward computational approaches capable of supporting individualized risk assessment, diagnosis, prognosis, and treatment-related decision-making.",
+    "Prof. Dr. Abraham’s work also recognizes that high-performing AI systems are not necessarily sufficient for deployment in healthcare. Explainability, transparency, robustness, privacy, and accountability are essential when computational models operate in high-impact environments. His interest in explainable AI addresses the need to make algorithmic outputs more interpretable and understandable to healthcare professionals, particularly when those outputs may influence clinical decisions. Similarly, his work on privacy-preserving machine learning reflects the importance of enabling collaborative and data-driven healthcare research while protecting sensitive patient information. These considerations are particularly relevant to distributed and federated approaches to learning, where useful knowledge can potentially be derived across institutions without requiring unrestricted sharing of underlying patient data.",
+    "An important feature of his approach is therefore the responsible deployment of AI in healthcare, building upon his broader research contributions in intelligent systems and their applications to real-world problems. He emphasizes that computational performance must be considered alongside clinical validity, generalizability, interpretability, privacy, security, and ethical acceptability. AI systems intended for healthcare applications need to be evaluated not merely on benchmark accuracy, but also on their reliability across populations and clinical environments, their ability to support rather than obscure human judgement, and their implications for patients, healthcare professionals, and society.",
+    "This perspective reflects a broader evolution in his research, from developing intelligent computational methodologies toward addressing the challenges involved in translating AI research into trustworthy healthcare applications. Prof. Dr. Abraham’s healthcare work consequently brings together machine learning, computational intelligence, medical data analytics, medical imaging, decision-support technologies, and responsible AI, with the overarching goal of developing intelligent systems that can deliver meaningful assistance while maintaining the standards of safety, transparency, accountability, and human oversight required in clinical settings."
+  ],
+  "excellenceTitle": "Research Excellence & Influence",
+  "excellence": [
+    "Prof. Dr. Abraham is widely recognized for his contributions to Artificial Intelligence, Computational Intelligence, Machine Learning, and Intelligent Systems. His research encompasses foundational computational methodologies as well as applied intelligent systems addressing challenges in engineering, healthcare, and data-driven decision-making.",
+    "He has authored or co-authored more than 1,500 scholarly publications, including journal articles, conference papers, books, and edited research volumes. His work has received more than 72,000 citations on Google Scholar, with an H-index exceeding 126. His scholarly contributions are also represented in major research databases, including Scopus and Web of Science.",
+    "His research recognition includes consistent inclusion in the Stanford–Elsevier list of the world’s top 2% most-cited scientists. In 2025, ScholarGPS ranked him among the top 0.01% of researchers worldwide in Engineering and Computer Science.",
+    "His contributions have advanced research in hybrid intelligent systems, global optimization, adaptive machine learning frameworks, and computational intelligence. These areas bring together intelligent algorithms, optimization techniques, and data-driven approaches to address complex problems across scientific and industrial settings.",
+    "Through his research, Prof. Dr. Abraham has contributed to the development of computational methodologies that connect theoretical advances with practical applications, strengthening the role of intelligent systems in contemporary research and technological innovation."
+  ],
+  "phd": {
+    "title": "PhD Supervision",
+    "note": "Completed doctoral students supervised, from the CV.",
+    "students": [
+      {
+        "name": "Ayalew Belay Habtie",
+        "year": 2018
+      },
+      {
+        "name": "Amira Kamil",
+        "year": 2017
+      },
+      {
+        "name": "Nada Ahmed",
+        "year": 2017
+      },
+      {
+        "name": "Sara Abdelghani",
+        "year": 2017
+      },
+      {
+        "name": "Varun Kumar Ojha",
+        "year": 2016
+      },
+      {
+        "name": "Mohamed Elhebir",
+        "year": 2016
+      },
+      {
+        "name": "Nazim Osman Bushara",
+        "year": 2016
+      },
+      {
+        "name": "Shaza Abd Elrahman",
+        "year": 2016
+      },
+      {
+        "name": "Lubna Gabrella",
+        "year": 2015
+      },
+      {
+        "name": "Abdel Hamid",
+        "year": 2015
+      },
+      {
+        "name": "Tibebe Tesema",
+        "year": 2013
+      },
+      {
+        "name": "Salha Al-Sahrani",
+        "year": 2012
+      },
+      {
+        "name": "Sarina Sulaiman",
+        "year": 2012
+      },
+      {
+        "name": "Cong Tran",
+        "year": 2005
+      }
+    ]
+  },
+  "postdocs": [
+    { "name": "Fariba Goodarzian", "detail": "June 2020 – December 2021" },
+    { "name": "Aswathy SU", "detail": "February 2021 – January 2022" },
+    { "name": "Anu Bajaj", "detail": "March 2021 – August 2022" },
+    { "name": "Meera Ramadas", "detail": "January 2022 – January 2023" }
+  ]
+}

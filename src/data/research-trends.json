@@ -44,7 +44,7 @@
     {
       "key": "neural",
       "name": "Neural Networks",
-      "blurb": "Artificial neural networks, their metaheuristic design and ensembles for forecasting.",
+      "blurb": "Artificial neural networks, from the metaheuristic design of feedforward networks to ensemble methods for forecasting.",
       "topics": [
         "ANN",
         "Ensembles",
@@ -76,7 +76,7 @@
     {
       "key": "nextgen",
       "name": "Next-Gen Computing",
-      "blurb": "Reviews and perspectives on AI for the Internet of Things, Industry 4.0 and generative AI in education.",
+      "blurb": "Reviews and perspectives on AI for the Internet of Things and Industry 4.0, and on the role of generative AI in education.",
       "topics": [
         "AI for IoT",
         "Industry 4.0",
@@ -92,7 +92,7 @@
     {
       "key": "mining",
       "name": "Data Mining",
-      "blurb": "Text mining and learning from imbalanced data, including plagiarism detection and class imbalance methods.",
+      "blurb": "Text mining and learning from imbalanced data, including plagiarism detection and methods for handling class imbalance.",
       "topics": [
         "Class Imbalance",
         "Text Mining",

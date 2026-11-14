@@ -1,0 +1,81 @@
+{
+  "_help": "Entrepreneurship page content. Each card has a 'links' list of {label, href, note?}. To show another link (e.g. MIR Labs 'About' page or the Wellermind company-profile listing) just add an entry; links with an empty href are hidden. Company-record links are third-party listings, not official websites.",
+  "title": "Entrepreneurship & Innovation",
+  "tagline": "From research leadership to innovation-driven enterprise.",
+  "intro": [
+    "Innovation is not limited to the development of new technologies. It also involves building collaborative ecosystems, creating opportunities for knowledge exchange, and connecting scientific research with practical applications. Prof. Dr. Ajith Abraham's professional journey extends across academic leadership, international research collaboration, and enterprise-oriented initiatives. Through research networks and technology-related organisations, his work reflects an interest in strengthening the relationship between academia, industry, and innovation."
+  ],
+  "featured": {
+    "kicker": "Featured initiative",
+    "name": "Machine Intelligence Research Labs (MIR Labs)",
+    "role": "Founding Director",
+    "period": "2008–2022",
+    "facts": [
+      "Founded in 2008",
+      "Non-profit academic consortium",
+      "Researchers in 100+ countries"
+    ],
+    "paragraphs": [
+      "Machine Intelligence Research Labs (MIR Labs) was established in 2008 as a non-profit academic consortium dedicated to innovation and research excellence. Its mission centres on bringing together researchers, scientists, universities, and industry professionals to advance research in machine intelligence and related technological fields.",
+      "Under Prof. Dr. Abraham's founding leadership, MIR Labs developed an international scientific networking platform that encouraged interdisciplinary collaboration, research partnerships, academic conferences, workshops, and knowledge exchange.",
+      "Its activities span areas such as machine intelligence, data science, cyber-physical systems, Internet of Things, network intelligence, and applied computational research.",
+      "The initiative reflects a research-led approach to innovation: connecting people, institutions, and ideas to address complex scientific and technological challenges."
+    ],
+    "links": [
+      {
+        "label": "Explore MIR Labs",
+        "href": "https://www.mirlabs.org/newsite/index.html"
+      },
+      {
+        "label": "About MIR Labs",
+        "href": "https://www.mirlabs.org/newsite/about.html"
+      }
+    ]
+  },
+  "enterprisesTitle": "Enterprise & Technology Initiatives",
+  "enterprises": [
+    {
+      "confirmed": true,
+      "name": "Wellermind Technologies Private Limited",
+      "role": "Director",
+      "meta": "Incorporated October 2024",
+      "facts": [
+        "Incorporated 4 October 2024",
+        "Registered with ROC Kanpur, Uttar Pradesh",
+        "NIC 62011: computer programming",
+        "CIN U62011UP2024PTC210201"
+      ],
+      "paragraphs": [
+        "Wellermind Technologies Private Limited is an Indian technology company incorporated on 4 October 2024 and registered with the Registrar of Companies, Kanpur, Uttar Pradesh. Classified under NIC 62011, the company operates within the computer programming and software development domain, encompassing the broader landscape of digital technologies and software engineering.",
+        "The company's leadership includes Prof. Dr. Ajith Padath Abraham, alongside Yana Gaur and Abhay Chaudhary, as listed in public corporate records. Its association with an established academic and technology professional adds an academic dimension to its organisational profile.",
+        "With its foundation in the technology sector, Wellermind Technologies represents an emerging enterprise in India's evolving digital ecosystem. Its registered business domain provides a foundation for exploring software development, digital solutions, application engineering, and technology-driven initiatives. Further details about its products, services, development projects, and collaborations can help showcase its technological capabilities and contributions to the industry."
+      ],
+      "image": "/wellermind.jpg",
+      "imageAlt": "Illustration of software engineers collaborating around laptops, servers, cloud and security icons, representing digital technology and software development.",
+      "links": []
+    }
+  ],
+  "impactTitle": "Research, Industry & Institutional Innovation",
+  "impactIntro": "Beyond individual organisations, Prof. Dr. Abraham's work reflects a broader engagement with research translation and institutional innovation.",
+  "impact": [
+    {
+      "title": "Industry–academia collaboration",
+      "text": "Connecting scientific communities, universities, and industry through collaborative research networks."
+    },
+    {
+      "title": "Research and technology development",
+      "text": "Working across machine intelligence, computational intelligence, data science, cybersecurity, and emerging technology domains."
+    },
+    {
+      "title": "Research funding and partnerships",
+      "text": "Participating as investigator or co-investigator in research projects supported by international funding agencies and institutions."
+    },
+    {
+      "title": "Academic incubation and innovation leadership",
+      "text": "His academic leadership experience has included responsibility for research, incubation, and international relations."
+    }
+  ],
+  "closingTitle": "An Ecosystem for Innovation",
+  "closing": "The common thread across these initiatives is the belief that meaningful innovation emerges through collaboration. By connecting research expertise, institutional networks, and technology-oriented enterprise, the work creates opportunities for scientific ideas to move towards practical and societal applications.",
+  "motto": "Research. Collaboration. Innovation. Impact."
+}

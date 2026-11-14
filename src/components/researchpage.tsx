@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useState } from 'react'
-import MagicRings from './MagicRings'
+import MagnetLines from './MagnetLines'
 import top from '../data/scholar-top.json'
 import cfg from '../data/research-trends.json'
 
 /* ==========================================================================
-   Research and Trends. Two views of Prof. Abraham's 20 most-cited papers
+   Research and Trends. Two views of Prof. Dr. Abraham's 20 most-cited papers
    (src/data/scholar-top.json, Google Scholar):
      1. Research domains: bubbles sized by citations, tap one to explore it.
      2. Trends: every paper on a timeline, filter by domain, three eras.
@@ -34,49 +34,25 @@ const stats = DOMAINS.map((d) => {
   return { ...d, papers, citations: papers.reduce((s, p) => s + p.citations, 0) }
 }).sort((a, b) => b.citations - a.citations)
 
-/* ---- bubble layout: deterministic, simple collision relaxation ---- */
-const BW = 640
-const BH = 440
-function pack() {
-  const max = Math.max(...stats.map((s) => s.citations))
-  const nodes = stats.map((s, i) => ({
-    key: s.key,
-    r: Math.max(46, 128 * Math.sqrt(s.citations / max)),
-    x: BW / 2 + Math.cos(i * 2.4) * (30 + i * 24),
-    y: BH / 2 + Math.sin(i * 2.4) * (30 + i * 24),
-  }))
-  for (let it = 0; it < 500; it++) {
-    for (const n of nodes) {
-      n.x += (BW / 2 - n.x) * 0.02
-      n.y += (BH / 2 - n.y) * 0.02
-    }
-    for (let i = 0; i < nodes.length; i++) {
-      for (let j = i + 1; j < nodes.length; j++) {
-        const a = nodes[i]
-        const b = nodes[j]
-        let dx = b.x - a.x
-        let dy = b.y - a.y
-        const dist = Math.hypot(dx, dy) || 0.01
-        const min = a.r + b.r + 8
-        if (dist < min) {
-          dx /= dist
-          dy /= dist
-          const push = (min - dist) / 2
-          a.x -= dx * push
-          a.y -= dy * push
-          b.x += dx * push
-          b.y += dy * push
-        }
-      }
-    }
-    for (const n of nodes) {
-      n.x = Math.min(BW - n.r - 4, Math.max(n.r + 4, n.x))
-      n.y = Math.min(BH - n.r - 4, Math.max(n.r + 4, n.y))
-    }
-  }
-  return nodes
-}
-const BUBBLES = pack()
+const PALETTE = ['#14305A', '#2B6CD4', '#3FA9F5', '#6C7BDB', '#8FD3F4']
+const COLOR_OF = new Map(stats.map((s, i) => [s.key, PALETTE[i % PALETTE.length]]))
+const LIGHT = new Set(stats.filter((_, i) => ['#3FA9F5', '#8FD3F4'].includes(PALETTE[i % PALETTE.length])).map((s) => s.key))
+const TOTAL_CITES = PAPERS.reduce((s, p) => s + p.citations, 0)
+const TOTAL_CITES_DOM = stats.reduce((s, d) => s + d.citations, 0)
+
+/* ---- donut geometry ---- */
+const DS = 420
+const DR = 148
+const DW = 46
+const DC = 2 * Math.PI * DR
+const GAP = 5
+let acc = 0
+const SEGS = stats.map((d) => {
+  const share = d.citations / TOTAL_CITES_DOM
+  const seg = { key: d.key, share, start: acc * DC, len: Math.max(0, share * DC - GAP) }
+  acc += share
+  return seg
+})
 
 /* ---- timeline geometry ---- */
 const CW = 900
@@ -121,48 +97,67 @@ const CSS = `
 .rt-hero { position: relative; isolation: isolate; overflow: hidden; display: flex; flex-direction: column; justify-content: center;
   min-height: 100vh; padding: 120px 30px; background: #24476B; color: #fff; text-align: center; }
 @media (min-width: 640px) { .rt-hero { padding: 130px 56px; } }
-.rt-rings { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; }
+.rt-rings { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; opacity: .45; }
 .rt-hero-in { position: relative; z-index: 1; pointer-events: none; }
 .rt-title { margin: 0; text-align: center; font-size: clamp(2rem, 4.6vw, 3.6rem); font-weight: 500; line-height: 1.02; letter-spacing: -.045em; color: #fff; }
-.rt-lede { margin: 14px auto 0; max-width: 620px; font-size: .8rem; font-weight: 400; line-height: 1.65; color: rgba(255,255,255,.82); text-wrap: balance; }
+.rt-lede { margin: 14px auto 0; max-width: 760px; font-size: .8rem; font-weight: 400; line-height: 1.65; color: rgba(255,255,255,.82); text-wrap: balance; }
 .rt-tally { margin: 22px auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
 .rt-pill { padding: 6px 14px; border-radius: 999px; font-size: .74rem; font-weight: 500; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.28); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
 
 .rt-body { padding: 72px 30px 90px; text-align: left; }
 @media (min-width: 640px) { .rt-body { padding: 96px 56px 110px; } }
-.rt-sec + .rt-sec { margin-top: 110px; }
+.rt-sec + .rt-sec { margin-top: 180px; }
+.rt-h2-c { text-align: center; font-weight: 700; font-style: italic; font-synthesis: style; }
 .rt-eyebrow { margin: 0 0 12px; font-size: .74rem; font-weight: 500; letter-spacing: .02em; color: #3a5f86; }
 .rt-h2 { margin: 0; color: #24476B; font-size: clamp(1.8rem, 3.6vw, 2.6rem); font-weight: 600; line-height: 1.15; letter-spacing: -.04em; }
 .rt-h2 span { color: #6b84a0; }
-.rt-sub { margin: 16px 0 0; max-width: 620px; font-size: .9rem; line-height: 1.6; color: #2f4d68; }
+.rt-sub { margin: 16px auto 0; max-width: 760px; font-size: .9rem; line-height: 1.6; color: #2f4d68; text-align: center; text-wrap: balance; }
 
 /* ---- domains ---- */
 .rt-uni { margin-top: 44px; display: grid; grid-template-columns: 1fr; gap: 20px; }
-@media (min-width: 960px) { .rt-uni { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: start; } .rt-canvas { position: sticky; top: 100px; } }
-.rt-canvas { padding: 12px; border-radius: 20px; background: #fff; border: 1px solid rgba(36,71,107,.12); box-shadow: 0 14px 34px -22px rgba(18,36,60,.45); }
+@media (min-width: 820px) {
+  .rt-canvas { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 80px; padding: 28px 36px 18px; }
+  .rt-canvas .rt-donut { margin: 0; width: 340px; flex: 0 0 340px; }
+  .rt-canvas .rt-legend { margin: 0; width: 440px; flex: 0 0 440px; }
+  .rt-canvas .rt-hint { flex: 0 0 100%; margin: 4px 0 0; text-align: center; }
+  .rt-uni .rt-panel { display: grid; grid-template-columns: minmax(0, 1fr) 330px; grid-template-rows: repeat(3, max-content) 1fr auto; column-gap: 48px; }
+  .rt-uni .rt-panel > * { grid-column: 1; }
+  .rt-uni .rt-panel > .rt-nums { grid-column: 2; grid-row: 1 / span 4; align-self: center; margin: 0 !important; grid-template-columns: 1fr 1fr; }
+  .rt-uni .rt-panel > .rt-topics { align-self: start; }
+  .rt-list li:nth-child(odd):nth-last-child(2) { border-bottom: 0; padding-bottom: 0; }
+  .rt-uni .rt-panel > .rt-list { grid-column: 1 / -1; grid-template-columns: 1fr 1fr; column-gap: 48px; margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.18); }
+}
+.rt-canvas { padding: 12px; }
 .rt-canvas svg { display: block; width: 100%; height: auto; }
-.rt-bub { cursor: pointer; outline: none; }
-.rt-bub circle { fill: #24476B; transition: fill .3s, transform .35s cubic-bezier(.16,1,.3,1); transform-box: fill-box; transform-origin: center; }
-.rt-bub:hover circle { transform: scale(1.03); }
-.rt-bub.is-on circle { fill: #3d6ba0; }
-.rt-bub:focus-visible circle { stroke: #24476B; stroke-width: 3; stroke-dasharray: 6 4; }
-.rt-bub.is-off circle { fill: #7f9fc6; }
-.rt-bub text { fill: #fff; text-anchor: middle; pointer-events: none; }
-.rt-bub .n { font-size: 15px; font-weight: 500; }
-.rt-bub .c { font-size: 11px; font-weight: 300; opacity: .8; }
+.rt-donut { display: block; width: 100%; max-width: 360px; margin: 6px auto 0; height: auto; }
+.rt-seg { fill: none; cursor: pointer; outline: none; opacity: .9; transition: opacity .3s, stroke-width .35s cubic-bezier(.16,1,.3,1); }
+.rt-seg:hover { opacity: 1; }
+.rt-seg.is-on { opacity: 1; stroke-width: 58px; }
+.rt-seg:focus-visible { stroke-dasharray: none; }
+.rt-dc-n { font-size: 17px; font-weight: 500; fill: #24476B; text-anchor: middle; }
+.rt-dc-v { font-size: 34px; font-weight: 600; letter-spacing: -.02em; fill: #24476B; text-anchor: middle; font-variant-numeric: tabular-nums; }
+.rt-dc-s { font-size: 12px; font-weight: 400; fill: #3a5f86; text-anchor: middle; }
+.rt-legend { list-style: none; margin: 14px 4px 4px; padding: 0; display: grid; gap: 4px; }
+.rt-leg { display: grid; grid-template-columns: 12px 1fr auto auto; align-items: center; gap: 10px; width: 100%; padding: 9px 12px; border: 0; border-radius: 10px; background: transparent; color: #24476B; font: inherit; font-size: .82rem; text-align: left; cursor: pointer; transition: background .2s; }
+.rt-leg:hover { background: #EEF4FA; }
+.rt-leg[aria-pressed="true"] { background: #DCE8F1; font-weight: 600; }
+.rt-leg i { width: 12px; height: 12px; border-radius: 50%; }
+.rt-leg b { font-weight: 500; font-variant-numeric: tabular-nums; }
+.rt-leg small { min-width: 38px; text-align: right; font-size: .74rem; color: #3a5f86; font-variant-numeric: tabular-nums; }
 .rt-hint { margin: 8px 6px 2px; font-size: .74rem; color: #3a5f86; }
 
-.rt-panel { display: flex; flex-direction: column; padding: 32px; border-radius: 20px; background: #24476B; color: #fff; box-shadow: 0 14px 34px -18px rgba(18,36,60,.7); }
+.rt-panel { display: flex; flex-direction: column; padding: 32px; border-top: 6px solid var(--dc, #3F7CC0); border-radius: 14px; background: #24476B; color: #fff; box-shadow: 0 14px 34px -18px rgba(18,36,60,.7); }
 .rt-panel h3 { margin: 0; font-size: 1.35rem; font-weight: 500; letter-spacing: -.02em; }
-.rt-panel p { margin: 12px 0 0; font-size: .86rem; font-weight: 300; line-height: 1.65; color: rgba(255,255,255,.82); }
+.rt-panel p { margin: 12px 0 0; font-size: .86rem; font-weight: 300; line-height: 1.65; color: rgba(255,255,255,.82); text-align: justify; max-width: 33rem; }
 .rt-topics { margin: 18px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
 .rt-topic { padding: 4px 12px; border-radius: 999px; font-size: .72rem; font-weight: 400; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); }
 .rt-nums { margin: 22px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.rt-num { margin: 0; padding: 14px 16px; border-radius: 12px; background: rgba(255,255,255,.1); text-align: center; }
-.rt-num strong { display: block; font-size: 1.7rem; font-weight: 500; letter-spacing: -.02em; line-height: 1.1; font-variant-numeric: tabular-nums; }
-.rt-num span { display: block; margin-top: 4px; font-size: .72rem; font-weight: 300; color: rgba(255,255,255,.72); }
-.rt-list { margin: 22px 0 0; padding: 0; list-style: none; display: grid; gap: 16px; }
-.rt-item { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 14px; align-items: baseline; font-size: .84rem; line-height: 1.45; }
+.rt-num { margin: 0; padding: 0; border-radius: 0; background: none; color: #fff; text-align: center; }
+.rt-num strong { display: flex; align-items: center; justify-content: center; width: 72px; height: 72px; margin: 0 auto; border-radius: 50%; background: #DCE8F1; color: #24476B; font-size: 1.15rem; font-weight: 500; letter-spacing: -.02em; line-height: 1; font-variant-numeric: tabular-nums; }
+.rt-num span { display: block; margin-top: 12px; white-space: nowrap; font-size: .78rem; font-weight: 300; color: #DCE8F1; }
+.rt-list { margin: 22px 0 0; padding: 0; list-style: none; display: grid; gap: 14px; }
+.rt-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+.rt-item { align-content: start; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.12); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 14px; align-items: baseline; font-size: .84rem; line-height: 1.45; }
 .rt-item a { color: #fff; font-weight: 500; text-decoration: none; transition: opacity .2s; }
 .rt-item a:hover { opacity: .75; }
 .rt-item a:active, .rt-item a:focus { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; text-decoration-color: rgba(255,255,255,.55); }
@@ -170,34 +165,40 @@ const CSS = `
 .rt-item small { grid-column: 1; font-size: .72rem; font-weight: 300; color: rgba(255,255,255,.65); }
 
 /* ---- trends ---- */
-.rt-chips { margin: 36px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.rt-chips { margin: 36px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
 .rt-chip { display: inline-flex; align-items: center; gap: 8px; min-height: 36px; padding: 0 14px; border-radius: 999px; border: 1px solid rgba(36,71,107,.28); background: #fff; color: #24476B; font: 400 .8rem inherit; font-family: inherit; cursor: pointer; transition: background-color .2s, color .2s, border-color .2s; }
 .rt-chip:hover { border-color: #24476B; }
-.rt-chip[aria-pressed="true"] { background: #24476B; border-color: #24476B; color: #fff; }
+.rt-chip { --c: #24476B; --fg: #fff; position: relative; overflow: hidden; isolation: isolate; }
+.rt-chip[aria-pressed="true"] { color: var(--fg); background: var(--c); border-color: var(--c); }
+.rt-cd { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.rt-chip[aria-pressed="true"] .rt-cd { box-shadow: 0 0 0 2px rgba(255,255,255,.85); }
 .rt-chip i { font-style: normal; font-size: .72rem; opacity: .7; }
-.rt-chart { margin-top: 18px; padding: 14px 14px 10px; border-radius: 20px; background: #fff; border: 1px solid rgba(36,71,107,.12); box-shadow: 0 14px 34px -22px rgba(18,36,60,.45); }
+.rt-chart { margin-top: 18px; padding: 14px 0 10px; }
 .rt-chart svg { display: block; width: 100%; height: auto; overflow: visible; }
 .rt-chart text { font-family: inherit; fill: #3a5f86; }
 .rt-grid { stroke: rgba(36,71,107,.12); stroke-width: 1; }
 .rt-era-t { font-size: 10.5px; font-weight: 500; letter-spacing: .02em; }
-.rt-dot { fill: #24476B; cursor: pointer; transition: opacity .3s, r .25s; outline: none; }
+.rt-dot { cursor: pointer; fill-opacity: .88; transition: opacity .3s, r .25s; outline: none; }
 .rt-dot.is-dim { opacity: .14; }
-.rt-dot:hover, .rt-dot.is-sel { stroke: #7f9fc6; stroke-width: 4; }
-.rt-dot:focus-visible { stroke: #7f9fc6; stroke-width: 4; }
+.rt-dot:hover, .rt-dot.is-sel { stroke: #24476B; stroke-opacity: .35; stroke-width: 5; fill-opacity: 1; }
+.rt-dot:focus-visible { stroke: #24476B; stroke-opacity: .5; stroke-width: 5; }
 .rt-lab { font-size: 11px; fill: #24476B !important; font-weight: 500; }
-.rt-pick { margin: 6px 6px 4px; min-height: 44px; font-size: .84rem; line-height: 1.5; color: #2f4d68; }
+.rt-pick { text-align: center; margin: 6px 6px 4px; min-height: 44px; font-size: .84rem; line-height: 1.5; color: #2f4d68; }
 .rt-pick a { color: #24476B; font-weight: 600; text-decoration: none; }
 .rt-pick a:active, .rt-pick a:focus { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; text-decoration-color: rgba(36,71,107,.5); }
 
-.rt-eras { margin-top: 20px; display: grid; grid-template-columns: 1fr; gap: 16px; }
+.rt-eras { margin-top: 110px; display: grid; grid-template-columns: 1fr; gap: 16px; }
 @media (min-width: 800px) { .rt-eras { grid-template-columns: repeat(3, 1fr); } }
-.rt-era { padding: 26px 28px; border-radius: 16px; background: #24476B; color: #fff; box-shadow: 0 14px 34px -18px rgba(18,36,60,.7); }
-.rt-era small { display: block; font-size: .74rem; font-weight: 300; color: rgba(255,255,255,.7); }
+.rt-era { padding: 26px 24px; border-radius: 16px; background: #fff; color: #24476B; border: 1px solid rgba(36,71,107,.1); box-shadow: 0 14px 34px -22px rgba(18,36,60,.35); }
+.rt-era small { display: block; font-size: .74rem; font-weight: 300; color: #3a5f86; }
 .rt-era strong { display: block; margin-top: 10px; font-size: 1.5rem; font-weight: 500; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
-.rt-era strong span { font-size: .84rem; font-weight: 300; color: rgba(255,255,255,.75); letter-spacing: 0; }
-.rt-era p { margin: 12px 0 0; font-size: .82rem; font-weight: 300; line-height: 1.6; color: rgba(255,255,255,.82); }
+.rt-era strong span { font-size: .84rem; font-weight: 300; color: #3a5f86; letter-spacing: 0; }
+.rt-era-bar { margin-top: 16px; height: 4px; border-radius: 4px; background: #DCE8F1; overflow: hidden; }
+.rt-era-bar i { display: block; height: 100%; border-radius: 4px; background: #4A86C8; }
+.rt-era-pct { margin: 8px 0 0 !important; font-size: .72rem !important; color: #3a5f86 !important; }
+.rt-era p { margin: 12px 0 0; font-size: .78rem; font-weight: 300; line-height: 1.6; color: #2f4d68; text-align: justify; }
 
-.rt-foot { margin: 56px 0 0; font-size: .74rem; line-height: 1.6; color: #2f4d68; }
+.rt-foot { margin: 28px 0 0; font-size: .74rem; line-height: 1.6; color: #2f4d68; }
 @media (max-width: 639px) {
   .rt-hero { padding: 120px 24px 72px; min-height: 92svh; }
   .rt-title { font-size: 3rem; text-wrap: balance; }
@@ -209,11 +210,9 @@ const CSS = `
   .rt-sub { margin-top: 14px; }
   .rt-uni { margin-top: 30px; }
   .rt-canvas { padding: 8px; border-radius: 16px; }
-  .rt-bub .n { font-size: 19px; }
-  .rt-bub .c { font-size: 14px; }
-  .rt-panel { padding: 24px 20px; border-radius: 16px; }
+  .rt-panel { padding: 24px 20px; border-radius: 12px; }
   .rt-nums { gap: 10px; }
-  .rt-num strong { font-size: 1.4rem; }
+  .rt-num strong { width: 60px; height: 60px; font-size: 1rem; }
   .rt-chips { margin-top: 26px; flex-wrap: nowrap; overflow-x: auto; margin-left: -22px; margin-right: -22px; padding: 2px 22px 8px; scrollbar-width: none; }
   .rt-chips::-webkit-scrollbar { display: none; }
   .rt-chips li { flex: 0 0 auto; }
@@ -223,7 +222,7 @@ const CSS = `
   .rt-era { padding: 22px 22px; }
   .rt-foot { margin-top: 40px; }
 }
-@media (prefers-reduced-motion: reduce) { .rt-bub circle, .rt-dot { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .rt-seg, .rt-dot { transition: none; } }
 `
 
 export default function ResearchPage() {
@@ -238,7 +237,6 @@ export default function ResearchPage() {
 
   const domain = stats.find((s) => s.key === domainKey) ?? stats[0]
   const pickedPaper = picked ? BY_ID.get(picked) ?? null : null
-  const bubble = useMemo(() => new Map(BUBBLES.map((b) => [b.key, b])), [])
 
   const chipCount = (key: string) => stats.find((s) => s.key === key)?.papers.length ?? 0
 
@@ -248,14 +246,13 @@ export default function ResearchPage() {
 
       <section className="rt-hero">
         <div className="rt-rings">
-          <MagicRings color="#ffffff" colorTwo="#cdd9ff" motion="pulse" ringCount={6} baseRadius={0.46} speed={1} lineThickness={2} glow={0.5} hoverScale={1.2} clickBurst={true} theme="dark" />
+          <MagnetLines lineColor="#6391BD" accentColor="#BBD6EC" spacing={34} lineWidth={2} lineHeight={18} mode="orbit" shape="line" radius={200} fade={0.75} stretch={0.4} baseAngle={-10} edgeFade={0.15} idle />
         </div>
         <div className="rt-hero-in rt-in">
-          <h1 id="rt-title" className="rt-title">Research and Trends</h1>
-          <p className="rt-lede">Twenty of his most-cited papers, grouped by research domain and placed on a timeline to show how the focus moved over 25 years.</p>
+          <h1 id="rt-title" className="rt-title">Most Cited Research Papers</h1>
+          <p className="rt-lede">The ideas that defined a career: his most influential papers, grouped by research domain and traced across 25 years of evolving research.</p>
           <div className="rt-tally">
-            <span className="rt-pill">{PAPERS.length} landmark papers</span>
-            <span className="rt-pill">{fmt(PAPERS.reduce((s, p) => s + p.citations, 0))} citations</span>
+            <span className="rt-pill">{stats.length} research domains</span>
             <span className="rt-pill">Source: Google Scholar</span>
           </div>
         </div>
@@ -264,46 +261,62 @@ export default function ResearchPage() {
       <div className="rt-body">
         <div className="rt-in">
           <section className="rt-sec" aria-labelledby="rt-dom-title">
-            <p className="rt-eyebrow">Research universe</p>
-            <h2 id="rt-dom-title" className="rt-h2">{stats.length} domains, <span>one mission</span></h2>
-            <p className="rt-sub">Each bubble is a research domain, sized by the citations of its landmark papers. Tap a bubble to explore it.</p>
+            <h2 id="rt-dom-title" className="rt-h2 rt-h2-c">Where his research <span>has made its mark</span></h2>
 
             <div className="rt-uni">
               <div className="rt-canvas">
-                <svg viewBox={`0 0 ${BW} ${BH}`} role="group" aria-label="Research domains sized by citations">
-                  {stats.map((s) => {
-                    const b = bubble.get(s.key)!
-                    const on = s.key === domain.key
-                    const [l1, l2] = s.name.length > 16 ? [s.name.split(' ').slice(0, -1).join(' '), s.name.split(' ').slice(-1)[0]] : [s.name, '']
-                    return (
-                      <g
-                        key={s.key}
-                        className={`rt-bub${on ? ' is-on' : ''}`}
-                        role="button"
-                        tabIndex={0}
-                        aria-pressed={on}
-                        aria-label={`${s.name}, ${fmt(s.citations)} citations`}
-                        onClick={() => setDomainKey(s.key)}
-                        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setDomainKey(s.key) } }}
-                      >
-                        <circle cx={b.x} cy={b.y} r={b.r} />
-                        <text className="n" x={b.x} y={b.y - (l2 ? 12 : 4)}>{l1}</text>
-                        {l2 && <text className="n" x={b.x} y={b.y + 6}>{l2}</text>}
-                        <text className="c" x={b.x} y={b.y + (l2 ? 26 : 18)}>{fmt(s.citations)} cites</text>
-                      </g>
-                    )
-                  })}
+                <svg className="rt-donut" viewBox={`0 0 ${DS} ${DS}`} role="group" aria-label="Research domains by share of citations">
+                  <circle cx={DS / 2} cy={DS / 2} r={DR} fill="none" stroke="#EEF4FA" strokeWidth={DW} />
+                  <g transform={`rotate(-90 ${DS / 2} ${DS / 2})`}>
+                    {stats.map((s, i) => {
+                      const g = SEGS[i]
+                      const on = s.key === domain.key
+                      return (
+                        <circle
+                          key={s.key}
+                          className={`rt-seg${on ? ' is-on' : ''}`}
+                          cx={DS / 2} cy={DS / 2} r={DR}
+                          stroke={COLOR_OF.get(s.key)}
+                          strokeWidth={DW}
+                          strokeDasharray={`${g.len} ${DC - g.len}`}
+                          strokeDashoffset={-(g.start + GAP / 2)}
+                          role="button"
+                          tabIndex={0}
+                          aria-pressed={on}
+                          aria-label={`${s.name}, ${fmt(s.citations)} citations`}
+                          onClick={() => setDomainKey(s.key)}
+                          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setDomainKey(s.key) } }}
+                        />
+                      )
+                    })}
+                  </g>
+                  <text className="rt-dc-n" x={DS / 2} y={DS / 2 - (domain.name.length > 18 ? 36 : 26)}>{domain.name.length > 18 ? domain.name.split(' ').slice(0, -1).join(' ') : domain.name}</text>
+                  {domain.name.length > 18 && <text className="rt-dc-n" x={DS / 2} y={DS / 2 - 12}>{domain.name.split(' ').slice(-1)[0]}</text>}
+                  <text className="rt-dc-v" x={DS / 2} y={DS / 2 + (domain.name.length > 18 ? 34 : 28)}>{fmt(domain.citations)}</text>
+                  <text className="rt-dc-s" x={DS / 2} y={DS / 2 + (domain.name.length > 18 ? 64 : 58)}>{Math.round((domain.citations / TOTAL_CITES_DOM) * 100)}% of citations</text>
                 </svg>
-                <p className="rt-hint">Bubble area follows the combined citations of the domain's papers in the top 20.</p>
+                <ul className="rt-legend">
+                  {stats.map((s) => (
+                    <li key={s.key}>
+                      <button type="button" className="rt-leg" aria-pressed={s.key === domain.key} onClick={() => setDomainKey(s.key)}>
+                        <i style={{ background: COLOR_OF.get(s.key) }} />
+                        <span>{s.name}</span>
+                        <b>{fmt(s.citations)}</b>
+                        <small>{Math.round((s.citations / TOTAL_CITES_DOM) * 100)}%</small>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+                <p className="rt-hint">Segment length follows the combined citations of each domain's most-cited papers.</p>
               </div>
 
-              <aside className="rt-panel" aria-live="polite">
+              <aside className="rt-panel" aria-live="polite" style={{ ['--dc' as string]: COLOR_OF.get(domain.key) }}>
                 <h3>{domain.name}</h3>
-                <p>{domain.blurb}</p>
+                <p>{domain.blurb.replace(/-/g, '\u2011')}</p>
                 <ul className="rt-topics">{domain.topics.map((t) => <li key={t} className="rt-topic">{t}</li>)}</ul>
                 <dl className="rt-nums" style={{ margin: '22px 0 0' }}>
                   <div className="rt-num"><strong>{fmt(domain.citations)}</strong><span>Citations from top papers</span></div>
-                  <div className="rt-num"><strong>{domain.papers.length}</strong><span>of the top {PAPERS.length} papers</span></div>
+                  <div className="rt-num"><strong>{domain.papers.length}</strong><span>Most-cited papers</span></div>
                 </dl>
                 <ol className="rt-list">
                   {domain.papers.map((p) => (
@@ -319,16 +332,15 @@ export default function ResearchPage() {
           </section>
 
           <section className="rt-sec" aria-labelledby="rt-trend-title">
-            <p className="rt-eyebrow">Research trends</p>
-            <h2 id="rt-trend-title" className="rt-h2">25 years of <span>evolving ideas</span></h2>
-            <p className="rt-sub">Each dot is one of his {PAPERS.length} most-cited papers, placed by the year it was published and how often it has been cited. Pick a domain to see how the focus moved.</p>
+            <h2 id="rt-trend-title" className="rt-h2 rt-h2-c">25 years of <span>evolving ideas</span></h2>
+            <p className="rt-sub">Each dot is one of his most-cited papers, placed by the year it was published and how often it has been cited. Pick a domain to see how the focus moved.</p>
 
             <ul className="rt-chips" aria-label="Filter by domain">
               <li><button type="button" className="rt-chip" aria-pressed={filter === null} onClick={() => setFilter(null)}>All domains</button></li>
               {stats.map((s) => (
                 <li key={s.key}>
-                  <button type="button" className="rt-chip" aria-pressed={filter === s.key} onClick={() => setFilter(filter === s.key ? null : s.key)}>
-                    {s.name} <i>{chipCount(s.key)}</i>
+                  <button type="button" className="rt-chip" style={{ ['--c' as string]: COLOR_OF.get(s.key), ['--fg' as string]: LIGHT.has(s.key) ? '#14305A' : '#fff' }} aria-pressed={filter === s.key} onClick={() => setFilter(filter === s.key ? null : s.key)}>
+                    <span className="rt-cd" style={{ background: COLOR_OF.get(s.key) }} />{s.name} <i>{chipCount(s.key)}</i>
                   </button>
                 </li>
               ))}
@@ -342,7 +354,7 @@ export default function ResearchPage() {
                   return (
                     <g key={e.label}>
                       <rect x={xAt(from)} y={M.t - 24} width={xAt(to) - xAt(from)} height={CH - M.b - M.t + 24} fill={i % 2 ? 'rgba(36,71,107,.05)' : 'rgba(36,71,107,.02)'} />
-                      <text className="rt-era-t" x={(xAt(from) + xAt(to)) / 2} y={M.t - 8} textAnchor="middle">{e.label.toUpperCase()}</text>
+                      <text className="rt-era-t" x={(xAt(from) + xAt(to)) / 2} y={M.t - 8} textAnchor="middle">{e.label}</text>
                     </g>
                   )
                 })}
@@ -355,7 +367,7 @@ export default function ResearchPage() {
                 {xTicks.map((v) => (
                   <text key={v} x={xAt(v)} y={CH - M.b + 22} textAnchor="middle" fontSize="11">{v}</text>
                 ))}
-                <text x={M.l - 10} y={M.t - 28} textAnchor="end" fontSize="10.5">CITATIONS</text>
+                <text x={M.l - 10} y={M.t - 28} textAnchor="end" fontSize="10.5">Citations</text>
 
                 {PAPERS.map((p) => {
                   const d = DOMAIN_OF.get(p.id)
@@ -366,7 +378,7 @@ export default function ResearchPage() {
                     <g key={p.id}>
                       <circle
                         className={`rt-dot${dim ? ' is-dim' : ''}${picked === p.id ? ' is-sel' : ''}`}
-                        cx={x} cy={y} r={7}
+                        cx={x} cy={y} r={3 + 4 * Math.sqrt(p.citations / Math.max(...cites))} fill={d ? COLOR_OF.get(d.key) : '#24476B'}
                         tabIndex={dim ? -1 : 0}
                         role="button"
                         aria-label={`${p.title}, ${p.year}, ${fmt(p.citations)} citations`}
@@ -376,7 +388,7 @@ export default function ResearchPage() {
                         onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setPicked(p.id) } }}
                       />
                       {LABELLED.has(p.id) && !dim && (
-                        <text className="rt-lab" x={x + (x > CW * 0.7 ? -12 : 12)} y={y + 4} textAnchor={x > CW * 0.7 ? 'end' : 'start'}>
+                        <text className="rt-lab" x={x + (x > CW * 0.7 ? -17 : 17)} y={y + 4} textAnchor={x > CW * 0.7 ? 'end' : 'start'}>
                           {shortTitle(p.title)} · {fmt(p.citations)}
                         </text>
                       )}
@@ -402,13 +414,15 @@ export default function ResearchPage() {
                 <article key={e.label} className="rt-era">
                   <small>{eraRange(e)}</small>
                   <strong>{e.count} papers <span>· {fmt(e.citations)} citations</span></strong>
-                  <p>{e.label}{e.lead.length ? `. Led by ${e.lead.join(' and ')}.` : '.'}</p>
+                  <div className="rt-era-bar" aria-hidden="true"><i style={{ width: `${(e.citations / TOTAL_CITES) * 100}%` }} /></div>
+                  <p className="rt-era-pct">{Math.round((e.citations / TOTAL_CITES) * 100)}% of the combined citations</p>
+                  <p>{`${e.label}${e.lead.length ? `. Led\u00A0by ${e.lead.join(' and ')}.` : '.'}`.replace(/-/g, '\u2011')}</p>
                 </article>
               ))}
             </div>
           </section>
 
-          <p className="rt-foot">Citation counts are from the Google Scholar profile, retrieved {retrieved}. Grouping of papers into domains and eras is editorial and can be changed in src/data/research-trends.json.</p>
+          <p className="rt-foot">Citation counts are from the Google Scholar profile, retrieved {retrieved}.</p>
         </div>
       </div>
     </main>
