@@ -80,6 +80,13 @@ const CSS = `
 .fp-title { margin: 0; font-size: clamp(2.1rem, 4.6vw, 3.8rem); font-weight: 500; line-height: 1.05; letter-spacing: -.045em; color: #24476B; animation: fp-drop 1.1s cubic-bezier(.16,1,.3,1) .2s both; }
 @keyframes fp-drop { from { opacity: 0; transform: translateY(-34px); } to { opacity: 1; transform: none; } }
 .fp-lede { margin: 18px auto 0; max-width: 36rem; font-size: clamp(.84rem, 1.05vw, .92rem); font-weight: 300; line-height: 1.75; color: #3a5a7a; text-align: justify; text-align-last: center; hyphens: none; animation: fp-drop 1.1s cubic-bezier(.16,1,.3,1) .6s both; }
+@media (max-width: 639px) {
+  .fp-title { font-size: min(2.5rem, 10vw); line-height: 1.12; }
+  .fp-lede { margin-top: 26px; -webkit-hyphens: auto; hyphens: auto; }
+  .fp-stats { margin-top: 60px; }
+  .fp-filters { gap: 8px; }
+  .fp-field { gap: 4px; }
+}
 @media (prefers-reduced-motion: reduce) { .fp-title, .fp-lede { animation: none; } }
 
 .fp-glass {
@@ -168,7 +175,7 @@ export default function FundingPage() {
 
       <section className="fp-hero">
         <div className="fp-in">
-          <h1 id="fp-title" className="fp-title">Research Funding &amp; Projects</h1>
+          <h1 id="fp-title" className="fp-title">{'Research Funding and Projects'}</h1>
           <p className="fp-lede">{funding.totalNote.replace("Asia-Pacific", "Asia\u2011Pacific")}</p>
         </div>
         <div className="fp-stats" aria-label="Funding at a glance">

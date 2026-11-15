@@ -114,7 +114,7 @@ const CSS = `
 .rt-sub { margin: 16px auto 0; max-width: 760px; font-size: .9rem; line-height: 1.6; color: #2f4d68; text-align: center; text-wrap: balance; }
 
 /* ---- domains ---- */
-.rt-uni { margin-top: 44px; display: grid; grid-template-columns: 1fr; gap: 20px; }
+.rt-uni { margin-top: 44px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
 @media (min-width: 820px) {
   .rt-canvas { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 80px; padding: 28px 36px 18px; }
   .rt-canvas .rt-donut { margin: 0; width: 340px; flex: 0 0 340px; }
@@ -127,7 +127,7 @@ const CSS = `
   .rt-list li:nth-child(odd):nth-last-child(2) { border-bottom: 0; padding-bottom: 0; }
   .rt-uni .rt-panel > .rt-list { grid-column: 1 / -1; grid-template-columns: 1fr 1fr; column-gap: 48px; margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.18); }
 }
-.rt-canvas { padding: 12px; }
+.rt-canvas { padding: 12px; min-width: 0; }
 .rt-canvas svg { display: block; width: 100%; height: auto; }
 .rt-donut { display: block; width: 100%; max-width: 360px; margin: 6px auto 0; height: auto; }
 .rt-seg { fill: none; cursor: pointer; outline: none; opacity: .9; transition: opacity .3s, stroke-width .35s cubic-bezier(.16,1,.3,1); }
@@ -146,7 +146,7 @@ const CSS = `
 .rt-leg small { min-width: 38px; text-align: right; font-size: .74rem; color: #3a5f86; font-variant-numeric: tabular-nums; }
 .rt-hint { margin: 8px 6px 2px; font-size: .74rem; color: #3a5f86; }
 
-.rt-panel { display: flex; flex-direction: column; padding: 32px; border-top: 6px solid var(--dc, #3F7CC0); border-radius: 14px; background: #24476B; color: #fff; box-shadow: 0 14px 34px -18px rgba(18,36,60,.7); }
+.rt-panel { min-width: 0; display: flex; flex-direction: column; padding: 32px; border-top: 6px solid var(--dc, #3F7CC0); border-radius: 14px; background: #24476B; color: #fff; box-shadow: 0 14px 34px -18px rgba(18,36,60,.7); }
 .rt-panel h3 { margin: 0; font-size: 1.35rem; font-weight: 500; letter-spacing: -.02em; }
 .rt-panel p { margin: 12px 0 0; font-size: .86rem; font-weight: 300; line-height: 1.65; color: rgba(255,255,255,.82); text-align: justify; max-width: 33rem; }
 .rt-topics { margin: 18px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
@@ -252,7 +252,7 @@ export default function ResearchPage() {
           <h1 id="rt-title" className="rt-title">Most Cited Research Papers</h1>
           <p className="rt-lede">The ideas that defined a career: his most influential papers, grouped by research domain and traced across 25 years of evolving research.</p>
           <div className="rt-tally">
-            <span className="rt-pill">{stats.length} research domains</span>
+            <span className="rt-pill">{stats.length} research domains</span>
             <span className="rt-pill">Source: Google Scholar</span>
           </div>
         </div>

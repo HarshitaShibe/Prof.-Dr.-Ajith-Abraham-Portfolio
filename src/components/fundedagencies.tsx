@@ -111,6 +111,8 @@ const CSS = `
 @media (max-width: 639px) {
   .fa-wrap { padding-bottom: 80px; }
   .fa-title { margin-bottom: 32px; }
+  .fa-logos { gap: 14px; }
+  .fa-tile img { width: 90%; height: 90%; }
 }
 .fa-logos {
   display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; list-style: none; margin: 0 0 24px; padding: 0;
@@ -119,7 +121,7 @@ const CSS = `
 
 .fa-tile {
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
-  width: calc((100% - 24px) / 3); aspect-ratio: 1 / 1; padding: 8px; box-sizing: border-box; background: #ffffff; border-radius: 14px;
+  width: calc((100% - 14px) / 2); aspect-ratio: 1 / 1; padding: 10px; box-sizing: border-box; background: #ffffff; border-radius: 14px;
   box-shadow: 0 10px 26px -14px rgba(18,36,60,.6);
   transition: box-shadow .4s cubic-bezier(.16,1,.3,1);
 }

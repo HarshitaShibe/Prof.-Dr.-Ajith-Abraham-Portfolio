@@ -24,6 +24,7 @@ const MAXY = Math.max(...TOT)
 const niceMax = Math.ceil(MAXY / 20) * 20
 const TICKS = [0, 0.25, 0.5, 0.75, 1].map((f) => Math.round(niceMax * f))
 const ALIAS: Record<string, string> = { 'United States': 'United States of America' }
+const ABBR: Record<string, string> = { 'United States': 'US' }
 const HIT = new Map(collab.countries.map((c) => [ALIAS[c.name] ?? c.name, c]))
 const NOT_DRAWN = collab.countries.filter((c) => !world.countries.some((k) => k.n === (ALIAS[c.name] ?? c.name))).map((c) => c.name)
 // shade by number of joint publications (log steps so small counts stay visible)
@@ -64,6 +65,7 @@ const CSS = `
 .ri-itbl tbody tr:hover { background: #EAF2FA; }
 .ri-itbl .ri-itbl-num { font-variant-numeric: tabular-nums; font-weight: 500; white-space: nowrap; }
 @media (max-width: 639px) { .ri-itbl thead th, .ri-itbl tbody th, .ri-itbl tbody td { padding: 12px 14px; } }
+@media (max-width: 639px) { .ri-sub { text-align: justify; text-justify: inter-word; -webkit-hyphens: auto; hyphens: auto; } }
 .ri-more { margin-top: 12px; height: 38px; padding: 0 18px; border-radius: 999px; border: 0; background: #24476B; color: #fff; font: inherit; font-size: .82rem; font-weight: 600; cursor: pointer; }
 .ri-more:focus-visible { outline: 2px solid #4A86C8; outline-offset: 2px; }
 .ri-countries { margin: 14px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
@@ -72,6 +74,12 @@ const CSS = `
 .ri-countries button[aria-pressed="true"] { background: #24476B; color: #fff; border-color: #24476B; }
 .ri-countries button:focus-visible { outline: 2px solid #4A86C8; outline-offset: 2px; }
 .ri-countries em { font-style: normal; opacity: .75; }
+.ri-cn-ab { display: none; }
+@media (max-width: 639px) { .ri-cn-full { display: none; } .ri-cn-ab { display: inline; } }
+.ri-scroll { overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; scrollbar-width: thin; border-radius: 10px; }
+.ri-scroll::-webkit-scrollbar { height: 6px; }
+.ri-scroll::-webkit-scrollbar-thumb { background: #C5D7E6; border-radius: 3px; }
+@media (max-width: 639px) { .ri-scroll > .ri-svg { min-width: 600px; } .ri-scroll.ri-scroll-xl > .ri-svg { min-width: 880px; } }
 `
 
 function Growth() {
@@ -86,14 +94,14 @@ function Growth() {
     <div className="ri-card">
       <h3>Year-wise growth</h3>
       <p>Publication output per year since {FROM}</p>
-      <svg className="ri-svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Publications per year, ${FROM} to ${SPAN[SPAN.length - 1]}`}>
+      <div className="ri-scroll"><svg className="ri-svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Publications per year, ${FROM} to ${SPAN[SPAN.length - 1]}`}>
         <defs><linearGradient id="ri-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#4A86C8" stopOpacity=".35" /><stop offset="1" stopColor="#4A86C8" stopOpacity="0" /></linearGradient></defs>
         {TICKS.map((t) => (<g key={t}><line x1={L} x2={W - R} y1={y(t)} y2={y(t)} stroke="#DCE8F1" strokeDasharray="3 4" /><text x={L - 6} y={y(t) + 3} fontSize="9" textAnchor="end">{t}</text></g>))}
         <path d={area} fill="url(#ri-g)" />
         <path d={line} fill="none" stroke="#24476B" strokeWidth="2.4" strokeLinejoin="round" />
         {SPAN.map((yr, i) => (<g key={yr}>{(yr % 3 === 0 || (i === SPAN.length - 1 && (yr - 1) % 3 !== 0)) && <text x={x(i)} y={H - 8} fontSize="9" textAnchor="middle">{yr}</text>}
           <circle cx={x(i)} cy={y(TOT[i])} r={hi === yr ? 5 : 8} fill={hi === yr ? '#24476B' : 'transparent'} onMouseEnter={() => setHi(yr)} onMouseLeave={() => setHi(null)} onClick={() => setHi(yr)} /></g>))}
-      </svg>
+      </svg></div>
       <div className="ri-tip" aria-live="polite">{hi ? `${hi}: ${nf(total(hi))} publications` : 'Select a point to see the year.'}</div>
     </div>
   )
@@ -133,7 +141,7 @@ function Stacked() {
     <div className="ri-card ri-wide">
       <h3>Annual publication output by document type</h3>
       <p>Year-by-year output split by type</p>
-      <svg className="ri-svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Publications per year by type">
+      <div className="ri-scroll ri-scroll-xl"><svg className="ri-svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Publications per year by type">
         {TICKS.map((t) => (<g key={t}><line x1={L} x2={W - R} y1={y(t)} y2={y(t)} stroke="#DCE8F1" strokeDasharray="3 4" /><text x={L - 6} y={y(t) + 3} fontSize="10" textAnchor="end">{t}</text></g>))}
         {SPAN.map((yr, i) => {
           let acc = 0
@@ -143,7 +151,7 @@ function Stacked() {
             <text x={L + i * bw + bw / 2} y={H - 8} fontSize="10" textAnchor="middle">{yr}</text>
           </g>)
         })}
-      </svg>
+      </svg></div>
       <ul className="ri-legend">{insights.types.map((t) => (<li key={t} style={{ ['--c' as string]: COLOR[t] }}><i />{LABEL[t]}</li>))}</ul>
     </div>
   )
@@ -164,7 +172,7 @@ function Quartiles() {
     <div className="ri-card ri-wide">
       <h3>Journal quartile (SJR)</h3>
       <p>{nf(matched)} of {nf(quart.total)} journal articles appear in journals ranked in the {quart.year} Scimago Journal Rank, shown by the journal's best quartile. {nf(quart.notMatched)} could not be matched by title.</p>
-      <svg className="ri-svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Journal articles by SJR quartile">
+      <div className="ri-scroll"><svg className="ri-svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Journal articles by SJR quartile">
         {rows.map((r, i) => {
           const h = ((H - T - B) * r.v) / max, x = L + gap + i * (bw + gap), y = H - B - h
           return (<g key={r.k}>
@@ -174,7 +182,7 @@ function Quartiles() {
           </g>)
         })}
         <line x1={L} x2={W - 10} y1={H - B} y2={H - B} stroke="#C5D7E6" />
-      </svg>
+      </svg></div>
     </div>
   )
 }
@@ -188,12 +196,12 @@ function CollabMap() {
     <div className="ri-card ri-wide">
       <h3>International research collaboration</h3>
       <p>{collab.countries.length} countries with joint publications. Shading shows how many publications include at least one co-author from that country. Select a country for its count. Source: OpenAlex.</p>
-      <svg className="ri-svg ri-map" viewBox={`0 0 ${world.w} ${world.h}`} role="img" aria-label="World map of collaborating countries">
+      <div className="ri-scroll"><svg className="ri-svg ri-map" viewBox={`0 0 ${world.w} ${world.h}`} role="img" aria-label="World map of collaborating countries">
         {world.countries.map((k) => {
           const h = HIT.get(k.n)
           return <path key={k.n} d={k.d} className={h ? `on s${shade(h.papers)}${sel === k.n ? ' sel' : ''}` : undefined} onClick={h ? () => setSel(sel === k.n ? null : k.n) : undefined}><title>{h ? `${h.name}: ${nf(h.papers)} publications` : k.n}</title></path>
         })}
-      </svg>
+      </svg></div>
       <div className="ri-scale" aria-hidden="true">
         <span><i style={{ background: '#BBD6EC' }} />1–7</span><span><i style={{ background: '#7FB0DB' }} />8–29</span><span><i style={{ background: '#3F7CC0' }} />30–99</span><span><i style={{ background: '#24476B' }} />100+</span>
       </div>
@@ -201,7 +209,7 @@ function CollabMap() {
       <ul className="ri-countries">
         {rows.map((k) => {
           const key = ALIAS[k.name] ?? k.name
-          return <li key={k.code}><button type="button" aria-pressed={sel === key} onClick={() => setSel(sel === key ? null : key)}>{k.name}<em>{nf(k.papers)}</em></button></li>
+          return <li key={k.code}><button type="button" aria-pressed={sel === key} onClick={() => setSel(sel === key ? null : key)}><span><span className="ri-cn-full">{k.name}</span><span className="ri-cn-ab">{ABBR[k.name] ?? k.name}</span></span><em>{nf(k.papers)}</em></button></li>
         })}
       </ul>
       <button type="button" className="ri-more" onClick={() => setAll((v) => !v)}>{all ? 'Show top 15' : `Show all ${collab.countries.length} countries`}</button>

@@ -25,8 +25,19 @@ const ITEMS = [
 // Contact sits on its own at the right end, outside the pill (desktop)
 const PILL_ITEMS = ITEMS.filter((i) => i.id !== 'contact')
 
-// phone menu: the full list, with Home first
-const MENU_ITEMS = [{ label: 'Home', id: 'top' }, ...ITEMS]
+// phone / tablet menu: the full list (incl. the Research Funding page), Home first
+const MENU_ITEMS = [
+  { label: 'Home', id: 'top' },
+  { label: 'Career & Leadership', id: 'career' },
+  { label: 'Research', id: 'research' },
+  { label: 'Research Funding and Projects', id: 'funding' },
+  { label: 'Entrepreneurship', id: 'entrepreneurship' },
+  { label: 'Publications', id: 'publications' },
+  { label: 'Journals and Publishers', id: 'journals' },
+  { label: 'Most Cited', id: 'mostcited' },
+  { label: 'Media & Gallery', id: 'media' },
+  { label: 'Contact', id: 'contact' },
+]
 
 const CSS = `
 .nv-header {
@@ -35,8 +46,8 @@ const CSS = `
   box-sizing: border-box;
 }
 @media (min-width: 640px) { .nv-header { top: 34px; padding: 0 20px; } }
-/* five tabs are wide: on tablets the name would collide with the pill */
-@media (min-width: 768px) and (max-width: 1100px) { .nv-header .nv-brand { display: none; } }
+/* five tabs are wide: at this width the name would collide with the pill */
+@media (min-width: 1024px) and (max-width: 1100px) { .nv-header .nv-brand { display: none; } }
 
 .nv-row {
   position: relative; max-width: 1200px; margin: 0 auto;
@@ -136,44 +147,56 @@ const CSS = `
 /* Publications page only: after the hero, the pill turns dark and the name stays visible in dark blue */
 .on-publications .nv-header.is-scrolled .nv-pill, .on-journals .nv-header.is-scrolled .nv-pill, .on-research-overview .nv-header.is-scrolled .nv-pill { background: #24476B; border-color: rgba(255,255,255,.14); }
 
-/* ---- Phones and small tablets (below 768px): the pill becomes a menu button + dropdown ---- */
-.nv-burger, .nv-menu { display: none; }
-@media (max-width: 767px) {
+/* ---- Phones & tablets (below 1024px): the pill collapses into a slide-in sidebar ---- */
+.nv-burger, .nv-menu, .nv-scrim { display: none; }
+@media (max-width: 1023px) {
   .nv-nav, .nv-contact { display: none; }
-  .nv-name { font-size: .78rem; }
+  .nv-name { font-size: .82rem; }
   .nv-burger {
+    position: relative; z-index: 70;
     display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
-    width: 38px; height: 38px; padding: 0; margin: 0; border-radius: 50%; cursor: pointer; flex-shrink: 0;
+    width: 40px; height: 40px; padding: 0; margin: 0; border-radius: 50%; cursor: pointer; flex-shrink: 0;
     background: #24476B; border: 1px solid rgba(255,255,255,.28); box-shadow: 0 8px 22px -10px rgba(18,36,60,.8), inset 0 1px 0 rgba(255,255,255,.25);
     -webkit-tap-highlight-color: transparent;
   }
   .nv-burger:focus-visible { outline: 2px solid #cdd9ff; outline-offset: 3px; }
-  .nv-burger span { display: block; width: 16px; height: 1.5px; border-radius: 2px; background: #fff; transition: transform .3s cubic-bezier(.16,1,.3,1), opacity .2s; }
+  .nv-burger span { display: block; width: 17px; height: 1.5px; border-radius: 2px; background: #fff; transition: transform .3s cubic-bezier(.16,1,.3,1), opacity .2s; }
   .nv-burger.is-open span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
   .nv-burger.is-open span:nth-child(2) { opacity: 0; }
   .nv-burger.is-open span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
 
-  .nv-menu {
-    display: flex; flex-direction: column; gap: 2px; position: absolute; right: 0; top: calc(100% + 10px);
-    width: min(300px, 100%); margin: 0; padding: 10px; list-style: none; box-sizing: border-box;
-    border-radius: 20px; background: #24476B; border: 1px solid rgba(255,255,255,.2);
-    box-shadow: 0 22px 44px -16px rgba(18,36,60,.85), inset 0 1px 0 rgba(255,255,255,.2);
-    opacity: 0; visibility: hidden; transform: translateY(-8px) scale(.98); transform-origin: top right; pointer-events: none;
-    transition: opacity .25s ease, transform .3s cubic-bezier(.16,1,.3,1), visibility .25s;
+  /* dim the page behind the sidebar */
+  .nv-scrim {
+    display: block; position: fixed; inset: 0; z-index: 55;
+    background: rgba(10,22,38,.5); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px);
+    opacity: 0; visibility: hidden; transition: opacity .3s ease, visibility .3s;
   }
-  .nv-menu.is-open { opacity: 1; visibility: visible; transform: none; pointer-events: auto; }
+  .nv-scrim.is-open { opacity: 1; visibility: visible; }
+
+  /* full-height sidebar sliding in from the right */
+  .nv-menu {
+    display: flex; flex-direction: column; gap: 2px;
+    position: fixed; top: 0; right: 0; bottom: 0; z-index: 60;
+    width: min(330px, 86vw); height: 100vh; height: 100dvh; margin: 0;
+    padding: 84px 16px calc(24px + env(safe-area-inset-bottom)); list-style: none; box-sizing: border-box; overflow-y: auto;
+    background: #24476B; border-left: 1px solid rgba(255,255,255,.14);
+    box-shadow: -26px 0 60px -24px rgba(18,36,60,.9);
+    transform: translateX(105%); visibility: hidden; pointer-events: none;
+    transition: transform .36s cubic-bezier(.16,1,.3,1), visibility .36s;
+  }
+  .nv-menu.is-open { transform: none; visibility: visible; pointer-events: auto; }
   .nv-menu a {
-    display: block; padding: 15px 18px; border-radius: 14px; color: rgba(255,255,255,.9); text-decoration: none;
-    font-size: .86rem; font-weight: 400; -webkit-tap-highlight-color: transparent; transition: background-color .2s, color .2s;
+    display: block; padding: 14px 16px; border-radius: 14px; color: rgba(255,255,255,.9); text-decoration: none;
+    font-size: .92rem; font-weight: 400; -webkit-tap-highlight-color: transparent; transition: background-color .2s, color .2s;
   }
   .nv-menu a:hover, .nv-menu a:active { background: rgba(255,255,255,.1); color: #fff; }
   .nv-menu a.is-active { background: rgba(255,255,255,.16); color: #fff; font-weight: 500; }
   .nv-menu a:focus-visible { outline: 2px solid #cdd9ff; outline-offset: -2px; }
-  .nv-menu-sep { height: 1px; margin: 8px 8px 6px; background: rgba(255,255,255,.16); }
-  .nv-menu-h { margin: 4px 18px 6px; font-size: .68rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: rgba(255,255,255,.55); }
-  .nv-menu a.nv-menu-c { padding: 10px 18px; font-size: .8rem; color: rgba(255,255,255,.82); overflow-wrap: anywhere; }
+  .nv-menu-sep { height: 1px; margin: 10px 8px 8px; background: rgba(255,255,255,.16); }
+  .nv-menu-h { margin: 4px 16px 6px; font-size: .68rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+  .nv-menu a.nv-menu-c { padding: 10px 16px; font-size: .84rem; color: rgba(255,255,255,.82); overflow-wrap: anywhere; }
   .nv-menu-p { display: flex; flex-wrap: wrap; gap: 6px; padding: 6px 12px 4px; }
-  .nv-menu a.nv-menu-chip { padding: 6px 12px; border-radius: 999px; font-size: .7rem; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.26); color: #fff; }
+  .nv-menu a.nv-menu-chip { padding: 6px 12px; border-radius: 999px; font-size: .72rem; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.26); color: #fff; }
   .nv-menu a.nv-menu-chip:hover { background: rgba(255,255,255,.2); }
 }
 @media (prefers-reduced-motion: reduce) { .nv-menu, .nv-burger span { transition: none; } }
@@ -250,7 +273,7 @@ export default function Navbar() {
     const onDown = (e: PointerEvent) => {
       if (!(e.target as Element).closest('.nv-menu, .nv-burger')) setOpen(false)
     }
-    const onResize = () => window.innerWidth >= 768 && setOpen(false)
+    const onResize = () => window.innerWidth >= 1024 && setOpen(false)
     document.addEventListener('keydown', onKey)
     document.addEventListener('pointerdown', onDown)
     window.addEventListener('resize', onResize)
@@ -285,6 +308,11 @@ export default function Navbar() {
   return (
     <header className={`nv-header${pastHero ? ' is-scrolled' : ''}`}>
       <style>{CSS}</style>
+      <div
+        className={`nv-scrim${open ? ' is-open' : ''}`}
+        aria-hidden="true"
+        onClick={() => setOpen(false)}
+      />
       <div className="nv-row">
         <a
           href="#top"

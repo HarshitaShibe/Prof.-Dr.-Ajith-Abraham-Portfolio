@@ -126,7 +126,7 @@ const CSS = `
 .rs-ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 34px; }
 .rs-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 34px; padding: 0 14px; border-radius: 11px; font-size: .73rem; font-weight: 600; font-family: inherit; text-decoration: none; white-space: nowrap; color: #24476B; border: 1px solid #4A86C8; background: #fff; box-shadow: 0 8px 20px -14px rgba(18,36,60,.4); transition: transform .22s cubic-bezier(.16,1,.3,1), box-shadow .22s, background .22s, border-color .22s; }
 .rs-btn:hover { transform: translateY(-2px); background: #F4F9FE; border-color: #3F7CC0; box-shadow: 0 14px 26px -14px rgba(18,36,60,.5); }
-@media (max-width: 639px) { .rs-title { font-size: 3.4rem; } .rs-ctas { gap: 14px 24px; } .rs-btn { height: auto; padding: 2px 0; border: 0; border-radius: 0; background: none; color: #24476B; font-size: .8rem; font-weight: 500; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; } .rs-btn:hover { background: none; } .rs-hero .rs-lede { font-size: .84rem; line-height: 1.7; max-width: 330px; } }
+@media (max-width: 639px) { .rs-title { font-size: 3.4rem; } .rs-ctas { gap: 14px 24px; } .rs-btn { height: auto; padding: 2px 0; border: 0; border-radius: 0; background: none; color: #24476B; font-size: .8rem; font-weight: 500; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; } .rs-btn:hover { background: none; } .rs-hero .rs-lede { font-size: .84rem; line-height: 1.7; max-width: 360px; text-align: justify; text-align-last: center; text-justify: inter-word; -webkit-hyphens: auto; hyphens: auto; } }
 .rs-lede { margin: 18px 0 0; max-width: 46rem; font-size: clamp(.95rem, 1.5vw, 1.1rem); font-weight: 300; line-height: 1.7; color: #3a5a7a; }
 
 .rs-h2 { margin: 0 0 32px; font-size: clamp(1.8rem, 3.6vw, 2.6rem); font-weight: 600; line-height: 1.15; letter-spacing: -.04em; color: #24476B; }
@@ -134,7 +134,7 @@ const CSS = `
 .rs-dark .rs-h2 { color: #24476B; }
 .rs-dark .rs-prose { max-width: none; }
 .rs-dark .rs-prose p { font-size: .9rem; font-weight: 300; line-height: 1.7; letter-spacing: -.01em; text-align: justify; text-justify: inter-word; color: #2f4f6e; }
-@media (max-width: 639px) { .rs-dark .rs-prose p { text-align: left; font-size: .9rem; line-height: 1.75; } }
+@media (max-width: 639px) { .rs-dark .rs-prose p { text-align: justify; text-justify: inter-word; -webkit-hyphens: auto; hyphens: auto; font-size: .9rem; line-height: 1.75; } }
 .rs-asof { margin: -18px 0 28px; font-size: .85rem; font-weight: 300; color: #5b7893; }
 .rs-h2-mid { text-align: center; }
 .rs-imp-hint { margin: -24px 0 54px; text-align: left; font-size: .8rem; font-weight: 300; font-style: italic; letter-spacing: .01em; color: #6b86a3; font-synthesis: style; }
@@ -152,7 +152,7 @@ const CSS = `
 .rs-dom:hover { transform: translateY(-4px); }
 .rs-dom-body { margin-top: auto; }
 .rs-dom h3 { margin: 0 0 18px; font-size: 1.3rem; font-weight: 600; letter-spacing: -.02em; }
-.rs-dom p { margin: 0; font-size: .8rem; font-weight: 300; line-height: 1.6; text-align: justify; }
+.rs-dom p { margin: 0; font-size: .8rem; font-weight: 300; line-height: 1.6; text-align: justify; text-justify: inter-word; -webkit-hyphens: auto; hyphens: auto; }
 .rs-dom--grad p { color: rgba(255,255,255,.9); }
 @media (min-width: 700px) {
   .rs-dom.dom-xl { grid-column: span 4; min-height: 232px; }
@@ -202,7 +202,7 @@ const CSS = `
 .rs-prose { max-width: 52rem; }
 .rs-prose + .rs-prose { margin-top: 0; }
 .rs-prose p { margin: 0 0 18px; font-size: clamp(.95rem, 1.5vw, 1.08rem); font-weight: 400; line-height: 1.7; color: #2f4d68; }
-@media (max-width: 639px) { .rs-prose p { font-size: .9rem; line-height: 1.75; } }
+@media (max-width: 639px) { .rs-prose p { text-align: justify; text-justify: inter-word; -webkit-hyphens: auto; hyphens: auto; font-size: .9rem; line-height: 1.75; } }
 
 .rs-links { display: flex; flex-wrap: wrap; gap: 12px; padding-bottom: 90px !important; }
 .rs-link { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 20px; border-radius: 999px; background: #24476B; color: #fff;
@@ -247,7 +247,7 @@ export default function ResearchOverview() {
           />
         </div>
         <div className="rs-in">
-          <h1 id="rs-title" className="rs-title">Research in Action</h1>
+          <h1 id="rs-title" className="rs-title">{'Research in Action'}</h1>
           <div className="rs-ctas">
             <a className="rs-btn" href={(scholarTop as { profileUrl: string }).profileUrl} target="_blank" rel="noopener noreferrer"><BrandBadge brand="scholar" size={20} />Google Scholar</a>
             <a className="rs-btn" href="https://www.scopus.com/authid/detail.uri?authorId=7202760099" target="_blank" rel="noopener noreferrer"><BrandBadge brand="scopus" size={20} />Scopus</a>

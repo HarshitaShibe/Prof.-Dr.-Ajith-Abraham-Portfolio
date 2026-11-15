@@ -281,7 +281,7 @@ const CSS = `
 .kp-name { font-size: 1.05rem; font-weight: 600; line-height: 1.3; letter-spacing: -.01em; color: #24476B; }
 .kp-teaser {
   font-size: .8rem; font-weight: 400; line-height: 1.6; color: #2f4d68;
-  text-align: left;
+  text-align: justify; text-justify: inter-word; -webkit-hyphens: auto; hyphens: auto;
 }
 .kp-more { margin-top: auto; padding-top: 6px; font-size: .85rem; font-weight: 600; color: #24476B; }
 

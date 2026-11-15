@@ -119,6 +119,8 @@ const CSS = `
 @media (max-width: 639px) {
   .en-body p, .en-close p { font-size: .9rem; line-height: 1.75; }
   .en-card p, .en-ent p { font-size: .9rem; }
+  .en-hero .en-lede, .en-body p, .en-ent p, .en-sub { text-align: justify; -webkit-hyphens: auto; hyphens: auto; }
+  .en-waves { inset: auto 0 0 0; height: 58vw; }
 }
 `
 

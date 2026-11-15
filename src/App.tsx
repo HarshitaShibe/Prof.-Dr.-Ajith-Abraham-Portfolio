@@ -193,19 +193,21 @@ body { display: block; min-height: 0; }
   .hm-hero { min-height: 1010px; }
   .hm-content { padding-top: 84px; padding-bottom: 255px; }
   .hm-badge { font-size: 1rem; }
-  .hm-hero h1.hm-name { font-size: 2.6rem; margin-top: 0; white-space: normal; text-wrap: balance; }
+  .hm-hero h1.hm-name { font-size: min(2.7rem, 7vw); margin-top: 26px; white-space: nowrap; letter-spacing: -.045em; }
   .hm-tag { font-size: 1.15rem; white-space: normal; flex-wrap: wrap; row-gap: 2px; margin-top: 20px; line-height: 1.4; }
   .hm-aff { margin-top: 32px; gap: 10px; }
   .hm-aff li { font-size: 1rem; line-height: 1.5; }
   .hm-aff li:first-child { white-space: nowrap; font-size: calc((100vw - 56px) / 23.5); }
   .hm-more { margin-top: 24px; gap: 8px; }
   .hm-kw { font-size: .9rem; line-height: 1.5; }
-  .hm-exp { font-size: .9rem; }
-  .hm-rank { font-size: .8rem; line-height: 1.6; }
+  .hm-exp { font-size: min(.8rem, 3.5vw); white-space: nowrap; }
+  .hm-rank { font-size: .7rem; line-height: 1.55; }
+  .hm-pill-wrap { margin-top: 14px; }
+  .hm-pill { width: min(420px, 80vw); font-size: .72rem; }
 }
 @media (max-width: 380px) {
   .hm-hero { min-height: 1050px; }
-  .hm-hero h1.hm-name { font-size: 2.3rem; }
+  .hm-hero h1.hm-name { font-size: 6.8vw; }
   .hm-badge { font-size: .92rem; }
   .hm-tag { font-size: 1.05rem; margin-top: 16px; }
   .hm-aff { margin-top: 24px; gap: 8px; }
