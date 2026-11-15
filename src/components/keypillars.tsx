@@ -245,6 +245,25 @@ const CSS = `
   .kp-wrap .kp-p, .kp-wrap .kp-li { font-size: .9rem; }
   .kp-wrap .kp-subhead { font-size: 1.1rem; }
 }
+.kp-acc { display: none; }
+@media (min-width: 1000px) {
+  .kp-acc { display: flex; gap: 2px; height: 400px; margin-top: 8px; border-radius: 20px; overflow: hidden; box-shadow: 0 18px 44px -24px rgba(18,36,60,.5); }
+  .kp-grid { display: none !important; }
+}
+.kp-panel { position: relative; flex-basis: 0; min-width: 0; display: flex; flex-direction: column; padding: 26px 24px; text-align: left; font-family: inherit; background: #DCE8F1; border: 0; cursor: pointer; outline: none; overflow: hidden; transition: background-color .65s ease, flex-grow .85s cubic-bezier(.22,1,.3,1); }
+.kp-panel > * { position: relative; z-index: 1; }
+.kp-panel::after { content: ''; position: absolute; inset: 0; z-index: 0; background-image: linear-gradient(rgba(36,71,107,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(36,71,107,.05) 1px, transparent 1px); background-size: 22px 22px; opacity: 0; transition: opacity .7s ease; pointer-events: none; }
+.kp-panel[data-active="true"]::after { opacity: 1; }
+.kp-panel[data-active="true"] { background: #fff; }
+.kp-panel-num { flex: none; align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: #24476B; color: #DCE8F1; font-size: .72rem; font-weight: 600; letter-spacing: .04em; }
+.kp-panel-main { position: relative; flex: 1; width: 100%; margin-top: 20px; }
+.kp-panel-vtitle { position: absolute; inset: 0; left: -7px; display: flex; align-items: flex-end; justify-content: flex-start; padding-right: 10px; font-size: .9rem; font-weight: 600; line-height: 1.32; letter-spacing: -.01em; color: #24476B; text-wrap: balance; transition: opacity .5s ease; }
+.kp-panel[data-active="true"] .kp-panel-vtitle { opacity: 0; pointer-events: none; }
+.kp-panel-body { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-start; opacity: 0; transform: translateY(6px); transition: opacity .28s ease, transform .32s cubic-bezier(.16,1,.3,1); pointer-events: none; }
+.kp-panel[data-active="true"] .kp-panel-body { opacity: 1; transform: translateY(0); transition-delay: .18s; pointer-events: auto; }
+.kp-panel-body h3 { margin: 0 0 10px; font-size: 1.1rem; font-weight: 600; line-height: 1.25; letter-spacing: -.015em; color: #24476B; text-wrap: balance; }
+.kp-panel-body p { margin: 0 0 14px; font-size: .82rem; font-weight: 300; line-height: 1.6; color: #3a5a7a; max-width: 30rem; text-align: justify; text-justify: inter-word; -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 7 4 3; }
+.kp-panel-more { margin-top: auto; font-size: .85rem; font-weight: 600; color: #24476B; }
 .kp-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
 @media (min-width: 640px) { .kp-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 640px) { .kp-grid > :last-child:nth-child(odd) { grid-column: 1 / -1; } }
@@ -281,10 +300,27 @@ const CSS = `
   margin: 0 0 8px; font-size: .875rem; font-weight: 300; line-height: 1.7;
   letter-spacing: -.01em; text-align: justify; text-justify: inter-word; color: rgba(255,255,255,.95);
 }
+.kp-modal-overlay { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(18,36,60,.55); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); animation: kp-fade .3s ease; }
+.kp-modal { position: relative; width: min(1180px, 84vw); height: 86vh; max-height: 920px; border-radius: 24px; background: #fff; background-image: linear-gradient(rgba(36,71,107,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(36,71,107,.05) 1px, transparent 1px); background-size: 24px 24px; box-shadow: 0 44px 100px -34px rgba(18,36,60,.75); overflow-y: auto; scrollbar-width: thin; scrollbar-color: rgba(36,71,107,.28) transparent; animation: kp-pop .42s cubic-bezier(.16,1,.3,1); }
+.kp-modal::-webkit-scrollbar { width: 8px; }
+.kp-modal::-webkit-scrollbar-track { background: transparent; margin: 16px 0; }
+.kp-modal::-webkit-scrollbar-thumb { background: rgba(36,71,107,.28); border-radius: 999px; border: 2px solid transparent; background-clip: padding-box; }
+.kp-modal::-webkit-scrollbar-thumb:hover { background: rgba(36,71,107,.45); background-clip: padding-box; }
+.kp-modal-article { max-width: 1000px; margin: 0 auto; padding: 40px 26px; }
+.kp-modal-article .kp-page-title { margin: 0 0 20px; font-size: clamp(1.5rem, 2.6vw, 2rem); color: #24476B; }
+.kp-modal-article .kp-p { color: #2f4f6e; }
+.kp-modal-article .kp-subhead { color: #24476B; border-left: 0; padding-left: 0; }
+.kp-modal-article .kp-li { color: #2f4f6e; }
+.kp-modal-close { position: absolute; top: 16px; right: 18px; z-index: 2; width: 32px; height: 32px; border-radius: 50%; border: 0; background: #EEF4FA; color: #24476B; font-size: 1.1rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s, transform .2s; }
+.kp-modal-close:hover { background: #DCE8F1; transform: rotate(90deg); }
+@keyframes kp-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes kp-pop { from { opacity: 0; transform: translateY(22px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@media (max-width: 639px) { .kp-modal { width: 92vw; height: 85vh; } .kp-modal-article { padding: 52px 24px; } }
 `
 
 export default function KeyPillars() {
   const [openId, setOpenId] = useState<string | null>(null)
+  const [accActive, setAccActive] = useState(0)
   const active = PILLARS.find((p) => p.id === openId) ?? null
 
   // Opening a pillar pushes a history entry, so the browser back button returns to the list
@@ -311,42 +347,42 @@ export default function KeyPillars() {
     }
   }, [openId])
 
-  if (active) {
-    return (
-      <div className="kp-layer">
-        <style>{CSS}</style>
-        <section className="kp-wrap kp-page" aria-labelledby="kp-page-title">
-          <article className="kp-article">
-            <h2 id="kp-page-title" className="kp-page-title">{active.title}</h2>
-
-            {active.sections.map((sec, si) => (
-              <div key={si}>
-                {sec.heading && <h3 className="kp-subhead">{sec.heading}</h3>}
-                {sec.paragraphs.map((text, pi) => (
-                  <p key={pi} className="kp-p">{text}</p>
-                ))}
-                {sec.items && (
-                  <ul className="kp-list">
-                    {sec.items.map((item, ii) => (
-                      <li key={ii} className="kp-li">{item}</li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
-          </article>
-        </section>
-      </div>
-    )
-  }
-
   return (
     <section id="key-pillars" className="kp-wrap" aria-labelledby="kp-title">
       <style>{CSS}</style>
       <h2 id="kp-title" className="kp-title">Key Pillars</h2>
 
+      <div className="kp-acc">
+        {PILLARS.map((p, i) => {
+          const isActive = i === accActive
+          return (
+            <button
+              key={p.id}
+              type="button"
+              className="kp-panel"
+              data-active={isActive}
+              aria-label={p.title}
+              onMouseEnter={() => setAccActive(i)}
+              onFocus={() => setAccActive(i)}
+              onClick={() => openPillar(p.id)}
+              style={{ flexGrow: isActive ? 2.4 : 1 }}
+            >
+              <span className="kp-panel-num">{String(i + 1).padStart(2, '0')}</span>
+              <div className="kp-panel-main">
+                <span className="kp-panel-vtitle" aria-hidden={isActive}>{p.title}</span>
+                <div className="kp-panel-body" aria-hidden={!isActive}>
+                  <h3>{p.title}</h3>
+                  <p>{TEASERS[p.id]}</p>
+                  <span className="kp-panel-more">Read More →</span>
+                </div>
+              </div>
+            </button>
+          )
+        })}
+      </div>
+
       <div className="kp-grid">
-        {PILLARS.map((p, i) => (
+        {PILLARS.map((p) => (
           <button key={p.id} type="button" className="kp-card" onClick={() => openPillar(p.id)}>
             <span className="kp-name">{p.title}</span>
             <span className="kp-teaser">{TEASERS[p.id]}</span>
@@ -354,6 +390,38 @@ export default function KeyPillars() {
           </button>
         ))}
       </div>
+
+      {active && (
+        <div className="kp-modal-overlay" onClick={() => window.history.back()}>
+          <div
+            className="kp-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="kp-modal-title"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button type="button" className="kp-modal-close" aria-label="Close" onClick={() => window.history.back()}>×</button>
+            <article className="kp-modal-article">
+              <h2 id="kp-modal-title" className="kp-page-title">{active.title}</h2>
+              {active.sections.map((sec, si) => (
+                <div key={si}>
+                  {sec.heading && <h3 className="kp-subhead">{sec.heading}</h3>}
+                  {sec.paragraphs.map((text, pi) => (
+                    <p key={pi} className="kp-p">{text}</p>
+                  ))}
+                  {sec.items && (
+                    <ul className="kp-list">
+                      {sec.items.map((item, ii) => (
+                        <li key={ii} className="kp-li">{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </article>
+          </div>
+        </div>
+      )}
     </section>
   )
 }

@@ -26,7 +26,6 @@ const TICKS = [0, 0.25, 0.5, 0.75, 1].map((f) => Math.round(niceMax * f))
 const ALIAS: Record<string, string> = { 'United States': 'United States of America' }
 const HIT = new Map(collab.countries.map((c) => [ALIAS[c.name] ?? c.name, c]))
 const NOT_DRAWN = collab.countries.filter((c) => !world.countries.some((k) => k.n === (ALIAS[c.name] ?? c.name))).map((c) => c.name)
-const MAXP = Math.max(...collab.institutions.map((i) => i.papers))
 // shade by number of joint publications (log steps so small counts stay visible)
 const shade = (p: number) => (p >= 100 ? 4 : p >= 30 ? 3 : p >= 8 ? 2 : 1)
 
@@ -56,13 +55,15 @@ const CSS = `
 .ri-map path.sel { fill: #E0A33A; }
 .ri-scale { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 8px 0 0; font-size: .72rem; color: #3a5a7a; }
 .ri-scale i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -2px; }
-.ri-inst { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr; gap: 10px 28px; }
-@media (min-width: 900px) { .ri-inst { grid-template-columns: 1fr 1fr; } }
-.ri-inst li { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; font-size: .82rem; }
-.ri-inst small { grid-column: 1; font-size: .7rem; color: #5b7893; }
-.ri-inst b { grid-row: 1; grid-column: 2; font-weight: 600; }
-.ri-inst .bar { grid-column: 1 / -1; height: 5px; border-radius: 999px; background: #DCE8F1; overflow: hidden; }
-.ri-inst .bar i { display: block; height: 100%; background: #3F7CC0; border-radius: 999px; }
+.ri-itbl-wrap { margin-top: 14px; overflow-x: auto; border-radius: 8px; background: #fff; border: 1px solid rgba(36,71,107,.14); }
+.ri-itbl { width: 100%; border-collapse: collapse; font-size: .78rem; color: #24476B; }
+.ri-itbl thead th { padding: 14px 18px; background: #24476B; color: #fff; text-align: center; font-size: .78rem; font-weight: 500; white-space: nowrap; }
+.ri-itbl tbody th, .ri-itbl tbody td { padding: 13px 18px; text-align: center; font-weight: 400; border-top: 1px solid #DCE8F1; vertical-align: middle; }
+.ri-itbl tbody th { font-weight: 500; }
+.ri-itbl tbody tr:nth-child(even) { background: #F5F9FD; }
+.ri-itbl tbody tr:hover { background: #EAF2FA; }
+.ri-itbl .ri-itbl-num { font-variant-numeric: tabular-nums; font-weight: 500; white-space: nowrap; }
+@media (max-width: 639px) { .ri-itbl thead th, .ri-itbl tbody th, .ri-itbl tbody td { padding: 12px 14px; } }
 .ri-more { margin-top: 12px; height: 38px; padding: 0 18px; border-radius: 999px; border: 0; background: #24476B; color: #fff; font: inherit; font-size: .82rem; font-weight: 600; cursor: pointer; }
 .ri-more:focus-visible { outline: 2px solid #4A86C8; outline-offset: 2px; }
 .ri-countries { margin: 14px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
@@ -214,11 +215,28 @@ function Institutions() {
     <div className="ri-card ri-wide">
       <h3>Top collaborating institutions</h3>
       <p>Institutions with the most joint publications. Source: OpenAlex.</p>
-      <ul className="ri-inst">
-        {collab.institutions.map((i) => (
-          <li key={i.name}><span>{i.name}</span><b>{nf(i.papers)}</b><small>{i.country}</small><span className="bar" aria-hidden="true"><i style={{ width: `${(i.papers / MAXP) * 100}%` }} /></span></li>
-        ))}
-      </ul>
+      <div className="ri-itbl-wrap">
+        <table className="ri-itbl">
+          <thead>
+            <tr>
+              <th scope="col">Sr. No.</th>
+              <th scope="col">Institution</th>
+              <th scope="col">Country</th>
+              <th scope="col">Joint papers</th>
+            </tr>
+          </thead>
+          <tbody>
+            {collab.institutions.map((i, idx) => (
+              <tr key={i.name}>
+                <td className="ri-itbl-num">{idx + 1}</td>
+                <th scope="row">{i.name}</th>
+                <td>{i.country}</td>
+                <td className="ri-itbl-num">{nf(i.papers)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }

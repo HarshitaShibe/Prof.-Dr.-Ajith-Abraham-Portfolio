@@ -16,7 +16,7 @@ const LINKEDIN_URL = 'https://www.linkedin.com/in/ajithabraham/'
 const LINKS = [
   { label: 'Career and Leadership', href: '#career' },
   { label: 'Research', href: '#research' },
-  { label: 'Research Funding', href: '#funding' },
+  { label: 'Research Funding and Projects', href: '#funding' },
   { label: 'Entrepreneurship', href: '#entrepreneurship' },
   { label: 'Publications', href: '#publications' },
   { label: 'Most Cited', href: '#mostcited' },

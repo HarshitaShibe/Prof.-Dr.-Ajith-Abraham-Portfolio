@@ -1,35 +1,35 @@
 {
   "_help": "Content of the Research page. Domains, current research text, excellence text, PhD list and post-doctoral list all live here. Add post-doctoral names to 'postdocs' as {\"name\": \"...\", \"detail\": \"...\"}; the section stays hidden while the list is empty. Add 'patents' under impact when the figure is confirmed.",
   "asOf": "5 June 2026",
-  "intro": "Prof. Dr. Ajith Abraham's research sits at the intersection of intelligent systems, data and real-world decision-making, from foundational computational intelligence to responsible AI in healthcare.",
+  "intro": "Work at the intersection of intelligent systems, data and real-world decision-making, spanning foundational computational intelligence to responsible AI in healthcare.",
   "domains": [
     {
       "name": "Artificial Intelligence",
-      "text": "Foundational and applied work on intelligent systems that learn, reason and adapt. His research brings together hybrid and computational-intelligence methods to build systems that perform reliably in real-world settings."
+      "text": "Foundational and applied research on intelligent systems that learn, reason and adapt. His work unifies hybrid and computational-intelligence methods to build models that stay reliable, interpretable and useful in real-world conditions."
     },
     {
       "name": "Soft Computing",
-      "text": "A long-standing strand of his work: neural networks, fuzzy systems, evolutionary computation and swarm intelligence, and their hybrids. These techniques handle problems that are uncertain, imprecise or too complex to model exactly."
+      "text": "A defining strand of his career: neural networks, fuzzy systems, evolutionary computation and swarm intelligence, frequently combined into hybrid models. These techniques are built to handle problems that are uncertain, imprecise or too complex for exact methods."
     },
     {
       "name": "Data Science",
-      "text": "Data mining, feature selection and large-scale knowledge discovery. The focus is on turning heterogeneous, high-volume data into patterns and predictions that people can act on."
+      "text": "Data mining, feature selection and large-scale knowledge discovery across heterogeneous, high-volume datasets. The emphasis is on turning raw, noisy data into patterns, predictions and decisions that practitioners can genuinely act on."
     },
     {
       "name": "Deep Learning",
-      "text": "Deep neural architectures for images, signals and sequences, studied together with optimisation and training strategies. Applications range from medical imaging to intelligent analytics."
+      "text": "Deep neural architectures for images, signals and sequences, studied alongside the optimisation and training strategies that make them perform. Applications range from medical imaging to forecasting and other data-intensive problems."
     },
     {
       "name": "Healthcare AI",
-      "text": "Medical image analysis, clinical decision support, personalised medicine, explainable AI and privacy-preserving learning. The aim is trustworthy tools that assist, rather than replace, clinical expertise."
+      "text": "Medical image analysis, clinical decision support, personalised medicine and explainable, privacy-preserving learning. The goal is trustworthy AI that augments the judgement of clinicians rather than attempting to replace it."
     },
     {
       "name": "Cybersecurity",
-      "text": "Intelligent approaches to intrusion detection, network defence and secure systems. This was one of the earliest application areas of his computational-intelligence research."
+      "text": "Intelligent approaches to intrusion detection, network defence and secure systems, among the earliest application areas of his computational-intelligence research. Models learn evolving attack patterns to make systems more resilient."
     },
     {
       "name": "Decision Support Systems",
-      "text": "Systems that combine data, models and domain knowledge to support complex decisions, in healthcare, enterprise and strategic planning contexts."
+      "text": "Systems that fuse data, models and domain knowledge to support complex decisions across healthcare, industry and strategic planning. They translate analytical insight into choices that people and organisations can trust."
     }
   ],
   "currentResearchTitle": "Current Research",
@@ -52,7 +52,7 @@
   ],
   "phd": {
     "title": "PhD Supervision",
-    "note": "Completed doctoral students supervised, from the CV.",
+    "note": "Doctoral researchers supervised to completion.",
     "students": [
       {
         "name": "Ayalew Belay Habtie",
@@ -113,9 +113,21 @@
     ]
   },
   "postdocs": [
-    { "name": "Fariba Goodarzian", "detail": "June 2020 – December 2021" },
-    { "name": "Aswathy SU", "detail": "February 2021 – January 2022" },
-    { "name": "Anu Bajaj", "detail": "March 2021 – August 2022" },
-    { "name": "Meera Ramadas", "detail": "January 2022 – January 2023" }
+    {
+      "name": "Fariba Goodarzian",
+      "detail": "June 2020 – December 2021"
+    },
+    {
+      "name": "Aswathy SU",
+      "detail": "February 2021 – January 2022"
+    },
+    {
+      "name": "Anu Bajaj",
+      "detail": "March 2021 – August 2022"
+    },
+    {
+      "name": "Meera Ramadas",
+      "detail": "January 2022 – January 2023"
+    }
   ]
 }

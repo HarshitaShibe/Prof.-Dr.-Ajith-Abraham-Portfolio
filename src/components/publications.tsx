@@ -29,7 +29,7 @@ import GradientASCII from './GradientASCII'
      Generated: npm run publications:links you@example.org
      Loaded together with the list.
    - src/data/publication-citations.json: citation counts. Google Scholar
-     first (Prof. Abraham's profile, matched by verified title, year, journal
+     first (Prof. Dr. Abraham's profile, matched by verified title, year, journal
      and pages); OpenAlex for papers not on the profile (DOI first, then
      title). Unmatched or ambiguous entries have no count (see the review
      file), and zero counts are not shown.
@@ -214,7 +214,7 @@ const CSS = `
 .pb-hero .pb-ctas { justify-content: center; margin-top: 34px; gap: 8px; animation: pb-rise 1.1s cubic-bezier(.16,1,.3,1) .45s both; }
 .pb-hero .pb-btn { height: 30px; padding: 0 12px; font-size: .72rem; background: #24476B; color: #fff; border-color: #24476B; }
 .pb-hero .pb-btn:hover { background: #3d6ba0; border-color: #3d6ba0; color: #fff; }
-.pb-hero .pb-lede { font-size: .82rem; line-height: 1.6; max-width: 560px; margin: 14px auto 0; color: rgba(255,255,255,.9); animation: pb-rise 1.1s cubic-bezier(.16,1,.3,1) .45s both; }
+.pb-hero .pb-lede { font-size: .82rem; line-height: 1.6; max-width: min(44rem, 100%); text-wrap: balance; margin: 14px auto 0; color: rgba(255,255,255,.9); animation: pb-rise 1.1s cubic-bezier(.16,1,.3,1) .45s both; }
 .pb-hero .pb-title { color: #fff; text-align: center; animation: pb-rise 1.1s cubic-bezier(.16,1,.3,1) .45s both; }
 @keyframes pb-rise { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
 .pb-title { margin: 0; font-size: clamp(2.4rem, 6vw, 5rem); font-weight: 500; line-height: 1.02; letter-spacing: -.045em; }

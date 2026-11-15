@@ -51,7 +51,7 @@ export function BrandBadge({ brand, size = 22 }: { brand: Brand; size?: number }
           {brand === 'scopus' ? (
             <text x="12" y="19" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="700" fontSize="22" fill="currentColor">S</text>
           ) : (
-            <text x="12" y="17.5" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="700" fontSize="13" fill="currentColor">WoS</text>
+            <text x="12" y="16" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="700" fontSize="10.5" fill="currentColor">WoS</text>
           )}
         </svg>
       )}
