@@ -124,8 +124,8 @@ const CSS = `
 .rs-title { margin: 0; font-size: clamp(2.4rem, 6vw, 5rem); font-weight: 500; line-height: 1.02; letter-spacing: -.045em; color: #24476B; }
 .rs-hero .rs-lede { font-size: .98rem; font-weight: 400; line-height: 1.7; max-width: min(46rem, 100%); text-wrap: balance; margin: 18px auto 0; }
 .rs-ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 34px; }
-.rs-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 34px; padding: 0 14px; border-radius: 11px; font-size: .73rem; font-weight: 600; font-family: inherit; text-decoration: none; white-space: nowrap; color: #fff; border: 1px solid rgba(255,255,255,.16); background: linear-gradient(165deg, #2f5887 0%, #24476B 52%, #1b3959 100%); box-shadow: inset 0 1px 0 rgba(255,255,255,.24), 0 10px 24px -14px rgba(18,36,60,.9), 0 2px 6px -2px rgba(18,36,60,.5); transition: transform .22s cubic-bezier(.16,1,.3,1), box-shadow .22s, background .22s; }
-.rs-btn:hover { transform: translateY(-2px); background: linear-gradient(165deg, #3a6697 0%, #2a527e 55%, #214974 100%); box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 16px 30px -14px rgba(18,36,60,.95), 0 3px 8px -2px rgba(18,36,60,.55); }
+.rs-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 34px; padding: 0 14px; border-radius: 11px; font-size: .73rem; font-weight: 600; font-family: inherit; text-decoration: none; white-space: nowrap; color: #24476B; border: 1px solid #4A86C8; background: #fff; box-shadow: 0 8px 20px -14px rgba(18,36,60,.4); transition: transform .22s cubic-bezier(.16,1,.3,1), box-shadow .22s, background .22s, border-color .22s; }
+.rs-btn:hover { transform: translateY(-2px); background: #F4F9FE; border-color: #3F7CC0; box-shadow: 0 14px 26px -14px rgba(18,36,60,.5); }
 @media (max-width: 639px) { .rs-title { font-size: 3.4rem; } .rs-ctas { gap: 14px 24px; } .rs-btn { height: auto; padding: 2px 0; border: 0; border-radius: 0; background: none; color: #24476B; font-size: .8rem; font-weight: 500; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; } .rs-btn:hover { background: none; } .rs-hero .rs-lede { font-size: .84rem; line-height: 1.7; max-width: 330px; } }
 .rs-lede { margin: 18px 0 0; max-width: 46rem; font-size: clamp(.95rem, 1.5vw, 1.1rem); font-weight: 300; line-height: 1.7; color: #3a5a7a; }
 
@@ -176,22 +176,24 @@ const CSS = `
 
 .rs-two { display: flex; flex-direction: column; gap: 20px; align-items: stretch; }
 @media (min-width: 900px) { .rs-two { flex-direction: row; align-items: stretch; } }
-.rs-two .rs-box { min-width: 0; }
+.rs-two .rs-box { min-width: 0; transition: flex-grow .55s cubic-bezier(.16,1,.3,1), box-shadow .4s ease; outline: none; }
 @media (min-width: 900px) {
   .rs-two .rs-men-postdoc { flex: 2 1 0; }
   .rs-two .rs-men-phd { flex: 3 1 0; }
+  .rs-two .rs-men-postdoc:hover, .rs-two .rs-men-postdoc:focus-within { flex-grow: 3.2; box-shadow: 0 20px 44px -18px rgba(36,71,107,.42); }
+  .rs-two .rs-men-phd:hover, .rs-two .rs-men-phd:focus-within { flex-grow: 4.2; box-shadow: 0 20px 44px -18px rgba(36,71,107,.42); }
 }
 .rs-men-lede { margin: -18px 0 26px; font-size: .9rem; font-weight: 300; color: #5b7893; }
-.rs-men-head { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; }
-.rs-men-num { flex: none; font-size: 2.4rem; font-weight: 500; line-height: .95; letter-spacing: -.03em; color: #24476B; font-variant-numeric: tabular-nums; }
+.rs-men-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.rs-men-num { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: #24476B; color: #fff; font-size: 1.1rem; font-weight: 600; font-variant-numeric: tabular-nums; }
 .rs-men-ix { margin: 2px 0 6px; font-size: 1.05rem; font-weight: 600; letter-spacing: -.015em; color: #24476B; }
-.rs-men-head .rs-note { margin: 0; }
+.rs-men-head .rs-note { margin: 0; text-wrap: balance; }
 .rs-box { padding: 26px 24px; }
 .rs-box h3 { margin: 0 0 6px; font-size: 1.15rem; font-weight: 600; letter-spacing: -.02em; }
 .rs-note { margin: 0 0 16px; font-size: .84rem; font-weight: 300; color: #5b7893; }
 .rs-ppl { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 2px 24px; }
 @media (min-width: 480px) { .rs-ppl { grid-template-columns: 1fr 1fr; } }
-.rs-ppl li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid #DCE8F1; font-size: .9rem; font-weight: 400; color: #24476B; }
+.rs-ppl li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid #DCE8F1; font-size: .9rem; font-weight: 500; color: #24476B; }
 .rs-ppl li span { color: #4A86C8; font-weight: 300; flex-shrink: 0; }
 .rs-ppl.rs-ppl-stack { grid-template-columns: 1fr !important; }
 .rs-ppl-stack li { flex-direction: column; gap: 2px; }
@@ -324,13 +326,13 @@ export default function ResearchOverview() {
           <p className="rs-men-lede">A record of research mentorship and doctoral supervision.</p>
           <div className="rs-two">
             {POSTDOCS.length > 0 && (
-              <div className="rs-glass rs-box rs-men-postdoc">
+              <div className="rs-glass rs-box rs-men-postdoc" tabIndex={0}>
                 <header className="rs-men-head">
-                  <span className="rs-men-num">{String(POSTDOCS.length).padStart(2, '0')}</span>
                   <div>
-                    <p className="rs-men-ix">01 — Postdoctoral Researchers</p>
-                    <p className="rs-note">Researchers who undertook postdoctoral work under his mentorship.</p>
+                    <p className="rs-men-ix">Postdoctoral Researchers</p>
+                    <p className="rs-note">Former postdoctoral researchers mentored by him.</p>
                   </div>
+                  <span className="rs-men-num">{POSTDOCS.length}</span>
                 </header>
                 <ul className="rs-ppl rs-ppl-stack">
                   {POSTDOCS.map((p) => (
@@ -339,13 +341,13 @@ export default function ResearchOverview() {
                 </ul>
               </div>
             )}
-            <div className="rs-glass rs-box rs-men-phd" style={POSTDOCS.length === 0 ? { width: '100%' } : undefined}>
+            <div className="rs-glass rs-box rs-men-phd" tabIndex={0} style={POSTDOCS.length === 0 ? { width: '100%' } : undefined}>
               <header className="rs-men-head">
-                <span className="rs-men-num">{String(research.phd.students.length).padStart(2, '0')}</span>
                 <div>
-                  <p className="rs-men-ix">02 — {research.phd.title}</p>
+                  <p className="rs-men-ix">{research.phd.title}</p>
                   <p className="rs-note">{research.phd.note}</p>
                 </div>
+                <span className="rs-men-num">{research.phd.students.length}</span>
               </header>
               <ul className="rs-ppl">
                 {research.phd.students.map((s) => (
