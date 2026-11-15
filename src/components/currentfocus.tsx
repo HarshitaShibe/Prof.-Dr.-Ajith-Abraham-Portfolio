@@ -1,15 +1,39 @@
 /* ==========================================================================
-   Current Focus: five short cards shown just before "Moments & Milestones".
-   Edit the FOCUS list below to change the text.
+   Current Focus: a dashed-grid "blueprint" bento of focus areas, with a large
+   closing statement in the bottom-right. Edit FOCUS / the headline below.
    ========================================================================== */
 
-const FOCUS = [
-  { title: 'AI & Education', text: 'Transforming higher education through AI-enabled learning.' },
-  { title: 'AI & Healthcare', text: 'Intelligent systems for healthcare and medical decision support.' },
-  { title: 'AI & Society', text: 'Responsible and human-centred AI.' },
-  { title: 'Research & Innovation', text: 'Building interdisciplinary research ecosystems.' },
-  { title: 'University Leadership', text: 'Advancing liberal education, entrepreneurship and industry-academia collaboration.' },
+type Focus = { title: string; text: string }
+
+const FOCUS: Focus[] = [
+  {
+    title: 'AI & Education',
+    text: 'Advancing the future of higher education through artificial intelligence, intelligent learning environments and technology-enabled pedagogy. Exploring innovative approaches that enhance teaching, strengthen academic outcomes and make education more adaptive, accessible and effective.',
+  },
+  {
+    title: 'AI & Healthcare',
+    text: 'Exploring the intersection of artificial intelligence and healthcare through medical imaging, predictive analytics, clinical decision-support systems and intelligent diagnostics. Focusing on developing reliable, evidence-driven technologies that support better clinical understanding and healthcare delivery.',
+  },
+  {
+    title: 'AI & Society',
+    text: 'Examining the broader implications of artificial intelligence in an increasingly technology-driven world. Emphasising responsible innovation, explainable systems and human-centred approaches that address societal challenges while ensuring technology remains inclusive, ethical and beneficial.',
+  },
+  {
+    title: 'Research & Innovation',
+    text: 'Driving interdisciplinary research that connects emerging technologies with practical applications. Fostering collaboration across academic domains, exploring new research directions and translating scientific inquiry into innovative solutions with the potential for meaningful real-world applications.',
+  },
+  {
+    title: 'Academic Leadership',
+    text: 'Strengthening higher education through institutional development, academic excellence and international collaboration. Promoting entrepreneurship, interdisciplinary engagement and industry–academia partnerships while fostering an environment that encourages knowledge exchange, research advancement and educational transformation.',
+  },
 ]
+
+const HEAD = {
+  line1: 'Where research meets',
+  line2: 'real-world impact.',
+  body1: 'From advancing computational intelligence and exploring emerging technologies to addressing complex challenges in healthcare, education and society, the focus is on research that extends beyond theoretical exploration.',
+  body2: 'By bringing together interdisciplinary expertise, technological innovation and evidence-driven approaches, the aim is to translate new ideas into practical applications, strengthen research collaborations and contribute to solutions that create meaningful, measurable and lasting impact.',
+}
 
 const CSS = `
 .cf-wrap {
@@ -24,27 +48,52 @@ const CSS = `
 }
 @media (max-width: 639px) { .cf-title { margin-bottom: 28px; } }
 
-.cf-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; grid-template-columns: 1fr; }
-@media (min-width: 640px) { .cf-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; } }
-@media (min-width: 1100px) { .cf-grid { grid-template-columns: repeat(6, 1fr); }
-  .cf-card { grid-column: span 2; }
-  .cf-card:nth-child(4) { grid-column: 2 / span 2; }
-  .cf-card:nth-child(5) { grid-column: 4 / span 2; } }
-
-.cf-card {
-  display: flex; flex-direction: column; gap: 10px; padding: 26px 24px; border-radius: 20px; box-sizing: border-box;
-  background: linear-gradient(145deg, rgba(255,255,255,.16) 0%, rgba(255,255,255,.07) 100%);
-  border: 1px solid rgba(255,255,255,.28);
-  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
-  box-shadow: 0 10px 30px -14px rgba(8,22,40,.5), inset 0 1px 0 rgba(255,255,255,.3);
-  transition: transform .3s cubic-bezier(.16,1,.3,1), background .3s;
+.cf-grid {
+  --line: rgba(255,255,255,.16);
+  display: grid; grid-template-columns: 1fr;
+  border-top: 1px dashed var(--line); border-left: 1px dashed var(--line);
 }
-.cf-card:hover { transform: translateY(-4px); background: linear-gradient(145deg, rgba(255,255,255,.24) 0%, rgba(255,255,255,.1) 100%); }
-.cf-num { font-size: .72rem; font-weight: 500; letter-spacing: .16em; color: #cdd9ff; }
-.cf-h { margin: 0; font-size: 1.15rem; font-weight: 600; letter-spacing: -.02em; color: #fff; }
-.cf-p { margin: 0; font-size: .92rem; font-weight: 300; line-height: 1.65; color: rgba(255,255,255,.88); }
-@media (max-width: 639px) { .cf-p { font-size: .9rem; } .cf-h { font-size: 1.1rem; } }
-@media (prefers-reduced-motion: reduce) { .cf-card { transition: none; } .cf-card:hover { transform: none; } }
+@media (min-width: 760px) {
+  .cf-grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+  }
+}
+
+.cf-cell {
+  position: relative; padding: 24px 26px 28px; box-sizing: border-box;
+  border-right: 1px dashed var(--line); border-bottom: 1px dashed var(--line);
+  transition: background .35s ease;
+}
+.cf-cell::before {
+  content: '+'; position: absolute; top: -9px; left: -8px; z-index: 1;
+  font-size: 15px; line-height: 1; font-weight: 400; color: rgba(255,255,255,.32);
+}
+.cf-feat:hover { background: rgba(255,255,255,.04); }
+
+.cf-num { display: block; margin-bottom: 8px; font-size: .68rem; font-weight: 600; letter-spacing: .16em; color: rgba(255,255,255,.5); }
+.cf-h { margin: 0 0 9px; font-size: 1.1rem; font-weight: 600; letter-spacing: -.01em; color: #fff; text-wrap: balance; }
+.cf-p { margin: 0; font-size: .78rem; font-weight: 300; line-height: 1.6; color: rgba(255,255,255,.72); text-align: justify; -webkit-hyphens: auto; hyphens: auto; }
+
+.cf-head { display: flex; flex-direction: column; justify-content: flex-end; }
+.cf-head-h { margin: 0; font-size: 1.1rem; font-weight: 600; line-height: 1.25; letter-spacing: -.01em; color: #fff; }
+.cf-head-p { margin: 16px 0 0; font-size: .8rem; font-weight: 300; line-height: 1.6; color: rgba(255,255,255,.62); text-align: justify; -webkit-hyphens: auto; hyphens: auto; }
+.cf-head-p + .cf-head-p { margin-top: 12px; }
+
+/* placement (desktop) */
+@media (min-width: 760px) {
+  .cf-cell.cf-c1 { grid-area: 1 / 1 / 2 / 6; }        /* AI & Education — a touch wider */
+  .cf-cell.cf-c2 { grid-area: 1 / 6 / 2 / 13; }       /* AI & Healthcare — extends to the end */
+  .cf-cell.cf-c3 { grid-area: 2 / 1 / 3 / 7; }        /* AI & Society — extends right */
+  .cf-cell.cf-c4 { grid-area: 2 / 7 / 3 / 13; }       /* Research & Innovation — extends right */
+  .cf-cell.cf-c5 { grid-area: 3 / 1 / 4 / 6; }        /* Academic Leadership */
+  .cf-cell.cf-head { grid-area: 3 / 6 / 4 / 13; }     /* statement */
+}
+@media (max-width: 759px) {
+  .cf-cell.cf-empty { display: none; }
+  .cf-head { padding-top: 34px; }
+}
+@media (prefers-reduced-motion: reduce) { .cf-cell { transition: none; } }
 `
 
 export default function CurrentFocus() {
@@ -52,15 +101,20 @@ export default function CurrentFocus() {
     <section id="current-focus" className="cf-wrap" aria-labelledby="cf-title">
       <style>{CSS}</style>
       <h2 id="cf-title" className="cf-title">Current Focus</h2>
-      <ul className="cf-grid">
+      <div className="cf-grid">
         {FOCUS.map((f, i) => (
-          <li key={f.title} className="cf-card">
+          <div key={f.title} className={`cf-cell cf-feat cf-c${i + 1}`}>
             <span className="cf-num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
             <h3 className="cf-h">{f.title}</h3>
             <p className="cf-p">{f.text}</p>
-          </li>
+          </div>
         ))}
-      </ul>
+        <div className="cf-cell cf-head">
+          <h3 className="cf-head-h">{HEAD.line1} {HEAD.line2}</h3>
+          <p className="cf-head-p">{HEAD.body1}</p>
+          <p className="cf-head-p">{HEAD.body2}</p>
+        </div>
+      </div>
     </section>
   )
 }

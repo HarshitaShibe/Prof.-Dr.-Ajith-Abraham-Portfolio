@@ -142,7 +142,7 @@ body { display: block; min-height: 0; }
 .hm-badge { display: inline-block; font-weight: 400; font-size: .78rem; letter-spacing: .02em; color: #fff;
   text-shadow: 0 2px 14px rgba(18,36,60,.9), 0 1px 3px rgba(18,36,60,.85); }
 
-.hm-hero h1.hm-name { margin: 16px 0 0; padding-bottom: .08em; font-weight: 400; line-height: 1.02; letter-spacing: -.04em;
+.hm-hero h1.hm-name { margin: 16px 0 0; padding-bottom: .18em; font-weight: 400; line-height: 1.12; letter-spacing: -.04em;
   font-size: clamp(2.1rem, 5.6vw, 4.1rem); text-align: center;
   background: linear-gradient(90deg, #fff 55%, #cdd9ff 100%); -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent; color: transparent; filter: drop-shadow(0 2px 12px rgba(18,36,60,.9)); }
@@ -159,11 +159,14 @@ body { display: block; min-height: 0; }
 
 .hm-icon { width: 17px; height: 17px; flex-shrink: 0; }
 
-.hm-more { margin-top: 18px; max-width: 780px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.hm-more { margin-top: 18px; max-width: 820px; display: flex; flex-direction: column; align-items: center; gap: 2px; }
 .hm-more p { margin: 0; text-align: center; color: #fff; }
-.hm-kw { font-size: .76rem; font-weight: 500; letter-spacing: .02em; color: #cdd9ff !important; }
-.hm-exp { font-size: .76rem; font-weight: 400; }
-.hm-rank { margin-top: 6px !important; font-size: .7rem; line-height: 1.55; font-weight: 300; font-style: italic; color: rgba(255,255,255,.88) !important; }
+.hm-kw { font-size: .92rem; font-weight: 500; letter-spacing: .02em; color: #cdd9ff !important; }
+.hm-exp { font-size: .92rem; font-weight: 400; }
+.hm-rank { margin: 0 auto !important; max-width: 820px; font-size: .72rem; line-height: 1.55; font-weight: 300; font-style: italic; text-align: center; text-wrap: balance; color: rgba(255,255,255,.82) !important; }
+.hm-pill-wrap { margin: 18px 0 0; display: flex; justify-content: center; }
+.hm-pill { display: inline-flex; align-items: center; justify-content: center; text-align: center; width: min(560px, 92vw); min-height: 36px; padding: 7px 16px; box-sizing: border-box; border-radius: 7px; background: #fff; color: #24476B; font-size: .76rem; font-weight: 500; line-height: 1.3; overflow: hidden; }
+.hm-pill-txt { display: inline-block; animation: hm-topic .45s cubic-bezier(.16,1,.3,1) both; }
 .hm-btns { margin-top: 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; }
 .hm-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 16px;
   border-radius: 10px; border: 1px solid #fff; background: #fff; color: #24476B; font: 600 .82rem inherit; font-family: inherit; text-decoration: none; white-space: nowrap;
@@ -238,6 +241,11 @@ function App() {
   const [topic, setTopic] = useState(0)
   useEffect(() => {
     const id = window.setInterval(() => setTopic((t) => (t + 1) % TOPICS.length), TOPIC_MS)
+    return () => window.clearInterval(id)
+  }, [])
+  const [pill, setPill] = useState(0)
+  useEffect(() => {
+    const id = window.setInterval(() => setPill((p) => (p + 1) % home.affiliations.length), 3200)
     return () => window.clearInterval(id)
   }, [])
   // Shuru mein sirf 2 photos load hoti hain, baaki ek-ek karke.
@@ -424,6 +432,8 @@ function App() {
 
         <div className="hm-content">
           <div className="hm-inner">
+            <p className="hm-rank hm-in" style={delay(0.4)}>{home.ranking}</p>
+
             <h1 id="home-title" className="hm-name hm-in" style={delay(0.46)}>
               {home.name}
             </h1>
@@ -433,16 +443,15 @@ function App() {
               <span key={TOPICS[topic]} className="hm-topic">{TOPICS[topic]}</span>
             </div>
 
-            <ul className="hm-aff hm-in" style={delay(0.68)}>
-              {home.affiliations.map((line) => (
-                <li key={line}>{line}</li>
-              ))}
-            </ul>
+            <div className="hm-pill-wrap hm-in" style={delay(0.68)} aria-live="polite">
+              <div className="hm-pill">
+                <span key={home.affiliations[pill]} className="hm-pill-txt">{home.affiliations[pill]}</span>
+              </div>
+            </div>
 
             <div className="hm-more hm-in" style={delay(0.8)}>
               <p className="hm-kw">{home.keywords}</p>
               <p className="hm-exp">{home.experience}</p>
-              <p className="hm-rank">{home.ranking}</p>
             </div>
           </div>
         </div>

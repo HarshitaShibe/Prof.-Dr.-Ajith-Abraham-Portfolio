@@ -124,9 +124,9 @@ const CSS = `
   transition: box-shadow .4s cubic-bezier(.16,1,.3,1);
 }
 @media (min-width: 640px) { .fa-tile { width: calc((100% - 80px) / 5); padding: 10px; } }
-@media (min-width: 1024px) { .fa-tile { width: calc((100% - 120px) / 7); } }
+@media (min-width: 1024px) { .fa-tile { width: calc((100% - 80px) / 5); } }
 .fa-tile img {
-  width: 80%; height: 80%; object-fit: contain; display: block;
+  width: 86%; height: 86%; object-fit: contain; display: block;
   transition: transform .4s cubic-bezier(.16,1,.3,1);
 }
 .fa-tile:hover img { transform: scale(1.15); }
