@@ -113,12 +113,12 @@ const CSS = `
 .jn-net-title + .jn-net-h { margin-top: 18px; }
 .jn-tw { overflow-x: auto; border-radius: 6px; background: #fff; border: 1px solid rgba(36,71,107,.14); box-shadow: 0 14px 34px -24px rgba(18,36,60,.45); }
 .jn-tbl { width: 100%; border-collapse: collapse; font-size: .78rem; color: #24476B; }
-.jn-tbl thead th { padding: 14px 18px; background: #24476B; color: #fff; text-align: center; font-size: .78rem; font-weight: 500; white-space: nowrap; }
-.jn-tbl tbody th, .jn-tbl tbody td { padding: 13px 18px; text-align: center; font-weight: 400; border-top: 1px solid #DCE8F1; vertical-align: top; }
+.jn-tbl thead th { padding: 14px 18px; background: #24476B; color: #fff; text-align: left; font-size: .78rem; font-weight: 500; white-space: nowrap; }
+.jn-tbl tbody th, .jn-tbl tbody td { padding: 13px 18px; text-align: left; font-weight: 400; border-top: 1px solid #DCE8F1; vertical-align: top; }
 .jn-tbl tbody th { font-weight: 500; }
 .jn-tbl tbody tr:nth-child(even) { background: #F5F9FD; }
 .jn-tbl tbody tr:hover { background: #EAF2FA; }
-.jn-tbl .jn-t-n { text-align: center; font-variant-numeric: tabular-nums; font-weight: 500; white-space: nowrap; }
+.jn-tbl .jn-t-n { text-align: left; font-variant-numeric: tabular-nums; font-weight: 500; white-space: nowrap; }
 .jn-t-sub { display: none; margin-top: 3px; font-size: .74rem; line-height: 1.5; font-weight: 400; color: #5b7a99; }
 @media (max-width: 759px) {
   .jn-t-hide { display: none; }

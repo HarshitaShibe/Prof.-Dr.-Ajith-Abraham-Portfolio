@@ -58,8 +58,8 @@ const CSS = `
 .ri-scale i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -2px; }
 .ri-itbl-wrap { margin-top: 14px; overflow-x: auto; border-radius: 8px; background: #fff; border: 1px solid rgba(36,71,107,.14); }
 .ri-itbl { width: 100%; border-collapse: collapse; font-size: .78rem; color: #24476B; }
-.ri-itbl thead th { padding: 14px 18px; background: #24476B; color: #fff; text-align: center; font-size: .78rem; font-weight: 500; white-space: nowrap; }
-.ri-itbl tbody th, .ri-itbl tbody td { padding: 13px 18px; text-align: center; font-weight: 400; border-top: 1px solid #DCE8F1; vertical-align: middle; }
+.ri-itbl thead th { padding: 14px 18px; background: #24476B; color: #fff; text-align: left; font-size: .78rem; font-weight: 500; white-space: nowrap; }
+.ri-itbl tbody th, .ri-itbl tbody td { padding: 13px 18px; text-align: left; font-weight: 400; border-top: 1px solid #DCE8F1; vertical-align: middle; }
 .ri-itbl tbody th { font-weight: 500; }
 .ri-itbl tbody tr:nth-child(even) { background: #F5F9FD; }
 .ri-itbl tbody tr:hover { background: #EAF2FA; }

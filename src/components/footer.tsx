@@ -76,7 +76,7 @@ const CSS = `
 .ft-gap { margin-top: 10px; }
 .ft-lab { margin: 10px 0 5px; font-size: .68rem; font-weight: 500; letter-spacing: .02em; color: #2f4d68; opacity: .85; }
 .ft-head + .ft-lab { margin-top: 0; }
-.ft-by { margin-top: 22px; display: flex; align-items: center; justify-content: flex-start; gap: 12px; font-size: .72rem; color: #2f4d68; }
+.ft-by { margin-top: 22px; display: flex; align-items: center; justify-content: center; gap: 12px; font-size: .72rem; color: #2f4d68; }
 .ft-by a { display: inline-flex; }
 .ft-logo { height: 150px; margin: -20px 0; width: auto; display: block; }
 .ft-logo-dark { display: none; }
