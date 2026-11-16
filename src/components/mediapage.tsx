@@ -43,6 +43,24 @@ const CSS = `
 .md-card:hover .md-arr { transform: translate(3px,-3px); }
 @media (prefers-reduced-motion: reduce) { .md-card { opacity: 1; transform: none; transition: none; } }
 @media (max-width: 860px) { .md-grid { grid-template-columns: 1fr; max-width: 460px; } .md-links { padding: 56px 20px 72px; } }
+/* Hovering (or focusing) a photo on the drifting wall enlarges it */
+.on-media .drift-wall__tile.is-active .drift-wall__inner,
+.on-media .drift-wall__tile:focus-visible .drift-wall__inner { transform: translateZ(var(--dw-lift)) scale(1.16); }
+
+/* ---- Scrollable photo strip below "Watch & Follow" ---- */
+.md-gallery { background: #24476B; color: #fff; padding: 0 0 80px; font-family: "Plus Jakarta Sans", Inter, system-ui, sans-serif; }
+.md-gallery .md-lh { margin: 0 0 28px; }
+.md-strip { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 4px 24px 6px; scrollbar-width: none; }
+.md-strip::-webkit-scrollbar { display: none; }
+.md-shot { flex: 0 0 auto; margin: 0; width: min(84vw, 760px); scroll-snap-align: center; border-radius: 18px; overflow: hidden; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.16); box-shadow: 0 16px 36px -18px rgba(0,0,0,.55); }
+.md-shot img { display: block; width: 100%; height: 440px; object-fit: cover; transition: transform .45s cubic-bezier(.22,1,.36,1); }
+.md-shot:hover img { transform: scale(1.06); }
+.md-nav { display: flex; justify-content: center; gap: 14px; margin-top: 26px; }
+.md-navbtn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,.42); background: rgba(255,255,255,.08); color: #fff; font-size: 1.1rem; line-height: 1; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: background .2s, border-color .2s, transform .2s; }
+.md-navbtn:hover { background: rgba(255,255,255,.18); border-color: rgba(255,255,255,.78); }
+.md-navbtn:active { transform: scale(.93); }
+.md-navbtn:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+@media (max-width: 639px) { .md-shot { width: 84vw; } .md-shot img { height: 270px; } }
 `
 
 const LINKS = [
@@ -50,6 +68,9 @@ const LINKS = [
   { href: 'https://www.linkedin.com/posts/ajithabraham_artificialintelligence-researchcollaboration-activity-7482763604186812417-U-ao', icon: <BrandBadge brand="linkedin" size={44} />, title: 'LinkedIn Post', desc: 'Artificial intelligence and research collaboration.', cta: 'View on LinkedIn' },
   { href: 'https://www.linkedin.com/posts/ajithabraham_activity-7491104519578148864-ynSd', icon: <BrandBadge brand="linkedin" size={44} />, title: 'LinkedIn Post', desc: 'Latest update shared by Prof. Dr. Ajith Abraham.', cta: 'View on LinkedIn' },
 ]
+
+/* The gallery strip below "Watch & Follow": the unique wall photos */
+const PHOTOS = Array.from({ length: 24 }, (_, i) => `/wall/${i + 1}.jpg`)
 
 export default function MediaPage() {
   // fewer, narrower columns on phones so the photos stay a good size
@@ -86,6 +107,15 @@ export default function MediaPage() {
     io.observe(el)
     return () => io.disconnect()
   }, [])
+
+  const stripRef = useRef<HTMLDivElement>(null)
+  const scrollStrip = (dir: number) => {
+    const el = stripRef.current
+    if (!el) return
+    const first = el.querySelector('.md-shot') as HTMLElement | null
+    const step = first ? first.offsetWidth + 18 : Math.round(el.clientWidth * 0.9)
+    el.scrollBy({ left: dir * step, behavior: 'smooth' })
+  }
 
   return (
     <main id="media-page" aria-labelledby="md-title">
@@ -127,6 +157,21 @@ export default function MediaPage() {
               <span className="md-go">{l.cta} <span className="md-arr" aria-hidden="true">↗</span></span>
             </a>
           ))}
+        </div>
+      </section>
+
+      <section className="md-gallery" aria-label="Photo gallery">
+        <h2 className="md-lh">Gallery</h2>
+        <div className="md-strip" ref={stripRef}>
+          {PHOTOS.map((src, i) => (
+            <figure className="md-shot" key={src}>
+              <img src={src} alt={`Moment ${i + 1}`} loading="lazy" />
+            </figure>
+          ))}
+        </div>
+        <div className="md-nav">
+          <button type="button" className="md-navbtn" aria-label="Previous photos" onClick={() => scrollStrip(-1)}>&lsaquo;</button>
+          <button type="button" className="md-navbtn" aria-label="Next photos" onClick={() => scrollStrip(1)}>&rsaquo;</button>
         </div>
       </section>
     </main>

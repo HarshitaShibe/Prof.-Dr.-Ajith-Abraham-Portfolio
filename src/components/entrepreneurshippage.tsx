@@ -9,7 +9,7 @@ import data from '../data/entrepreneurship.json'
    appear once "confirmed" is set to true there.
    ========================================================================== */
 
-type Enterprise = { confirmed: boolean; name: string; role: string; meta: string; facts?: string[]; paragraphs?: string[]; image?: string; imageAlt?: string; links: Link[] }
+type Enterprise = { confirmed: boolean; name: string; role: string; meta: string; facts?: string[]; paragraphs?: string[]; image?: string; imageAlt?: string; bgLogo?: string; links: Link[] }
 type Link = { label: string; href: string; note?: string }
 const shown = (l: Link[]) => l.filter((x) => x.href)
 const ENTERPRISES = (data.enterprises as Enterprise[]).filter((e) => e.confirmed)
@@ -65,6 +65,8 @@ const CSS = `
 .en-chips li { padding: 6px 14px; border-radius: 999px; font-size: .8rem; font-weight: 400; background: #EEF4FA; border: 1px solid #C5D7E6; color: #24476B; }
 .en-body { position: relative; isolation: isolate; margin: 0 auto; max-width: 58rem; }
 .en-body-logo::before { content: ""; position: absolute; z-index: -1; inset: -20px -10px; background: url("/mirlabs-logo.png") center / auto 72% no-repeat; opacity: .08; pointer-events: none; }
+.en-body-wm { position: relative; isolation: isolate; }
+.en-body-wm::before { content: ""; position: absolute; z-index: -1; inset: -20px -10px; background: var(--en-wm) center / auto 66% no-repeat; opacity: .07; pointer-events: none; }
 .en-body p { margin: 0 0 14px; font-size: .86rem; font-weight: 300; line-height: 1.8; color: #2f4f6e; }
 .en-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 8px; height: 44px; padding: 0 20px; border-radius: 999px; background: #24476B; color: #fff;
   font-size: .86rem; font-weight: 600; text-decoration: none; transition: background .25s; }
@@ -100,7 +102,7 @@ const CSS = `
 .en-ico { width: 72px; height: 72px; border-radius: 50%; background: #24476B; display: grid; place-items: center; margin-bottom: 18px; color: #fff; }
 .en-ico svg { width: 34px; height: 34px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .en-card h3 { margin: 0 0 18px; font-size: 1rem; font-weight: 600; letter-spacing: -.02em; line-height: 1.3; color: #24476B; }
-.en-card p { margin: 0; font-size: .86rem; font-weight: 300; line-height: 1.8; color: #2f4f6e; text-align: center; }
+.en-card p { margin: 0; font-size: .8rem; font-weight: 300; line-height: 1.75; color: #2f4f6e; text-align: justify; text-justify: inter-word; -webkit-hyphens: auto; hyphens: auto; }
 .en-sub { margin: -10px 0 56px; max-width: none; font-size: .95rem; font-weight: 300; line-height: 1.7; color: #3a5a7a; text-align: justify; hyphens: none; }
 @media (min-width: 1000px) { .en-sub { font-size: .875rem; text-align: left; text-align-last: justify; white-space: nowrap; } }
 
@@ -204,8 +206,12 @@ export default function EntrepreneurshipPage() {
                 </div>
                 <div className="en-glass en-feat">
                   <div className="en-featgrid">
-                    {e.image ? <div className="en-shot en-shot-static"><img src={e.image} alt={e.imageAlt ?? ''} loading="lazy" /></div> : null}
-                    <div className="en-body">{(e.paragraphs ?? []).map((p, i) => <p key={i}>{p}</p>)}</div>
+                    {e.image ? (
+                      shown(e.links)[0]
+                        ? <a className="en-shot" href={shown(e.links)[0].href} target="_blank" rel="noopener noreferrer" aria-label={`Open the ${e.name} website in a new tab`}><img src={e.image} alt={e.imageAlt ?? ''} loading="lazy" /><span className="en-shot-cta">Visit website</span></a>
+                        : <div className="en-shot en-shot-static"><img src={e.image} alt={e.imageAlt ?? ''} loading="lazy" /></div>
+                    ) : null}
+                    <div className={`en-body${e.bgLogo ? ' en-body-wm' : ''}`} style={e.bgLogo ? ({ ['--en-wm' as string]: `url("${e.bgLogo}")` }) : undefined}>{(e.paragraphs ?? []).map((p, i) => <p key={i}>{p}</p>)}</div>
                   </div>
                 </div>
               </div>

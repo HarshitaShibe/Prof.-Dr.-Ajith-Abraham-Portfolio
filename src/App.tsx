@@ -216,7 +216,7 @@ body { display: block; min-height: 0; }
 }
 
 /* Heading sits over the faded top of the DriftWall photos (same style as the other section titles) */
-.mm-over { position: absolute; top: 0; left: 0; right: 0; z-index: 2; pointer-events: none;
+.mm-over { position: absolute; top: 0; left: 0; right: 0; z-index: 2; pointer-events: none; text-align: center;
   padding: 90px 30px 0; box-sizing: border-box; color: #fff;
   font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 @media (min-width: 640px) { .mm-over { padding: 130px 56px 0; } }
@@ -228,6 +228,11 @@ body { display: block; min-height: 0; }
 }
 .mm-title { margin: 0; text-align: center; font-size: clamp(1.8rem, 3.6vw, 2.6rem); font-weight: 600;
   line-height: 1.15; letter-spacing: -.04em; color: #fff; }
+.mm-title-link { pointer-events: auto; display: inline-flex; flex-direction: column; align-items: center; gap: 16px; text-decoration: none; cursor: pointer; }
+.mm-title-cta { font-size: .72rem; font-weight: 500; letter-spacing: .02em; color: rgba(255,255,255,.92); border: 1px solid rgba(255,255,255,.42); padding: 6px 15px; border-radius: 999px; transition: background .2s ease, border-color .2s ease, transform .2s ease; }
+.mm-title-link:hover .mm-title-cta, .mm-title-link:focus-visible .mm-title-cta { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.75); }
+.mm-title-link:hover .mm-title { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+.mm-title-link:focus-visible { outline: 2px solid rgba(255,255,255,.85); outline-offset: 6px; border-radius: 10px; }
 
 @media (prefers-reduced-motion: reduce) {
   .hm-slide { transition: opacity .4s linear; transform: none !important; }
@@ -480,7 +485,10 @@ function App() {
 
       <section id="moments" className="mm-sec" aria-labelledby="mm-title">
         <div className="mm-over">
-          <h2 id="mm-title" className="mm-title">Moments &amp; Milestones</h2>
+          <a href="#media" className="mm-title-link" aria-label="Open the Moments & Milestones gallery">
+            <h2 id="mm-title" className="mm-title">Moments &amp; Milestones</h2>
+            <span className="mm-title-cta">View the gallery</span>
+          </a>
         </div>
         <div className="mm-wall">
         <DriftWall

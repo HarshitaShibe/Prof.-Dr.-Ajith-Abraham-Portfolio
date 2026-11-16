@@ -36,6 +36,30 @@
   "enterprises": [
     {
       "confirmed": true,
+      "name": "DetectIQ Private Limited",
+      "role": "Advisory & innovation engagement",
+      "meta": "AI-assisted colorectal imaging · Kochi, India",
+      "facts": [
+        "Flagship product: ColonView™",
+        "AI-assisted CT analysis for colorectal imaging",
+        "Indian Patent No. 586511",
+        "Startup India & Udyam registered"
+      ],
+      "paragraphs": [
+        "DetectIQ Private Limited is an India-based health-technology company developing AI-assisted CT analysis for colorectal imaging. Its flagship product, ColonView™, turns a routine abdominal CT scan into structured, reviewable colorectal information — without any additional imaging procedure.",
+        "ColonView™ is built around two clinical questions: whether the colon is adequately prepared to be read, and what the scan contains. It combines automated bowel-preparation assessment based on the Boston Bowel Preparation Scale (BBPS) with polyp detection, segmentation of colon and lesion regions, and lesion measurement for clinical review.",
+        "Because colorectal cancers often develop through a slow polyp-to-cancer pathway, earlier visual support can be valuable — yet small and flat lesions are easy to miss, and bowel preparation, distension, and image quality all add difficulty. ColonView™ is designed to add standardised visual support within existing CT workflows, guided by the idea of \"Visualizing Health, in a New Light.\"",
+        "The initiative reflects a continued engagement with applied, translational innovation — bringing a machine-intelligence perspective to a clinically motivated venture, currently in the validation stage and developed with hospital and cancer-centre collaborators."
+      ],
+      "image": "/detectiq.png",
+      "imageAlt": "DetectIQ ColonView™ landing page showing AI-assisted colorectal CT imaging.",
+      "bgLogo": "/detectiq-logo.png",
+      "links": [
+        { "label": "Visit DetectIQ", "href": "https://detectiq.in/" }
+      ]
+    },
+    {
+      "confirmed": true,
       "name": "Wellermind Technologies Private Limited",
       "role": "Director",
       "meta": "Incorporated October 2024",
