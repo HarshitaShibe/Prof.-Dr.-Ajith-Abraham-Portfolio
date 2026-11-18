@@ -15,7 +15,7 @@ export interface WallItem {
 }
 
 /* How many photos are in public/wall/ (named 1.jpg, 2.jpg ... N.jpg) */
-const PHOTO_COUNT = 24
+const PHOTO_COUNT = 141
 /* Total tiles on the wall. Keep it a multiple of the column count (9), so every
    column gets several different photos. Photos repeat here if there are fewer
    files than tiles. */

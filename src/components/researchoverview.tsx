@@ -176,18 +176,31 @@ const CSS = `
 
 .rs-two { display: flex; flex-direction: column; gap: 20px; align-items: stretch; }
 @media (min-width: 900px) { .rs-two { flex-direction: row; align-items: stretch; } }
-.rs-two .rs-box { min-width: 0; transition: flex-grow .55s cubic-bezier(.16,1,.3,1), box-shadow .4s ease; outline: none; }
+.rs-two .rs-box { min-width: 0; outline: none; will-change: transform;
+  transition: transform .6s cubic-bezier(.16,1,.3,1), box-shadow .6s cubic-bezier(.16,1,.3,1), opacity .5s ease; }
 @media (min-width: 900px) {
-  .rs-two .rs-men-postdoc { flex: 2 1 0; }
-  .rs-two .rs-men-phd { flex: 3 1 0; }
-  .rs-two .rs-men-postdoc:hover, .rs-two .rs-men-postdoc:focus-within { flex-grow: 3.2; box-shadow: 0 20px 44px -18px rgba(36,71,107,.42); }
-  .rs-two .rs-men-phd:hover, .rs-two .rs-men-phd:focus-within { flex-grow: 4.2; box-shadow: 0 20px 44px -18px rgba(36,71,107,.42); }
+  .rs-two .rs-men-postdoc { flex: 1 1 0; }
+  .rs-two .rs-men-phd { flex: 1.15 1 0; }
+}
+.rs-two .rs-box:hover, .rs-two .rs-box:focus-within { transform: translateY(-6px); box-shadow: 0 26px 50px -20px rgba(36,71,107,.45); }
+/* the card you are not on settles back slightly, so the active one reads as lifted */
+@media (hover: hover) {
+  .rs-two:has(.rs-box:hover) .rs-box:not(:hover) { box-shadow: 0 10px 26px -18px rgba(36,71,107,.25); }
+}
+/* width-grow on hover: animate the grid tracks (rows never wrap here, so the text does not jump) */
+@media (min-width: 1200px) and (hover: hover) {
+  .rs-two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 20px;
+    transition: grid-template-columns .7s cubic-bezier(.16,1,.3,1); }
+  .rs-two:has(.rs-men-postdoc:hover), .rs-two:has(.rs-men-postdoc:focus-within) { grid-template-columns: minmax(0, 1.12fr) minmax(0, 1.15fr); }
+  .rs-two:has(.rs-men-phd:hover), .rs-two:has(.rs-men-phd:focus-within) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); }
 }
 .rs-men-lede { margin: -18px 0 26px; font-size: .9rem; font-weight: 300; color: #5b7893; }
 .rs-men-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
 .rs-men-num { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: #24476B; color: #fff; font-size: 1.1rem; font-weight: 600; font-variant-numeric: tabular-nums; }
 .rs-men-ix { margin: 2px 0 6px; font-size: 1.05rem; font-weight: 600; letter-spacing: -.015em; color: #24476B; }
-.rs-men-head .rs-note { margin: 0; text-wrap: balance; }
+.rs-men-head .rs-note { margin: 0; white-space: nowrap; }
+.rs-men-head > div { min-width: 0; min-height: 56px; }
+@media (max-width: 1199px) { .rs-men-head .rs-note { white-space: normal; } }
 .rs-box { padding: 26px 24px; }
 .rs-box h3 { margin: 0 0 6px; font-size: 1.15rem; font-weight: 600; letter-spacing: -.02em; }
 .rs-note { margin: 0 0 16px; font-size: .84rem; font-weight: 300; color: #5b7893; }
@@ -196,8 +209,19 @@ const CSS = `
 .rs-ppl li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid #DCE8F1; font-size: .9rem; font-weight: 500; color: #24476B; }
 .rs-ppl li span { color: #4A86C8; font-weight: 300; flex-shrink: 0; }
 .rs-ppl.rs-ppl-stack { grid-template-columns: 1fr !important; }
-.rs-ppl-stack li { flex-direction: column; gap: 2px; }
-.rs-ppl-stack li span { font-size: .82rem; }
+.rs-ppl li { flex-wrap: nowrap; align-items: baseline; white-space: nowrap; }
+.rs-ppl li > span { white-space: nowrap; transition: color .3s ease; }
+.rs-ppl li { margin: 0 -10px; padding-left: 10px; padding-right: 10px; border-radius: 6px; transition: background-color .3s ease, color .3s ease; }
+.rs-ppl li:hover { background: rgba(74,134,200,.08); }
+.rs-ppl li:hover > span { color: #24476B; }
+.rs-men-num { transition: transform .5s cubic-bezier(.16,1,.3,1), background-color .3s ease; }
+.rs-two .rs-box:hover .rs-men-num, .rs-two .rs-box:focus-within .rs-men-num { transform: scale(1.08); background: #2d5a8a; }
+@media (prefers-reduced-motion: reduce) {
+  .rs-two, .rs-two .rs-box, .rs-men-num, .rs-ppl li { transition: none; }
+  .rs-two .rs-box:hover, .rs-two .rs-box:focus-within, 
+}
+@media (max-width: 1199px) { .rs-ppl li { flex-wrap: wrap; white-space: normal; } }
+.rs-ppl-stack li span { font-size: .82rem; white-space: nowrap; margin-left: auto; }
 
 .rs-prose { max-width: 52rem; }
 .rs-prose + .rs-prose { margin-top: 0; }
@@ -329,8 +353,8 @@ export default function ResearchOverview() {
               <div className="rs-glass rs-box rs-men-postdoc" tabIndex={0}>
                 <header className="rs-men-head">
                   <div>
-                    <p className="rs-men-ix">Postdoctoral Researchers</p>
-                    <p className="rs-note">Former postdoctoral researchers mentored by him.</p>
+                    <p className="rs-men-ix">Completed Post Doctoral Fellows</p>
+                    <p className="rs-note">Post-doctoral researchers hosted.</p>
                   </div>
                   <span className="rs-men-num">{POSTDOCS.length}</span>
                 </header>
