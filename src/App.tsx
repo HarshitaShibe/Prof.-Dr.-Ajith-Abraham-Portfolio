@@ -254,8 +254,12 @@ body { display: block; min-height: 0; }
 .mm-sec { position: relative; width: 100%; height: calc(100vh + 260px); background: #24476B; overflow: hidden; }
 .mm-wall { position: absolute; inset: 260px 0 0 0; }
 @media (max-width: 639px) {
-  .mm-sec { height: calc(100svh + 40px); }
-  .mm-wall { inset: 150px 0 0 0; }
+  /* Current Focus has 100px of bottom padding; the Moments section is pulled up only 50px into it, so
+     about 68px of clear space remains between the dashed box and the heading. The section's height
+     is adjusted so its bottom edge stays where it was. */
+  .mm-sec { margin-top: -50px; height: calc(100svh + 90px); }
+  .mm-over { padding-top: 18px; }
+  .mm-wall { inset: 72px 0 0 0; }
 }
 .mm-title { margin: 0; text-align: center; font-size: clamp(1.8rem, 3.6vw, 2.6rem); font-weight: 600;
   line-height: 1.15; letter-spacing: -.04em; color: #fff; }

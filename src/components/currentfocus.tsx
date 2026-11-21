@@ -37,7 +37,7 @@ const HEAD = {
 
 const CSS = `
 .cf-wrap {
-  padding: 50px 30px 60px; box-sizing: border-box; color: #fff;
+  padding: 50px 30px 100px; box-sizing: border-box; color: #fff;
   font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 @media (min-width: 640px) { .cf-wrap { padding: 70px 56px 80px; } }
