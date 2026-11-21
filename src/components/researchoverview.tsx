@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import research from '../data/research.json'
 import metrics from '../data/metrics.json'
 import funding from '../data/funding.json'
@@ -36,6 +36,7 @@ const IMPACT: Impact[] = [
   books ? { value: String(books), label: 'Authored books' } : null,
 ].filter(Boolean) as Impact[]
 
+const excellenceHead = (research.excellenceTitle as string).split(' & ')
 const POSTDOCS = (research as { postdocs?: { name: string; detail?: string }[] }).postdocs ?? []
 
 const DOM_GRAD: [string, string][] = [
@@ -77,6 +78,7 @@ function StatNum({ prefix, target, suffix, active }: { prefix: string; target: n
 
 function FolderStat({ value, label }: Impact) {
   const [open, setOpen] = useState(false)
+  const touched = useRef(false)
   const parsed = parseStat(value)
   return (
     <li>
@@ -86,11 +88,12 @@ function FolderStat({ value, label }: Impact) {
         data-open={open ? '' : undefined}
         aria-expanded={open}
         aria-label={`${label}: ${value}`}
-        onMouseEnter={() => setOpen(true)}
-        onMouseLeave={() => setOpen(false)}
-        onFocus={() => setOpen(true)}
-        onBlur={() => setOpen(false)}
-        onClick={() => setOpen((o) => !o)}
+        onPointerDown={(e) => { touched.current = e.pointerType !== 'mouse' }}
+        onPointerEnter={(e) => { if (e.pointerType === 'mouse') setOpen(true) }}
+        onPointerLeave={(e) => { if (e.pointerType === 'mouse') setOpen(false) }}
+        onFocus={() => { if (!touched.current) setOpen(true) }}
+        onBlur={() => { if (!touched.current) setOpen(false) }}
+        onClick={() => { if (touched.current) setOpen((o) => !o) }}
       >
         <span className="rs-folder-paper" aria-hidden={!open}>
           {parsed ? <StatNum {...parsed} active={open} /> : value}
@@ -126,7 +129,7 @@ const CSS = `
 .rs-ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 34px; }
 .rs-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 34px; padding: 0 14px; border-radius: 11px; font-size: .73rem; font-weight: 600; font-family: inherit; text-decoration: none; white-space: nowrap; color: #24476B; border: 1px solid #4A86C8; background: #fff; box-shadow: 0 8px 20px -14px rgba(18,36,60,.4); transition: transform .22s cubic-bezier(.16,1,.3,1), box-shadow .22s, background .22s, border-color .22s; }
 .rs-btn:hover { transform: translateY(-2px); background: #F4F9FE; border-color: #3F7CC0; box-shadow: 0 14px 26px -14px rgba(18,36,60,.5); }
-@media (max-width: 639px) { .rs-title { font-size: 3.4rem; } .rs-ctas { gap: 14px 24px; } .rs-btn { height: auto; padding: 2px 0; border: 0; border-radius: 0; background: none; color: #24476B; font-size: .8rem; font-weight: 500; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; } .rs-btn:hover { background: none; } .rs-hero .rs-lede { font-size: .84rem; line-height: 1.7; max-width: 360px; text-align: justify; text-align-last: center; text-justify: inter-word; -webkit-hyphens: auto; hyphens: auto; } }
+@media (max-width: 639px) { .rs-title { font-size: 3.4rem; } .rs-ctas { gap: 14px 24px; } .rs-btn { height: auto; padding: 2px 0; border: 0; border-radius: 0; background: none; color: #24476B; font-size: .8rem; font-weight: 500; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; } .rs-btn:hover { background: none; } .rs-hero .rs-lede { font-size: .84rem; line-height: 1.7; max-width: none; margin-left: -14px; margin-right: -14px; font-size: .8rem; text-align: center; text-wrap: balance; } }
 .rs-lede { margin: 18px 0 0; max-width: 46rem; font-size: clamp(.95rem, 1.5vw, 1.1rem); font-weight: 300; line-height: 1.7; color: #3a5a7a; }
 
 .rs-h2 { margin: 0 0 32px; font-size: clamp(1.8rem, 3.6vw, 2.6rem); font-weight: 600; line-height: 1.15; letter-spacing: -.04em; color: #24476B; }
@@ -236,6 +239,13 @@ const CSS = `
 /* Key Pillars (shared with the landing page) on this light page */
 .rs-wrap .kp-title { color: #24476B; }
 .rs-wrap .kp-card { background: #fff; border: 1px solid #DCE8F1; box-shadow: 0 8px 24px -14px rgba(36,71,107,.28); }
+@media (max-width: 639px) {
+  .rs-slats { opacity: .4; }
+  .rs-h2-a { white-space: nowrap; }
+  .rs-h2-amp { display: block; }
+  .rs-ppl-stack li { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; padding: 10px 0; }
+  .rs-ppl-stack li span { margin-left: 0; text-align: left; white-space: normal; font-size: .8rem; }
+}
 `
 
 export default function ResearchOverview() {
@@ -295,7 +305,7 @@ export default function ResearchOverview() {
 
         <section aria-labelledby="rs-exc-h">
           <div className="rs-in">
-            <h2 id="rs-exc-h" className="rs-h2">{research.excellenceTitle}</h2>
+            <h2 id="rs-exc-h" className="rs-h2">{excellenceHead.map((part, i) => (i === 0 ? <span key={i} className="rs-h2-a">{part}</span> : <span key={i} className="rs-h2-amp"> &amp; {part}</span>))}</h2>
             <div className="rs-prose">
               {research.excellence.map((p, i) => <p key={i}>{p}</p>)}
             </div>

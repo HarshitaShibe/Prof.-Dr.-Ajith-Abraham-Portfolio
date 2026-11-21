@@ -24,7 +24,7 @@ const MAXY = Math.max(...TOT)
 const niceMax = Math.ceil(MAXY / 20) * 20
 const TICKS = [0, 0.25, 0.5, 0.75, 1].map((f) => Math.round(niceMax * f))
 const ALIAS: Record<string, string> = { 'United States': 'United States of America' }
-const ABBR: Record<string, string> = { 'United States': 'US' }
+const ABBR: Record<string, string> = { 'United States': 'US', 'United Kingdom': 'UK', 'United Arab Emirates': 'UAE' }
 const HIT = new Map(collab.countries.map((c) => [ALIAS[c.name] ?? c.name, c]))
 const NOT_DRAWN = collab.countries.filter((c) => !world.countries.some((k) => k.n === (ALIAS[c.name] ?? c.name))).map((c) => c.name)
 // shade by number of joint publications (log steps so small counts stay visible)
@@ -50,6 +50,7 @@ const CSS = `
 .ri-tip { min-height: 1.2em; margin-top: 8px; font-size: .78rem; color: #24476B; }
 .ri-donut { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 24px; }
 .ri-donut .ri-legend { flex-direction: column; margin: 0; }
+@media (max-width: 639px) { .ri-donut .ri-legend { width: 100%; align-items: flex-start; text-align: left; padding-left: 4px; } }
 .ri-map path { fill: #DCE8F1; stroke: #fff; stroke-width: .4; }
 .ri-map path.on { stroke: #fff; cursor: pointer; }
 .ri-map path.s1 { fill: #BBD6EC; } .ri-map path.s2 { fill: #7FB0DB; } .ri-map path.s3 { fill: #3F7CC0; } .ri-map path.s4 { fill: #24476B; }
@@ -65,6 +66,12 @@ const CSS = `
 .ri-itbl tbody tr:hover { background: #EAF2FA; }
 .ri-itbl .ri-itbl-num { font-variant-numeric: tabular-nums; font-weight: 500; white-space: nowrap; }
 @media (max-width: 639px) { .ri-itbl thead th, .ri-itbl tbody th, .ri-itbl tbody td { padding: 12px 14px; } }
+@media (max-width: 639px) {
+  .ri-countries button { font-size: .7rem; }
+  .ri-itbl { min-width: 520px; }
+  .ri-itbl thead th, .ri-itbl tbody th, .ri-itbl tbody td { text-align: left; vertical-align: top; }
+  .ri-itbl tbody th { min-width: 200px; overflow-wrap: anywhere; }
+}
 @media (max-width: 639px) { .ri-sub { text-align: justify; text-justify: inter-word; -webkit-hyphens: auto; hyphens: auto; } }
 .ri-more { margin-top: 12px; height: 38px; padding: 0 18px; border-radius: 999px; border: 0; background: #24476B; color: #fff; font: inherit; font-size: .82rem; font-weight: 600; cursor: pointer; }
 .ri-more:focus-visible { outline: 2px solid #4A86C8; outline-offset: 2px; }

@@ -119,12 +119,16 @@ const CSS = `
 .jn-tbl tbody tr:nth-child(even) { background: #F5F9FD; }
 .jn-tbl tbody tr:hover { background: #EAF2FA; }
 .jn-tbl .jn-t-n { text-align: left; font-variant-numeric: tabular-nums; font-weight: 500; white-space: nowrap; }
+.jn-tw-wrap { position: relative; }
+.jn-tw-fade { display: none; }
 .jn-t-sub { display: none; margin-top: 3px; font-size: .74rem; line-height: 1.5; font-weight: 400; color: #5b7a99; }
 @media (max-width: 759px) {
   .jn-t-hide { display: none; }
   .jn-t-sub { display: block; }
   .jn-tbl { table-layout: auto; min-width: 560px; }
   .jn-tbl thead th, .jn-tbl tbody th, .jn-tbl tbody td, .jn-tbl .jn-t-n { text-align: left; }
+  .jn-tw-fade { display: block; position: absolute; top: 0; right: 0; bottom: 0; width: 14px; border-radius: 0 6px 6px 0; pointer-events: none; background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,.35)); transition: opacity .25s; }
+  .jn-tw-fade[data-hide] { opacity: 0; }
   .jn-tbl thead th:last-child, .jn-tbl tbody td:last-child { min-width: 96px; }
   .jn-tbl thead th:last-child, .jn-tbl tbody td:last-child { padding-left: 8px; padding-right: 14px; }
   .jn-tbl thead th:nth-child(3), .jn-tbl tbody td:nth-child(3) { min-width: 120px; padding-left: 8px; padding-right: 8px; font-size: .78rem; line-height: 1.4; }
@@ -265,6 +269,12 @@ export default function JournalsPage() {
   const [coPage, setCoPage] = useState(1)
   const [pageSize, setPageSize] = useState(25)
   const coTop = useRef<HTMLDivElement>(null)
+  const twRef = useRef<HTMLDivElement>(null)
+  const [tableAtEnd, setTableAtEnd] = useState(true)
+  const checkTable = () => {
+    const el = twRef.current
+    if (el) setTableAtEnd(el.scrollLeft + el.clientWidth >= el.scrollWidth - 4)
+  }
   const countryOpts = useMemo(() => {
     const m = new Map<string, number>()
     for (const c of CO_ALL) if (c.country) m.set(c.country, (m.get(c.country) ?? 0) + 1)
@@ -288,6 +298,11 @@ export default function JournalsPage() {
     document.documentElement.classList.add('on-journals')
     return () => document.documentElement.classList.remove('on-journals')
   }, [])
+  useEffect(() => {
+    checkTable()
+    window.addEventListener('resize', checkTable)
+    return () => window.removeEventListener('resize', checkTable)
+  }, [coList.length, page, pageSize])
 
   return (
     <main id="journals" className="jn-wrap" aria-labelledby="jn-title">
@@ -419,7 +434,8 @@ export default function JournalsPage() {
             {coList.length === 0 ? (
               <p className="jn-co-empty">No co-authors match these filters.</p>
             ) : (
-              <div className="jn-tw">
+              <div className="jn-tw-wrap">
+              <div className="jn-tw" ref={twRef} onScroll={checkTable}>
                 <table className="jn-tbl">
                   <thead>
                     <tr><th scope="col">Co-author</th><th scope="col" className="jn-t-hide">Institution</th><th scope="col">Country</th><th scope="col" className="jn-t-n">Joint papers</th></tr>
@@ -435,6 +451,8 @@ export default function JournalsPage() {
                     ))}
                   </tbody>
                 </table>
+              </div>
+              <span className="jn-tw-fade" data-hide={tableAtEnd ? 'true' : undefined} aria-hidden="true" />
               </div>
             )}
             {coList.length > 0 && (
