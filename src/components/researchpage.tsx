@@ -200,7 +200,8 @@ const CSS = `
 
 .rt-foot { margin: 28px 0 0; font-size: .74rem; line-height: 1.6; color: #2f4d68; }
 @media (max-width: 639px) {
-  .rt-hero { padding: 120px 24px 72px; min-height: 92svh; }
+  .rt-wrap { overflow-x: clip; }
+  .rt-hero { padding: 120px 24px 72px; min-height: 100svh; width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); }
   .rt-title { font-size: 3rem; text-wrap: balance; }
   .rt-lede { margin-top: 18px; max-width: 320px; }
   .rt-tally { margin-top: 26px; gap: 8px; }
@@ -214,13 +215,21 @@ const CSS = `
   .rt-nums { gap: 10px; }
   .rt-num strong { width: 60px; height: 60px; font-size: 1rem; }
   .rt-chips { margin-top: 26px; flex-wrap: nowrap; overflow-x: auto; margin-left: -22px; margin-right: -22px; padding: 2px 22px 8px; scrollbar-width: none; }
-  .rt-chips::-webkit-scrollbar { display: none; }
+  .rt-chips::-webkit-scrollbar { display: block; height: 4px; }
+  .rt-chips::-webkit-scrollbar-track { background: #DCE8F1; border-radius: 4px; margin: 0 22px; }
+  .rt-chips::-webkit-scrollbar-thumb { background: #8fa9c2; border-radius: 4px; }
   .rt-chips li { flex: 0 0 auto; }
   .rt-chart { overflow-x: auto; padding: 12px 10px 8px; border-radius: 16px; }
   .rt-chart svg { min-width: 640px; }
   .rt-pick { position: sticky; left: 0; }
   .rt-era { padding: 22px 22px; }
   .rt-foot { margin-top: 40px; }
+  .rt-lede { max-width: 340px; text-align: justify; text-align-last: center; hyphens: auto; -webkit-hyphens: auto; }
+  .rt-sub { text-align: justify; text-align-last: center; hyphens: auto; -webkit-hyphens: auto; }
+  .rt-pick { text-align: justify; text-align-last: center; hyphens: auto; -webkit-hyphens: auto; }
+  .rt-panel p, .rt-era p { hyphens: auto; -webkit-hyphens: auto; }
+  .rt-chips { flex-wrap: nowrap; overflow-x: auto; margin-left: -22px; margin-right: -22px; padding: 2px 22px 10px; scrollbar-width: thin; scrollbar-color: #8fa9c2 #DCE8F1; -webkit-overflow-scrolling: touch; -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); }
+  .rt-chart svg { min-width: 800px; }
 }
 @media (prefers-reduced-motion: reduce) { .rt-seg, .rt-dot { transition: none; } }
 `

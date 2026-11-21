@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
 import funding from '../data/funding.json'
-import LineWaves from './LineWaves'
 import FundedAgencies from './fundedagencies'
 
 /* ==========================================================================
@@ -29,18 +28,6 @@ const STATS: StatDef[] = [
   { parts: [PI_N, CO_N], label: 'As PI · as Co-I' },
   { parts: [AGENCIES], label: 'Funding agencies' },
 ]
-
-const NARROW_QUERY = '(max-width: 639px)'
-function useIsNarrow() {
-  const [narrow, setNarrow] = useState(() => typeof window !== 'undefined' && window.matchMedia(NARROW_QUERY).matches)
-  useEffect(() => {
-    const mq = window.matchMedia(NARROW_QUERY)
-    const onChange = () => setNarrow(mq.matches)
-    mq.addEventListener('change', onChange)
-    return () => mq.removeEventListener('change', onChange)
-  }, [])
-  return narrow
-}
 
 function useCount(target: number, start: boolean) {
   const [v, setV] = useState(0)
@@ -79,7 +66,13 @@ const CSS = `
   font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 .fp-wrap { position: relative; overflow-x: clip; }
-.fp-waves { position: absolute; top: 0; left: 0; right: 0; height: 820px; z-index: 0; pointer-events: none; opacity: .22; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
+.fp-grid {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(36,71,107,.11) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(36,71,107,.11) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
 .fp-wrap section { position: relative; z-index: 1; padding: 44px 30px; box-sizing: border-box; }
 @media (min-width: 640px) { .fp-wrap section { padding: 56px 56px; } }
 .fp-in { max-width: 1100px; margin: 0 auto; }
@@ -159,7 +152,7 @@ const CSS = `
 
 /* Mobile compaction. Kept at the end so it overrides the desktop-first rules above. */
 @media (max-width: 639px) {
-  .fp-waves { height: 560px; }
+  .fp-grid { background-size: 24px 24px; }
   .fp-wrap section { padding: 36px 20px; }
   .fp-wrap section.fp-agencies { padding-bottom: 28px; }
   .fp-wrap section[aria-label="Filter grants"] { padding-top: 24px; }
@@ -183,8 +176,6 @@ export default function FundingPage() {
     return () => document.documentElement.classList.remove('on-funding')
   }, [])
 
-  const narrow = useIsNarrow()
-
   const [role, setRole] = useState('')
   const [country, setCountry] = useState('')
   const [agency, setAgency] = useState('')
@@ -206,25 +197,7 @@ export default function FundingPage() {
   return (
     <main id="funding-page" className="fp-wrap" aria-labelledby="fp-title">
       <style>{CSS}</style>
-      {!narrow ? <div className="fp-waves" aria-hidden="true">
-        <LineWaves
-          lightMode
-          color1="#4A86C8"
-          color2="#6391BD"
-          color3="#24476B"
-          speed={narrow ? 0.22 : 0.3}
-          lineCount={narrow ? 46 : 72}
-          lineWidth={narrow ? 1.1 : 1.3}
-          warpIntensity={narrow ? 0.8 : 1}
-          highlight={0.85}
-          glow={0.5}
-          edgeFade={0.15}
-          maxDevicePixelRatio={narrow ? 1.5 : 2}
-          enableMouseInteraction={!narrow}
-          mouseInfluence={1.4}
-          clickRipple
-        />
-      </div> : null}
+      <div className="fp-grid" aria-hidden="true" />
 
       <section className="fp-hero">
         <div className="fp-in">
