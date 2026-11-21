@@ -123,6 +123,15 @@ const CSS = `
 @media (max-width: 759px) {
   .jn-t-hide { display: none; }
   .jn-t-sub { display: block; }
+  .jn-tbl { table-layout: auto; min-width: 560px; }
+  .jn-tbl thead th, .jn-tbl tbody th, .jn-tbl tbody td, .jn-tbl .jn-t-n { text-align: left; }
+  .jn-tbl thead th:last-child, .jn-tbl tbody td:last-child { min-width: 96px; }
+  .jn-tbl thead th:last-child, .jn-tbl tbody td:last-child { padding-left: 8px; padding-right: 14px; }
+  .jn-tbl thead th:nth-child(3), .jn-tbl tbody td:nth-child(3) { min-width: 120px; padding-left: 8px; padding-right: 8px; font-size: .78rem; line-height: 1.4; }
+  .jn-tbl thead th:first-child, .jn-tbl tbody th { min-width: 200px; }
+  .jn-tbl tbody th { overflow-wrap: anywhere; vertical-align: top; }
+  .jn-tbl tbody td:last-child { vertical-align: top; }
+  .jn-tbl thead th { white-space: normal; }
   .jn-tbl thead th, .jn-tbl tbody th, .jn-tbl tbody td { padding: 12px 14px; }
 }
 .jn-co-sel { flex: 0 1 200px; height: 44px; padding: 0 36px 0 12px; border-radius: 6px; border: 1px solid rgba(36,71,107,.3); background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%2324476B' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 16px center; -webkit-appearance: none; appearance: none; color: #24476B; font: inherit; font-size: .84rem; cursor: pointer; }
@@ -139,7 +148,15 @@ const CSS = `
 .jn-pg-b:disabled { color: rgba(36,71,107,.35); border-color: rgba(36,71,107,.14); cursor: default; }
 .jn-pg-of { font-size: .84rem; font-weight: 500; color: #24476B; white-space: nowrap; }
 .jn-pg-sel { height: 38px; flex: none; width: auto; }
-@media (max-width: 639px) { .jn-pgw { justify-content: center; text-align: center; } .jn-pg { justify-content: center; } .jn-pg-info { width: 100%; } }
+@media (max-width: 639px) {
+  .jn-pgw { display: grid; grid-template-columns: minmax(0, auto) minmax(0, 1fr) minmax(0, auto); align-items: center; justify-items: center; gap: 14px 10px; text-align: center; }
+  .jn-pg { display: contents; }
+  .jn-pg-rows { grid-column: 1 / -1; grid-row: 1; flex-direction: column; gap: 8px; white-space: nowrap; }
+  .jn-pg-rows .jn-pg-sel { width: 112px; }
+  .jn-pg-info { grid-column: 1 / -1; grid-row: 2; margin: 0; justify-self: stretch; min-width: 0; }
+  .jn-pg-b:first-of-type { justify-self: start; }
+  .jn-pg-b:last-of-type { justify-self: end; }
+}
 @media (max-width: 639px) { .jn-co-sel { flex: 1 1 100%; } }
 .jn-people { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr; gap: 16px; }
 @media (min-width: 760px) { .jn-people { grid-template-columns: repeat(2, 1fr); } }
@@ -405,14 +422,14 @@ export default function JournalsPage() {
               <div className="jn-tw">
                 <table className="jn-tbl">
                   <thead>
-                    <tr><th scope="col">Co-author</th><th scope="col" className="jn-t-hide">Institution</th><th scope="col" className="jn-t-hide">Country</th><th scope="col" className="jn-t-n">Joint papers</th></tr>
+                    <tr><th scope="col">Co-author</th><th scope="col" className="jn-t-hide">Institution</th><th scope="col">Country</th><th scope="col" className="jn-t-n">Joint papers</th></tr>
                   </thead>
                   <tbody>
                     {coList.slice((page - 1) * pageSize, page * pageSize).map((c) => (
                       <tr key={c.name}>
-                        <th scope="row">{c.name}{(c.institution || c.country) && <small className="jn-t-sub">{[c.institution, c.country ? countryName(c.country) : ''].filter(Boolean).join(' · ')}</small>}</th>
+                        <th scope="row">{c.name}{c.institution && <small className="jn-t-sub">{c.institution}</small>}</th>
                         <td className="jn-t-hide">{c.institution || '-'}</td>
-                        <td className="jn-t-hide">{c.country ? countryName(c.country) : '-'}</td>
+                        <td>{c.country ? countryName(c.country) : '-'}</td>
                         <td className="jn-t-n">{c.papers}</td>
                       </tr>
                     ))}

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import MagnetLines from './MagnetLines'
 import top from '../data/scholar-top.json'
 import cfg from '../data/research-trends.json'
@@ -208,7 +208,7 @@ const CSS = `
   .rt-body { padding: 56px 22px 72px; }
   .rt-sec + .rt-sec { margin-top: 80px; }
   .rt-h2 { text-wrap: balance; }
-  .rt-sub { margin-top: 14px; }
+  .rt-sub { margin-top: 14px; max-width: none; font-size: .86rem; }
   .rt-uni { margin-top: 30px; }
   .rt-canvas { padding: 8px; border-radius: 16px; }
   .rt-panel { padding: 24px 20px; border-radius: 12px; }
@@ -220,16 +220,17 @@ const CSS = `
   .rt-chips::-webkit-scrollbar-thumb { background: #8fa9c2; border-radius: 4px; }
   .rt-chips li { flex: 0 0 auto; }
   .rt-chart { overflow-x: auto; padding: 12px 10px 8px; border-radius: 16px; }
-  .rt-chart svg { min-width: 640px; }
+  .rt-chart svg { min-width: 900px; }
   .rt-pick { position: sticky; left: 0; }
   .rt-era { padding: 22px 22px; }
   .rt-foot { margin-top: 40px; }
+  .rt-rings { opacity: .2; }
   .rt-lede { max-width: 340px; text-align: justify; text-align-last: center; hyphens: auto; -webkit-hyphens: auto; }
-  .rt-sub { text-align: justify; text-align-last: center; hyphens: auto; -webkit-hyphens: auto; }
+  .rt-sub { text-align: center; text-wrap: balance; }
   .rt-pick { text-align: justify; text-align-last: center; hyphens: auto; -webkit-hyphens: auto; }
   .rt-panel p, .rt-era p { hyphens: auto; -webkit-hyphens: auto; }
-  .rt-chips { flex-wrap: nowrap; overflow-x: auto; margin-left: -22px; margin-right: -22px; padding: 2px 22px 10px; scrollbar-width: thin; scrollbar-color: #8fa9c2 #DCE8F1; -webkit-overflow-scrolling: touch; -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); }
-  .rt-chart svg { min-width: 800px; }
+  .rt-chips { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; margin-left: -22px; margin-right: -22px; padding: 2px 22px 10px; scrollbar-width: thin; scrollbar-color: #8fa9c2 #DCE8F1; -webkit-overflow-scrolling: touch; -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); }
+  .rt-chart svg { min-width: 900px; }
 }
 @media (prefers-reduced-motion: reduce) { .rt-seg, .rt-dot { transition: none; } }
 `
@@ -243,6 +244,8 @@ export default function ResearchPage() {
   const [domainKey, setDomainKey] = useState(stats[0].key)
   const [filter, setFilter] = useState<string | null>(null)
   const [picked, setPicked] = useState<string | null>(null)
+  const chipsRef = useRef<HTMLUListElement>(null)
+  useEffect(() => { if (chipsRef.current) chipsRef.current.scrollLeft = 0 }, [])
 
   const domain = stats.find((s) => s.key === domainKey) ?? stats[0]
   const pickedPaper = picked ? BY_ID.get(picked) ?? null : null
@@ -344,7 +347,7 @@ export default function ResearchPage() {
             <h2 id="rt-trend-title" className="rt-h2 rt-h2-c">25 years of <span>evolving ideas</span></h2>
             <p className="rt-sub">Each dot is one of his most-cited papers, placed by the year it was published and how often it has been cited. Pick a domain to see how the focus moved.</p>
 
-            <ul className="rt-chips" aria-label="Filter by domain">
+            <ul className="rt-chips" ref={chipsRef} aria-label="Filter by domain">
               <li><button type="button" className="rt-chip" aria-pressed={filter === null} onClick={() => setFilter(null)}>All domains</button></li>
               {stats.map((s) => (
                 <li key={s.key}>
@@ -391,7 +394,7 @@ export default function ResearchPage() {
                         tabIndex={dim ? -1 : 0}
                         role="button"
                         aria-label={`${p.title}, ${p.year}, ${fmt(p.citations)} citations`}
-                        onClick={() => setPicked(picked === p.id ? null : p.id)}
+                        onClick={() => setPicked(p.id)}
                         onMouseEnter={() => setPicked(p.id)}
                         onFocus={() => setPicked(p.id)}
                         onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setPicked(p.id) } }}
