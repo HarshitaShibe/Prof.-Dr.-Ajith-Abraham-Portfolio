@@ -25,7 +25,7 @@ const CSS = `
 
 .en-hero { position: relative; overflow: hidden; min-height: 100svh; display: flex; align-items: flex-start; background: #EEF4FA;
   padding-top: 130px !important; padding-bottom: 80px !important; }
-@media (max-width: 639px) { .en-hero { padding-bottom: 230px !important; } }
+@media (max-width: 639px) { .en-hero { align-items: center; padding-top: 112px !important; padding-bottom: 120px !important; } }
 @media (min-width: 640px) { .en-hero { padding-top: 150px !important; } }
 .en-waves { position: absolute; inset: 0; z-index: 0; }
 .en-hero .en-in { position: relative; z-index: 1; width: 100%; text-align: center; }
@@ -117,14 +117,62 @@ const CSS = `
 .en-cbox .en-link { background: #DCE8F1; color: #24476B; margin-top: 0; height: 36px; padding: 0 16px; font-size: .8rem; }
 .en-cbox .en-link:hover { background: #fff; }
 .en-foot { padding-bottom: 90px !important; }
+.en-br { display: none; }
 
 @media (max-width: 639px) {
-  .en-body p, .en-close p { font-size: .9rem; line-height: 1.75; }
-  .en-card p, .en-ent p { font-size: .9rem; }
-  .en-hero .en-lede, .en-body p, .en-ent p, .en-sub { text-align: justify; -webkit-hyphens: auto; hyphens: auto; }
-  .en-waves { inset: auto 0 0 0; height: 58vw; }
+  .en-br { display: inline; }
+  .en-waves { inset: auto 0 0 0; height: 64svh; min-height: 400px; }
+  .en-hero .en-lede { font-size: .8rem; line-height: 1.7; text-align: center; text-align-last: center; text-wrap: balance; -webkit-hyphens: none; hyphens: none; }
+  .en-hero .en-tag { font-size: 1rem; line-height: 1.45; text-wrap: balance; }
+
+  /* Body text: smaller, justified with hyphenation so lines fill evenly */
+  .en-body p, .en-ent2 .en-body p { font-size: .8rem; line-height: 1.7; text-align: justify; text-justify: inter-word; -webkit-hyphens: auto; hyphens: auto; }
+  .en-ent p { font-size: .8rem; text-align: justify; -webkit-hyphens: auto; hyphens: auto; }
+
+  /* Background logos: smaller so the whole logo is visible on screen */
+  .en-body-logo::before, .en-body-wm::before { inset: 0; background-size: 58% auto; }
+
+  /* Fact pills: smaller text, tighter, less curvy */
+  .en-role { font-size: .88rem; }
+  .en-chips { gap: 6px; margin-top: 14px; }
+  .en-chips li { padding: 4px 10px; font-size: .72rem; border-radius: 8px; }
+
+  /* Impact section: intro justified, then each point = icon + heading side by side, description justified below */
+  .en-sub { margin: -10px 0 34px; font-size: .82rem; line-height: 1.7; text-align: justify; text-justify: inter-word; text-wrap: pretty; -webkit-hyphens: auto; hyphens: auto; }
+  .en-imp { gap: 42px; }
+  .en-card { display: grid; grid-template-columns: 46px minmax(0, 1fr); gap: 10px 14px; align-items: center; padding: 0 4px; text-align: left; }
+  .en-ico { width: 46px; height: 46px; margin: 0; }
+  .en-ico svg { width: 22px; height: 22px; }
+  .en-card h3 { margin: 0; font-size: clamp(.85rem, calc((100vw - 134px) / 17.6), 1.04rem); line-height: 1.3; text-align: left; text-wrap: wrap; }
+  .en-card p { grid-column: 1 / -1; font-size: .8rem; line-height: 1.7; text-align: justify; text-justify: inter-word; text-wrap: pretty; -webkit-hyphens: auto; hyphens: auto; }
+
+  /* Closing box: compact, justified text, centred heading, motto and buttons */
+  .en-cbox { border-radius: 22px; padding: 28px 22px; }
+  .en-cbg { border-radius: 22px; }
+  .en-cbox .en-h2 { margin-bottom: 14px; font-size: 1.35rem; text-align: center; }
+  .en-close p { max-width: none; margin: 0; font-size: .78rem; line-height: 1.7; text-align: justify; text-justify: inter-word; -webkit-hyphens: auto; hyphens: auto; }
+  .en-close .en-motto { margin-top: 16px !important; font-size: .92rem !important; line-height: 1.5; text-align: center !important; }
+  .en-links { flex-direction: column; align-items: center; justify-content: center; gap: 8px; margin-top: 34px; }
+  .en-cbox .en-link { height: 32px; padding: 0 14px; font-size: .74rem; border-radius: 8px; }
 }
 `
+
+/* Mobile-only line breaks (the <br> is hidden on larger screens) */
+const splitTitle = (raw: string) => {
+  const t = raw.replace(/\band\b/gi, '&')
+  return t
+}
+const splitMotto = (t: string) => {
+  const parts = t.match(/[^.]+\./g)
+  if (!parts || parts.length < 4) return t
+  const h = Math.ceil(parts.length / 2)
+  return <>{parts.slice(0, h).join('').trim()}{' '}<br className="en-br" />{parts.slice(h).join('').trim()}</>
+}
+
+const splitImpactTitle = (t: string) => {
+  const m = t.match(/^(.*?&)\s+(.+)$/)
+  return m ? <>{m[1]}{' '}<br className="en-br" />{m[2]}</> : t
+}
 
 const ICONS = [
   <svg viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>,
@@ -142,7 +190,7 @@ export default function EntrepreneurshipPage() {
   const f = data.featured
 
   return (
-    <main id="entrepreneurship-page" className="en-wrap" aria-labelledby="en-title">
+    <main id="entrepreneurship-page" lang="en" className="en-wrap" aria-labelledby="en-title">
       <style>{CSS}</style>
 
       <section className="en-hero">
@@ -222,13 +270,13 @@ export default function EntrepreneurshipPage() {
 
       <section aria-labelledby="en-imp-h">
         <div className="en-in">
-          <h2 id="en-imp-h" className="en-h2">{data.impactTitle}</h2>
+          <h2 id="en-imp-h" className="en-h2">{splitImpactTitle(data.impactTitle)}</h2>
           <p className="en-sub">{data.impactIntro}</p>
           <ul className="en-imp">
             {data.impact.map((x, i) => (
               <li key={x.title} className="en-card">
                 <span className="en-ico" aria-hidden="true">{ICONS[i % ICONS.length]}</span>
-                <h3>{x.title}</h3>
+                <h3>{splitTitle(x.title)}</h3>
                 <p>{x.text}</p>
               </li>
             ))}
@@ -245,7 +293,7 @@ export default function EntrepreneurshipPage() {
             <div className="en-cin">
               <h2 id="en-close-h" className="en-h2">{data.closingTitle}</h2>
               <p>{data.closing}</p>
-              <p className="en-motto">{data.motto}</p>
+              <p className="en-motto">{splitMotto(data.motto)}</p>
               <div className="en-links">
                 <a className="en-link" href="#funding">Explore research funding &amp; projects</a>
                 <a className="en-link" href="#research">Explore research</a>
