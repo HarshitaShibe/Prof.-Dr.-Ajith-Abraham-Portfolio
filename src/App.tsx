@@ -37,6 +37,10 @@ const SLIDES: { src: string; mo: Mo }[] = [
 
 // Hero text (badge, name, topics, affiliations) lives in src/data/home.json
 const TOPICS = home.topics
+// Phones show a tighter version of the ranking line (same facts). Add "rankingShort" to home.json to override it.
+const RANKING_SHORT =
+  ((home as Record<string, unknown>).rankingShort as string | undefined) ??
+  'Stanford–Elsevier World’s Top 2% Scientists: ranked within the top 0.037% of researchers worldwide for career-long scientific impact, and the top 0.118% globally for research performance in 2025.'
 const TOPIC_MS = 2600 // ms: har topic kitni der dikhe
 
 const HOLD = 7000 // ms: har photo kitni der rukti hai
@@ -166,6 +170,7 @@ body { display: block; min-height: 0; }
 .hm-rank { margin: 0 auto !important; max-width: 820px; font-size: .72rem; line-height: 1.55; font-weight: 300; font-style: italic; text-align: center; text-wrap: balance; color: rgba(255,255,255,.82) !important; }
 .hm-pill-wrap { margin: 18px 0 0; display: flex; justify-content: center; }
 .hm-pill { display: inline-flex; align-items: center; justify-content: center; text-align: center; width: min(560px, 92vw); min-height: 36px; padding: 7px 16px; box-sizing: border-box; border-radius: 7px; background: #fff; color: #24476B; font-size: .76rem; font-weight: 500; line-height: 1.3; overflow: hidden; }
+.hm-rank-short { display: none; }
 .hm-pill-txt { display: inline-block; animation: hm-topic .45s cubic-bezier(.16,1,.3,1) both; }
 .hm-btns { margin-top: 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; }
 .hm-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 16px;
@@ -209,10 +214,12 @@ body { display: block; min-height: 0; }
   .hm-kw { font-size: .9rem; line-height: 1.5; }
   .hm-exp { font-size: min(.8rem, 3.5vw); white-space: nowrap; }
   /* ranking paragraph: use the full width, justified (last line centred), no ugly gaps or lonely last words */
+  .hm-rank-full { display: none; }
+  .hm-rank-short { display: inline; }
   .hm-rank { width: calc(100% + 12px); max-width: none; font-size: .74rem; line-height: 1.55; text-align: justify; text-align-last: center;
     text-wrap: pretty; hyphens: auto; -webkit-hyphens: auto; word-spacing: -.02em; }
   .hm-pill-wrap { margin-top: 14px; }
-  .hm-pill { width: min(420px, 80vw); font-size: .72rem; }
+  .hm-pill { width: min(420px, 80vw); height: 48px; min-height: 0; padding: 4px 14px; font-size: .72rem; line-height: 1.3; }
 }
 @media (max-width: 380px) {
   .hm-hero h1.hm-name { font-size: 8.5vw; }
@@ -236,7 +243,7 @@ body { display: block; min-height: 0; }
   .hm-kw { font-size: .78rem; line-height: 1.45; }
   .hm-exp { font-size: min(.74rem, 3.3vw); }
   .hm-pill-wrap { margin-top: 12px; }
-  .hm-pill { min-height: 32px; padding: 6px 12px; font-size: .7rem; }
+  .hm-pill { height: 46px; min-height: 0; padding: 4px 12px; font-size: .7rem; }
 }
 
 /* Heading sits over the faded top of the DriftWall photos (same style as the other section titles) */
@@ -463,7 +470,10 @@ function App() {
 
         <div className="hm-content">
           <div className="hm-inner">
-            <p className="hm-rank hm-in" lang="en" style={delay(0.4)}>{home.ranking}</p>
+            <p className="hm-rank hm-in" lang="en" style={delay(0.4)}>
+              <span className="hm-rank-full">{home.ranking}</span>
+              <span className="hm-rank-short">{RANKING_SHORT}</span>
+            </p>
 
             <h1 id="home-title" className="hm-name hm-in" style={delay(0.46)}>
               {home.name}
