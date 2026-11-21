@@ -122,7 +122,9 @@ const CSS = `
 @media (max-width: 639px) {
   .en-br { display: inline; }
   .en-waves { inset: auto 0 0 0; height: 64svh; min-height: 400px; }
-  .en-hero .en-lede { font-size: .8rem; line-height: 1.7; text-align: center; text-align-last: center; text-wrap: balance; -webkit-hyphens: none; hyphens: none; }
+  .en-wrap .en-hero { padding-left: 22px; padding-right: 22px; }
+  .en-title { font-size: min(2.8rem, 11vw); }
+  .en-hero .en-lede { font-size: .76rem; line-height: 1.62; text-align: justify; text-justify: inter-word; text-align-last: center; text-wrap: pretty; -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 6 3 3; }
   .en-hero .en-tag { font-size: 1rem; line-height: 1.45; text-wrap: balance; }
 
   /* Body text: smaller, justified with hyphenation so lines fill evenly */
@@ -161,6 +163,10 @@ const CSS = `
 const splitTitle = (raw: string) => {
   const t = raw.replace(/\band\b/gi, '&')
   return t
+}
+const splitHeroTitle = (t: string) => {
+  const m = t.match(/^(.+?)\s+(&\s+.+)$/)
+  return m ? <>{m[1]}{' '}<br className="en-br" />{m[2]}</> : t
 }
 const splitMotto = (t: string) => {
   const parts = t.match(/[^.]+\./g)
@@ -213,7 +219,7 @@ export default function EntrepreneurshipPage() {
           />
         </div>
         <div className="en-in">
-          <h1 id="en-title" className="en-title">{data.title}</h1>
+          <h1 id="en-title" className="en-title">{splitHeroTitle(data.title)}</h1>
           <p className="en-tag">{data.tagline}</p>
           {data.intro.map((p, i) => <p key={i} className="en-lede">{p}</p>)}
         </div>
