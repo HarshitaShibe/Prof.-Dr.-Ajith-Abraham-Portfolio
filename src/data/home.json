@@ -1,14 +1,17 @@
 {
   "name": "Prof. Dr. Ajith Abraham",
-  "taglinePrefix": "Building intelligent systems for",
+  "taglinePrefix": "Artificial intelligence for",
   "topics": [
-    "Data Mining",
+    "Digital Healthcare",
+    "Fintech",
+    "Agritech",
+    "Media Tech",
+    "Legal Tech",
     "Cybersecurity",
-    "Healthcare",
-    "Industry 4.0 and IoT",
-    "Evolutionary Optimization",
-    "Neural Computing",
-    "Generative AI in Education"
+    "Networks",
+    "Education",
+    "Entrepreneurship",
+    "Business Applications"
   ],
   "affiliations": [
     "Humanitarian · Academician · Entrepreneur",
@@ -16,7 +19,7 @@
     "Vice Chancellor, Sai University, Chennai",
     "Founder & Former Director, Machine Intelligence Research Labs (MIR Labs), USA"
   ],
-  "keywords": "Artificial Intelligence | Machine Learning | Data Science | Intelligent Systems",
+  "keywords": "Machine Intelligence | Artificial Intelligence | Business Applications | Entrepreneurship",
   "experience": "35+ years of academic and research experience",
   "ranking": "According to the Stanford–Elsevier World’s Top 2% Scientists ranking, he is placed within the top 0.037% of researchers worldwide based on career-long scientific impact, and within the top 0.118% globally based on his research performance in 2025.",
   "stats": [

@@ -195,12 +195,11 @@ const CSS = `
   .rs-two:has(.rs-men-phd:hover), .rs-two:has(.rs-men-phd:focus-within) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); }
 }
 .rs-men-lede { margin: -18px 0 26px; font-size: .9rem; font-weight: 300; color: #5b7893; }
-.rs-men-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.rs-men-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
 .rs-men-num { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: #24476B; color: #fff; font-size: 1.1rem; font-weight: 600; font-variant-numeric: tabular-nums; }
-.rs-men-ix { margin: 2px 0 6px; font-size: 1.05rem; font-weight: 600; letter-spacing: -.015em; color: #24476B; }
-.rs-men-head .rs-note { margin: 0; white-space: nowrap; }
-.rs-men-head > div { min-width: 0; min-height: 56px; }
-@media (max-width: 1199px) { .rs-men-head .rs-note { white-space: normal; } }
+.rs-men-ix { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: -.015em; color: #24476B; }
+.rs-men-head > div { min-width: 0; }
+@media (min-width: 1200px) { .rs-men-ix { white-space: nowrap; } }
 .rs-box { padding: 26px 24px; }
 .rs-box h3 { margin: 0 0 6px; font-size: 1.15rem; font-weight: 600; letter-spacing: -.02em; }
 .rs-note { margin: 0 0 16px; font-size: .84rem; font-weight: 300; color: #5b7893; }
@@ -354,7 +353,6 @@ export default function ResearchOverview() {
                 <header className="rs-men-head">
                   <div>
                     <p className="rs-men-ix">Completed Post Doctoral Fellows</p>
-                    <p className="rs-note">Post-doctoral researchers hosted.</p>
                   </div>
                   <span className="rs-men-num">{POSTDOCS.length}</span>
                 </header>
@@ -369,7 +367,6 @@ export default function ResearchOverview() {
               <header className="rs-men-head">
                 <div>
                   <p className="rs-men-ix">{research.phd.title}</p>
-                  <p className="rs-note">{research.phd.note}</p>
                 </div>
                 <span className="rs-men-num">{research.phd.students.length}</span>
               </header>
