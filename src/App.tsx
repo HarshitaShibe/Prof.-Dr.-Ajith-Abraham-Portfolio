@@ -185,16 +185,21 @@ body { display: block; min-height: 0; }
   .hm-btn { height: 44px; padding: 0 20px; font-size: .88rem; }
 }
 
+/* Phones + tablets: the hero is a flex column (text block, then the stats strip in normal flow).
+   Its height follows its content, so the text and the stats never overlap or drift on any screen. */
+@media (max-width: 899px) {
+  .hm-hero { display: flex; flex-direction: column; height: auto; min-height: calc(100svh - 16px); }
+  .hm-content { height: auto; flex: 1 0 auto; padding-top: 84px; padding-bottom: 44px; }
+}
 @media (min-width: 640px) and (max-width: 899px) {
-  .hm-hero { min-height: 960px; }
-  .hm-content { padding-bottom: 250px; }
+  .hm-hero { min-height: calc(100svh - 24px); }
+  .hm-content { padding-top: 96px; }
 }
 @media (max-width: 639px) {
-  .hm-hero { min-height: 1010px; }
-  .hm-content { padding-top: 84px; padding-bottom: 255px; }
   .hm-badge { font-size: 1rem; }
-  .hm-hero h1.hm-name { font-size: min(2.7rem, 7vw); margin-top: 26px; white-space: nowrap; letter-spacing: -.045em; }
-  .hm-tag { font-size: 1.15rem; white-space: normal; flex-wrap: wrap; row-gap: 2px; margin-top: 20px; line-height: 1.4; }
+  .hm-hero h1.hm-name { font-size: min(2.9rem, 8.7vw); margin-top: 26px; white-space: nowrap; letter-spacing: -.045em; }
+  .hm-tag { font-size: min(1.15rem, 5.4vw); flex-direction: column; align-items: center; white-space: nowrap; row-gap: 2px; margin-top: 20px; line-height: 1.4; }
+  .hm-tag > span:first-child { white-space: nowrap; }
   .hm-aff { margin-top: 32px; gap: 10px; }
   .hm-aff li { font-size: 1rem; line-height: 1.5; }
   .hm-aff li:first-child { white-space: nowrap; font-size: calc((100vw - 56px) / 23.5); }
@@ -206,13 +211,28 @@ body { display: block; min-height: 0; }
   .hm-pill { width: min(420px, 80vw); font-size: .72rem; }
 }
 @media (max-width: 380px) {
-  .hm-hero { min-height: 1050px; }
-  .hm-hero h1.hm-name { font-size: 6.8vw; }
+  .hm-hero h1.hm-name { font-size: 8.5vw; }
   .hm-badge { font-size: .92rem; }
-  .hm-tag { font-size: 1.05rem; margin-top: 16px; }
+  .hm-tag { font-size: min(1.05rem, 5.4vw); margin-top: 16px; }
   .hm-aff { margin-top: 24px; gap: 8px; }
   .hm-aff li { font-size: .92rem; }
   .hm-aff li:first-child { font-size: calc((100vw - 56px) / 23.5); }
+}
+/* Compact hero for small / short phones (e.g. Galaxy S8+ 360x740): smaller text and tighter gaps so
+   the whole hero, stats included, fits on one screen */
+@media (max-width: 380px), (max-width: 639px) and (max-height: 760px) {
+  .hm-content { padding-top: 76px; padding-bottom: 24px; }
+  .hm-rank { font-size: .64rem; line-height: 1.45; }
+  .hm-hero h1.hm-name { margin-top: 14px; }
+  .hm-tag { margin-top: 12px; font-size: min(1rem, 5vw); line-height: 1.35; }
+  .hm-aff { margin-top: 16px; gap: 6px; }
+  .hm-aff li { font-size: .85rem; }
+  .hm-aff li:first-child { font-size: calc((100vw - 56px) / 25); }
+  .hm-more { margin-top: 14px; gap: 6px; }
+  .hm-kw { font-size: .78rem; line-height: 1.45; }
+  .hm-exp { font-size: min(.74rem, 3.3vw); }
+  .hm-pill-wrap { margin-top: 12px; }
+  .hm-pill { min-height: 32px; padding: 6px 12px; font-size: .7rem; }
 }
 
 /* Heading sits over the faded top of the DriftWall photos (same style as the other section titles) */

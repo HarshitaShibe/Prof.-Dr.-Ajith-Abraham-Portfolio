@@ -37,6 +37,8 @@ const CSS = `
   font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 @media (min-width: 640px) { .st-wrap { bottom: 24px; padding: 0 58px; } }
+/* Phones + tablets: the strip sits in normal flow under the hero text (no absolute positioning) */
+@media (max-width: 899px) { .st-wrap { position: relative; bottom: auto; padding-bottom: 26px; flex: none; } }
 
 .st-card {
   display: grid; grid-template-columns: repeat(2, 1fr); overflow: hidden;
@@ -59,7 +61,7 @@ const CSS = `
 .st-label { margin-top: 4px; font-size: .74rem; font-weight: 250; white-space: pre-line; color: rgba(255,255,255,.85); }
 
 @media (max-width: 639px) {
-  .st-wrap { bottom: 30px; padding: 0 14px; }
+  .st-wrap { padding: 0 14px 30px; }
   .st-card { border-radius: 18px; padding: 6px 0; background: linear-gradient(to top, rgba(18,36,60,.42), rgba(18,36,60,.18)); }
   .st-item { padding: 9px 6px; }
   .st-item:last-child:nth-child(odd) { grid-column: 1 / -1; }
