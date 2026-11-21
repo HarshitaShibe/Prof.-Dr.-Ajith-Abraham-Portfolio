@@ -67,7 +67,11 @@ const CSS = `
 .ri-itbl .ri-itbl-num { font-variant-numeric: tabular-nums; font-weight: 500; white-space: nowrap; }
 @media (max-width: 639px) { .ri-itbl thead th, .ri-itbl tbody th, .ri-itbl tbody td { padding: 12px 14px; } }
 @media (max-width: 639px) {
-  .ri-countries button { font-size: .7rem; }
+  .ri-countries { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ri-countries li { min-width: 0; }
+  .ri-countries button { font-size: .7rem; min-width: 0; height: 36px; padding: 0 10px; align-items: center; }
+  .ri-countries button > span:first-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ri-countries em { flex: none; }
   .ri-itbl { min-width: 520px; }
   .ri-itbl thead th, .ri-itbl tbody th, .ri-itbl tbody td { text-align: left; vertical-align: top; }
   .ri-itbl tbody th { min-width: 200px; overflow-wrap: anywhere; }
