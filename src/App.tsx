@@ -189,11 +189,13 @@ body { display: block; min-height: 0; }
    Its height follows its content, so the text and the stats never overlap or drift on any screen. */
 @media (max-width: 899px) {
   .hm-hero { display: flex; flex-direction: column; height: auto; min-height: calc(100svh - 16px); }
-  .hm-content { height: auto; flex: 1 0 auto; padding-top: 84px; padding-bottom: 44px; }
+  /* equal breathing room above and below the text block: leftover height is split evenly between
+     (navbar -> text) and (text -> stats) */
+  .hm-content { height: auto; flex: 1 0 auto; padding-top: 64px; padding-bottom: 20px; }
 }
 @media (min-width: 640px) and (max-width: 899px) {
   .hm-hero { min-height: calc(100svh - 24px); }
-  .hm-content { padding-top: 96px; }
+  .hm-content { padding-top: 84px; }
 }
 @media (max-width: 639px) {
   .hm-badge { font-size: 1rem; }
@@ -223,7 +225,7 @@ body { display: block; min-height: 0; }
 /* Compact hero for small / short phones (e.g. Galaxy S8+ 360x740): smaller text and tighter gaps so
    the whole hero, stats included, fits on one screen */
 @media (max-width: 380px), (max-width: 639px) and (max-height: 760px) {
-  .hm-content { padding-top: 76px; padding-bottom: 24px; }
+  .hm-content { padding-top: 64px; padding-bottom: 20px; }
   .hm-rank { font-size: .68rem; line-height: 1.5; }
   .hm-hero h1.hm-name { margin-top: 14px; }
   .hm-tag { margin-top: 12px; font-size: min(1rem, 5vw); line-height: 1.35; }
