@@ -38,9 +38,10 @@ const CSS = `
 .md-ic { display: inline-flex; }
 .md-ct { font-size: 1rem; font-weight: 600; letter-spacing: -.01em; margin-top: 4px; }
 .md-cd { font-size: .82rem; font-weight: 300; line-height: 1.6; color: rgba(255,255,255,.85); }
-.md-go { margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 999px; font-size: .78rem; font-weight: 500; background: #fff; color: #24476B; }
+.md-go { margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 12px; font-size: .7rem; font-weight: 500; background: #fff; color: #24476B; }
 .md-arr { display: inline-block; transition: transform .15s; }
 .md-card:hover .md-arr { transform: translate(3px,-3px); }
+@media (max-width: 639px) { .md-go { padding: 5px 10px; font-size: .64rem; gap: 5px; border-radius: 10px; } }
 @media (prefers-reduced-motion: reduce) { .md-card { opacity: 1; transform: none; transition: none; } }
 @media (max-width: 860px) { .md-grid { grid-template-columns: 1fr; max-width: 460px; } .md-links { padding: 56px 20px 72px; } }
 /* Hovering (or focusing) a photo on the drifting wall enlarges it */

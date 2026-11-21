@@ -26,14 +26,18 @@ const PHONES = [
   { display: '+91-9496829000', tel: '+919496829000' },
 ]
 
-const PROFILES = [
-  { label: 'Google Scholar', brand: 'scholar' as Brand, short: 'GS', url: 'https://scholar.google.com/citations?user=i95DGLQAAAAJ' },
-  { label: 'ORCID', brand: 'orcid' as Brand, short: 'ID', url: 'https://orcid.org/0000-0002-0169-6738' },
-  { label: 'Scopus', brand: 'scopus' as Brand, short: 'Sc', url: 'https://www.scopus.com/authid/detail.uri?authorId=7202760099' },
-  { label: 'Web of Science', brand: 'wos' as Brand, short: 'WoS', url: 'https://www.webofscience.com/wos/author/record/A-1416-2008' },
-  { label: 'LinkedIn', brand: 'linkedin' as Brand, short: 'in', url: 'https://www.linkedin.com/in/ajithabraham/' },
-  { label: 'Personal website', short: 'www', url: 'https://softcomputing.net' },
-  { label: 'MIR Labs', short: 'MIR', url: 'https://www.mirlabs.org' },
+type Profile =
+  | { label: string; brand: Brand; url: string }
+  | { label: string; icon: 'web' | 'mir'; url: string }
+
+const PROFILES: Profile[] = [
+  { label: 'Google Scholar', brand: 'scholar', url: 'https://scholar.google.com/citations?user=i95DGLQAAAAJ' },
+  { label: 'ORCID', brand: 'orcid', url: 'https://orcid.org/0000-0002-0169-6738' },
+  { label: 'Scopus', brand: 'scopus', url: 'https://www.scopus.com/authid/detail.uri?authorId=7202760099' },
+  { label: 'Web of Science', brand: 'wos', url: 'https://www.webofscience.com/wos/author/record/A-1416-2008' },
+  { label: 'LinkedIn', brand: 'linkedin', url: 'https://www.linkedin.com/in/ajithabraham/' },
+  { label: 'Personal website', icon: 'web', url: 'https://softcomputing.net' },
+  { label: 'MIR Labs', icon: 'mir', url: 'https://www.mirlabs.org' },
 ]
 
 const CSS = `
@@ -52,9 +56,10 @@ const CSS = `
 .ct-eyebrow { margin: 0; display: flex; align-items: center; gap: 8px; font-size: .74rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.72); }
 .ct-eyebrow::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #cdd9ff; }
 .ct-title { margin: 0; text-align: center; text-wrap: balance; font-size: clamp(1.8rem, 3.6vw, 2.6rem); font-weight: 600; line-height: 1.05; letter-spacing: -.045em; color: #fff; }
-.ct-lede { margin: 16px 0 0; text-align: center; font-size: .92rem; font-weight: 300; line-height: 1.65; color: rgba(255,255,255,.8); }
+.ct-lede { margin: 16px auto 0; max-width: 34em; text-align: center; text-wrap: balance; font-size: .92rem; font-weight: 300; line-height: 1.65; color: rgba(255,255,255,.8); }
+@media (max-width: 639px) { .ct-lede { max-width: none; font-size: .85rem; line-height: 1.6; padding: 0 6px; } }
 
-@media (min-width: 1100px) { .ct-lede { white-space: nowrap; } }
+@media (min-width: 1100px) { .ct-lede { white-space: nowrap; max-width: none; } }
 .ct-grid { margin-top: 32px; display: grid; grid-template-columns: 1fr; gap: 16px; }
 @media (min-width: 640px) { .ct-grid { margin-top: 44px; } }
 @media (min-width: 900px) { .ct-grid { grid-template-columns: 1fr 1fr; } }
@@ -76,8 +81,10 @@ const CSS = `
 .ct-list small { display: block; margin: 2px 0 0; font-size: .72rem; color: rgba(255,255,255,.6); }
 
 @media (min-width: 420px) { .ct-list small { display: inline; margin: 0 0 0 6px; } }
-.ct-tiles { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr; gap: 8px; }
-@media (min-width: 560px) { .ct-tiles { grid-template-columns: 1fr 1fr; } }
+
+/* Profiles: 2 columns on every screen, 3 left + 3 right, last tile centred at half width */
+.ct-tiles { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; max-width: 100%; }
+.ct-tiles li:last-child:nth-child(odd) { grid-column: 1 / -1; justify-self: center; width: calc(50% - 4px); }
 .ct-card-fill { display: flex; flex-direction: column; }
 .ct-card-fill .ct-tiles { flex: 1; grid-auto-rows: 1fr; }
 .ct-card-fill .ct-text { margin-bottom: 18px; }
@@ -86,18 +93,49 @@ const CSS = `
   background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.28); box-shadow: inset 0 1px 0 rgba(255,255,255,.2); transition: background-color .25s, border-color .25s; }
 .ct-pill:hover { background: rgba(255,255,255,.2); border-color: rgba(255,255,255,.4); }
 .ct-pill:active, .ct-pill:focus { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; text-decoration-color: rgba(255,255,255,.55); }
-@media (min-width: 560px) { .ct-tiles li:last-child:nth-child(odd) { grid-column: 1 / -1; } }
 .ct-reach { margin-top: 16px; display: grid; grid-template-columns: 1fr; gap: 24px; }
 @media (min-width: 900px) { .ct-reach { grid-template-columns: 1fr 1fr; gap: 0; } .ct-reach > div:last-child { padding-left: 36px; } }
-.ct-tile { display: flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 12px; border-radius: 10px; color: #fff; text-decoration: none; font-size: .82rem; font-weight: 400;
+
+/* Tile: icon pinned left, label centred */
+.ct-tile { position: relative; display: flex; align-items: center; justify-content: flex-start; min-height: 40px; height: 100%; padding: 0 12px 0 40px; border-radius: 10px; color: #fff; text-decoration: none; font-size: .82rem; font-weight: 400;
   background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.28); box-shadow: inset 0 1px 0 rgba(255,255,255,.2); transition: background-color .25s, border-color .25s, transform .3s cubic-bezier(.16,1,.3,1); }
 .ct-tile:hover { background: rgba(255,255,255,.2); border-color: rgba(255,255,255,.4); transform: translateY(-2px); }
-.ct-tile { gap: 10px; }
-.ct-tile span { flex: 1; min-width: 0; text-align: center; }
-.ct-tile > span:first-child:not(:last-child) { flex: 0 0 auto; }
+.ct-ico { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); display: inline-flex; flex: none; }
+.ct-tile span.ct-label { min-width: 0; text-align: left; line-height: 1.2; }
+
+@media (max-width: 559px) {
+  .ct-tile { font-size: .75rem; padding: 0 8px 0 36px; }
+  .ct-ico { left: 9px; }
+}
+
+/* Desktop: icon + label sit together, centred inside the pill */
+@media (min-width: 560px) {
+  .ct-tile { justify-content: center; gap: 10px; padding: 0 14px; }
+  .ct-ico { position: static; transform: none; }
+  .ct-tile span.ct-label { text-align: left; }
+}
 
 @media (prefers-reduced-motion: reduce) { .ct-tile { transition: none; } .ct-tile:hover { transform: none; } }
 `
+
+/* White rounded-square badge, same size and look as the brand badges, for links without a brand logo */
+function PlainBadge({ kind }: { kind: 'web' | 'mir' }) {
+  return (
+    <span
+      aria-hidden="true"
+      style={{ display: 'inline-flex', width: 20, height: 20, borderRadius: 5, background: '#fff', color: '#24476B', alignItems: 'center', justifyContent: 'center', flex: 'none' }}
+    >
+      {kind === 'web' ? (
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" />
+        </svg>
+      ) : (
+        <b style={{ fontSize: 7, fontWeight: 700, letterSpacing: '-.02em', lineHeight: 1 }}>MIR</b>
+      )}
+    </span>
+  )
+}
 
 function Card({ title, children, fill }: { title: string; children: ReactNode; fill?: boolean }) {
   return (
@@ -140,8 +178,10 @@ export default function ContactPage() {
                 {PROFILES.map((p) => (
                   <li key={p.label}>
                     <a className="ct-tile" href={p.url} target="_blank" rel="noopener noreferrer">
-                      {'brand' in p && p.brand ? <BrandBadge brand={p.brand} size={20} /> : null}
-                      <span>{p.label}</span>
+                      <span className="ct-ico">
+                        {'brand' in p ? <BrandBadge brand={p.brand} size={20} /> : <PlainBadge kind={p.icon} />}
+                      </span>
+                      <span className="ct-label">{p.label}</span>
                     </a>
                   </li>
                 ))}
