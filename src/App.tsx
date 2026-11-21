@@ -206,7 +206,9 @@ body { display: block; min-height: 0; }
   .hm-more { margin-top: 24px; gap: 8px; }
   .hm-kw { font-size: .9rem; line-height: 1.5; }
   .hm-exp { font-size: min(.8rem, 3.5vw); white-space: nowrap; }
-  .hm-rank { font-size: .7rem; line-height: 1.55; }
+  /* ranking paragraph: use the full width, justified (last line centred), no ugly gaps or lonely last words */
+  .hm-rank { width: calc(100% + 12px); max-width: none; font-size: .74rem; line-height: 1.55; text-align: justify; text-align-last: center;
+    text-wrap: pretty; hyphens: auto; -webkit-hyphens: auto; word-spacing: -.02em; }
   .hm-pill-wrap { margin-top: 14px; }
   .hm-pill { width: min(420px, 80vw); font-size: .72rem; }
 }
@@ -222,7 +224,7 @@ body { display: block; min-height: 0; }
    the whole hero, stats included, fits on one screen */
 @media (max-width: 380px), (max-width: 639px) and (max-height: 760px) {
   .hm-content { padding-top: 76px; padding-bottom: 24px; }
-  .hm-rank { font-size: .64rem; line-height: 1.45; }
+  .hm-rank { font-size: .68rem; line-height: 1.5; }
   .hm-hero h1.hm-name { margin-top: 14px; }
   .hm-tag { margin-top: 12px; font-size: min(1rem, 5vw); line-height: 1.35; }
   .hm-aff { margin-top: 16px; gap: 6px; }
@@ -459,7 +461,7 @@ function App() {
 
         <div className="hm-content">
           <div className="hm-inner">
-            <p className="hm-rank hm-in" style={delay(0.4)}>{home.ranking}</p>
+            <p className="hm-rank hm-in" lang="en" style={delay(0.4)}>{home.ranking}</p>
 
             <h1 id="home-title" className="hm-name hm-in" style={delay(0.46)}>
               {home.name}
