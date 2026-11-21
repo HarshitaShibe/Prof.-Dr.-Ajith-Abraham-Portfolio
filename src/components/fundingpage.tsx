@@ -29,6 +29,19 @@ const STATS: StatDef[] = [
   { parts: [PI_N, CO_N], label: 'As PI · as Co-I' },
   { parts: [AGENCIES], label: 'Funding agencies' },
 ]
+
+const NARROW_QUERY = '(max-width: 639px)'
+function useIsNarrow() {
+  const [narrow, setNarrow] = useState(() => typeof window !== 'undefined' && window.matchMedia(NARROW_QUERY).matches)
+  useEffect(() => {
+    const mq = window.matchMedia(NARROW_QUERY)
+    const onChange = () => setNarrow(mq.matches)
+    mq.addEventListener('change', onChange)
+    return () => mq.removeEventListener('change', onChange)
+  }, [])
+  return narrow
+}
+
 function useCount(target: number, start: boolean) {
   const [v, setV] = useState(0)
   useEffect(() => {
@@ -82,6 +95,7 @@ const CSS = `
 .fp-lede { margin: 18px auto 0; max-width: 36rem; font-size: clamp(.84rem, 1.05vw, .92rem); font-weight: 300; line-height: 1.75; color: #3a5a7a; text-align: justify; text-align-last: center; hyphens: none; animation: fp-drop 1.1s cubic-bezier(.16,1,.3,1) .6s both; }
 @media (max-width: 639px) {
   .fp-title { font-size: min(2.5rem, 10vw); line-height: 1.12; }
+  .fp-title-tail { white-space: nowrap; }
   .fp-lede { margin-top: 26px; -webkit-hyphens: auto; hyphens: auto; }
   .fp-stats { margin-top: 60px; }
   .fp-filters { gap: 8px; }
@@ -102,6 +116,7 @@ const CSS = `
 .fp-lab { margin-top: 7px; font-size: .88rem; font-weight: 400; color: #3a5a7a; }
 
 .fp-h2 { margin: 0 0 26px; font-size: clamp(1.8rem, 3.6vw, 2.6rem); font-weight: 600; line-height: 1.15; letter-spacing: -.04em; color: #24476B; }
+.fp-h2-role { display: inline; }
 .fp-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
 .fp-item { display: grid; grid-template-columns: 1fr; gap: 8px; padding: 22px 22px; }
 @media (min-width: 760px) { .fp-item { grid-template-columns: 170px 1fr; gap: 28px; padding: 24px 28px; } }
@@ -134,12 +149,32 @@ const CSS = `
 .fp-co { margin: 6px 0 0; font-size: .8rem; font-weight: 400; color: rgba(255,255,255,.7); }
 .fp-tag { display: inline-block; margin-top: 8px; padding: 3px 10px; border-radius: 999px; font-size: .72rem; font-weight: 500; color: #24476B; background: #dce8f1; }
 .fp-empty { margin: 0; font-size: .95rem; font-weight: 400; color: #3a5a7a; }
+.fp-wrap section.fp-empty-sec { padding-top: 40px; padding-bottom: 120px; }
 .fp-wrap section.fp-grp { padding-top: 64px; padding-bottom: 64px; }
 .fp-wrap section.fp-agencies { padding-bottom: 110px; }
 .fp-wrap section[aria-label="Filter grants"] { padding-bottom: 0; }
-.fp-wrap section[aria-label="Filter grants"] + section.fp-grp { padding-top: 22px; }
+.fp-wrap section[aria-label="Filter grants"] + section.fp-grp { padding-top: 96px; }
 .fp-wrap section.fp-foot { margin-top: -48px; padding-top: 0; padding-bottom: 90px; }
 .fp-note { margin: 0; font-size: .74rem; font-weight: 400; color: #3a5a7a; }
+
+/* Mobile compaction. Kept at the end so it overrides the desktop-first rules above. */
+@media (max-width: 639px) {
+  .fp-waves { height: 560px; }
+  .fp-wrap section { padding: 36px 20px; }
+  .fp-wrap section.fp-agencies { padding-bottom: 28px; }
+  .fp-wrap section[aria-label="Filter grants"] { padding-top: 24px; }
+  .fp-wrap section[aria-label="Filter grants"] + section.fp-grp { padding-top: 52px; }
+  .fp-wrap section.fp-grp { padding-top: 40px; padding-bottom: 40px; }
+  .fp-wrap section.fp-foot { margin-top: -20px; padding-bottom: 60px; }
+  .fp-wrap section.fp-empty-sec { padding-top: 24px; padding-bottom: 72px; }
+  .fp-filters { gap: 8px; }
+  .fp-field { gap: 4px; }
+  .fp-field select, .fp-clear { height: 40px; }
+  .fp-count { margin-top: 10px; }
+  .fp-h2 { margin-bottom: 18px; }
+  .fp-h2-role { display: block; }
+  .fp-tw { margin: 0 -4px; }
+}
 `
 
 export default function FundingPage() {
@@ -147,6 +182,8 @@ export default function FundingPage() {
     document.documentElement.classList.add('on-funding')
     return () => document.documentElement.classList.remove('on-funding')
   }, [])
+
+  const narrow = useIsNarrow()
 
   const [role, setRole] = useState('')
   const [country, setCountry] = useState('')
@@ -169,13 +206,29 @@ export default function FundingPage() {
   return (
     <main id="funding-page" className="fp-wrap" aria-labelledby="fp-title">
       <style>{CSS}</style>
-      <div className="fp-waves" aria-hidden="true">
-        <LineWaves lightMode color1="#4A86C8" color2="#6391BD" color3="#24476B" speed={0.3} lineCount={72} lineWidth={1.3} enableMouseInteraction={false} clickRipple={false} edgeFade={0.15} />
-      </div>
+      {!narrow ? <div className="fp-waves" aria-hidden="true">
+        <LineWaves
+          lightMode
+          color1="#4A86C8"
+          color2="#6391BD"
+          color3="#24476B"
+          speed={narrow ? 0.22 : 0.3}
+          lineCount={narrow ? 46 : 72}
+          lineWidth={narrow ? 1.1 : 1.3}
+          warpIntensity={narrow ? 0.8 : 1}
+          highlight={0.85}
+          glow={0.5}
+          edgeFade={0.15}
+          maxDevicePixelRatio={narrow ? 1.5 : 2}
+          enableMouseInteraction={!narrow}
+          mouseInfluence={1.4}
+          clickRipple
+        />
+      </div> : null}
 
       <section className="fp-hero">
         <div className="fp-in">
-          <h1 id="fp-title" className="fp-title">{'Research Funding and Projects'}</h1>
+          <h1 id="fp-title" className="fp-title">Research Funding <span className="fp-title-tail">and Projects</span></h1>
           <p className="fp-lede">{funding.totalNote.replace("Asia-Pacific", "Asia\u2011Pacific")}</p>
         </div>
         <div className="fp-stats" aria-label="Funding at a glance">
@@ -214,12 +267,12 @@ export default function FundingPage() {
         </div>
       </section>
 
-      {groups.length === 0 ? <section><div className="fp-in"><p className="fp-empty">No grants match these filters.</p></div></section> : null}
+      {groups.length === 0 ? <section className="fp-empty-sec"><div className="fp-in"><p className="fp-empty">No grants match these filters.</p></div></section> : null}
 
       {groups.map((g) => (
         <section key={g.role} className="fp-grp" aria-label={g.role}>
           <div className="fp-in">
-            <h2 className="fp-h2">Research grants as {g.role}</h2>
+            <h2 className="fp-h2">Research grants as <span className="fp-h2-role">{g.role}</span></h2>
             <div className="fp-tw">
               <table className="fp-tbl">
                 <thead>
