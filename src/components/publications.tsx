@@ -264,8 +264,9 @@ const CSS = `
 @media (min-width: 1000px) { .pb-two { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px; } .pb-two .pb-section { margin-top: 0; } }
 
 /* ---- Chart: publications per year ---- */
-.ch { --h: 150px; position: relative; }
+.ch { --h: 340px; position: relative; }
 @media (min-width: 1000px) { .ch { --h: 300px; } }
+.ch-y { display: none; }
 .ch-plot { position: relative; height: var(--h); margin-left: 34px; }
 .ch-grid { position: absolute; left: 0; right: 0; height: 0; border-top: 1px solid rgba(36,71,107,.1); }
 .ch-grid span { position: absolute; right: calc(100% + 8px); top: -.55em; font-size: .68rem; color: #3a5f86; font-variant-numeric: tabular-nums; }
@@ -455,7 +456,7 @@ const CSS = `
     backdrop-filter: none; -webkit-backdrop-filter: none; }
   .pb-hero .pb-btn:hover { background: none; border: 0; color: #fff; text-decoration-color: #fff; }
   .pb-hero .pb-btn svg { width: 13px; height: 13px; }
-  .pb-hero .pb-lede { font-size: .84rem; line-height: 1.7; max-width: 330px; margin-top: 32px; text-wrap: balance; }
+  .pb-hero .pb-lede { font-size: .74rem; line-height: 1.65; max-width: 100%; margin-top: 28px; text-wrap: balance; }
 
   /* Counts: total on top, then two per row; number first, label under it so the numbers line up */
   .pb-counts { margin-top: 36px; min-height: 0; border-radius: 18px; }
@@ -487,6 +488,29 @@ const CSS = `
   .ls-pub svg { order: 2; }
   .ls-pub .ls-doi { order: 3; flex-basis: 100%; white-space: normal; overflow-wrap: anywhere; font-size: .74rem; }
   .ls-pub .ls-doi::before { content: none; }
+
+  /* Chart: use more of the width and a taller plot */
+  .pb-gap .pb-card { padding: 18px 12px 14px; margin-left: -16px; margin-right: -16px; }
+  /* Chart scrolls sideways: fixed value labels on the left, bars and years scroll */
+  .ch { display: flex; align-items: flex-start; }
+  .ch-y { display: block; position: relative; flex: none; width: 30px; height: var(--h); margin-top: 44px; }
+  .ch-y span { position: absolute; right: 6px; transform: translateY(50%); font-size: .7rem; color: #3a5f86; font-variant-numeric: tabular-nums; line-height: 1; }
+  .ch-scroll { flex: 1 1 auto; min-width: 0; overflow-x: auto; overflow-y: hidden; padding-top: 44px; padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; scrollbar-width: thin; scrollbar-color: rgba(36,71,107,.35) transparent; }
+  .ch-scroll::-webkit-scrollbar { height: 5px; }
+  .ch-scroll::-webkit-scrollbar-track { background: transparent; }
+  .ch-scroll::-webkit-scrollbar-thumb { background: rgba(36,71,107,.35); border-radius: 999px; }
+  .ch-inner { min-width: calc(var(--n, 27) * 16px); padding: 0 6px 0 4px; }
+  .ch-plot, .ch-axis { margin-left: 0; }
+  .ch-grid span { display: none; }
+  .ch-axis span { font-size: .7rem; }
+  .ch-foot { font-size: .8rem; }
+
+  /* Publication list: justified text with hyphenation so lines fill evenly */
+  .ls-title, .ls-authors, .ls-venue { text-align: justify; text-justify: inter-word; hyphens: auto; -webkit-hyphens: auto; text-wrap: pretty; }
+  .ls-title { font-size: .95rem; line-height: 1.45; }
+  .ls-authors { font-size: .82rem; line-height: 1.6; }
+  .ls-venue { font-size: .8rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -830,7 +854,7 @@ export default function Publications() {
   const listId = `${ids}-list`
 
   return (
-    <main id="publications" className="pb-wrap" aria-labelledby="pb-title">
+    <main id="publications" lang="en" className="pb-wrap" aria-labelledby="pb-title">
       <style>{CSS}</style>
 
       <section className="pb-hero">
@@ -904,7 +928,14 @@ export default function Publications() {
                     {q.trim() ? <>Matching “{q.trim()}”. </> : null}Select a year to filter the list.
                   </p>
                   <div className="pb-card pb-glass">
-                    <div className={`ch${yearSet ? ' has-sel' : ''}${yearFrom !== null && yearFrom === yearTo ? ' is-single' : ''}`}>
+                    <div className={`ch${yearSet ? ' has-sel' : ''}${yearFrom !== null && yearFrom === yearTo ? ' is-single' : ''}`} style={{ '--n': years.length } as CSSProperties}>
+                      <div className="ch-y" aria-hidden="true">
+                        {[0, 0.5, 1].map((f) => (
+                          <span key={f} style={{ bottom: `${f * 100}%` }}>{nf.format(Math.round(maxY * f))}</span>
+                        ))}
+                      </div>
+                      <div className="ch-scroll">
+                      <div className="ch-inner">
                       <div className="ch-plot">
                         {[0, 0.5, 1].map((f) => (
                           <div key={f} className={`ch-grid${f === 0 ? ' ch-base' : ''}`} style={{ bottom: `${f * 100}%` }} aria-hidden="true">
@@ -948,6 +979,8 @@ export default function Publications() {
                             </span>
                           ) : null,
                         )}
+                      </div>
+                      </div>
                       </div>
                     </div>
                     <div className="ch-foot">
