@@ -50,7 +50,7 @@ const CSS = `
 
 .cm-card { container-type: inline-size; }
 .cm-total {
-  display: flex; align-items: baseline; flex-wrap: nowrap; white-space: nowrap; gap: .3em; margin: 0 0 14px;
+  display: flex; align-items: baseline; justify-content: space-between; flex-wrap: nowrap; white-space: nowrap; gap: .3em; margin: 0 0 14px;
   font-size: clamp(.95rem, 1.8vw, 1.4rem);
   font-size: clamp(.95rem, 5.6cqi, 1.4rem);
   font-weight: 600; letter-spacing: -.02em; line-height: 1.05; font-variant-numeric: tabular-nums;
